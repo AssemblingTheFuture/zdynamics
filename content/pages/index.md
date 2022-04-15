@@ -7,7 +7,16 @@ sections:
     colors: colors-a
     title: zDynamics
     subtitle: The Future is ROBOTICS
-    actions: []
+    actions:
+      - type: Button
+        label: Learn more
+        altText: ''
+        url: /
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        style: secondary
+        elementId: ''
     media:
       type: ImageBlock
       url: /images/hero.png
