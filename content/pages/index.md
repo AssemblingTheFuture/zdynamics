@@ -474,9 +474,8 @@ sections:
     title: ''
     subtitle: ''
     testimonials:
-      - quote: >
-          "Such a great experience to be using this product. It really helped
-          with what I needed help with."
+      - quote: |
+          "La información es digerible y completa."
         name: Abdiel Altamirano
         title: Alumno de "Métodos Numéricos con Aplicaciones de Ingeniería"
         image:
