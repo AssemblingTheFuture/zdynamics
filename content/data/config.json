@@ -138,7 +138,6 @@
                 "type": "Social",
                 "label": "Facebook",
                 "altText": "",
-                "url": "fb.com/",
                 "icon": "facebook",
                 "style": "link",
                 "elementId": ""
