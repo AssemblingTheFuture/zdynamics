@@ -107,8 +107,9 @@ sections:
     colors: colors-a
     title: NUESTRA VISIÓN
     text: >
-      Share WIP, comment on each other’s work, approve what’s ready to go, ship
-      together
+      Hacer que la robótica, tangible e intangible, sea accesible para cualquier
+      ser humano, a través de educación minimalista y sencilla, a un costo
+      reducido
     actions:
       - type: Button
         label: Get Started
