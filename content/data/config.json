@@ -13,7 +13,7 @@
                 "label": "Inicio",
                 "url": "/",
                 "altText": "Inicio",
-                "showIcon": true
+                "showIcon": false
             },
             {
                 "type": "Link",
