@@ -288,7 +288,7 @@ sections:
     colors: colors-a
     title: Productos
     text: >
-      Queremos crear y construir robots (y sus subproductos) asequibles para
+      Creamos y construimos robots (y sus subproductos) asequibles para
       cualquiera que desee desarrollarse en esta rama de la ingeniería :D
     actions:
       - type: Button
