@@ -471,24 +471,6 @@ sections:
     colors: colors-a
     variant: variant-a
     testimonials:
-      - type: Testimonial
-        quote: >-
-          “It’s great to see someone taking action while still maintaining a
-          sustainable fish supply to home cooks.”
-        name: Johnna Doe
-        title: Product Marketing Manager at Acme
-        image:
-          url: >-
-            https://assets.stackbit.com/components/images/default/default-person.png
-          altText: Person photo
-        elementId: ''
-        styles:
-          name:
-            fontWeight: 400
-            fontStyle: normal
-          title:
-            fontWeight: 400
-            fontStyle: normal
       - quote: >
           Such a great experience to be using this product. It really helped
           with what I needed help with.
