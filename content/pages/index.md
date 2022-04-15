@@ -497,8 +497,8 @@ sections:
         title: Alumno de "Control de Sistemas Dinámicos"
       - type: Testimonial
         quote: >
-          “Excelente curso de robotica, de los mejores que he tomado, explica
-          con gran detalle el uso de los cuaterniones”
+          *“Excelente curso de robotica, de los mejores que he tomado, explica
+          con gran detalle el uso de los cuaterniones”*
         name: Carlos Enrique Moran Garabito
         title: 'Alumno de "Robótica: de la Cinemática al Control"'
         elementId: ''
