@@ -475,7 +475,7 @@ sections:
     subtitle: ''
     testimonials:
       - quote: |
-          "La información es digerible y completa."
+          *"La información es digerible y completa."*
         name: Abdiel Altamirano
         title: Alumno de "Métodos Numéricos con Aplicaciones de Ingeniería"
         image:
