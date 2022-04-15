@@ -254,11 +254,6 @@ sections:
       ser humano, a través de educación minimalista y sencilla, a un costo
       reducido
     actions:
-      - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
-        elementId: hero-main-button
       - type: Link
         label: Learn More
         url: /
