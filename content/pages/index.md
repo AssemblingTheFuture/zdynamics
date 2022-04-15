@@ -5,19 +5,18 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
-    title: 'Love your work. Work loves you.'
-    subtitle: 'One platform, one community.'
+    title: zDynamics
+    subtitle: The Future is ROBOTICS
     actions:
       - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
-      - type: Link
-        label: Learn More
-        url: /
+        label: MÁS INFORMACIÓN
+        altText: MÁS INFORMACIÓN
+        url: '#nosotros'
         showIcon: true
-        icon: arrowRight
+        icon: chevronRight
         iconPosition: right
+        style: primary
+        elementId: ''
     media:
       type: ImageBlock
       url: /images/hero.png
@@ -48,37 +47,32 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
-  - elementId: ''
-    colors: colors-f
+  - elementId: nosotros
+    colors: colors-e
     backgroundSize: inset
-    title: Where did everyone go?
-    text: >
-      Learn how top tech companies have learned working remote using our
-      product.
+    title: ¿Quién @$@% somos?
+    text: "Un grupo de amigos que buscan hacer algo más que programar robots:\_**queremos mejorar las condiciones de trabajo a través de la robótica y ramas afines**.\n"
     badge:
       type: Badge
-      label: Case study
+      label: NOSOTROS
       styles:
         self:
           textAlign: left
     actions:
       - type: Button
-        label: Get Started
-        url: /
+        label: ¡Conócenos!
+        url: /about
         style: primary
-      - type: Link
-        label: Watch Video
-        url: /
+        altText: ¡Conócenos!
         showIcon: true
-        icon: playCircle
-        iconPosition: left
+        icon: arrowRightCircle
     styles:
       self:
         height: auto
         width: wide
         margin:
-          - mt-24
-          - mb-0
+          - mt-14
+          - mb-14
           - ml-4
           - mr-4
         padding:
@@ -87,7 +81,7 @@ sections:
           - pl-16
           - pr-16
         justifyContent: center
-        flexDirection: row
+        flexDirection: row-reverse
         alignItems: center
         borderRadius: xx-large
         boxShadow: xx-large
@@ -101,86 +95,28 @@ sections:
         justifyContent: flex-start
     type: FeatureHighlightSection
     media:
-      url: /images/hero-3.jpg
-      altText: Where did everyone go?
-      caption: Team meeting
+      url: /images/team.jpg
+      altText: The Team
+      caption: The Team
       elementId: ''
       styles:
         self:
           opacity: 100
       type: ImageBlock
-  - colors: colors-h
-    subtitle: Trusted by
-    elementId: ''
-    images:
-      - type: ImageBlock
-        url: /images/apple.svg
-        altText: Apple
-        caption: Apple
-      - type: ImageBlock
-        url: /images/google-play.svg
-        altText: Google Play
-        caption: Google Play
-      - type: ImageBlock
-        url: /images/playstation.svg
-        altText: PlayStation
-        caption: PlayStation
-      - type: ImageBlock
-        url: /images/gatsby.svg
-        altText: Gatsby
-        caption: Gatsby
-      - type: ImageBlock
-        url: /images/xbox.svg
-        altText: Xbox
-        caption: Xbox
-      - type: ImageBlock
-        url: /images/skype.svg
-        altText: Skype
-        caption: Skype
-      - type: ImageBlock
-        url: /images/zcool.svg
-        altText: ZCOOL
-        caption: ZCOOL
-    spacing: 3
-    columns: 7
-    aspectRatio: 'auto'
-    showCaption: false
-    enableHover: false
-    styles:
-      self:
-        width: wide
-        height: auto
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-12
-          - pb-24
-          - pl-4
-          - pr-4
-        justifyContent: center
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-    imageSizePx: 240
-    type: MediaGallerySection
   - colors: colors-a
     elementId: ''
-    title: Remote doesn’t mean alone. Here are so great features
+    title: '¿Qué %&#@ hacemos?'
     subtitle: >-
-      These are all excellent features that will provide exactly the things
-      you’re looking for.
+      Nosotros te EDUCAMOS en robótica avanzada, donde no solo aprendes a
+      vomitar ecuaciones que no entiendes, sino que RAZONAS sobre cómo funciona
+      un robot
     items:
       - type: FeaturedItem
-        title: Faster
+        title: Métodos Numéricos con Aplicaciones de Ingeniería
         text: >
-          Learn how top tech companies have learned working remote using our
-          product.
+          Las matemáticas son muy importantes en cualquier sector profesional,
+          pero es esencial saber cómo resolver problemas rápidamente cumpliendo
+          los requisitos teóricos básicos
         featuredImage:
           url: /images/faster.svg
           altText: altText of the image
@@ -201,11 +137,14 @@ sections:
               - pl-4
               - pb-6
               - pr-4
+            borderRadius: medium
       - type: FeaturedItem
-        title: Smarter
+        title: Control de Sistemas Dinámicos
         text: >
-          Learn how top tech companies have learned working remote using our
-          product.
+          Aunque muchos sistemas todavía se controlan con la estructura clásica
+          de PID, es necesario modernizar y simplificar esto a través de
+          funciones de aprendizaje basadas en criterios de estabilidad más
+          confiables que la asignación de polos y ceros.
         featuredImage:
           url: /images/smarter.svg
           altText: altText of the image
@@ -226,11 +165,13 @@ sections:
               - pl-4
               - pb-6
               - pr-4
+            borderRadius: medium
       - type: FeaturedItem
-        title: Focused
+        title: 'Robótica: de la Cinemática al Control'
         text: >
-          Learn how top tech companies have learned working remote using our
-          product.
+          Los robots se diseñan utilizando herramientas teóricas que no se
+          enseñan en las aulas de Latinoamérica debido a su complejidad, ¡pero
+          se puede aprender de forma muy sencilla!
         featuredImage:
           url: /images/focused.svg
           altText: altText of the image
@@ -251,8 +192,34 @@ sections:
               - pl-4
               - pb-6
               - pr-4
-    columns: 3
-    enableHover: false
+            borderRadius: medium
+      - type: FeaturedItem
+        elementId: ''
+        title: Programación Básica de Robots con Python
+        subtitle: ''
+        text: >
+          La robótica debe aprenderse practicando con sistemas reales que
+          permitan al usuario visualizar la teoría al resolver problemas reales.
+          ¡Y NO ES NECESARIO UTILIZAR EQUIPOS MUY CAROS!
+        featuredImage:
+          type: ImageBlock
+          url: /images/faster.svg
+          altText: Item image
+        actions: []
+        styles:
+          self:
+            textAlign: left
+            padding:
+              - pt-4
+              - pl-4
+              - pr-4
+              - pb-6
+            borderRadius: medium
+            borderColor: border-dark
+            borderStyle: solid
+            borderWidth: 1
+    columns: 4
+    enableHover: true
     styles:
       self:
         height: auto
@@ -263,8 +230,8 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-28
-          - pb-28
+          - pt-9
+          - pb-9
           - pl-4
           - pr-4
         justifyContent: center
@@ -281,25 +248,15 @@ sections:
     type: FeaturedItemsSection
   - elementId: ''
     colors: colors-a
-    title: 'A great feature, we’re proud of'
+    title: NUESTRA VISIÓN
     text: >
-      Share WIP, comment on each other’s work, approve what’s ready to go, ship
-      together
-    actions:
-      - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
-        elementId: hero-main-button
-      - type: Link
-        label: Learn More
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
+      Hacer que la robótica, tangible e intangible, sea accesible para cualquier
+      ser humano, a través de educación minimalista y sencilla, a un costo
+      reducido
+    actions: []
     media:
       type: ImageBlock
-      url: /images/hero-1.png
+      url: /images/vision.png
       altText: Hero section image
     styles:
       self:
@@ -311,7 +268,7 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-36
+          - pt-6
           - pb-6
           - pl-4
           - pr-4
@@ -329,25 +286,23 @@ sections:
     type: FeatureHighlightSection
   - elementId: ''
     colors: colors-a
-    title: And a strong value proposition
+    title: Productos
     text: >
-      Share WIP, comment on each other’s work, approve what’s ready to go, ship
-      together
+      Creamos y construimos robots (y sus subproductos) asequibles para
+      cualquiera que desee desarrollarse en esta rama de la ingeniería :D
     actions:
       - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
+        label: MÁS INFORMACIÓN
+        url: /products
         style: primary
         elementId: hero-main-button
-      - type: Link
-        label: Learn More
-        url: /
-        showIcon: true
-        icon: arrowRight
+        altText: zRobot 0.1
         iconPosition: right
+        showIcon: true
+        icon: arrowRightCircle
     media:
       type: ImageBlock
-      url: /images/hero-2.png
+      url: /images/zrobot01.jpg
       altText: Hero section image
     styles:
       self:
@@ -360,7 +315,7 @@ sections:
           - mr-0
         padding:
           - pt-6
-          - pb-36
+          - pb-6
           - pl-4
           - pr-4
         alignItems: center
@@ -375,20 +330,30 @@ sections:
       actions:
         justifyContent: flex-start
     type: FeatureHighlightSection
-  - elementId: ''
+  - type: FeatureHighlightSection
+    elementId: ''
     colors: colors-a
-    variant: variant-b
-    title: We sometimes write things. You should read it, it might shed some
-      light on why we’re doing what we’re doing
+    backgroundSize: full
+    title: Servicios
+    subtitle: ''
+    text: >
+      Podemos apoyarte en el desarrollo de robots (algoritmos, hardware, diseño
+      mecánico, etcétera) o si deseas entrenar a tus trabajadores en los
+      fundamentos de robótica, programación, o cualquier disciplina relacionada
+      ;)
     actions:
-      - type: Link
-        label: See all posts
-        url: '/blog'
+      - type: Button
+        label: ¡Contáctanos!
+        url: /contact
+        style: primary
+        altText: ¡Contáctanos!
+        icon: arrowRightCircle
+        iconPosition: right
         showIcon: true
-        icon: arrowRight
-    posts:
-      - content/pages/blog/post-four.md
-      - content/pages/blog/post-three.md
+    media:
+      type: ImageBlock
+      url: /images/robot design.png
+      altText: Hero image
     styles:
       self:
         height: auto
@@ -399,57 +364,87 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-0
-          - pb-36
+          - pt-6
+          - pb-6
           - pl-4
           - pr-4
+        alignItems: center
         justifyContent: center
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
+        flexDirection: row
       title:
         textAlign: left
       subtitle:
+        textAlign: left
+      text:
         textAlign: left
       actions:
         justifyContent: flex-start
-    type: FeaturedPostsSection
-    showDate: true
-  - colors: colors-f
+  - type: FeaturedItemsSection
+    colors: colors-e
     elementId: ''
-    title: Need Answers?
+    title: Algunos datos sobre nosotros
+    subtitle: ♡
     items:
-      - question: How is this different from what we have today?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
-      - question: How is this different from what we have today?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
-      - question: How is this different from what we have today?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
-      - question: How is this different from what we have today?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation. At the office, working together is often a
-          distraction, on remote, it could be motivation. At the office, working
-          together is often a distraction, on remote, it could be motivation.
-      - question: How is this different from what we have today?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation. At the office, working together is often a
-          distraction, on remote, it could be motivation. At the office, working
-          together is often a distraction, on remote, it could be motivation.
+      - type: FeaturedItem
+        featuredImage:
+          type: ImageBlock
+          url: /images/students.png
+          altText: +700 estudiantes desde 2019
+          caption: +700 estudiantes desde 2019
+          elementId: ''
+          styles:
+            self:
+              opacity: 100
+        styles:
+          self:
+            textAlign: center
+        title: 700+ estudiantes
+        text: |
+          ¡Y continuamos creciendo día con día!
+      - type: FeaturedItem
+        title: Presencia en 26 países
+        text: |
+          Más que multidisciplinarios, somos MULTINACIONALES :D
+        featuredImage:
+          type: ImageBlock
+          url: /images/international.png
+          altText: altText of the image
+          caption: Caption of the image
+          elementId: ''
+          styles:
+            self:
+              opacity: 100
+        styles:
+          self:
+            textAlign: center
+      - type: FeaturedItem
+        title: 5+ años de experiencia
+        text: >
+          Comenzamos a emprender en 2017 sin saber hasta dónde llegaríamos, ¡y
+          desde entonces no nos hemos detenido!
+        featuredImage:
+          type: ImageBlock
+          url: /images/experience.png
+          altText: Experience
+          caption: Experience
+          elementId: ''
+          styles:
+            self:
+              opacity: 100
+        styles:
+          self:
+            textAlign: center
+    actions:
+      - type: Link
+        label: 'Y si no nos crees, revisa nuestras métricas públicas ;)'
+        altText: ''
+        url: 'https://www.udemy.com/user/z-dynamics/'
+        showIcon: true
+        icon: arrowRightCircle
+        iconPosition: right
+        elementId: ''
+    columns: 3
+    enableHover: false
     styles:
       self:
         height: auto
@@ -460,84 +455,39 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-20
-          - pb-36
+          - pt-12
+          - pb-12
           - pl-4
           - pr-4
         justifyContent: center
-        borderRadius: none
-        borderWidth: 0
-        borderStyle: none
-        borderColor: border-dark
+        borderRadius: medium
       title:
-        textAlign: left
-      subtitle:
-        fontWeight: '400'
-        fontStyle: normal
         textAlign: center
-    type: FaqSection
-    actions:
-      - altText: ''
-        url: /faq
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        elementId: ''
-        type: Link
-        label: See all
-  - elementId: ''
-    colors: colors-a
-    variant: variant-a
-    testimonials:
-      - quote: >
-          Such a great experience to be using this product. It really helped
-          with what I needed help with.
-        name: Carla Rogers
-        title: Happy customer
-        image:
-          type: ImageBlock
-          url: /images/carla.jpg
-          altText: Photo of Carla Rogers
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-        padding:
-          - pt-28
-          - pb-56
-          - pl-4
-          - pr-4
-        justifyContent: center
-      title:
-        textAlign: left
       subtitle:
-        textAlign: left
-    type: TestimonialsSection
+        textAlign: center
+      actions:
+        justifyContent: center
   - type: ContactSection
     colors: colors-f
     backgroundSize: inset
-    title: Get early access
-    text: >
-      Sign up your team today to be the first to try out our new product to
-      increase your team’s productivity
+    title: Stay tuned!
+    text: |
+      ¡Puedes confiar en nosotros! Solo te enviaremos información interesante :)
     form:
       type: FormBlock
       variant: variant-b
       elementId: sign-up-form
-      destination: ''
+      destination: contact@zdynamics.org
       action: /.netlify/functions/submission_created
       fields:
         - name: email
           label: Email
           hideLabel: true
-          placeholder: Your email
+          placeholder: Correo electrónico
           isRequired: true
           width: full
           type: EmailFormControl
-      submitLabel: Sign Up
+      submitLabel: ¡Suscribirme!
       styles:
         submitLabel:
           textAlign: center

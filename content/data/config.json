@@ -1,29 +1,24 @@
 {
     "type": "Config",
-    "favicon": "/images/favicon.svg",
+    "favicon": "/images/Z Dynamics.png",
     "header": {
         "headerVariant": "variant-c",
         "primaryColors": "colors-a",
         "secondaryColors": "colors-f",
-        "title": "Starter",
-        "isTitleVisible": true,
+        "title": "zDynamics",
+        "isTitleVisible": false,
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Home",
+                "label": "Inicio",
                 "url": "/",
-                "altText": ""
+                "altText": "Inicio",
+                "showIcon": false
             },
             {
                 "type": "Link",
-                "label": "Careers",
-                "url": "/careers",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "FAQ",
-                "url": "/faq",
+                "label": "¿Quién @$@% somos?",
+                "url": "/about",
                 "altText": ""
             },
             {
@@ -31,26 +26,44 @@
                 "label": "Blog",
                 "altText": "Blog",
                 "url": "/blog"
+            },
+            {
+                "type": "Link",
+                "label": "Productos",
+                "altText": "",
+                "url": "/products",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "elementId": ""
             }
         ],
         "secondaryLinks": [
             {
                 "type": "Button",
-                "label": "Sign up",
-                "url": "/",
-                "altText": "Sign up",
-                "style": "primary"
+                "label": "¡Contáctanos!",
+                "url": "/contact",
+                "altText": "¡Contáctanos!",
+                "style": "primary",
+                "showIcon": true,
+                "icon": "arrowRightCircle",
+                "iconPosition": "right"
             }
         ],
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": ["pt-5", "pb-5", "pr-4", "pl-4"]
+                "padding": [
+                    "pt-5",
+                    "pb-5",
+                    "pr-4",
+                    "pl-4"
+                ]
             }
         },
         "logo": {
-            "altText": "altText of the image",
-            "caption": "Caption of the image",
+            "altText": "zDynamics",
+            "caption": "zDynamics",
             "elementId": "",
             "styles": {
                 "self": {
@@ -58,14 +71,14 @@
                 }
             },
             "type": "ImageBlock",
-            "url": "/images/logo.svg"
+            "url": "/images/Z Dynamics.png"
         }
     },
     "footer": {
         "colors": "colors-h",
         "logo": {
-            "altText": "altText of the image",
-            "caption": "Caption of the image",
+            "altText": "The Future is ROBOTICS",
+            "caption": "The Future is ROBOTICS",
             "elementId": "",
             "styles": {
                 "self": {
@@ -73,19 +86,17 @@
                 }
             },
             "type": "ImageBlock",
-            "url": "/images/logo.svg"
+            "url": "/images/Z Dynamics.png"
         },
-        "title": "Starter",
+        "title": "zDynamics",
         "contacts": {
-            "title": "Contact details",
-            "phoneNumber": "850-123-5021",
-            "phoneAltText": "Our phone",
-            "email": "info@lorem.mail",
-            "emailAltText": "Our email",
-            "address": "312 Lovely Street, NY",
-            "addressAltText": "Our address"
+            "title": "¡Contáctanos!",
+            "email": "contact@zdynamics.org",
+            "emailAltText": "Email",
+            "address": "México",
+            "addressAltText": "Dirección"
         },
-        "copyrightText": "Powered by [Stackbit](https://www.stackbit.com/)",
+        "copyrightText": "Powered with ♡ by [Stackbit](https://www.stackbit.com/)\n",
         "primaryLinks": [
             {
                 "type": "Link",
@@ -95,44 +106,72 @@
             },
             {
                 "type": "Link",
-                "label": "Careers",
-                "url": "/careers",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "FAQ",
-                "url": "/faq",
-                "altText": ""
-            },
-            {
-                "type": "Link",
                 "label": "Blog",
                 "url": "/blog",
                 "altText": ""
+            },
+            {
+                "type": "Link",
+                "label": "Contacto",
+                "altText": "Contacto",
+                "url": "/contact",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "elementId": ""
+            },
+            {
+                "type": "Link",
+                "label": "Productos",
+                "altText": "Productos",
+                "url": "/products",
+                "showIcon": false,
+                "icon": "arrowRight",
+                "iconPosition": "right",
+                "elementId": ""
             }
         ],
         "socialLinks": [
             {
                 "type": "Social",
-                "altText": "Twitter",
-                "label": "Twitter",
-                "url": "/",
-                "icon": "twitter"
+                "altText": "GitHub",
+                "label": "GitHub",
+                "url": "https://github.com/AssemblingTheFuture",
+                "icon": "github",
+                "style": "link"
+            },
+            {
+                "type": "Social",
+                "label": "LinkedIn",
+                "altText": "LinkedIn",
+                "url": "https://linkedin.com/in/dzentenol",
+                "icon": "linkedin",
+                "style": "link",
+                "elementId": ""
             },
             {
                 "type": "Social",
                 "altText": "Instagram",
                 "label": "Instagram",
-                "url": "/",
-                "icon": "instagram"
+                "url": "https://instagram.com/zdynamicz",
+                "icon": "instagram",
+                "style": "link"
             },
             {
                 "type": "Social",
-                "altText": "Facebook",
-                "label": "Facebook",
-                "url": "/",
-                "icon": "facebook"
+                "altText": "YouTube",
+                "label": "YouTube",
+                "url": "https://www.youtube.com/channel/UCzqAQ-rrxYrqIRo5dAnkfQA",
+                "icon": "youtube",
+                "style": "link"
+            },
+            {
+                "type": "Social",
+                "label": "Linktree",
+                "altText": "Linktree",
+                "url": "https://linktr.ee/zdynamics",
+                "style": "link",
+                "elementId": ""
             }
         ],
         "legalLinks": [
@@ -150,7 +189,12 @@
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": ["pt-16", "pb-16", "pr-4", "pl-4"]
+                "padding": [
+                    "pt-16",
+                    "pb-16",
+                    "pr-4",
+                    "pl-4"
+                ]
             }
         }
     }
