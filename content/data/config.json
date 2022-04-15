@@ -42,7 +42,7 @@
             {
                 "type": "Button",
                 "label": "¡Contáctanos!",
-                "url": "/",
+                "url": "/contact",
                 "altText": "¡Contáctanos!",
                 "style": "primary"
             }
