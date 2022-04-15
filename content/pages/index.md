@@ -394,7 +394,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-f
     elementId: ''
-    title: Key value propositions
+    title: Algunos datos sobre nosotros
     subtitle: ''
     items:
       - type: FeaturedItem
