@@ -140,7 +140,8 @@
                 "altText": "",
                 "icon": "facebook",
                 "style": "link",
-                "elementId": ""
+                "elementId": "",
+                "url": "fb.com/zdynamicz"
             },
             {
                 "type": "Social",
