@@ -296,6 +296,7 @@ sections:
         url: 'https://www.stackbit.com/'
         style: primary
         elementId: hero-main-button
+        altText: zRobot 0.1
       - type: Link
         label: Learn More
         url: /
