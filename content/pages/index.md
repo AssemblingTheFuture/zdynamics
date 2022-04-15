@@ -348,6 +348,7 @@ sections:
         url: /contact
         style: primary
         altText: ¡Contáctanos!
+        icon: arrowRightCircle
     media:
       type: ImageBlock
       url: /images/hero-1.png
