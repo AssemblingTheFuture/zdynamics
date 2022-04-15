@@ -352,7 +352,7 @@ sections:
         iconPosition: left
     media:
       type: ImageBlock
-      url: /images/hero-1.png
+      url: /images/robot design.png
       altText: Hero image
     styles:
       self:
