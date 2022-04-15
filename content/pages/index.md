@@ -349,6 +349,7 @@ sections:
         style: primary
         altText: ¡Contáctanos!
         icon: arrowRightCircle
+        iconPosition: left
     media:
       type: ImageBlock
       url: /images/hero-1.png
