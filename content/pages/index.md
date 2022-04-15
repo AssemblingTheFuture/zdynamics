@@ -62,7 +62,7 @@ sections:
     actions:
       - type: Button
         label: ¡Conócenos!
-        url: /
+        url: /about
         style: primary
         altText: ¡Conócenos!
     styles:
