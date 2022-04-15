@@ -420,8 +420,7 @@ sections:
           Más que multidisciplinarios, somos MULTINACIONALES :D
         featuredImage:
           type: ImageBlock
-          url: >-
-            https://assets.stackbit.com/components/images/default/default-image.png
+          url: /images/international.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
