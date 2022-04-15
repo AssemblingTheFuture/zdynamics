@@ -399,7 +399,7 @@ sections:
     items:
       - type: FeaturedItem
         text: |
-          \+700 estudiantes inscritos desde 2019
+          \+700 estudiantes desde 2019
         featuredImage: null
         styles:
           self:
