@@ -337,9 +337,10 @@ sections:
     backgroundSize: full
     title: Servicios
     subtitle: ''
-    text: >-
-      Share WIP, comment on each other’s work, approve what’s ready to go, ship
-      together
+    text: >
+      Podemos apoyarte en tus proyectos de desarrollo de robots (algoritmos,
+      hardware, diseño mecánico) o si deseas entrenar a tus trabajadores en los
+      fundamentos de robótica para mejorar sus habilidades en programación ;)
     actions:
       - type: Button
         label: Sign Up
