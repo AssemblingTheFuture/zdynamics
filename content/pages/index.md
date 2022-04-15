@@ -211,6 +211,7 @@ sections:
             textAlign: left
             padding:
               - pt-4
+              - pl-4
     columns: 3
     enableHover: false
     styles:
