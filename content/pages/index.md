@@ -479,7 +479,6 @@ sections:
           *“Excelente curso, temario muy amplio y excelente explicación.
           RECOMENDADO”*
         name: David Ortega De La Paz
-        title: Product Marketing Manager at Acme
         elementId: ''
         styles:
           name:
