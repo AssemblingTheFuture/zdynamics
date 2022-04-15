@@ -491,7 +491,7 @@ sections:
       - quote: >
           "Such a great experience to be using this product. It really helped
           with what I needed help with."
-        name: Carla Rogers
+        name: José Cristóbal Medina Huerta
         title: Happy customer
         image:
           type: ImageBlock
