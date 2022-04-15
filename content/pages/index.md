@@ -331,7 +331,7 @@ sections:
       actions:
         justifyContent: flex-start
     type: FeatureHighlightSection
-  - colors: colors-h
+  - colors: colors-a
     subtitle: Algunos datos sobre nosotros
     elementId: ''
     images:
