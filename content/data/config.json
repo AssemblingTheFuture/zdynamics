@@ -45,7 +45,8 @@
                 "url": "/contact",
                 "altText": "¡Contáctanos!",
                 "style": "primary",
-                "showIcon": true
+                "showIcon": true,
+                "icon": "arrowRightCircle"
             }
         ],
         "styles": {
