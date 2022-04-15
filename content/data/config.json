@@ -5,7 +5,7 @@
         "headerVariant": "variant-c",
         "primaryColors": "colors-a",
         "secondaryColors": "colors-f",
-        "title": "Starter",
+        "title": "zDynamics",
         "isTitleVisible": true,
         "primaryLinks": [
             {
@@ -45,7 +45,12 @@
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": ["pt-5", "pb-5", "pr-4", "pl-4"]
+                "padding": [
+                    "pt-5",
+                    "pb-5",
+                    "pr-4",
+                    "pl-4"
+                ]
             }
         },
         "logo": {
@@ -150,7 +155,12 @@
         "styles": {
             "self": {
                 "width": "narrow",
-                "padding": ["pt-16", "pb-16", "pr-4", "pl-4"]
+                "padding": [
+                    "pt-16",
+                    "pb-16",
+                    "pr-4",
+                    "pl-4"
+                ]
             }
         }
     }
