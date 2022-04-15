@@ -514,7 +514,7 @@ sections:
           “It’s great to see someone taking action while still maintaining a
           sustainable fish supply to home cooks.”
         name: Rodolfo Ponce Reynoso
-        title: Product Marketing Manager at Acme
+        title: Alumno de "Programación Básica de Robots con Python"
         elementId: ''
         styles:
           name:
