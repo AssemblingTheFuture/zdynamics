@@ -343,7 +343,7 @@ sections:
       ;)
     actions:
       - type: Button
-        label: ¡Contáctanos!
+        label: ¡CONTÁCTANOS!
         url: /contact
         style: primary
         altText: ¡Contáctanos!
