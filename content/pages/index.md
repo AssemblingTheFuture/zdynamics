@@ -48,7 +48,7 @@ sections:
       actions:
         justifyContent: flex-start
   - elementId: nosotros
-    colors: colors-g
+    colors: colors-e
     backgroundSize: inset
     title: ¿Quién @$@% somos?
     text: "Un grupo de amigos que buscan hacer algo más que programar robots:\_**queremos mejorar las condiciones de trabajo a través de la robótica y ramas afines**.\n"
