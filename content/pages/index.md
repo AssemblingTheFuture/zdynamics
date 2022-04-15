@@ -288,8 +288,9 @@ sections:
     colors: colors-a
     title: Productos
     text: >
-      Queremos crear y construir robots asequibles para cualquier que desee
-      desarrollarse como profesional en esta rama de la ingeniería
+      Queremos crear y construir robots (y sus respectivos subproductos)
+      asequibles para cualquier que desee desarrollarse como profesional en esta
+      rama de la ingeniería :D
     actions:
       - type: Button
         label: zRobot 0.1
