@@ -62,7 +62,7 @@ sections:
       - type: Button
         label: ¡Conócenos!
         url: /about
-        style: secondary
+        style: primary
         altText: ¡Conócenos!
         showIcon: true
         icon: arrowRightCircle
