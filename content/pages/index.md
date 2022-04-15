@@ -108,7 +108,7 @@ sections:
     title: '¿Qué %&#@ hacemos?'
     subtitle: >-
       Nosotros te EDUCAMOS en robótica avanzada, donde NO solo aprendes sin
-      entender cómo funciona un robot
+      entender, más bien RAZONAS sobre cómo funciona un robot
     items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
