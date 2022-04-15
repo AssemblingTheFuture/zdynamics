@@ -503,7 +503,7 @@ sections:
           isRequired: true
           width: full
           type: EmailFormControl
-      submitLabel: ¡Suscribirime!
+      submitLabel: ¡Suscribirme!
       styles:
         submitLabel:
           textAlign: center
