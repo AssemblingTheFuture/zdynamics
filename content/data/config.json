@@ -46,7 +46,8 @@
                 "altText": "¡Contáctanos!",
                 "style": "primary",
                 "showIcon": true,
-                "icon": "arrowRightCircle"
+                "icon": "arrowRightCircle",
+                "iconPosition": "right"
             }
         ],
         "styles": {
