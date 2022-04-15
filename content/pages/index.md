@@ -510,9 +510,11 @@ sections:
             fontWeight: 400
             fontStyle: normal
       - type: Testimonial
-        quote: >-
-          “It’s great to see someone taking action while still maintaining a
-          sustainable fish supply to home cooks.”
+        quote: >
+          *“Excelente curso. Quedaron aclaradas muchas de mis dudas y preguntas
+          que tenía sobre planeación de trayectorias. Lo único que me costó y me
+          sigue complicando es que no había antes programado en Python, de ahí
+          en fuera, todo excelente. Muchas gracias.”*
         name: Rodolfo Ponce Reynoso
         title: Alumno de "Programación Básica de Robots con Python"
         elementId: ''
