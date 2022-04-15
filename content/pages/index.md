@@ -431,8 +431,9 @@ sections:
             textAlign: center
       - type: FeaturedItem
         title: 5+ años de experiencia
-        text: |
-          Comenzamos a emprender en 2017 y desde entonces no nos hemos detenido
+        text: >
+          Comenzamos a emprender en 2017 sin saber hasta dónde llegaríamos, ¡y
+          desde entonces no nos hemos detenido!
         featuredImage: null
         styles:
           self:
