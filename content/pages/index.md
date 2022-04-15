@@ -491,7 +491,7 @@ sections:
       - quote: >
           "Such a great experience to be using this product. It really helped
           with what I needed help with."
-        name: José Cristóbal Medina Huerta
+        name: Abdiel Altamirano
         title: 'Alumno de "Robótica: de la Cinemática al Control"'
         image:
           type: ImageBlock
