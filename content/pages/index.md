@@ -47,7 +47,7 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
-  - elementId: '#'
+  - elementId: nosotros
     colors: colors-f
     backgroundSize: inset
     title: ¿Quién @$@% somos?
