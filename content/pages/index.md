@@ -412,6 +412,7 @@ sections:
         styles:
           self:
             textAlign: center
+        title: +700 estudiantes desde 2019
       - type: FeaturedItem
         title: Smarter
         text: >-
