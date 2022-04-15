@@ -430,7 +430,7 @@ sections:
           self:
             textAlign: center
       - type: FeaturedItem
-        title: Focused
+        title: 5+ años de experiencia
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
