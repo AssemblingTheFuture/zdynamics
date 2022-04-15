@@ -474,6 +474,14 @@ sections:
     title: ''
     subtitle: ''
     testimonials:
+      - quote: >
+          "Such a great experience to be using this product. It really helped
+          with what I needed help with."
+        name: Abdiel Altamirano
+        title: Alumno de "Métodos Numéricos con Aplicaciones de Ingeniería"
+        image:
+          type: ImageBlock
+          altText: Photo of Carla Rogers
       - type: Testimonial
         quote: >
           *“Excelente curso, temario muy amplio y excelente explicación.
@@ -488,14 +496,6 @@ sections:
             fontWeight: 400
             fontStyle: normal
         title: Alumno de "Control de Sistemas Dinámicos"
-      - quote: >
-          "Such a great experience to be using this product. It really helped
-          with what I needed help with."
-        name: Abdiel Altamirano
-        title: Alumno de "Métodos Numéricos con Aplicaciones de Ingeniería"
-        image:
-          type: ImageBlock
-          altText: Photo of Carla Rogers
     styles:
       self:
         height: auto
