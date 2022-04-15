@@ -12,7 +12,7 @@ sections:
         label: Learn more
         altText: ''
         url: /
-        showIcon: true
+        showIcon: false
         icon: chevronLeft
         iconPosition: right
         style: secondary
