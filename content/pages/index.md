@@ -340,7 +340,7 @@ sections:
       - type: FeaturedItem
         featuredImage:
           type: ImageBlock
-          url: /images/students-0d681fe1.png
+          url: /images/students.png
           altText: +700 estudiantes desde 2019
           caption: +700 estudiantes desde 2019
           elementId: ''
