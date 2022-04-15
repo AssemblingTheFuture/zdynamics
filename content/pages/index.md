@@ -477,7 +477,6 @@ sections:
       - type: Testimonial
         quote: |2
            
-        title: Product Marketing Manager at Acme
         elementId: ''
         styles:
           name:
