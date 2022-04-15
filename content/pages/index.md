@@ -475,9 +475,9 @@ sections:
     subtitle: ''
     testimonials:
       - type: Testimonial
-        quote: >-
-          “It’s great to see someone taking action while still maintaining a
-          sustainable fish supply to home cooks.”
+        quote: >
+          *“Excelente curso, temario muy amplio y excelente explicación.
+          RECOMENDADO”*
         name: Johnna Doe
         title: Product Marketing Manager at Acme
         elementId: ''
