@@ -52,9 +52,7 @@ sections:
     colors: colors-f
     backgroundSize: inset
     title: ¿Quién @$@% somos?
-    text: >
-      Learn how top tech companies have learned working remote using our
-      product.
+    text: "Un grupo de amigos que buscan hacer algo más que programar robots:\_**queremos mejorar las condiciones de trabajo a través de la robótica y ramas afines**.\n"
     badge:
       type: Badge
       label: Case study
