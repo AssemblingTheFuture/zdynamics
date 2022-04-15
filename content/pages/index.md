@@ -416,9 +416,8 @@ sections:
 
       - type: FeaturedItem
         title: 25 países
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: |
+          Más que multidisciplinarios, somos MULTINACIONALES :D
         featuredImage: null
         styles:
           self:
