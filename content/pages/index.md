@@ -415,7 +415,7 @@ sections:
           ¡Y continuamos creciendo!
 
       - type: FeaturedItem
-        title: Smarter
+        title: 25 países
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
