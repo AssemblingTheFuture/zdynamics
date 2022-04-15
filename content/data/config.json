@@ -16,12 +16,6 @@
             },
             {
                 "type": "Link",
-                "label": "Careers",
-                "url": "/careers",
-                "altText": ""
-            },
-            {
-                "type": "Link",
                 "label": "FAQ",
                 "url": "/faq",
                 "altText": ""
