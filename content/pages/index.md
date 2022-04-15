@@ -475,9 +475,8 @@ sections:
     subtitle: ''
     testimonials:
       - type: Testimonial
-        quote: >-
-          “It’s great to see someone taking action while still maintaining a
-          sustainable fish supply to home cooks.”
+        quote: |2
+           
         title: Product Marketing Manager at Acme
         image:
           url: >-
