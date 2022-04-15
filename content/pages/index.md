@@ -411,6 +411,9 @@ sections:
           self:
             textAlign: center
         title: +700 estudiantes desde 2019
+        text: |+
+          ¡Y continuamos creciendo!
+
       - type: FeaturedItem
         title: Smarter
         text: >-
