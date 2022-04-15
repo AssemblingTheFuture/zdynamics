@@ -1,5 +1,5 @@
 ---
-title: Home
+title: zDynamics | The Future is ROBOTICS
 layout: PageLayout
 sections:
   - type: HeroSection
@@ -248,7 +248,7 @@ sections:
     type: FeaturedItemsSection
   - elementId: ''
     colors: colors-a
-    title: NUESTRA VISIÓN
+    title: Nuestra Visión
     text: >
       Hacer que la robótica, tangible e intangible, sea accesible para cualquier
       ser humano, a través de educación minimalista y sencilla, a un costo
