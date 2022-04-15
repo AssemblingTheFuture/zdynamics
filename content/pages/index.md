@@ -97,7 +97,7 @@ sections:
     type: FeatureHighlightSection
     media:
       url: /images/team.jpg
-      altText: Where did everyone go?
+      altText: The Team
       caption: Team meeting
       elementId: ''
       styles:
