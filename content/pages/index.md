@@ -295,7 +295,7 @@ sections:
       - type: Button
         label: MÁS INFORMACIÓN
         url: /products
-        style: primary
+        style: secondary
         elementId: hero-main-button
         altText: zRobot 0.1
         iconPosition: right
