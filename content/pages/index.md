@@ -66,7 +66,7 @@ sections:
         style: primary
         altText: ¡Conócenos!
         showIcon: true
-        icon: send
+        icon: apple
     styles:
       self:
         height: auto
