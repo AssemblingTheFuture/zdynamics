@@ -131,7 +131,8 @@
                 "altText": "Instagram",
                 "label": "Instagram",
                 "url": "https://instagram.com/zdynamicz",
-                "icon": "instagram"
+                "icon": "instagram",
+                "style": "link"
             },
             {
                 "type": "Social",
