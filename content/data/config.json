@@ -107,7 +107,7 @@
             {
                 "type": "Link",
                 "label": "Contacto",
-                "altText": "",
+                "altText": "Contacto",
                 "url": "/",
                 "showIcon": false,
                 "icon": "arrowRight",
