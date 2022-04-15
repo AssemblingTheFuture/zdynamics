@@ -402,7 +402,7 @@ sections:
           \+700 estudiantes desde 2019
         featuredImage:
           type: ImageBlock
-          url: /images/students.png
+          url: /images/students-0d681fe1.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
