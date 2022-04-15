@@ -66,6 +66,7 @@ sections:
         style: primary
         altText: ¡Conócenos!
         showIcon: true
+        icon: chevronLeft
     styles:
       self:
         height: auto
