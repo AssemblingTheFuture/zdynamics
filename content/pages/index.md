@@ -106,7 +106,7 @@ sections:
   - colors: colors-a
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
-    subtitle: 'La robótica es solo programación, manufactura o LEGO, estás equivacado'
+    subtitle: 'La robótica NO es solo programación, manufactura o LEGO, estás equivacado'
     items:
       - type: FeaturedItem
         title: Faster
