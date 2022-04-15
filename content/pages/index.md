@@ -350,6 +350,7 @@ sections:
         altText: ¡Contáctanos!
         icon: arrowRightCircle
         iconPosition: left
+        showIcon: true
     media:
       type: ImageBlock
       url: /images/robot design.png
