@@ -218,7 +218,7 @@ sections:
             borderColor: border-dark
             borderStyle: solid
             borderWidth: 1
-    columns: 3
+    columns: 4
     enableHover: true
     styles:
       self:
