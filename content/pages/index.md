@@ -395,7 +395,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: Algunos datos sobre nosotros
-    subtitle: ''
+    subtitle: ♡
     items:
       - type: FeaturedItem
         title: Faster
