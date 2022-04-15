@@ -1,5 +1,5 @@
 ---
-title: Home
+title: zDynamics | The Future is ROBOTICS
 layout: PageLayout
 sections:
   - type: HeroSection
