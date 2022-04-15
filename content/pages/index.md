@@ -138,7 +138,7 @@ sections:
               - pr-4
             borderRadius: medium
       - type: FeaturedItem
-        title: Smarter
+        title: Control de Sistemas Dinámicos
         text: >
           Learn how top tech companies have learned working remote using our
           product.
