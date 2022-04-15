@@ -124,7 +124,7 @@
                 "label": "GitHub",
                 "url": "https://github.com/AssemblingTheFuture",
                 "icon": "github",
-                "style": "primary"
+                "style": "secondary"
             },
             {
                 "type": "Social",
