@@ -487,9 +487,7 @@ sections:
             fontWeight: 400
             fontStyle: normal
       - quote: |+
-          ```
-          >> "La información es digerible y completa"
-          ```
+          ###### >> "La información es digerible y completa"
 
         name: Abdiel Altamirano
         title: Alumno de "Métodos Numéricos con Aplicaciones de Ingeniería"
