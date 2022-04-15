@@ -66,7 +66,7 @@ sections:
         style: primary
         altText: ¡Conócenos!
         showIcon: true
-        icon: apple
+        icon: arrowLeftCircle
     styles:
       self:
         height: auto
