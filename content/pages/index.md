@@ -9,7 +9,7 @@ sections:
     subtitle: The Future is ROBOTICS
     actions:
       - type: Button
-        label: Learn more
+        label: MÁS INFORMACIÓN
         altText: ''
         url: /
         showIcon: true
