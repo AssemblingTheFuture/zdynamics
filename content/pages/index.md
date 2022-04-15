@@ -197,10 +197,10 @@ sections:
         elementId: ''
         title: Programación Básica de Robots con Python
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          La robótica debe aprenderse practicando con sistemas reales que
+          permitan al usuario visualizar la teoría al resolver problemas reales.
+          ¡Y NO ES NECESARIO UTILIZAR EQUIPOS MUY CAROS!
         featuredImage:
           type: ImageBlock
           url: /images/faster.svg
