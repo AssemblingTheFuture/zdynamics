@@ -253,13 +253,7 @@ sections:
       Hacer que la robótica, tangible e intangible, sea accesible para cualquier
       ser humano, a través de educación minimalista y sencilla, a un costo
       reducido
-    actions:
-      - type: Link
-        label: Learn More
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
+    actions: []
     media:
       type: ImageBlock
       url: /images/hero-1.png
