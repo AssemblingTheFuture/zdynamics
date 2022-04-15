@@ -165,6 +165,7 @@ sections:
               - pl-4
               - pb-6
               - pr-4
+            borderRadius: medium
       - type: FeaturedItem
         title: 'Robótica: de la Cinemática al Control'
         text: >
