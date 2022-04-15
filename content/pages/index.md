@@ -493,7 +493,7 @@ sections:
       type: FormBlock
       variant: variant-b
       elementId: sign-up-form
-      destination: ''
+      destination: contact@zdynamics.org
       action: /.netlify/functions/submission_created
       fields:
         - name: email
