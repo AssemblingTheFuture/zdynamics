@@ -61,7 +61,7 @@ sections:
           textAlign: left
     actions:
       - type: Button
-        label: Get Started
+        label: ¡Conócenos!
         url: /
         style: primary
       - type: Link
