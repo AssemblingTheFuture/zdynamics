@@ -501,7 +501,7 @@ sections:
           “Excelente curso de robotica, de los mejores que he tomado, explica
           con gran detalle el uso de los cuaterniones”
         name: Carlos Enrique Moran Garabito
-        title: Product Marketing Manager at Acme
+        title: 'Alumno de "Robótica: de la Cinemática al Control"'
         elementId: ''
         styles:
           name:
