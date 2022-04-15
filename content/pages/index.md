@@ -398,7 +398,7 @@ sections:
     subtitle: ♡
     items:
       - type: FeaturedItem
-        title: Faster
+        title: '+700 '
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
