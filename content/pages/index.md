@@ -469,7 +469,7 @@ sections:
         justifyContent: center
   - type: TestimonialsSection
     elementId: ''
-    colors: colors-a
+    colors: colors-c
     variant: variant-c
     title: ''
     subtitle: ''
