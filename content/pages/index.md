@@ -391,7 +391,7 @@ sections:
         label: 'Y si no nos crees, revisa nuestras métricas públicas ;)'
         altText: ''
         url: 'https://www.udemy.com/user/z-dynamics/'
-        showIcon: false
+        showIcon: true
         icon: arrowRight
         iconPosition: right
         elementId: ''
