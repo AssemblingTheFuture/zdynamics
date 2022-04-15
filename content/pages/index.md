@@ -111,7 +111,7 @@ sections:
       celdas de manufactura
     items:
       - type: FeaturedItem
-        title: Faster
+        title: Métodos Numéricos con Aplicaciones de Ingeniería
         text: >
           Learn how top tech companies have learned working remote using our
           product.
