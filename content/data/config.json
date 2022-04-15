@@ -31,7 +31,7 @@
                 "type": "Link",
                 "label": "Productos",
                 "altText": "",
-                "url": "/",
+                "url": "/products",
                 "showIcon": false,
                 "icon": "arrowRight",
                 "iconPosition": "right",
