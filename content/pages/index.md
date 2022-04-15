@@ -438,7 +438,7 @@ sections:
           type: ImageBlock
           url: /images/experience.png
           altText: Experience
-          caption: Caption of the image
+          caption: Experience
           elementId: ''
           styles:
             self:
