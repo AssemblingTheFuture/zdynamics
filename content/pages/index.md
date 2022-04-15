@@ -345,7 +345,7 @@ sections:
     actions:
       - type: Button
         label: ¡Contáctanos!
-        url: /
+        url: /contact
         style: primary
         altText: ¡Contáctanos!
     media:
