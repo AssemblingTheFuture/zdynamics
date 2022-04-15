@@ -216,6 +216,7 @@ sections:
               - pb-6
             borderRadius: medium
             borderColor: border-dark
+            borderStyle: solid
     columns: 3
     enableHover: false
     styles:
