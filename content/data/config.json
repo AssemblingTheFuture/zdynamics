@@ -148,7 +148,8 @@
                 "altText": "YouTube",
                 "label": "YouTube",
                 "url": "https://www.youtube.com/channel/UCzqAQ-rrxYrqIRo5dAnkfQA",
-                "icon": "facebook"
+                "icon": "facebook",
+                "style": "link"
             }
         ],
         "legalLinks": [
