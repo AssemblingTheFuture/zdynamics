@@ -436,7 +436,7 @@ sections:
           desde entonces no nos hemos detenido!
         featuredImage:
           type: ImageBlock
-          url: /images/experience.png
+          url: /images/experience-bb0709d8.png
           altText: Experience
           caption: Experience
           elementId: ''
