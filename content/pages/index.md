@@ -65,6 +65,7 @@ sections:
         url: /about
         style: primary
         altText: ¡Conócenos!
+        showIcon: true
     styles:
       self:
         height: auto
