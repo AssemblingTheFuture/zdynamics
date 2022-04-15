@@ -107,8 +107,8 @@ sections:
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
     subtitle: >-
-      Nosotros te enseñamos que la robótica NO es solamente programación o
-      celdas de manufactura
+      Nosotros te EDUCAMOS en temas de robótica donde NO solamente aprendes
+      programación
     items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
