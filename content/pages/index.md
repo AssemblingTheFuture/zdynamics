@@ -141,8 +141,10 @@ sections:
       - type: FeaturedItem
         title: Control de Sistemas Dinámicos
         text: >
-          Learn how top tech companies have learned working remote using our
-          product.
+          Aunque muchos sistemas todavía se controlan con la estructura clásica
+          de PID, es necesario modernizar y simplificar esto a través de
+          funciones de aprendizaje basadas en criterios de estabilidad más
+          confiables que la asignación de polos y ceros.
         featuredImage:
           url: /images/smarter.svg
           altText: altText of the image
