@@ -147,7 +147,7 @@
                 "type": "Social",
                 "altText": "YouTube",
                 "label": "YouTube",
-                "url": "/",
+                "url": "https://youtube.com/",
                 "icon": "facebook"
             }
         ],
