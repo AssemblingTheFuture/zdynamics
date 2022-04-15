@@ -7,11 +7,7 @@ sections:
     colors: colors-a
     title: zDynamics
     subtitle: The Future is ROBOTICS
-    actions:
-      - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
+    actions: []
     media:
       type: ImageBlock
       url: /images/hero.png
