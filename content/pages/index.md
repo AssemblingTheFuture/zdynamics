@@ -288,8 +288,8 @@ sections:
     colors: colors-a
     title: Productos
     text: >
-      Share WIP, comment on each other’s work, approve what’s ready to go, ship
-      together
+      Queremos crear y construir robots asequibles para cualquier que desee
+      desarrollarse como profesional en esta rama de la ingeniería
     actions:
       - type: Button
         label: Get Started
