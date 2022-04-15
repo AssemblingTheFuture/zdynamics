@@ -332,7 +332,7 @@ sections:
         justifyContent: flex-start
     type: FeatureHighlightSection
   - colors: colors-h
-    subtitle: Trusted by
+    subtitle: Un vistazo
     elementId: ''
     images:
       - type: ImageBlock
