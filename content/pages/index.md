@@ -285,7 +285,7 @@ sections:
         justifyContent: flex-start
     type: FeatureHighlightSection
   - elementId: ''
-    colors: colors-f
+    colors: colors-e
     title: Productos
     text: >
       Queremos crear y construir robots (y sus respectivos subproductos)
