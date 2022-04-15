@@ -192,6 +192,7 @@ sections:
               - pl-4
               - pb-6
               - pr-4
+            borderRadius: medium
     columns: 3
     enableHover: false
     styles:
