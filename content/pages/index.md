@@ -488,7 +488,7 @@ sections:
           - mt-0
           - mb-0
         padding:
-          - pt-28
+          - pt-10
           - pb-10
           - pl-4
           - pr-4
