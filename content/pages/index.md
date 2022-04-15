@@ -293,7 +293,7 @@ sections:
     actions:
       - type: Button
         label: zRobot 0.1
-        url: 'https://www.stackbit.com/'
+        url: /zrobot
         style: primary
         elementId: hero-main-button
         altText: zRobot 0.1
