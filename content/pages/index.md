@@ -13,7 +13,7 @@ sections:
         altText: MÁS INFORMACIÓN
         url: '#nosotros'
         showIcon: true
-        icon: chevronLeft
+        icon: chevronRight
         iconPosition: right
         style: primary
         elementId: ''
