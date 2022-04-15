@@ -41,7 +41,7 @@
         "secondaryLinks": [
             {
                 "type": "Button",
-                "label": "Sign up",
+                "label": "¡CONTÁCTCANOS!",
                 "url": "/",
                 "altText": "Sign up",
                 "style": "primary"
