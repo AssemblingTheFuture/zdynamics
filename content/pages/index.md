@@ -492,7 +492,7 @@ sections:
           "Such a great experience to be using this product. It really helped
           with what I needed help with."
         name: José Cristóbal Medina Huerta
-        title: Happy customer
+        title: 'Alumno de "Robótica: de la Cinemática al Control"'
         image:
           type: ImageBlock
           altText: Photo of Carla Rogers
