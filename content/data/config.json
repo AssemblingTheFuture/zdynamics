@@ -41,7 +41,7 @@
         "secondaryLinks": [
             {
                 "type": "Button",
-                "label": "¡Contáctanos!",
+                "label": "¡CONTÁCTANOS!",
                 "url": "/contact",
                 "altText": "¡Contáctanos!",
                 "style": "primary",
