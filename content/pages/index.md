@@ -350,7 +350,7 @@ sections:
         styles:
           self:
             textAlign: center
-        title: 700+ estudiantes desde 2019
+        title: 700+ estudiantes
         text: |
           ¡Y continuamos creciendo día con día!
       - type: FeaturedItem
