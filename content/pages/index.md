@@ -107,7 +107,7 @@ sections:
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
     subtitle: >-
-      La robótica NO es solamente programación, celdas de manufacturaLEGO, estás
+      La robótica NO es solamente programación, celdas de manufactura o , estás
       equivacado
     items:
       - type: FeaturedItem
