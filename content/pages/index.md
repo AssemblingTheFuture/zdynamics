@@ -415,7 +415,7 @@ sections:
           ¡Y continuamos creciendo!
 
       - type: FeaturedItem
-        title: 25 países
+        title: Presencia en 26 países
         text: |
           Más que multidisciplinarios, somos MULTINACIONALES :D
         featuredImage: null
