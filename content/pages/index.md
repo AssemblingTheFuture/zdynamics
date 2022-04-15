@@ -497,9 +497,9 @@ sections:
             fontStyle: normal
         title: Alumno de "Control de Sistemas Dinámicos"
       - type: Testimonial
-        quote: >-
-          “It’s great to see someone taking action while still maintaining a
-          sustainable fish supply to home cooks.”
+        quote: >
+          “Excelente curso de robotica, de los mejores que he tomado, explica
+          con gran detalle el uso de los cuaterniones”
         name: Johnna Doe
         title: Product Marketing Manager at Acme
         image:
