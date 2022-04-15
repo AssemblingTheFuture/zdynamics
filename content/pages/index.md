@@ -107,8 +107,8 @@ sections:
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
     subtitle: >-
-      Nosotros te EDUCAMOS en temas de robótica donde NO solamente aprendes
-      programación o aplicaciones de manufactura
+      Nosotros te EDUCAMOS en robótica avanzada, donde NO solo aprendes sin
+      entender cómo funciona un robot
     items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
