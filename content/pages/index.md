@@ -475,8 +475,9 @@ sections:
     subtitle: ''
     testimonials:
       - type: Testimonial
-        quote: |2
-           
+        quote: |+
+          Algunas opiniones de nuestros alumnos :D
+
         elementId: ''
         styles:
           name:
