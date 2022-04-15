@@ -431,9 +431,8 @@ sections:
             textAlign: center
       - type: FeaturedItem
         title: 5+ años de experiencia
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: |
+          Comenzamos a emprender en 2017 y desde entonces no nos hemos detenido
         featuredImage: null
         styles:
           self:
