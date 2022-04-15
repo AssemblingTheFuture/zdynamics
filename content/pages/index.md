@@ -411,9 +411,8 @@ sections:
           self:
             textAlign: center
         title: 700+ estudiantes desde 2019
-        text: |+
-          ¡Y continuamos creciendo!
-
+        text: |
+          ¡Y continuamos creciendo día con día!
       - type: FeaturedItem
         title: Presencia en 26 países
         text: |
