@@ -404,7 +404,7 @@ sections:
           type: ImageBlock
           url: /images/students-0d681fe1.png
           altText: +700 estudiantes desde 2019
-          caption: Caption of the image
+          caption: +700 estudiantes desde 2019
           elementId: ''
           styles:
             self:
