@@ -478,7 +478,7 @@ sections:
         quote: >
           *“Excelente curso, temario muy amplio y excelente explicación.
           RECOMENDADO”*
-        name: Johnna Doe
+        name: David Ortega De La Paz
         title: Product Marketing Manager at Acme
         elementId: ''
         styles:
