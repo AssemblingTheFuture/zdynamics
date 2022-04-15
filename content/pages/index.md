@@ -64,6 +64,7 @@ sections:
         label: ¡Conócenos!
         url: /
         style: primary
+        altText: ¡Conócenos!
     styles:
       self:
         height: auto
