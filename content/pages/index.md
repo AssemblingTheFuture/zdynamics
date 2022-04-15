@@ -289,8 +289,7 @@ sections:
     title: Productos
     text: >
       Queremos crear y construir robots (y sus subproductos) asequibles para
-      cualquiera que desee desarrollarse como profesional en esta rama de la
-      ingeniería :D
+      cualquiera que desee desarrollarse en esta rama de la ingeniería :D
     actions:
       - type: Button
         label: MÁS INFORMACIÓN
