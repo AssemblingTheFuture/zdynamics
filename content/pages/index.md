@@ -388,7 +388,7 @@ sections:
             textAlign: center
     actions:
       - type: Link
-        label: MÁS INFORMACIÓN
+        label: COMPROBAR MÉTRICAS
         altText: ''
         url: /
         showIcon: false
