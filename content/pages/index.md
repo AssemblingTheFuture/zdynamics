@@ -335,7 +335,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: Algunos datos sobre nosotros
-    subtitle: 'y si no nos crees, revisa nuestras métricas públicas ;)'
+    subtitle: ♡
     items:
       - type: FeaturedItem
         featuredImage:
