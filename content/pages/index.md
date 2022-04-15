@@ -398,9 +398,8 @@ sections:
     subtitle: ♡
     items:
       - type: FeaturedItem
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: |
+          \+700 estudiantes inscritos desde 2019
         featuredImage: null
         styles:
           self:
