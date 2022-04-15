@@ -118,7 +118,7 @@
                 "type": "Link",
                 "label": "Productos",
                 "altText": "Productos",
-                "url": "/",
+                "url": "/products",
                 "showIcon": false,
                 "icon": "arrowRight",
                 "iconPosition": "right",
