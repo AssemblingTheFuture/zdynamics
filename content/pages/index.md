@@ -434,7 +434,16 @@ sections:
         text: >
           Comenzamos a emprender en 2017 sin saber hasta dónde llegaríamos, ¡y
           desde entonces no nos hemos detenido!
-        featuredImage: null
+        featuredImage:
+          type: ImageBlock
+          url: >-
+            https://assets.stackbit.com/components/images/default/default-image.png
+          altText: altText of the image
+          caption: Caption of the image
+          elementId: ''
+          styles:
+            self:
+              opacity: 100
         styles:
           self:
             textAlign: center
