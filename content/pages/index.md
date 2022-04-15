@@ -293,7 +293,7 @@ sections:
       rama de la ingeniería :D
     actions:
       - type: Button
-        label: zRobot 0.1
+        label: MÁS INFORMACIÓN
         url: /zrobot
         style: primary
         elementId: hero-main-button
