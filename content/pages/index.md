@@ -388,7 +388,7 @@ sections:
             textAlign: center
     actions:
       - type: Link
-        label: COMPROBAR MÉTRICAS
+        label: 'Y si no nos crees, revisa nuestras métricas públicas ;)'
         altText: ''
         url: /
         showIcon: false
