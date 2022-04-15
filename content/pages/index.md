@@ -502,10 +502,6 @@ sections:
           con gran detalle el uso de los cuaterniones”
         name: Johnna Doe
         title: Product Marketing Manager at Acme
-        image:
-          url: >-
-            https://assets.stackbit.com/components/images/default/default-person.png
-          altText: Person photo
         elementId: ''
         styles:
           name:
