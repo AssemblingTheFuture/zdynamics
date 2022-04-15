@@ -98,7 +98,7 @@ sections:
     media:
       url: /images/team.jpg
       altText: The Team
-      caption: Team meeting
+      caption: The Team
       elementId: ''
       styles:
         self:
