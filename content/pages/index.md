@@ -107,8 +107,8 @@ sections:
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
     subtitle: >-
-      These are all excellent features that will provide exactly the things
-      you’re looking for.
+      Si crees que la robótica es solo programación, manufactura o LEGO, estás
+      equivacado
     items:
       - type: FeaturedItem
         title: Faster
