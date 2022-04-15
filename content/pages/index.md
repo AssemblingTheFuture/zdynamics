@@ -388,7 +388,7 @@ sections:
             textAlign: center
     actions:
       - type: Link
-        label: Learn more
+        label: MÁS INFORMACIÓN
         altText: ''
         url: /
         showIcon: false
