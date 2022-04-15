@@ -120,7 +120,7 @@
         "socialLinks": [
             {
                 "type": "Social",
-                "altText": "Twitter",
+                "altText": "GitHub",
                 "label": "GitHub",
                 "url": "/",
                 "icon": "twitter"
