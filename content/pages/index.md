@@ -347,6 +347,7 @@ sections:
         label: ¡Contáctanos!
         url: /
         style: primary
+        altText: ¡Contáctanos!
     media:
       type: ImageBlock
       url: /images/hero-1.png
