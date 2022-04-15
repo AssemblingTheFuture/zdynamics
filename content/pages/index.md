@@ -451,15 +451,7 @@ sections:
         fontStyle: normal
         textAlign: center
     type: FaqSection
-    actions:
-      - altText: ''
-        url: /faq
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        elementId: ''
-        type: Link
-        label: See all
+    actions: []
   - elementId: ''
     colors: colors-a
     variant: variant-a
