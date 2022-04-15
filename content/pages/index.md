@@ -392,7 +392,7 @@ sections:
         altText: ''
         url: 'https://www.udemy.com/user/z-dynamics/'
         showIcon: true
-        icon: arrowRight
+        icon: chevronRight
         iconPosition: right
         elementId: ''
     columns: 3
