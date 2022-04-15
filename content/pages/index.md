@@ -11,7 +11,7 @@ sections:
       - type: Button
         label: MÁS INFORMACIÓN
         altText: MÁS INFORMACIÓN
-        url: /
+        url: '#nosotros'
         showIcon: true
         icon: chevronLeft
         iconPosition: right
