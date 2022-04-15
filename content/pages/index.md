@@ -398,8 +398,6 @@ sections:
     subtitle: ♡
     items:
       - type: FeaturedItem
-        text: |
-          \+700 estudiantes desde 2019
         featuredImage:
           type: ImageBlock
           url: /images/students-0d681fe1.png
