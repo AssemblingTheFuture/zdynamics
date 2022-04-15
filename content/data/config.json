@@ -121,7 +121,7 @@
             {
                 "type": "Social",
                 "altText": "Twitter",
-                "label": "GitHUb",
+                "label": "GitHub",
                 "url": "/",
                 "icon": "twitter"
             },
