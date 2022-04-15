@@ -103,55 +103,6 @@ sections:
         self:
           opacity: 100
       type: ImageBlock
-  - elementId: ''
-    colors: colors-a
-    title: NUESTRA VISIÓN
-    text: >
-      Hacer que la robótica, tangible e intangible, sea accesible para cualquier
-      ser humano, a través de educación minimalista y sencilla, a un costo
-      reducido
-    actions:
-      - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
-        elementId: hero-main-button
-      - type: Link
-        label: Learn More
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-    media:
-      type: ImageBlock
-      url: /images/hero-1.png
-      altText: Hero section image
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-36
-          - pb-6
-          - pl-4
-          - pr-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: row
-      title:
-        textAlign: left
-      subtitle:
-        textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start
-    type: FeatureHighlightSection
   - colors: colors-a
     elementId: ''
     title: Remote doesn’t mean alone. Here are so great features
@@ -262,6 +213,55 @@ sections:
       actions:
         justifyContent: flex-start
     type: FeaturedItemsSection
+  - elementId: ''
+    colors: colors-a
+    title: NUESTRA VISIÓN
+    text: >
+      Hacer que la robótica, tangible e intangible, sea accesible para cualquier
+      ser humano, a través de educación minimalista y sencilla, a un costo
+      reducido
+    actions:
+      - type: Button
+        label: Get Started
+        url: 'https://www.stackbit.com/'
+        style: primary
+        elementId: hero-main-button
+      - type: Link
+        label: Learn More
+        url: /
+        showIcon: true
+        icon: arrowRight
+        iconPosition: right
+    media:
+      type: ImageBlock
+      url: /images/hero-1.png
+      altText: Hero section image
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-36
+          - pb-6
+          - pl-4
+          - pr-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: row
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
+    type: FeatureHighlightSection
   - colors: colors-h
     subtitle: Trusted by
     elementId: ''
