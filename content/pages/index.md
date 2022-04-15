@@ -106,9 +106,7 @@ sections:
   - colors: colors-a
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
-    subtitle: >-
-      La robótica NO es solamente programación, celdas de manufactura o , estás
-      equivacado
+    subtitle: 'La robótica NO es solamente programación, celdas de manufactura o '
     items:
       - type: FeaturedItem
         title: Faster
