@@ -213,6 +213,7 @@ sections:
               - pt-4
               - pl-4
               - pr-4
+              - pb-6
     columns: 3
     enableHover: false
     styles:
