@@ -10,7 +10,7 @@ sections:
     actions:
       - type: Button
         label: MÁS INFORMACIÓN
-        altText: ''
+        altText: MÁS INFORMACIÓN
         url: /
         showIcon: true
         icon: chevronLeft
