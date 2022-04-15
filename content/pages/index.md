@@ -292,7 +292,7 @@ sections:
       desarrollarse como profesional en esta rama de la ingeniería
     actions:
       - type: Button
-        label: Get Started
+        label: zRobot 0.1
         url: 'https://www.stackbit.com/'
         style: primary
         elementId: hero-main-button
