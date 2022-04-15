@@ -489,7 +489,7 @@ sections:
           - mb-0
         padding:
           - pt-28
-          - pb-56
+          - pb-3
           - pl-4
           - pr-4
         justifyContent: center
