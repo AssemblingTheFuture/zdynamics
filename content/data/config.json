@@ -150,15 +150,6 @@
                 "url": "https://www.youtube.com/channel/UCzqAQ-rrxYrqIRo5dAnkfQA",
                 "icon": "facebook",
                 "style": "link"
-            },
-            {
-                "type": "Social",
-                "label": "Facebook",
-                "altText": "",
-                "url": "/",
-                "icon": "facebook",
-                "style": "link",
-                "elementId": ""
             }
         ],
         "legalLinks": [
