@@ -344,7 +344,7 @@ sections:
       ;)
     actions:
       - type: Button
-        label: Sign Up
+        label: ¡Contáctanos!
         url: /
         style: primary
     media:
