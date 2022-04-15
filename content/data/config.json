@@ -168,7 +168,7 @@
             {
                 "type": "Social",
                 "label": "Linktree",
-                "altText": "",
+                "altText": "Linktree",
                 "url": "/",
                 "style": "link",
                 "elementId": ""
