@@ -338,9 +338,10 @@ sections:
     title: Servicios
     subtitle: ''
     text: >
-      Podemos apoyarte en tus proyectos de desarrollo de robots (algoritmos,
-      hardware, diseño mecánico) o si deseas entrenar a tus trabajadores en los
-      fundamentos de robótica para mejorar sus habilidades en programación ;)
+      Podemos apoyarte en el desarrollo de robots (algoritmos, hardware, diseño
+      mecánico, etcétera) o si deseas entrenar a tus trabajadores en los
+      fundamentos de robótica, programación, o cualquier disciplina relacionada
+      ;)
     actions:
       - type: Button
         label: Sign Up
