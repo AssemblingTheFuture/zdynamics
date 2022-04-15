@@ -393,7 +393,7 @@ sections:
     type: MediaGallerySection
   - colors: colors-f
     elementId: ''
-    title: Need Answers?
+    title: FAQ
     items:
       - question: How is this different from what we have today?
         answer: >-
