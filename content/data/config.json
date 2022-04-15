@@ -143,7 +143,7 @@
             {
                 "type": "Social",
                 "label": "LinkedIn",
-                "altText": "",
+                "altText": "LinkedIn",
                 "url": "/",
                 "icon": "linkedin",
                 "style": "link",
