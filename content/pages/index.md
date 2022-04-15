@@ -294,7 +294,7 @@ sections:
     actions:
       - type: Button
         label: MÁS INFORMACIÓN
-        url: /zrobot
+        url: /products
         style: primary
         elementId: hero-main-button
         altText: zRobot 0.1
