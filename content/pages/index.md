@@ -487,6 +487,7 @@ sections:
           title:
             fontWeight: 400
             fontStyle: normal
+        title: Product Marketing Manager at Acme
       - quote: >
           "Such a great experience to be using this product. It really helped
           with what I needed help with."
