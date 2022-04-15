@@ -403,7 +403,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/students-0d681fe1.png
-          altText: altText of the image
+          altText: +700 estudiantes desde 3
           caption: Caption of the image
           elementId: ''
           styles:
