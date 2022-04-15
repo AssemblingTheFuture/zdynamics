@@ -6,7 +6,7 @@ sections:
     elementId: homepage-hero-1
     colors: colors-a
     title: zDynamics
-    subtitle: 'One platform, one community.'
+    subtitle: The Future is ROBOTICS
     actions:
       - type: Button
         label: Get Started
