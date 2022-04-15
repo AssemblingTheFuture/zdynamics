@@ -380,7 +380,7 @@ sections:
       actions:
         justifyContent: flex-start
   - type: FeaturedItemsSection
-    colors: colors-f
+    colors: colors-e
     elementId: ''
     title: Algunos datos sobre nosotros
     subtitle: ♡
