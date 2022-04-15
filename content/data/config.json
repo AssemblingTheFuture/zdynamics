@@ -12,7 +12,8 @@
                 "type": "Link",
                 "label": "Inicio",
                 "url": "/",
-                "altText": "Inicio"
+                "altText": "Inicio",
+                "showIcon": true
             },
             {
                 "type": "Link",
