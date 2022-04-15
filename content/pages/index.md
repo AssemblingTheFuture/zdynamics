@@ -299,6 +299,7 @@ sections:
         elementId: hero-main-button
         altText: zRobot 0.1
         iconPosition: right
+        showIcon: true
     media:
       type: ImageBlock
       url: /images/zrobot01.jpg
