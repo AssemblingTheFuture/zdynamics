@@ -390,7 +390,7 @@ sections:
       - type: Link
         label: 'Y si no nos crees, revisa nuestras métricas públicas ;)'
         altText: ''
-        url: /
+        url: 'https://www.udemy.com/user/z-dynamics/'
         showIcon: false
         icon: arrowRight
         iconPosition: right
