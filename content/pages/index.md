@@ -217,6 +217,7 @@ sections:
             borderRadius: medium
             borderColor: border-dark
             borderStyle: solid
+            borderWidth: 1
     columns: 3
     enableHover: false
     styles:
