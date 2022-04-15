@@ -107,8 +107,8 @@ sections:
     elementId: ''
     title: '¿Qué %&#@ hacemos?'
     subtitle: >-
-      Nosotros te enseñamos que la robótica NO es solamente programación, celdas
-      de manufactura
+      Nosotros te enseñamos que la robótica NO es solamente programación o
+      celdas de manufactura
     items:
       - type: FeaturedItem
         title: Faster
