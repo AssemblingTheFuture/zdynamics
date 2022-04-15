@@ -332,7 +332,7 @@ sections:
         justifyContent: flex-start
     type: FeatureHighlightSection
   - colors: colors-h
-    subtitle: Un vistazo
+    subtitle: Algunos datos sobre nosotros
     elementId: ''
     images:
       - type: ImageBlock
