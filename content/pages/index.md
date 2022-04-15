@@ -209,6 +209,8 @@ sections:
         styles:
           self:
             textAlign: left
+            padding:
+              - pt-4
     columns: 3
     enableHover: false
     styles:
