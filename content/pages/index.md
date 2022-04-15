@@ -214,6 +214,7 @@ sections:
               - pl-4
               - pr-4
               - pb-6
+            borderRadius: medium
     columns: 3
     enableHover: false
     styles:
