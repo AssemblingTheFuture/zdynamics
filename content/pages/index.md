@@ -349,7 +349,7 @@ sections:
         style: primary
         altText: ¡Contáctanos!
         icon: arrowRightCircle
-        iconPosition: left
+        iconPosition: right
         showIcon: true
     media:
       type: ImageBlock
