@@ -492,7 +492,7 @@ sections:
           "Such a great experience to be using this product. It really helped
           with what I needed help with."
         name: Abdiel Altamirano
-        title: 'Alumno de "Robótica: de la Cinemática al Control"'
+        title: Alumno de "Métodos Numéricos con Aplicaciones de Ingeniería"
         image:
           type: ImageBlock
           altText: Photo of Carla Rogers
