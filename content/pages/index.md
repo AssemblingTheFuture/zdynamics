@@ -487,7 +487,7 @@ sections:
           title:
             fontWeight: 400
             fontStyle: normal
-        title: Product Marketing Manager at Acme
+        title: Alumno de "Control de Sistemas Dinámicos"
       - quote: >
           "Such a great experience to be using this product. It really helped
           with what I needed help with."
