@@ -405,7 +405,6 @@ sections:
         styles:
           self:
             textAlign: center
-        subtitle: +700 estudiantes
       - type: FeaturedItem
         title: Smarter
         text: >-
