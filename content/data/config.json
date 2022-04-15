@@ -144,7 +144,7 @@
                 "type": "Social",
                 "label": "LinkedIn",
                 "altText": "LinkedIn",
-                "url": "/",
+                "url": "https://linkedin.com/in/",
                 "icon": "linkedin",
                 "style": "link",
                 "elementId": ""
