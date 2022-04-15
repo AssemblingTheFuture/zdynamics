@@ -124,15 +124,6 @@
             },
             {
                 "type": "Social",
-                "label": "Facebook",
-                "altText": "Facebook",
-                "icon": "facebook",
-                "style": "link",
-                "elementId": "",
-                "url": "fb.com/zdynamicz"
-            },
-            {
-                "type": "Social",
                 "altText": "YouTube",
                 "label": "YouTube",
                 "url": "https://www.youtube.com/channel/UCzqAQ-rrxYrqIRo5dAnkfQA",
