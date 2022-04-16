@@ -53,7 +53,7 @@ sections:
           - type: Link
             label: Descargar
             altText: ''
-            url: https
+            url: 'https://github.com/AssemblingTheFuture/zController'
             showIcon: false
             icon: arrowRight
             iconPosition: right
