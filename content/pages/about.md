@@ -60,42 +60,6 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
-  - type: HeroSection
-    colors: colors-h
-    title: ¿Quién @$@% somos?
-    text: You should join us.
-    media:
-      type: ImageBlock
-      url: /images/team.jpg
-      caption: Team meeting
-      altText: Hero section image
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: col
-      title:
-        textAlign: center
-      subtitle:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: center
-      text:
-        textAlign: center
-      actions:
-        justifyContent: flex-start
   - type: QuoteSection
     colors: colors-h
     quote: >-
