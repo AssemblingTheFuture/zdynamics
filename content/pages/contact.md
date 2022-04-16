@@ -3,7 +3,7 @@ layout: PageLayout
 metaTitle: Contáctanos
 metaDescription: ;)
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/vision.png
 metaTags: []
 title: Contacto
 sections:
