@@ -12,12 +12,6 @@ sections:
     colors: colors-h
     title: ¿Quién @$@% somos?
     subtitle: ''
-    badge:
-      label: This is the badge
-      elementId: ''
-      styles:
-        self:
-          textAlign: left
     text: >
       Assembling the Future S.A.S. se fundó en 2017 por nosotros, un grupo de
       amigos que buscan hacer algo más que programar robots: **queremos mejorar
