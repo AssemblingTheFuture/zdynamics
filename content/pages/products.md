@@ -81,6 +81,7 @@ sections:
             borderRadius: medium
             borderWidth: 1
             borderStyle: solid
+            borderColor: border-dark
     actions: []
     columns: 1
     enableHover: true
