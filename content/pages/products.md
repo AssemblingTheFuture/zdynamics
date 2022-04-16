@@ -88,7 +88,7 @@ sections:
           - type: Link
             label: Learn more
             altText: ''
-            url: /
+            url: /blog/el
             showIcon: false
             icon: arrowRight
             iconPosition: right
