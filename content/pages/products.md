@@ -16,7 +16,7 @@ sections:
       de robótica
     items:
       - type: FeaturedItem
-        title: Faster
+        title: zRobotics 0.2
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
