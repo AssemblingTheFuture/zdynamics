@@ -7,7 +7,7 @@ excerpt: 'Desde 2017 comenzamos a desarrollar un robot, ¡con características a
 featuredImage:
   type: ImageBlock
   url: /images/zrobot01.jpg
-  altText: Post Image
+  altText: zRobot 0.1
 bottomSections:
   - elementId: ''
     variant: variant-c
