@@ -83,16 +83,16 @@ sections:
     colors: colors-f
     title: Nuestro Camino
     subtitle: The section subtitle
-    text: |
+    text: |+
       ```
       graph TD
-          A[Christmas] -->|Get money| B(Go shopping)
-          B --> C{Let me think}
-          C -->|One| D[Laptop]
-          C -->|Two| E[iPhone]
-          C -->|Three| F[fa:fa-car Car]
-        
+      A[Christmas] -->|Get money| B(Go shopping)
+      B --> C{Let me think}
+      C -->|One| D[Laptop]
+      C -->|Two| E[iPhone]
+      C -->|Three| F[fa:fa-car Car]
       ```
+
     styles:
       self:
         height: auto
