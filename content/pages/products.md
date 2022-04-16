@@ -1,6 +1,6 @@
 ---
 layout: PageLayout
-metaTitle: null
+metaTitle: Productos
 metaDescription: null
 addTitleSuffix: true
 socialImage: null
