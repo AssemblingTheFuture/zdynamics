@@ -19,7 +19,7 @@ sections:
         elementId: ''
     media:
       type: ImageBlock
-      url: /images/hero.png
+      url: /images/ZD CMYK.png
       altText: Image alt text
       caption: Image caption
     styles:
