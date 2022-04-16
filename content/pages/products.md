@@ -28,6 +28,7 @@ sections:
             textAlign: center
             borderRadius: medium
             borderWidth: 1
+            borderStyle: solid
       - type: FeaturedItem
         title: Smarter
         text: >-
