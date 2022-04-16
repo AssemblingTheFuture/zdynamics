@@ -55,7 +55,7 @@ sections:
             altText: ''
             url: 'https://github.com/AssemblingTheFuture/zController'
             showIcon: true
-            icon: arrowRight
+            icon: github
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
