@@ -59,7 +59,6 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-    title: Featured
     subtitle: Featured blog posts section example
     colors: colors-f
     posts:
