@@ -22,6 +22,7 @@ sections:
         featuredImage:
           type: ImageBlock
           altText: Métodos Numéricos con Aplicaciones de Ingeniería
+          url: /images/numerics.png
         styles:
           self:
             textAlign: center
