@@ -122,7 +122,7 @@ sections:
     variant: variant-a
     colors: colors-c
     title: ¡Conócenos!
-    subtitle: Featured people section example
+    subtitle: 'Somos raros pero guapxs :D'
     actions: []
     people:
       - content/data/team/desmond-eagle.json
