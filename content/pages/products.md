@@ -72,7 +72,7 @@ sections:
           se puede aprender de forma muy sencilla!
         featuredImage:
           type: ImageBlock
-          url: /images/roboticz.webp
+          url: /images/robotics.png
           altText: Robótica
         styles:
           self:
