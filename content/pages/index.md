@@ -211,7 +211,7 @@ sections:
             altText: ''
             url: 'https://bit.ly/CertificationZ'
             showIcon: true
-            icon: arrowRightCircle
+            icon: cart
             iconPosition: right
             elementId: ''
         styles:
