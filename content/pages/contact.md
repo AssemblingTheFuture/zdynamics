@@ -61,7 +61,7 @@ sections:
           name: email
           label: Correo Electrónico
           placeholder: master@nugget.com
-          isRequired: 'true'
+          isRequired: true
           width: 1/2
         - type: TextFormControl
           name: address
