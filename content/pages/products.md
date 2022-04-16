@@ -71,6 +71,7 @@ sections:
         justifyContent: center
         borderRadius: medium
         borderWidth: 1
+        borderStyle: solid
       title:
         textAlign: center
       subtitle:
