@@ -116,7 +116,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-f
     elementId: ''
-    title: Key value propositions
+    title: Programación Básica de Robots con Python
     subtitle: ''
     items:
       - type: FeaturedItem
