@@ -9,7 +9,7 @@ title: ¿Quién @$@% somos?
 sections:
   - type: HeroSection
     colors: colors-h
-    title: We’re growing fast
+    title: ¿Quién @$@% somos?
     text: You should join us.
     media:
       type: ImageBlock
