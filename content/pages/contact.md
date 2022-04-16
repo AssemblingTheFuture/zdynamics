@@ -59,7 +59,7 @@ sections:
           width: 1/2
         - type: EmailFormControl
           name: email
-          label: Email
+          label: Correo Electrónico
           placeholder: Your email
           isRequired: 'true'
           width: 1/2
