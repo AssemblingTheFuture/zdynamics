@@ -67,7 +67,7 @@ sections:
           name: address
           label: País de Residencia
           placeholder: e.g. México
-          isRequired: 'false'
+          isRequired: true
           width: full
         - type: CheckboxFormControl
           name: updates
