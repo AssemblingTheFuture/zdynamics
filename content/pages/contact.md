@@ -60,7 +60,7 @@ sections:
         - type: EmailFormControl
           name: email
           label: Correo Electrónico
-          placeholder: Your email
+          placeholder: example@
           isRequired: 'true'
           width: 1/2
         - type: TextFormControl
