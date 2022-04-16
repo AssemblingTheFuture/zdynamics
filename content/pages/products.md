@@ -86,7 +86,7 @@ sections:
             borderColor: border-dark
         actions:
           - type: Link
-            label: Más informaciópn
+            label: Más información
             altText: ''
             url: /blog/el-robot
             showIcon: false
