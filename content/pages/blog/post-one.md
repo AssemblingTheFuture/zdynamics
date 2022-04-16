@@ -1,5 +1,5 @@
 ---
-title: Virtual benefits
+title: El Robot
 layout: PostLayout
 date: '2021-06-28'
 author: content/data/team/dianne-ameter.json
@@ -20,8 +20,16 @@ bottomSections:
       self:
         height: auto
         width: wide
-        margin: ['mt-0', 'mb-0', 'ml-0', 'mr-0']
-        padding: ['pt-12', 'pb-56', 'pr-4', 'pl-4']
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-56
+          - pr-4
+          - pl-4
         justifyContent: center
       title:
         textAlign: center
