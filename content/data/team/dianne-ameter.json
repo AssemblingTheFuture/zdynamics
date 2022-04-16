@@ -7,6 +7,7 @@
     "image": {
         "type": "ImageBlock",
         "url": "/images/troncs.jpg",
-        "altText": "Itzel"
+        "altText": "Itzel",
+        "caption": "Itzel"
     }
 }
