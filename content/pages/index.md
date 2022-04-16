@@ -171,7 +171,7 @@ sections:
             label: Más Información
             altText: ''
             url: 'https://bit.ly/zControl'
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
