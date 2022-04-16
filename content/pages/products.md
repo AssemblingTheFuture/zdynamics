@@ -17,9 +17,9 @@ sections:
     items:
       - type: FeaturedItem
         title: zRobotics 0.2
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          Un poderosa libreria para análisis de robots utilizando Python. ¡Hecha
+          por Mexicanos!
         featuredImage:
           type: ImageBlock
           url: /images/faster.svg
