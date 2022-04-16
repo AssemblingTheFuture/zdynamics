@@ -54,7 +54,7 @@ sections:
         - type: TextFormControl
           name: Nombre
           label: Nombre
-          placeholder: Your name
+          placeholder: Nombr
           isRequired: 'true'
           width: 1/2
         - type: EmailFormControl
