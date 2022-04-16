@@ -52,6 +52,7 @@ sections:
             textAlign: center
             borderRadius: medium
             borderWidth: 1
+            borderStyle: solid
       - type: FeaturedItem
         title: Focused
         text: >-
