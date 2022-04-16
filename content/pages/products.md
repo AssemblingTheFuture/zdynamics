@@ -53,7 +53,7 @@ sections:
           - type: Link
             label: Descargar
             altText: ''
-            url: /
+            url: https
             showIcon: false
             icon: arrowRight
             iconPosition: right
