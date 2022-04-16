@@ -3,7 +3,7 @@
     "favicon": "/images/Z Dynamics.png",
     "header": {
         "headerVariant": "variant-c",
-        "primaryColors": "colors-e",
+        "primaryColors": "colors-h",
         "secondaryColors": "colors-f",
         "title": "zDynamics | The Future is ROBOTICS",
         "isTitleVisible": false,
