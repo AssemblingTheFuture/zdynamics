@@ -34,9 +34,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-h
     elementId: ''
-    title: >-
-      Robótica no es sinónimo de abstracción mean alone. Here are so great
-      features
+    title: Robótica no es teoría aburrida. Aprende sobre esta hermosa disciplina
     subtitle: >-
       These are all excellent features that will provide exactly the things
       you’re looking for.
