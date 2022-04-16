@@ -55,7 +55,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/focused.svg
+          url: /images/roboticz.png
           altText: Item image
         styles:
           self:
