@@ -59,7 +59,7 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-    colors: colors-e
+    colors: colors-h
     posts:
       - content/pages/blog/post-three.md
       - content/pages/blog/post-two.md
