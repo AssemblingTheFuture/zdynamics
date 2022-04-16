@@ -8,7 +8,7 @@ metaTags: []
 title: Productos
 sections:
   - type: FeaturedItemsSection
-    colors: colors-h
+    colors: colors-a
     elementId: ''
     title: Herramientas Digitales
     subtitle: >-
