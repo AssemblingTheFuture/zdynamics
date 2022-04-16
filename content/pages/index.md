@@ -168,7 +168,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Learn more
+            label: Más Información
             altText: ''
             url: /
             showIcon: false
