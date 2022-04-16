@@ -80,6 +80,7 @@ sections:
             textAlign: center
             borderRadius: medium
             borderWidth: 1
+            borderStyle: dashed
     actions: []
     columns: 1
     enableHover: true
