@@ -53,8 +53,9 @@ sections:
   - type: QuoteSection
     colors: colors-h
     quote: >+
-      ### *No estamos seguros de hasta dónde llegaremos, pero sí tenemos claro
-      que debemos cambiar la robótica en México y Latinoamérica*
+      ### *No estamos seguros de lo que hacemos ni hasta dónde llegaremos, pero
+      sí tenemos claro que algo debemos cambiar la robótica en México y
+      Latinoamérica*
 
     name: David Zenteno
     title: Fundador
