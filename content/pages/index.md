@@ -138,6 +138,15 @@ sections:
               - pb-6
               - pr-4
             borderRadius: medium
+        actions:
+          - type: Link
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         title: Control de Sistemas Dinámicos
         text: >
