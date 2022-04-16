@@ -52,6 +52,7 @@ sections:
         styles:
           self:
             textAlign: center
+            borderRadius: medium
         actions:
           - type: Link
             label: Descargar
