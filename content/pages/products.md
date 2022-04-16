@@ -22,7 +22,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/numericz-fa1401f1.webp
-          altText: Item image
+          altText: Métodos Numéricos con Aplicaciones de Ingeniería
         styles:
           self:
             textAlign: center
