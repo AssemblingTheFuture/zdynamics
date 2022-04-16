@@ -83,12 +83,6 @@ sections:
     colors: colors-h
     title: Love where you work
     subtitle: ''
-    badge:
-      label: This is the badge
-      elementId: ''
-      styles:
-        self:
-          textAlign: left
     text: >-
       One platform, one community, getting to the bottom line of everything
       employment.  Figure out your benefits, practice for interviews, get
