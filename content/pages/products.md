@@ -71,7 +71,7 @@ sections:
           self:
             textAlign: center
     actions: []
-    columns: 1
+    columns: 2
     enableHover: true
     styles:
       self:
