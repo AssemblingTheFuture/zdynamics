@@ -8,6 +8,74 @@ metaTags: []
 title: Productos
 sections:
   - type: FeaturedItemsSection
+    colors: colors-h
+    elementId: ''
+    title: Herramientas Digitales
+    subtitle: >-
+      Desarrollamos algunas librerías para que puedas utilizar en tus proyectos
+      de robótica
+    items:
+      - type: FeaturedItem
+        title: Faster
+        text: >-
+          Learn how top tech companies have learned working remote using our
+          product.
+        featuredImage:
+          type: ImageBlock
+          url: /images/faster.svg
+          altText: Item image
+        styles:
+          self:
+            textAlign: center
+      - type: FeaturedItem
+        title: Smarter
+        text: >-
+          Learn how top tech companies have learned working remote using our
+          product.
+        featuredImage:
+          type: ImageBlock
+          url: /images/smarter.svg
+          altText: Item image
+        styles:
+          self:
+            textAlign: center
+      - type: FeaturedItem
+        title: Focused
+        text: >-
+          Learn how top tech companies have learned working remote using our
+          product.
+        featuredImage:
+          type: ImageBlock
+          url: /images/focused.svg
+          altText: Item image
+        styles:
+          self:
+            textAlign: center
+    actions: []
+    columns: 3
+    enableHover: false
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pl-4
+          - pr-4
+        justifyContent: center
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+      actions:
+        justifyContent: center
+  - type: FeaturedItemsSection
     colors: colors-c
     elementId: ''
     title: Robótica Avanzada en Línea
@@ -92,74 +160,6 @@ sections:
     actions: []
     columns: 3
     enableHover: true
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
-        justifyContent: center
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      actions:
-        justifyContent: center
-  - type: FeaturedItemsSection
-    colors: colors-h
-    elementId: ''
-    title: Herramientas Digitales
-    subtitle: >-
-      Desarrollamos algunas librerías para que puedas utilizar en tus proyectos
-      de robótica
-    items:
-      - type: FeaturedItem
-        title: Faster
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
-        featuredImage:
-          type: ImageBlock
-          url: /images/faster.svg
-          altText: Item image
-        styles:
-          self:
-            textAlign: center
-      - type: FeaturedItem
-        title: Smarter
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
-        featuredImage:
-          type: ImageBlock
-          url: /images/smarter.svg
-          altText: Item image
-        styles:
-          self:
-            textAlign: center
-      - type: FeaturedItem
-        title: Focused
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
-        featuredImage:
-          type: ImageBlock
-          url: /images/focused.svg
-          altText: Item image
-        styles:
-          self:
-            textAlign: center
-    actions: []
-    columns: 3
-    enableHover: false
     styles:
       self:
         height: auto
