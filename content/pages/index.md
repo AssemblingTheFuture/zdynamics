@@ -242,7 +242,7 @@ sections:
             iconPosition: right
             elementId: ''
           - type: Button
-            label: Learn more
+            label: MÁS INFORMACIÓN
             altText: ''
             url: /
             showIcon: false
