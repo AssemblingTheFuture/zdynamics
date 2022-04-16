@@ -140,7 +140,7 @@ sections:
             altText: ''
             url: 'https://bit.ly/CertificationZ'
             showIcon: true
-            icon: arrowRight
+            icon: arrowRightCircle
             iconPosition: right
             elementId: ''
     actions: []
