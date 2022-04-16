@@ -89,7 +89,7 @@ sections:
             label: MÁS INFORMACIÓN
             altText: ''
             url: /blog/el-robot
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             style: secondary
