@@ -83,10 +83,9 @@ sections:
     colors: colors-h
     title: 'Nuestro camino :D'
     subtitle: ''
-    text: >-
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    text: >
+      Muchos creen que un "curso" en línea es fácil de hacer, pero cuesta uno y
+      la mitad del otro :(
     actions:
       - type: Button
         label: Sign Up
