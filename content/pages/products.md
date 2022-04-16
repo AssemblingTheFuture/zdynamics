@@ -55,6 +55,15 @@ sections:
             borderRadius: medium
             borderWidth: 1
             borderStyle: solid
+        actions:
+          - type: Link
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         title: Focused
         text: >-
