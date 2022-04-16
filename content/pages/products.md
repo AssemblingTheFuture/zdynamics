@@ -34,7 +34,7 @@ sections:
             label: Comprar
             altText: ''
             url: 'https://bit.ly/NumericZ'
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
