@@ -31,7 +31,7 @@ sections:
           - type: Link
             label: Descargar
             altText: ''
-            url: /
+            url: 'https://github.com/AssemblingTheFuture/zRobotics'
             showIcon: false
             icon: arrowRight
             iconPosition: right
