@@ -78,7 +78,7 @@ sections:
           width: full
         - type: CheckboxFormControl
           name: updates
-          label: Sign me up to receive updates
+          label: Quiero que me envíen actualizaciones de su correo
           isRequired: false
           width: full
       submitLabel: Send Message
