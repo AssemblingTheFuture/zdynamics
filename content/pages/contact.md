@@ -66,7 +66,7 @@ sections:
         - type: TextFormControl
           name: address
           label: País de Residencia
-          placeholder: Your home address
+          placeholder: e.g. México
           isRequired: 'false'
           width: full
         - type: CheckboxFormControl
