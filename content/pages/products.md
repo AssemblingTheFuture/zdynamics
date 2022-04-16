@@ -134,15 +134,7 @@ sections:
         styles:
           self:
             textAlign: center
-        actions:
-          - type: Link
-            label: Más información
-            altText: ''
-            url: 'https://bit.ly/CertificationZ'
-            showIcon: true
-            icon: arrowRightCircle
-            iconPosition: right
-            elementId: ''
+        actions: []
     actions: []
     columns: 1
     enableHover: true
