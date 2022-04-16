@@ -23,7 +23,7 @@ sections:
     media:
       type: ImageBlock
       url: /images/hero-3.jpg
-      altText: Hero image
+      altText: The Team
     styles:
       self:
         height: auto
