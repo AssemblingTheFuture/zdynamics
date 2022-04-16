@@ -37,12 +37,7 @@ sections:
     showAuthor: false
     showExcerpt: false
     variant: variant-a
-    actions:
-      - type: Button
-        label: View All
-        altText: View All Posts
-        url: /blog
-        style: primary
+    actions: []
     styles:
       self:
         height: auto
