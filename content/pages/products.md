@@ -66,9 +66,10 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: 'Robótica: de la Cinemática al Control'
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          Los robots se diseñan utilizando herramientas teóricas que no se
+          enseñan en las aulas de Latinoamérica debido a su complejidad, ¡pero
+          se puede aprender de forma muy sencilla!
         featuredImage:
           type: ImageBlock
           url: /images/focused.svg
