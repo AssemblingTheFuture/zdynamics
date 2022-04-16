@@ -4,7 +4,7 @@ layout: PostLayout
 date: '2019-12-19'
 author: content/data/team/dianne-ameter.json
 excerpt: >-
-  uando se habla de robots colaborativos y trabajo humano, es necesario
+  Cuando se habla de robots colaborativos y trabajo humano, es necesario
   enfatizar que el trabajo realizado por máquinas tiene la función de apoyar a
   los trabajadores en actividades que son repetitivas, por lo que estas máquinas
   no reemplazan el trabajo humano, solo complementan sus capacidades. Su trabajo
