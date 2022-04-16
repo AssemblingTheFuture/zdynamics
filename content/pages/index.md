@@ -19,7 +19,7 @@ sections:
         elementId: ''
     media:
       type: ImageBlock
-      url: /images/hero.png
+      url: /images/ZD RGB.png
       altText: Image alt text
       caption: Image caption
     styles:
@@ -114,11 +114,11 @@ sections:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
         text: >
-          Las matemáticas son muy importantes en cualquier sector profesional,
-          pero es esencial saber cómo resolver problemas rápidamente cumpliendo
-          los requisitos teóricos básicos
+          Las matemáticas son muy importantes para cualquier profesional, pero
+          es esencial saber resolver problemas rápidamente cumpliendo los
+          requisitos teóricos básicos
         featuredImage:
-          url: /images/faster.svg
+          url: /images/numerics.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
@@ -138,15 +138,24 @@ sections:
               - pb-6
               - pr-4
             borderRadius: medium
+        actions:
+          - type: Link
+            label: Más Información
+            altText: ''
+            url: 'https://bit.ly/NumericZ'
+            showIcon: true
+            icon: cart
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         title: Control de Sistemas Dinámicos
         text: >
-          Aunque muchos sistemas todavía se controlan con la estructura clásica
-          de PID, es necesario modernizar y simplificar esto a través de
-          funciones de aprendizaje basadas en criterios de estabilidad más
-          confiables que la asignación de polos y ceros.
+          Muchos sistemas todavía se controlan con el clásico sistema PID, pero
+          es necesario simplificar esto a través de funciones robustas, basadas
+          en criterios de estabilidad más confiables que la asignación de polos
+          y ceros.
         featuredImage:
-          url: /images/smarter.svg
+          url: /images/lorenz.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
@@ -166,6 +175,15 @@ sections:
               - pb-6
               - pr-4
             borderRadius: medium
+        actions:
+          - type: Link
+            label: Más Información
+            altText: ''
+            url: 'https://bit.ly/zControl'
+            showIcon: true
+            icon: cart
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         title: 'Robótica: de la Cinemática al Control'
         text: >
@@ -173,7 +191,7 @@ sections:
           enseñan en las aulas de Latinoamérica debido a su complejidad, ¡pero
           se puede aprender de forma muy sencilla!
         featuredImage:
-          url: /images/focused.svg
+          url: /images/robotics.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
@@ -193,6 +211,15 @@ sections:
               - pb-6
               - pr-4
             borderRadius: medium
+        actions:
+          - type: Link
+            label: Más Información
+            altText: ''
+            url: 'https://bit.ly/RoboticZ'
+            showIcon: true
+            icon: cart
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         elementId: ''
         title: Programación Básica de Robots con Python
@@ -203,9 +230,17 @@ sections:
           ¡Y NO ES NECESARIO UTILIZAR EQUIPOS MUY CAROS!
         featuredImage:
           type: ImageBlock
-          url: /images/faster.svg
+          url: /images/python.png
           altText: Item image
-        actions: []
+        actions:
+          - type: Link
+            label: Más Información
+            altText: ''
+            url: 'https://bit.ly/CertificationZ'
+            showIcon: true
+            icon: cart
+            iconPosition: right
+            elementId: ''
         styles:
           self:
             textAlign: left
@@ -420,8 +455,8 @@ sections:
       - type: FeaturedItem
         title: 5+ años de experiencia
         text: >
-          Comenzamos a emprender en 2017 sin saber hasta dónde llegaríamos, ¡y
-          desde entonces no nos hemos detenido!
+          Comenzamos en 2017 sin saber hasta dónde llegaríamos, ¡y desde
+          entonces no nos hemos detenido!
         featuredImage:
           type: ImageBlock
           url: /images/experience.png
@@ -444,7 +479,7 @@ sections:
         iconPosition: right
         elementId: ''
     columns: 3
-    enableHover: false
+    enableHover: true
     styles:
       self:
         height: auto

@@ -3,7 +3,7 @@
     "favicon": "/images/Z Dynamics.png",
     "header": {
         "headerVariant": "variant-c",
-        "primaryColors": "colors-a",
+        "primaryColors": "colors-h",
         "secondaryColors": "colors-f",
         "title": "zDynamics | The Future is ROBOTICS",
         "isTitleVisible": false,
@@ -70,15 +70,14 @@
                     "opacity": 100
                 }
             },
-            "type": "ImageBlock",
-            "url": "/images/Z Dynamics.png"
+            "type": "ImageBlock"
         }
     },
     "footer": {
         "colors": "colors-h",
         "logo": {
-            "altText": "The Future is ROBOTICS",
-            "caption": "The Future is ROBOTICS",
+            "altText": "Assembling the Future",
+            "caption": "Assembling the Future",
             "elementId": "",
             "styles": {
                 "self": {
@@ -86,15 +85,15 @@
                 }
             },
             "type": "ImageBlock",
-            "url": "/images/Z Dynamics.png"
+            "url": "/images/bny-rgb-2.png"
         },
-        "title": "zDynamics",
         "contacts": {
             "title": "¡Contáctanos!",
             "email": "contact@zdynamics.org",
             "emailAltText": "Email",
             "address": "México",
-            "addressAltText": "Dirección"
+            "addressAltText": "Dirección",
+            "phoneNumber": "+553320807567"
         },
         "copyrightText": "Powered with ♡ by [Stackbit](https://www.stackbit.com/)\n",
         "primaryLinks": [
@@ -174,24 +173,13 @@
                 "elementId": ""
             }
         ],
-        "legalLinks": [
-            {
-                "type": "Link",
-                "label": "Privacy Policy",
-                "url": "/"
-            },
-            {
-                "type": "Link",
-                "label": "Terms & Conditions",
-                "url": "/"
-            }
-        ],
+        "legalLinks": [],
         "styles": {
             "self": {
-                "width": "narrow",
+                "width": "wide",
                 "padding": [
-                    "pt-16",
-                    "pb-16",
+                    "pt-10",
+                    "pb-10",
                     "pr-4",
                     "pl-4"
                 ]
