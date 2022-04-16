@@ -155,7 +155,7 @@ sections:
           funciones de aprendizaje basadas en criterios de estabilidad más
           confiables que la asignación de polos y ceros.
         featuredImage:
-          url: /images/smarter.svg
+          url: /images/lorenz.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
