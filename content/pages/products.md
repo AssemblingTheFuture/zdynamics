@@ -33,7 +33,7 @@ sections:
           - type: Link
             label: Comprar
             altText: ''
-            url: 'https://bit.ly/'
+            url: 'https://bit.ly/NumericZ'
             showIcon: false
             icon: arrowRight
             iconPosition: right
