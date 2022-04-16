@@ -1,7 +1,7 @@
 ---
 layout: PageLayout
 metaTitle: Productos
-metaDescription: null
+metaDescription: ¡Más allá de la aburrida teoría!
 addTitleSuffix: true
 socialImage: null
 metaTags: []
