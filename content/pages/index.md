@@ -233,14 +233,6 @@ sections:
           url: /images/python.png
           altText: Item image
         actions:
-          - type: Link
-            label: Más Información
-            altText: ''
-            url: 'https://bit.ly/CertificationZ'
-            showIcon: true
-            icon: cart
-            iconPosition: right
-            elementId: ''
           - type: Button
             label: MÁS INFORMACIÓN
             altText: ''
