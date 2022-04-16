@@ -71,7 +71,7 @@ sections:
           width: full
         - type: TextareaFormControl
           name: description
-          label: Description
+          label: Texto
           hideLabel: false
           placeholder: Please describe
           isRequired: false
