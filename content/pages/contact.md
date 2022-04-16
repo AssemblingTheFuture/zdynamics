@@ -39,7 +39,7 @@ sections:
     elementId: ''
     colors: colors-h
     backgroundSize: full
-    title: Contact us
+    title: ¡Escríbenos!
     text: We look forward to hearing from you.
     form:
       type: FormBlock
