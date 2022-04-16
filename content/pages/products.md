@@ -47,7 +47,7 @@ sections:
           y ceros.
         featuredImage:
           type: ImageBlock
-          url: /images/control-a962f211.webp
+          url: /images/lorenz.png
           altText: Item image
         styles:
           self:
