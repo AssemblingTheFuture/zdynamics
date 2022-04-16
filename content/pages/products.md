@@ -79,7 +79,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: Comprar ($5 USD)
             altText: ''
             url: /
             showIcon: false
