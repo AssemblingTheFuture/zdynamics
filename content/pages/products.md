@@ -33,7 +33,7 @@ sections:
             altText: ''
             url: 'https://github.com/AssemblingTheFuture/zRobotics'
             showIcon: true
-            icon: chevronRight
+            icon: github
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
