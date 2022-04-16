@@ -138,7 +138,7 @@ sections:
           - type: Link
             label: Learn more
             altText: ''
-            url: /
+            url: 'https://bit.ly/CertificationZ'
             showIcon: false
             icon: arrowRight
             iconPosition: right
