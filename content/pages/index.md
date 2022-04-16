@@ -210,7 +210,7 @@ sections:
             label: Más Información
             altText: ''
             url: 'https://bit.ly/CertificationZ'
-            showIcon: true
+            showIcon: false
             icon: arrowRight
             iconPosition: right
             elementId: ''
