@@ -10,7 +10,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-e
     elementId: ''
-    title: Robótica no es teoría aburrida. Aprende sobre esta hermosa disciplina
+    title: Aprende con nosotros que la robótica no es sinónimo de complejidad
     subtitle: Más allá de los libros y la aburrida teoría ;)
     items:
       - type: FeaturedItem
