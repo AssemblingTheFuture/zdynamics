@@ -37,7 +37,7 @@ sections:
         padding:
           - pt-12
           - pb-12
-          - pl-12
+          - pl-4
           - pr-12
         alignItems: center
         justifyContent: center
