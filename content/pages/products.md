@@ -81,7 +81,7 @@ sections:
           self:
             textAlign: center
             borderRadius: none
-            borderWidth: 1
+            borderWidth: 0
             borderStyle: solid
             borderColor: border-dark
         actions:
