@@ -248,7 +248,7 @@ sections:
             showIcon: false
             icon: arrowRightCircle
             iconPosition: right
-            style: secondary
+            style: primary
             elementId: ''
         styles:
           self:
