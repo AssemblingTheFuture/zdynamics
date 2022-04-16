@@ -65,7 +65,7 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        title: Focused
+        title: 'Robótica: de la Cinemática al Control'
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
