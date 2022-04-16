@@ -237,7 +237,7 @@ sections:
             label: MÁS INFORMACIÓN
             altText: ''
             url: 'https://bit.ly/CertificationZ'
-            showIcon: false
+            showIcon: true
             icon: arrowRightCircle
             iconPosition: right
             style: primary
