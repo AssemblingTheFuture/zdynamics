@@ -40,5 +40,14 @@ bottomSections:
         justifyContent: center
     type: RecentPostsSection
     showExcerpt: true
+    actions:
+      - type: Link
+        label: Learn more
+        altText: ''
+        url: /
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        elementId: ''
 ---
 Aunque muchos sistemas todavía se controlan con la estructura clásica de PID, es necesario modernizar y simplificar esto a través de funciones de aprendizaje basadas en criterios de estabilidad más confiables que la asignación de polos y ceros.
