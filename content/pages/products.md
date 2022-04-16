@@ -20,7 +20,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/faster.svg
+          url: /images/numericz-fa1401f1.webp
           altText: Item image
         styles:
           self:
