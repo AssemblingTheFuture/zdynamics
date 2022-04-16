@@ -6,7 +6,7 @@ author: content/data/team/dianne-ameter.json
 excerpt: 'Desde 2017 comenzamos a desarrollar un robot, ¡con características asombrosas!'
 featuredImage:
   type: ImageBlock
-  url: /images/post-1.jpg
+  url: /images/zrobot01.jpg
   altText: Post Image
 bottomSections:
   - elementId: ''
