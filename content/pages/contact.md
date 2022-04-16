@@ -71,7 +71,7 @@ sections:
           width: full
         - type: CheckboxFormControl
           name: updates
-          label: 'Contáctenme '
+          label: 'Contáctenme  o envíenme '
           isRequired: 'false'
           width: full
       submitLabel: Send Message
