@@ -117,7 +117,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: Programación Básica de Robots con Python
-    subtitle: ''
+    subtitle: ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN LA ROBÓTICA!
     items:
       - type: FeaturedItem
         title: Faster
