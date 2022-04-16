@@ -207,7 +207,7 @@ sections:
           altText: Item image
         actions:
           - type: Link
-            label: Learn more
+            label: Más Información
             altText: ''
             url: 'https://bit.ly/CertificationZ'
             showIcon: false
