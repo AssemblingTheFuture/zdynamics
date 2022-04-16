@@ -176,7 +176,7 @@
         "legalLinks": [],
         "styles": {
             "self": {
-                "width": "narrow",
+                "width": "wide",
                 "padding": [
                     "pt-10",
                     "pb-10",
