@@ -34,7 +34,9 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-h
     elementId: ''
-    title: Remote doesn’t mean alone. Here are so great features
+    title: >-
+      Robótica no es sinónimo de abstracción mean alone. Here are so great
+      features
     subtitle: >-
       These are all excellent features that will provide exactly the things
       you’re looking for.
