@@ -44,7 +44,7 @@ bottomSections:
       - type: Link
         label: Comprar
         altText: ''
-        url: /
+        url: 'https://bit.ly/zControl'
         showIcon: false
         icon: arrowRight
         iconPosition: right
