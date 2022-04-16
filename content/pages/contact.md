@@ -73,7 +73,7 @@ sections:
           name: description
           label: Texto
           hideLabel: false
-          placeholder: Please describe
+          placeholder: Escrí
           isRequired: false
           width: full
       submitLabel: Send Message
