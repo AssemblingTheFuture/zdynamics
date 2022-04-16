@@ -90,7 +90,7 @@ sections:
     media:
       type: ImageBlock
       url: /images/roadmap.svg
-      altText: Hero image
+      altText: Roadmap
     styles:
       self:
         height: auto
