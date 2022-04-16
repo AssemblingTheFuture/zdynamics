@@ -213,7 +213,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Más Información
+            label: Comprar ($5 USD)
             altText: ''
             url: 'https://bit.ly/RoboticZ'
             showIcon: true
