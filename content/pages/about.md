@@ -19,11 +19,7 @@ sections:
       Después de múltiples victorias y derrotas, logramos consolidar
       [zDynamics](https://zdynamics.org/): una organización para la educación en
       robótica avanzada
-    actions:
-      - type: Button
-        label: Sign Up
-        url: /
-        style: primary
+    actions: []
     media:
       type: ImageBlock
       url: /images/hero-3.jpg
