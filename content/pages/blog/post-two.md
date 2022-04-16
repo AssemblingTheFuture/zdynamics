@@ -16,7 +16,7 @@ bottomSections:
     variant: variant-c
     colors: colors-a
     title: Comprar
-    recentCount: 6
+    recentCount: 3
     styles:
       self:
         height: auto
