@@ -120,7 +120,6 @@ sections:
     subtitle: ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN LA ROBÓTICA!
     items:
       - type: FeaturedItem
-        title: Faster
         text: >
           Enfocado a estudiantes y profesionales que busquen llevar a la
           práctica los conocimientos teóricos sobre esta hermosa disciplina
