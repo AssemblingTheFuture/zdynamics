@@ -40,9 +40,11 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: Control de Sistemas Dinámicos
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          Muchos sistemas todavía se controlan con el clásico sistema PID, pero
+          es necesario simplificar esto a través de funciones robustas, basadas
+          en criterios de estabilidad más confiables que la asignación de polos
+          y ceros.
         featuredImage:
           type: ImageBlock
           url: /images/control-a962f211.webp
