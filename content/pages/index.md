@@ -197,7 +197,7 @@ sections:
           - type: Link
             label: Más Información
             altText: ''
-            url: 'https://bit.ly/'
+            url: 'https://bit.ly/RoboticZ'
             showIcon: false
             icon: arrowRight
             iconPosition: right
