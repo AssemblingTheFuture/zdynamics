@@ -11,43 +11,6 @@ featuredImage:
   type: ImageBlock
   url: /images/control.webp
   altText: Post Image
-bottomSections:
-  - elementId: ''
-    variant: variant-c
-    colors: colors-a
-    title: Comprar
-    recentCount: 3
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-56
-          - pr-4
-          - pl-4
-        justifyContent: center
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      actions:
-        justifyContent: center
-    type: RecentPostsSection
-    showExcerpt: true
-    actions:
-      - type: Link
-        label: Comprar
-        altText: ''
-        url: 'https://bit.ly/zControl'
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        elementId: ''
+bottomSections: []
 ---
 Aunque muchos sistemas todavía se controlan con la estructura clásica de PID, es necesario modernizar y simplificar esto a través de funciones de aprendizaje basadas en criterios de estabilidad más confiables que la asignación de polos y ceros.
