@@ -15,9 +15,10 @@ sections:
     items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          Las matemáticas son muy importantes para cualquier profesional, pero
+          es esencial saber resolver problemas rápidamente cumpliendo los
+          requisitos teóricos básicos
         featuredImage:
           type: ImageBlock
           url: /images/numericz-fa1401f1.webp
