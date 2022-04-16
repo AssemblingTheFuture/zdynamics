@@ -86,11 +86,7 @@ sections:
     text: >
       Muchos creen que un "curso" en línea es fácil de hacer, pero cuesta uno y
       la mitad del otro :(
-    actions:
-      - type: Button
-        label: Learn More
-        url: /
-        style: secondary
+    actions: []
     media:
       type: ImageBlock
       url: /images/roadmap.svg
