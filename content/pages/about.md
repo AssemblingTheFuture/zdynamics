@@ -55,7 +55,7 @@ sections:
     quote: >-
       ## Being part of this team has been incredible. We’ve fill each other’s
       gaps, and we go to lunch together :)
-    name: The Team
+    name: David Zenteno
     title: Someone from the team
     styles:
       self:
