@@ -21,7 +21,7 @@ sections:
           requisitos teóricos básicos
         featuredImage:
           type: ImageBlock
-          url: /images/numericz-fa1401f1.webp
+          url: /images/numericz-course.png
           altText: Métodos Numéricos con Aplicaciones de Ingeniería
         styles:
           self:
