@@ -142,7 +142,7 @@ sections:
           - type: Link
             label: Más Información
             altText: ''
-            url: /
+            url: 'https://bit.ly/NumericZ'
             showIcon: false
             icon: arrowRight
             iconPosition: right
