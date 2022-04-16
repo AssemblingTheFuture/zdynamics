@@ -60,7 +60,7 @@ sections:
         - type: EmailFormControl
           name: email
           label: Correo Electrónico
-          placeholder: example@
+          placeholder: master@nugget.com
           isRequired: 'true'
           width: 1/2
         - type: TextFormControl
