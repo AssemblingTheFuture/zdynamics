@@ -140,7 +140,7 @@ sections:
             altText: ''
             url: /
             showIcon: true
-            icon: arrowRight
+            icon: arrowRightCircle
             iconPosition: right
             style: secondary
             elementId: ''
