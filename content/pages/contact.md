@@ -13,9 +13,9 @@ sections:
     backgroundSize: full
     title: ¡Escríbenos!
     text: >
-      Puedes solicitar algún servicio especializado de acuerdo a las necesidades
-      de tus proyectos o solamente darnos tus comentarios, incluso si no están
-      directamente relacionados con este proyecto ;)
+      Puedes solicitar algún servicio especializado para tus proyectos o
+      solamente darnos tus comentarios, incluso si no están directamente
+      relacionados con este proyecto ;)
     form:
       type: FormBlock
       variant: variant-a
