@@ -91,6 +91,7 @@ sections:
       type: ImageBlock
       url: /images/roadmap.svg
       altText: Roadmap
+      caption: Roadmap
     styles:
       self:
         height: auto
