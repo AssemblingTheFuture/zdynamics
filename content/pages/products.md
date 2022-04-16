@@ -139,7 +139,7 @@ sections:
             label: Learn more
             altText: ''
             url: 'https://bit.ly/CertificationZ'
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
