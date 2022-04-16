@@ -60,9 +60,11 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: zRobot 0.1 Beta
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          El trabajo colaborativo hombre-máquina es parte de la nueva revolución
+          industrial. Sus principios y pautas se basan en la convivencia directa
+          del ser humano con los más modernos sistemas automáticos e
+          inteligentes.
         featuredImage:
           type: ImageBlock
           url: /images/roboticz.png
