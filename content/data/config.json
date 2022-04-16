@@ -84,7 +84,8 @@
                     "opacity": 100
                 }
             },
-            "type": "ImageBlock"
+            "type": "ImageBlock",
+            "url": "/images/bny-rgb-2.png"
         },
         "title": "Assembling the Future",
         "contacts": {
