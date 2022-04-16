@@ -85,7 +85,7 @@ sections:
             borderStyle: solid
             borderColor: border-dark
     actions: []
-    columns: 2
+    columns: 3
     enableHover: true
     styles:
       self:
