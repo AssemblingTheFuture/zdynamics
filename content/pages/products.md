@@ -75,7 +75,7 @@ sections:
           inteligentes.
         featuredImage:
           type: ImageBlock
-          url: /images/roboticz.png
+          url: /images/zrobot01.jpg
           altText: Item image
         styles:
           self:
