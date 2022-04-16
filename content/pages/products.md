@@ -53,7 +53,7 @@ sections:
         styles:
           self:
             textAlign: center
-            borderRadius: medium
+            borderRadius: none
             borderWidth: 0
             borderStyle: solid
             borderColor: border-dark
