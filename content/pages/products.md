@@ -22,7 +22,7 @@ sections:
           por Mexicanos!
         featuredImage:
           type: ImageBlock
-          url: /images/faster.svg
+          url: /images/droidtocat.png
           altText: Item image
         styles:
           self:
