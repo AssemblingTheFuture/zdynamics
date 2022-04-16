@@ -191,7 +191,7 @@ sections:
           enseñan en las aulas de Latinoamérica debido a su complejidad, ¡pero
           se puede aprender de forma muy sencilla!
         featuredImage:
-          url: /images/focused.svg
+          url: /images/robotics.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
