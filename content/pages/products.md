@@ -78,6 +78,7 @@ sections:
         styles:
           self:
             textAlign: center
+            borderRadius: medium
     actions: []
     columns: 1
     enableHover: true
