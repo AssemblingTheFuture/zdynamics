@@ -114,9 +114,9 @@ sections:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
         text: >
-          Las matemáticas son muy importantes en cualquier sector profesional,
-          pero es esencial saber cómo resolver problemas rápidamente cumpliendo
-          los requisitos teóricos básicos
+          Las matemáticas son muy importantes para cualquier profesional, pero
+          es esencial saber cómo resolver problemas rápidamente cumpliendo los
+          requisitos teóricos básicos
         featuredImage:
           url: /images/numerics.png
           altText: altText of the image
