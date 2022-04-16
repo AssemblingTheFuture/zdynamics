@@ -244,7 +244,7 @@ sections:
           - type: Button
             label: MÁS INFORMACIÓN
             altText: ''
-            url: /
+            url: 'https://bit.ly/'
             showIcon: false
             icon: arrowRightCircle
             iconPosition: right
