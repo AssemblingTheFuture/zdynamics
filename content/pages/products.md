@@ -54,6 +54,7 @@ sections:
             textAlign: center
             borderRadius: medium
             borderWidth: 1
+            borderStyle: solid
         actions:
           - type: Link
             label: Descargar
