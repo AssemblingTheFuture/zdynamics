@@ -136,7 +136,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: Más información
             altText: ''
             url: 'https://bit.ly/CertificationZ'
             showIcon: true
