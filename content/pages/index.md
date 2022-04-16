@@ -193,6 +193,15 @@ sections:
               - pb-6
               - pr-4
             borderRadius: medium
+        actions:
+          - type: Link
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         elementId: ''
         title: Programación Básica de Robots con Python
