@@ -158,15 +158,6 @@
             },
             {
                 "type": "Social",
-                "label": "Facebook",
-                "altText": "",
-                "url": "/",
-                "icon": "facebook",
-                "style": "link",
-                "elementId": ""
-            },
-            {
-                "type": "Social",
                 "altText": "YouTube",
                 "label": "YouTube",
                 "url": "https://www.youtube.com/channel/UCzqAQ-rrxYrqIRo5dAnkfQA",
