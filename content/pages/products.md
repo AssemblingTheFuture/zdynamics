@@ -51,7 +51,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: Descargar
             altText: ''
             url: /
             showIcon: false
