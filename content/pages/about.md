@@ -27,7 +27,7 @@ sections:
       caption: The Team
     styles:
       self:
-        height: auto
+        height: screen
         width: wide
         margin:
           - mt-0
