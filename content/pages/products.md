@@ -61,7 +61,7 @@ sections:
             altText: ''
             url: 'https://bit.ly/zControl'
             showIcon: true
-            icon: arrowRight
+            icon: cart
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
