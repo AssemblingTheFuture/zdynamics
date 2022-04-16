@@ -81,7 +81,7 @@ sections:
           - type: Link
             label: Comprar ($5 USD)
             altText: ''
-            url: /
+            url: 'https://bit.ly/RoboticZ'
             showIcon: false
             icon: arrowRight
             iconPosition: right
