@@ -176,6 +176,7 @@ sections:
           - pr-4
         justifyContent: center
         borderRadius: medium
+        borderWidth: 1
       title:
         textAlign: center
       subtitle:
