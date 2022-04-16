@@ -203,7 +203,7 @@ sections:
           ¡Y NO ES NECESARIO UTILIZAR EQUIPOS MUY CAROS!
         featuredImage:
           type: ImageBlock
-          url: /images/faster.svg
+          url: /images/python.png
           altText: Item image
         actions: []
         styles:
