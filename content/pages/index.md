@@ -455,8 +455,8 @@ sections:
       - type: FeaturedItem
         title: 5+ años de experiencia
         text: >
-          Comenzamos a emprender en 2017 sin saber hasta dónde llegaríamos, ¡y
-          desde entonces no nos hemos detenido!
+          Comenzamos en 2017 sin saber hasta dónde llegaríamos, ¡y desde
+          entonces no nos hemos detenido!
         featuredImage:
           type: ImageBlock
           url: /images/experience.png
