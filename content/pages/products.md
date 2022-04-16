@@ -72,7 +72,7 @@ sections:
           se puede aprender de forma muy sencilla!
         featuredImage:
           type: ImageBlock
-          url: /images/focused.svg
+          url: /images/roboticz.webp
           altText: Item image
         styles:
           self:
