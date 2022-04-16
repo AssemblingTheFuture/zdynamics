@@ -73,7 +73,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/roboticz.webp
-          altText: Item image
+          altText: Robótica
         styles:
           self:
             textAlign: center
