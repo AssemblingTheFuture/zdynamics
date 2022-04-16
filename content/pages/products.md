@@ -95,7 +95,7 @@ sections:
             style: primary
             elementId: ''
     actions: []
-    columns: 3
+    columns: 1
     enableHover: false
     styles:
       self:
