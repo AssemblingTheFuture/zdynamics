@@ -150,10 +150,10 @@ sections:
       - type: FeaturedItem
         title: Control de Sistemas Dinámicos
         text: >
-          Aunque muchos sistemas todavía se controlan con la estructura clásica
-          de PID, es necesario modernizar y simplificar esto a través de
-          funciones de aprendizaje basadas en criterios de estabilidad más
-          confiables que la asignación de polos y ceros.
+          Muchos sistemas todavía se controlan con la estructura clásica de PID,
+          es necesario modernizar y simplificar esto a través de funciones de
+          aprendizaje basadas en criterios de estabilidad más confiables que la
+          asignación de polos y ceros.
         featuredImage:
           url: /images/lorenz.png
           altText: altText of the image
