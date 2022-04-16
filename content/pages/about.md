@@ -18,10 +18,13 @@ sections:
       styles:
         self:
           textAlign: left
-    text: >-
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    text: >
+      Assembling the Future S.A.S. se fundó en 2017 por nosotros, un grupo de
+      amigos que buscan hacer algo más que programar robots: **queremos mejorar
+      las condiciones de trabajo a través de la robótica y ramas afines**.
+      Después de múltiples victorias y derrotas, logramos consolidar
+      [zDynamics](https://zdynamics.org/): una organización para la educación en
+      robótica avanzada
     actions:
       - type: Button
         label: Sign Up
