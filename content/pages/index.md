@@ -118,7 +118,7 @@ sections:
           pero es esencial saber cómo resolver problemas rápidamente cumpliendo
           los requisitos teóricos básicos
         featuredImage:
-          url: /images/faster.svg
+          url: /images/numerics.png
           altText: altText of the image
           caption: Caption of the image
           elementId: ''
