@@ -1,5 +1,5 @@
 ---
-title: Surround Yourself With the Right People
+title: Métodos Numéricos con Aplicaciones de Ingeniería
 layout: PostLayout
 date: '2021-07-01'
 excerpt: >-
