@@ -84,6 +84,15 @@ sections:
             borderWidth: 1
             borderStyle: solid
             borderColor: border-dark
+        actions:
+          - type: Link
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            elementId: ''
     actions: []
     columns: 3
     enableHover: true
