@@ -74,7 +74,7 @@ sections:
           label: Texto
           hideLabel: false
           placeholder: ¿En qué podemos ayudarte?
-          isRequired: false
+          isRequired: true
           width: full
       submitLabel: Send Message
     media: null
