@@ -10,7 +10,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-c
     elementId: ''
-    title: Aprende con nosotros que la robótica no es sinónimo de complejidad
+    title: Robótica Avanzada en Línea
     subtitle: Más allá de los libros y la aburrida teoría ;)
     items:
       - type: FeaturedItem
