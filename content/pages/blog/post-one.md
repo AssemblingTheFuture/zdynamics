@@ -43,12 +43,12 @@ bottomSections:
         justifyContent: center
     type: RecentPostsSection
 ---
-## ¿QUÉ ES UN ROBOT COLABORATIVO?
+#### ¿QUÉ ES UN ROBOT COLABORATIVO?
 
 Los Robots Colaborativos (también conocidos como Cobots) **se definen como máquinas complejas que trabajan mano a mano con los seres humanos**. En un proceso de trabajo compartido, apoyan y ayudan al operador humano. \[[1](#1)]
 
 Un robot colaborativo comparte un espacio de trabajo. Esto requiere un manipulador industrial, que pueda trabajar de forma segura y sin poner en peligro o dañar a los seres humanos. **Los robots diseñados para este propósito utilizan retroalimentación de fuerza / torque en sus articulaciones para detener su funcionamiento cuando ocurre una colisión** y, a menudo, están diseñados con bordes redondeados para minimizar los daños en caso de una posible colisión \[[2](#2)]
 
-## ¿QUÉ HACE ÚNICOS A LOS COBOTS?
+#### ¿QUÉ HACE ÚNICOS A LOS COBOTS?
 
 Se han identificado múltiples requisitos para considerar un sistema automatizado como un cobot. **El diálogo es un factor necesario para la comunicación efectiva y el intercambio de información entre humanos y máquinas**. Este proceso de comunicación, basado en múltiples modalidades (por ejemplo, detección visual y táctil), se puede utilizar para hacer preguntas y evaluar la calidad de las tareas.
