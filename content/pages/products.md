@@ -176,8 +176,8 @@ sections:
     elementId: ''
     title: Herramientas Digitales
     subtitle: >-
-      These are all excellent features that will provide exactly the things
-      you’re looking for.
+      Desarrollamos algunas librerías para que puedas utilizar en tus proyectos
+      de robótica
     items:
       - type: FeaturedItem
         title: Faster
