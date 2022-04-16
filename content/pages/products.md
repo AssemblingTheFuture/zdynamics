@@ -18,8 +18,8 @@ sections:
       - type: FeaturedItem
         title: zRobotics 0.2
         text: >
-          Un poderosa libreria para análisis de robots utilizando Python. ¡Hecha
-          por Mexicanos!
+          Un poderosa libreria para análisis de robots utilizando cuaterniones
+          duales y Python. ¡Hecha por Mexicanos!
         featuredImage:
           type: ImageBlock
           url: /images/droidtocat.png
