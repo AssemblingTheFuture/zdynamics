@@ -8,7 +8,7 @@ metaTags: []
 title: Productos
 sections:
   - type: FeaturedItemsSection
-    colors: colors-f
+    colors: colors-e
     elementId: ''
     title: Robótica no es teoría aburrida. Aprende sobre esta hermosa disciplina
     subtitle: Más allá de los libros y la aburrida teoría ;)
