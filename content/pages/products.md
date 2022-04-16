@@ -124,7 +124,16 @@ sections:
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
-        featuredImage: null
+        featuredImage:
+          type: ImageBlock
+          url: >-
+            https://assets.stackbit.com/components/images/default/default-image.png
+          altText: altText of the image
+          caption: Caption of the image
+          elementId: ''
+          styles:
+            self:
+              opacity: 100
         styles:
           self:
             textAlign: center
