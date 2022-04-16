@@ -45,7 +45,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/smarter.svg
+          url: /images/control-a962f211.webp
           altText: Item image
         styles:
           self:
