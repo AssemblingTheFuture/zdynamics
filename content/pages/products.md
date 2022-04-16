@@ -48,7 +48,7 @@ sections:
           realimentación de variables
         featuredImage:
           type: ImageBlock
-          url: /images/adaptive.png
+          url: /images/roboticz.png
           altText: Item image
         styles:
           self:
