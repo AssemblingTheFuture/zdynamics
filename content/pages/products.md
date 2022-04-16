@@ -35,7 +35,7 @@ sections:
             altText: ''
             url: 'https://bit.ly/NumericZ'
             showIcon: true
-            icon: arrowRight
+            icon: cart
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
