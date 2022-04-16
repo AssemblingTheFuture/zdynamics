@@ -114,7 +114,7 @@ sections:
       actions:
         justifyContent: center
   - type: FeaturedItemsSection
-    colors: colors-f
+    colors: colors-e
     elementId: ''
     title: Programación Básica de Robots con Python
     subtitle: ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN LA ROBÓTICA!
