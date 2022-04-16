@@ -58,7 +58,7 @@ sections:
           isRequired: true
           width: 1/2
         - type: EmailFormControl
-          name: Co
+          name: email
           label: Email
           placeholder: Your email
           isRequired: 'true'
