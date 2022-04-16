@@ -55,7 +55,7 @@ sections:
           name: Nombre
           label: Nombre
           placeholder: Tu nombre completo
-          isRequired: 'true'
+          isRequired: true
           width: 1/2
         - type: EmailFormControl
           name: email
