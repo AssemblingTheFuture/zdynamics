@@ -142,7 +142,7 @@ sections:
             showIcon: true
             icon: arrowRightCircle
             iconPosition: right
-            style: secondary
+            style: primary
             elementId: ''
     actions: []
     columns: 1
