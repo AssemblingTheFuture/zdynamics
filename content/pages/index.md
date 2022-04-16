@@ -209,7 +209,7 @@ sections:
           - type: Link
             label: Learn more
             altText: ''
-            url: /
+            url: 'https://'
             showIcon: false
             icon: arrowRight
             iconPosition: right
