@@ -40,7 +40,10 @@ sections:
     colors: colors-h
     backgroundSize: full
     title: ¡Escríbenos!
-    text: We look forward to hearing from you.
+    text: >
+      Si requieres algún servicio especializado o si quieres darnos tus
+      comentarios (incluso si no están directamente relacionados con este
+      proyecto). Ambos podemos ayudarnos mutuamente ;)
     form:
       type: FormBlock
       variant: variant-a
