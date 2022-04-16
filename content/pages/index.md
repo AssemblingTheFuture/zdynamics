@@ -170,7 +170,7 @@ sections:
           - type: Link
             label: Más Información
             altText: ''
-            url: /
+            url: 'https://bit.ly/zControl'
             showIcon: false
             icon: arrowRight
             iconPosition: right
