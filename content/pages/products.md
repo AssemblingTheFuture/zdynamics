@@ -80,7 +80,7 @@ sections:
         styles:
           self:
             textAlign: center
-            borderRadius: medium
+            borderRadius: none
             borderWidth: 1
             borderStyle: solid
             borderColor: border-dark
