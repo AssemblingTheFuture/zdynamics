@@ -1,7 +1,7 @@
 ---
 layout: PageLayout
 metaTitle: About
-metaDescription: null
+metaDescription: ¿Quién @$@% somos?
 addTitleSuffix: true
 socialImage: null
 metaTags: []
