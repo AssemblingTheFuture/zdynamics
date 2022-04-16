@@ -69,11 +69,6 @@ sections:
           placeholder: e.g. México
           isRequired: true
           width: full
-        - type: CheckboxFormControl
-          name: updates
-          label: Quiero que me contacten para negocios
-          isRequired: 'false'
-          width: full
       submitLabel: Send Message
     media: null
     styles:
