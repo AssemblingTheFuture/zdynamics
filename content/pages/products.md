@@ -38,9 +38,10 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: zController 0.1 Beta
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          Este controlador es útil para sistemas dinámicos complejos o con
+          incertidumbre, ya que su funcionamiento se basa solo en la
+          realimentación de variables
         featuredImage:
           type: ImageBlock
           url: /images/adaptive.png
