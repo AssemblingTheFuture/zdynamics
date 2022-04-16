@@ -12,5 +12,6 @@ featuredImage:
   url: /images/control.webp
   altText: Post Image
 bottomSections: []
+addTitleSuffix: true
 ---
 Aunque muchos sistemas todavía se controlan con la estructura clásica de PID, es necesario modernizar y simplificar esto a través de funciones de aprendizaje basadas en criterios de estabilidad más confiables que la asignación de polos y ceros.
