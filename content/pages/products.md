@@ -31,7 +31,7 @@ sections:
             borderStyle: solid
         actions:
           - type: Link
-            label: Learn more
+            label: Comprar
             altText: ''
             url: /
             showIcon: false
