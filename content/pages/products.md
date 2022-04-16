@@ -136,7 +136,7 @@ sections:
           self:
             textAlign: center
     actions: []
-    columns: 2
+    columns: 1
     enableHover: true
     styles:
       self:
