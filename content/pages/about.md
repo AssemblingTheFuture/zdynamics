@@ -56,7 +56,7 @@ sections:
       ## Being part of this team has been incredible. We’ve fill each other’s
       gaps, and we go to lunch together :)
     name: David Zenteno
-    title: Someone from the team
+    title: Fundador
     styles:
       self:
         height: auto
