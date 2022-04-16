@@ -3,7 +3,13 @@ title: El Robot
 layout: PostLayout
 date: '2019-12-19'
 author: content/data/team/dianne-ameter.json
-excerpt: 'Desde 2017 comenzamos a desarrollar un robot, ¡con características asombrosas!'
+excerpt: >-
+  uando se habla de robots colaborativos y trabajo humano, es necesario
+  enfatizar que el trabajo realizado por máquinas tiene la función de apoyar a
+  los trabajadores en actividades que son repetitivas, por lo que estas máquinas
+  no reemplazan el trabajo humano, solo complementan sus capacidades. Su trabajo
+  puede ser levantar objetos pesados, llegar a lugares lejanos para atender
+  procesos peligrosos, etc.
 featuredImage:
   type: ImageBlock
   url: /images/zrobot01.jpg
