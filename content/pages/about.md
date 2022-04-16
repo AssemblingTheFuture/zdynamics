@@ -3,7 +3,7 @@ layout: PageLayout
 metaTitle: About
 metaDescription: ¿Quién @$@% somos?
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/team.jpg
 metaTags: []
 title: ¿Quién @$@% somos?
 sections:
