@@ -43,7 +43,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/smarter.svg
+          url: /images/adaptive.png
           altText: Item image
         styles:
           self:
