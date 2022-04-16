@@ -71,7 +71,7 @@ sections:
           width: full
         - type: CheckboxFormControl
           name: updates
-          label: Envíenme actualizaciones de sus próximos proyectos
+          label: 'Contáctenme '
           isRequired: 'false'
           width: full
       submitLabel: Send Message
