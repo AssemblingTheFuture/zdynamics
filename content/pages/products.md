@@ -11,9 +11,7 @@ sections:
     colors: colors-h
     elementId: ''
     title: Robótica no es teoría aburrida. Aprende sobre esta hermosa disciplina
-    subtitle: >-
-      These are all excellent features that will provide exactly the things
-      you’re looking for.
+    subtitle: Más allá de los libros y la aburrida teoría ;)
     items:
       - type: FeaturedItem
         title: Faster
