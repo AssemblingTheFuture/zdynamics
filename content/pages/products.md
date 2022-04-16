@@ -8,7 +8,7 @@ metaTags: []
 title: Productos
 sections:
   - type: FeaturedItemsSection
-    colors: colors-c
+    colors: colors-d
     elementId: ''
     title: Aprende con nosotros que la robótica no es sinónimo de complejidad
     subtitle: Más allá de los libros y la aburrida teoría ;)
