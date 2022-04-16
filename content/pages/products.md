@@ -10,9 +10,6 @@ sections:
   - type: TextSection
     colors: colors-a
     title: Beyond theory!
-    subtitle: >-
-      Start adding sections by clicking the + button on the page or though the
-      sidebar.
     styles:
       self:
         height: auto
