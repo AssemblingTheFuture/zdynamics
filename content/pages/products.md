@@ -88,7 +88,7 @@ sections:
           - type: Button
             label: Learn more
             altText: ''
-            url: /blog/el-robot
+            url: /blog/zrobot
             showIcon: false
             icon: arrowRight
             iconPosition: right
