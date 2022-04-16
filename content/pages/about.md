@@ -121,7 +121,7 @@ sections:
     elementId: ''
     variant: variant-a
     colors: colors-c
-    title: About us
+    title: ¡Conócenos!
     subtitle: Featured people section example
     actions: []
     people:
