@@ -11,8 +11,9 @@ sections:
     colors: colors-a
     title: ¡Escríbenos!
     subtitle: >-
-      Start adding sections by clicking the + button on the page or though the
-      sidebar.
+      Si requieres algún servicio especializado o quieres darnos tus comentarios
+      (incluso si no están directamente relacionados con este proyecto),
+      leeremos tus opiniones para seguir mejorando
     styles:
       self:
         height: auto
