@@ -84,8 +84,8 @@ sections:
     title: 'Nuestro camino :D'
     subtitle: ''
     text: >
-      Muchos creen que un "curso" en línea es fácil de hacer, pero cuesta uno y
-      la mitad del otro :(
+      Muchos creen que emprender es fácil de hacer, pero cuesta uno y la mitad
+      del otro :(
     actions: []
     media:
       type: ImageBlock
