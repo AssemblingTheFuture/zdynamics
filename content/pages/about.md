@@ -52,9 +52,10 @@ sections:
         justifyContent: flex-start
   - type: QuoteSection
     colors: colors-h
-    quote: >-
-      ## Being part of this team has been incredible. We’ve fill each other’s
-      gaps, and we go to lunch together :)
+    quote: >+
+      ## No estamos seguros de hasta dónde llegaremos, pero sí tenemos claro que
+      debemos cambiar la robótica en México y Latinoamérica
+
     name: David Zenteno
     title: Fundador
     styles:
