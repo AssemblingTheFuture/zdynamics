@@ -114,64 +114,6 @@ sections:
       actions:
         justifyContent: center
   - type: FeaturedItemsSection
-    colors: colors-e
-    elementId: ''
-    title: Programación Básica de Robots con Python
-    subtitle: ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN LA ROBÓTICA!
-    items:
-      - type: FeaturedItem
-        text: >
-          Enfocado a estudiantes y profesionales que busquen llevar a la
-          práctica los conocimientos teóricos sobre esta hermosa disciplina
-        featuredImage:
-          type: ImageBlock
-          url: /images/robot.gif
-          altText: cobot-python
-          elementId: ''
-          styles:
-            self:
-              opacity: 100
-        styles:
-          self:
-            textAlign: center
-        actions:
-          - type: Button
-            label: MÁS INFORMACIÓN
-            altText: ''
-            url: 'https://bit.ly/CertificationZ'
-            showIcon: true
-            icon: arrowRightCircle
-            iconPosition: right
-            style: primary
-            elementId: ''
-    actions: []
-    columns: 1
-    enableHover: false
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
-        justifyContent: center
-        borderRadius: medium
-        borderWidth: 1
-        borderStyle: solid
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      actions:
-        justifyContent: center
-  - type: FeaturedItemsSection
     colors: colors-h
     elementId: ''
     title: Herramientas Digitales
@@ -233,6 +175,64 @@ sections:
           - pl-4
           - pr-4
         justifyContent: center
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+      actions:
+        justifyContent: center
+  - type: FeaturedItemsSection
+    colors: colors-e
+    elementId: ''
+    title: Programación Básica de Robots con Python
+    subtitle: ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN LA ROBÓTICA!
+    items:
+      - type: FeaturedItem
+        text: >
+          Enfocado a estudiantes y profesionales que busquen llevar a la
+          práctica los conocimientos teóricos sobre esta hermosa disciplina
+        featuredImage:
+          type: ImageBlock
+          url: /images/robot.gif
+          altText: cobot-python
+          elementId: ''
+          styles:
+            self:
+              opacity: 100
+        styles:
+          self:
+            textAlign: center
+        actions:
+          - type: Button
+            label: MÁS INFORMACIÓN
+            altText: ''
+            url: 'https://bit.ly/CertificationZ'
+            showIcon: true
+            icon: arrowRightCircle
+            iconPosition: right
+            style: primary
+            elementId: ''
+    actions: []
+    columns: 1
+    enableHover: false
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pl-4
+          - pr-4
+        justifyContent: center
+        borderRadius: medium
+        borderWidth: 1
+        borderStyle: solid
       title:
         textAlign: center
       subtitle:
