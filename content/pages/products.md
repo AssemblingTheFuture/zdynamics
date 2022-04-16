@@ -128,7 +128,6 @@ sections:
           type: ImageBlock
           url: /images/robot.gif
           altText: cobot-python
-          caption: Caption of the image
           elementId: ''
           styles:
             self:
