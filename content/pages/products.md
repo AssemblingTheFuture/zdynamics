@@ -30,6 +30,7 @@ sections:
             borderRadius: medium
             borderWidth: 1
             borderStyle: solid
+            borderColor: border-dark
         actions:
           - type: Link
             label: Descargar
