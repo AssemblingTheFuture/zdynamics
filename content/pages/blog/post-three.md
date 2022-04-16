@@ -3,8 +3,9 @@ title: Surround Yourself With the Right People
 layout: PostLayout
 date: '2021-07-01'
 excerpt: >-
-  Facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem semper.
-  Donec sed facilisis nibh.
+  Las matemáticas son muy importantes en cualquier sector profesional, pero es
+  esencial saber cómo resolver problemas rápidamente cumpliendo los requisitos
+  teóricos básicos
 featuredImage:
   type: ImageBlock
   url: /images/numericz.webp
