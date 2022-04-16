@@ -138,7 +138,7 @@ sections:
           - type: Button
             label: MÁS INFORMACIÓN
             altText: ''
-            url: /
+            url: 'https://bit.ly/'
             showIcon: true
             icon: arrowRightCircle
             iconPosition: right
