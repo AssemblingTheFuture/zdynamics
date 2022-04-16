@@ -70,7 +70,8 @@
                     "opacity": 100
                 }
             },
-            "type": "ImageBlock"
+            "type": "ImageBlock",
+            "url": "/images/ZD RGB.png"
         }
     },
     "footer": {
