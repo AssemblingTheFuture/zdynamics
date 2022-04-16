@@ -122,7 +122,7 @@ sections:
     variant: variant-a
     colors: colors-c
     title: ¡Conócenos!
-    subtitle: 'Somos raros pero guapxs :D'
+    subtitle: 'No hay ejércitos de un solo hombre :D'
     actions: []
     people:
       - content/data/team/desmond-eagle.json
