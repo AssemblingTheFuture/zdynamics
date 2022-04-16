@@ -22,7 +22,7 @@ sections:
     actions: []
     media:
       type: ImageBlock
-      url: /images/hero-3.jpg
+      url: /images/team.jpg
       altText: The Team
       caption: The Team
     styles:
