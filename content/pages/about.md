@@ -54,7 +54,7 @@ sections:
     colors: colors-h
     quote: >+
       ### *No estamos seguros de lo que hacemos ni hasta dónde llegaremos, pero
-      sí tenemos claro que algo debemos cambiar la robótica en México y
+      sí tenemos claro que algo cambiaremos en la robótica en México y
       Latinoamérica*
 
     name: David Zenteno
