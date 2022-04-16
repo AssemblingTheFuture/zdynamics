@@ -209,7 +209,7 @@ sections:
           - type: Link
             label: Learn more
             altText: ''
-            url: 'https://'
+            url: 'https://bit.ly/CertificationZ'
             showIcon: false
             icon: arrowRight
             iconPosition: right
