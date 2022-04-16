@@ -8,7 +8,7 @@ excerpt: >-
   Donec sed facilisis nibh.
 featuredImage:
   type: ImageBlock
-  url: /images/post-3.jpg
+  url: /images/numericz.webp
   altText: Post Image
 bottomSections:
   - elementId: ''
@@ -20,8 +20,16 @@ bottomSections:
       self:
         height: auto
         width: wide
-        margin: ['mt-0', 'mb-0', 'ml-0', 'mr-0']
-        padding: ['pt-12', 'pb-56', 'pr-4', 'pl-4']
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-56
+          - pr-4
+          - pl-4
         justifyContent: center
       title:
         textAlign: center
