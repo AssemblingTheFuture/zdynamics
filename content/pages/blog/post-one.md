@@ -1,7 +1,7 @@
 ---
 title: El Robot
 layout: PostLayout
-date: '2021-06-28'
+date: '2021-06-19'
 author: content/data/team/dianne-ameter.json
 excerpt: >-
   Praesent dapibus justo non efficitur efficitur. Nullam viverra justo arcu,
