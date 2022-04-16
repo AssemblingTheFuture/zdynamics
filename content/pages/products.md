@@ -146,7 +146,7 @@ sections:
             elementId: ''
     actions: []
     columns: 1
-    enableHover: true
+    enableHover: false
     styles:
       self:
         height: auto
