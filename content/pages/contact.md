@@ -73,7 +73,7 @@ sections:
           name: description
           label: Texto
           hideLabel: false
-          placeholder: Escrí
+          placeholder: ¿En qué podemos ayudarte?
           isRequired: false
           width: full
       submitLabel: Send Message
