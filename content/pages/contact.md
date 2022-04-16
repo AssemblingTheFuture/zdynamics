@@ -1,7 +1,7 @@
 ---
 layout: PageLayout
 metaTitle: Contáctanos
-metaDescription: null
+metaDescription: ;)
 addTitleSuffix: true
 socialImage: null
 metaTags: []
