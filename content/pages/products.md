@@ -54,7 +54,7 @@ sections:
           self:
             textAlign: center
             borderRadius: medium
-            borderWidth: 1
+            borderWidth: 0
             borderStyle: solid
             borderColor: border-dark
         actions:
