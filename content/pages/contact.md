@@ -71,7 +71,7 @@ sections:
           width: full
         - type: CheckboxFormControl
           name: updates
-          label: 'Contáctenme  o envíenme '
+          label: Quiero que me contacten para negocios
           isRequired: 'false'
           width: full
       submitLabel: Send Message
