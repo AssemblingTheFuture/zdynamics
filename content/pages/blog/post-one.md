@@ -4,8 +4,8 @@ layout: PostLayout
 date: '2019-12-19'
 author: content/data/team/dianne-ameter.json
 excerpt: >-
-  DESDE 2017 COMENZAMOS A DESARROLLAR UN NUEVO ROBOT, ¡CON CARACTERÍSTICAS
-  ASOMBROSAS!
+  Desde 2017 comenzamos a desarrollar un robot, DESDE 2017 COMENZAMOS A
+  DESARROLLAR UN NUEVO ROBOT, ¡CON CARACTERÍSTICAS ASOMBROSAS!
 featuredImage:
   type: ImageBlock
   url: /images/post-1.jpg
