@@ -199,7 +199,7 @@ sections:
             altText: ''
             url: 'https://bit.ly/RoboticZ'
             showIcon: true
-            icon: arrowRight
+            icon: cart
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
