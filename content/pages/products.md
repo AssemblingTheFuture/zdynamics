@@ -127,7 +127,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/robot.gif
-          altText: altText of the image
+          altText: cobot-python
           caption: Caption of the image
           elementId: ''
           styles:
