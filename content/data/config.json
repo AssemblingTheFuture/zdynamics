@@ -6,7 +6,7 @@
         "primaryColors": "colors-a",
         "secondaryColors": "colors-f",
         "title": "zDynamics | The Future is ROBOTICS",
-        "isTitleVisible": false,
+        "isTitleVisible": true,
         "primaryLinks": [
             {
                 "type": "Link",
