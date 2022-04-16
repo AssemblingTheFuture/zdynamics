@@ -140,7 +140,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Más Información
+            label: Comprar ($5 USD)
             altText: ''
             url: 'https://bit.ly/NumericZ'
             showIcon: true
@@ -177,7 +177,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Más Información
+            label: Comprar ($5 USD)
             altText: ''
             url: 'https://bit.ly/zControl'
             showIcon: true
@@ -213,7 +213,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Más Información
+            label: Comprar ($5 USD)
             altText: ''
             url: 'https://bit.ly/RoboticZ'
             showIcon: true
@@ -233,13 +233,14 @@ sections:
           url: /images/python.png
           altText: Item image
         actions:
-          - type: Link
-            label: Más Información
+          - type: Button
+            label: MÁS INFORMACIÓN
             altText: ''
             url: 'https://bit.ly/CertificationZ'
             showIcon: true
-            icon: cart
+            icon: arrowRightCircle
             iconPosition: right
+            style: primary
             elementId: ''
         styles:
           self:
