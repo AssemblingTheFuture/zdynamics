@@ -33,7 +33,7 @@ sections:
           - type: Link
             label: Comprar
             altText: ''
-            url: /
+            url: 'https://bit.ly/'
             showIcon: false
             icon: arrowRight
             iconPosition: right
