@@ -244,7 +244,7 @@ sections:
           - type: Button
             label: MÁS INFORMACIÓN
             altText: ''
-            url: 'https://bit.ly/'
+            url: 'https://bit.ly/CertificationZ'
             showIcon: false
             icon: arrowRightCircle
             iconPosition: right
