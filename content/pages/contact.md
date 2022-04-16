@@ -9,7 +9,7 @@ title: Contacto
 sections:
   - type: TextSection
     colors: colors-a
-    title: This in an empty page
+    title: ¡Escríbenos!
     subtitle: >-
       Start adding sections by clicking the + button on the page or though the
       sidebar.
