@@ -11,9 +11,9 @@ sections:
     colors: colors-a
     title: ¡Escríbenos!
     subtitle: >-
-      Si requieres algún servicio especializado o quieres darnos tus comentarios
-      (incluso si no están directamente relacionados con este proyecto),
-      leeremos tus opiniones para seguir mejorando
+      Si requieres algún servicio especializado o si quieres darnos tus
+      comentarios (incluso si no están directamente relacionados con este
+      proyecto). Ambos podemos ayudarnos mutuamente ;)
     styles:
       self:
         height: auto
