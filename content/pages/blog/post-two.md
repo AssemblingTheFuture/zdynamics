@@ -3,8 +3,10 @@ title: Control de Sistemas Dinámicos
 layout: PostLayout
 date: '2021-07-01'
 excerpt: >-
-  Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem
-  semper. Donec sed facilisis nibh.
+  Aunque muchos sistemas todavía se controlan con la estructura clásica de PID,
+  es necesario modernizar y simplificar esto a través de funciones de
+  aprendizaje basadas en criterios de estabilidad más confiables que la
+  asignación de polos y ceros.
 featuredImage:
   type: ImageBlock
   url: /images/control.webp
