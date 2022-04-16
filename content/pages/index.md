@@ -153,7 +153,7 @@ sections:
           Muchos sistemas todavía se controlan con el clásico sistema PID, pero
           es necesario simplificar esto a través de funciones robustas, basadas
           en criterios de estabilidad más confiables que la asignación de polos
-          y ceros o similares.
+          y ceros.
         featuredImage:
           url: /images/lorenz.png
           altText: altText of the image
