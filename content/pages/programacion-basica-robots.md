@@ -79,7 +79,7 @@ sections:
         subtitle: Una persona (IVA Incluido)
         actions:
           - type: Button
-            label: Learn more
+            label: REGÍSTRATE AHORA
             altText: ''
             url: /
             showIcon: false
