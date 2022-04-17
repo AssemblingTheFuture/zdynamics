@@ -151,8 +151,8 @@ sections:
     items:
       - type: FeaturedItem
         title: Faster
-        text: >
-          <iframe width="560" height="315"
+        text: >+
+          <iframe width="256" height="256"
           src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture"
@@ -162,14 +162,15 @@ sections:
           #### USO DE COBOT EN TU HOGAR
 
 
-          - Envío hasta tu domicilio**. Se envía un cobot que puedes instalar en
-          tu hogar
+          *   Envío hasta tu domicilio\*\*. Se envía un cobot que puedes
+          instalar en tu hogar
 
-          - Catorce días de uso del robot, ¡desde la comodidad de tu hogar!
+          *   Catorce días de uso del robot, ¡desde la comodidad de tu hogar!
 
-          - Recolección catorce días después de la entrega
+          *   Recolección catorce días después de la entrega
 
-          - Asesoría personalizada ilimitada SIN COSTO
+          *   Asesoría personalizada ilimitada SIN COSTO
+
         featuredImage:
           type: ImageBlock
           url: /images/faster.svg
