@@ -92,6 +92,9 @@ sections:
         text: >
           **Se envía UN robot para ser usado por DOS personas durante catorce
           días**
+
+
+          * Pagos flexibles y seguros a través de cripto activos
         featuredImage:
           type: ImageBlock
           url: /images/two-persons.png
