@@ -187,6 +187,7 @@ sections:
             borderRadius: medium
             borderColor: border-primary
             borderWidth: 1
+            borderStyle: solid
       - type: FeaturedItem
         text: >
           <p align="center">
