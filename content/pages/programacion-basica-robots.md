@@ -457,8 +457,9 @@ sections:
       - question: ¿En qué consiste este taller?
         answer: >
           Aquí aprenderás toda la teoría detrás del funcionamiento de un robot,
-          desde el funcionamiento de un algoritmo numérico hasta su uso en
-          robots REALES utilizando Python
+          desde los fenómenos físicos hasta su interpretación matemática e
+          implementación en algoritmos numéricos, utilizando un robot REALES y
+          Python como lenguaje de programación
       - question: ¿En qué se diferencia con otros talleres de robótica?
         answer: >+
           Lo que hacemos es explicarte el razonamiento de los fenómenos físicos
