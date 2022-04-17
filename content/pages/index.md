@@ -9,7 +9,7 @@ sections:
        
     backgroundImage:
       url: /images/intro.gif
-      altText: Product Marketing Manager Quote
+      altText: zDynamics
       styles:
         self:
           opacity: 70
