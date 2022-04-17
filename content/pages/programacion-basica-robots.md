@@ -443,7 +443,7 @@ sections:
     title: Preguntas Frecuentes
     actions: []
     items:
-      - question: How is this different from what we have today?
+      - question: ¿En qué consiste este taller?
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation, At the office, working together is often a
