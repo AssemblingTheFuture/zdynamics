@@ -379,7 +379,7 @@ sections:
           defaultValue: Please choose...
           options:
             - Sí
-            - San Francisco
+            - 'No'
           isRequired: false
           width: full
       submitLabel: Send Message
