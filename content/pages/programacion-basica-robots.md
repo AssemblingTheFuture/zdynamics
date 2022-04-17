@@ -440,7 +440,7 @@ sections:
   - type: FaqSection
     colors: colors-f
     elementId: ''
-    title: Need Answers?
+    title: Preguntas Frecuentes
     subtitle: We are here to help
     actions:
       - type: Link
