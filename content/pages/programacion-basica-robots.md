@@ -470,7 +470,7 @@ sections:
           LinkedIn. Mientras la terminamos, te enviaremos una copia digital
           firmada para que puedas usarla como referencia ;)
       - type: FaqItem
-        question: How is this different from what we have today?
+        question: ¿Puedo hacer ?
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation. At the office, working together is often a
