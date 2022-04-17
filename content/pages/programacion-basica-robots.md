@@ -12,7 +12,9 @@ sections:
     colors: colors-c
     quote: |
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
-    title: Product Marketing Manager at Acme
+    title: >-
+      Enfocado a Estudiantes y profesionales que busquen llevar a la práctica
+      los conocimientos teóricos sobre esta hermosa disciplina
     backgroundImage:
       url: /images/robot.gif
       altText: Product Marketing Manager Quote
