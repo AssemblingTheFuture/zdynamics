@@ -52,3 +52,15 @@ Un robot colaborativo comparte un espacio de trabajo. Esto requiere un manipulad
 #### ¿QUÉ HACE ÚNICOS A LOS COBOTS?
 
 Se han identificado múltiples requisitos para considerar un sistema automatizado como un cobot. **El diálogo es un factor necesario para la comunicación efectiva y el intercambio de información entre humanos y máquinas**. Este proceso de comunicación, basado en múltiples modalidades (por ejemplo, detección visual y táctil), se puede utilizar para hacer preguntas y evaluar la calidad de las tareas.
+
+Con el tiempo, a medida que los robots dejen de ser herramientas pasivas para los humanos y se conviertan en colaboradores más sofisticados y automatizados, **la relación hombre-máquina cambiará para comenzar a parecerse a la interacción entre dos individuos**. Para permitir esto, se deben considerar dos aspectos técnicos:
+
+- Entradas o sensores que permiten al robot reconocer y adaptarse a la presencia de entidades humanas. El uso de sensores de fuerza solo en el manipulador es inadecuado, **se necesitan otros tipos como sensores de proximidad y cámaras capaces de controlar el sistema en función del espacio de trabajo**
+- Una interfaz hombre-máquina que permite una fácil comunicación entre las dos entidades. Se pueden utilizar medios, como sonido, instrucciones visuales, control por voz o una interfaz gráfica de usuario intuitiva.
+
+#### COBOTS EN EL MERCADO MUNDIAL
+
+Empresas de todo el mundo han comenzado a desarrollar robots que pueden trabajar de la mano del hombre, entre ellos ABB Robotics con su robot [IRB 14000 – YuMi®](https://new.abb.com/products/robotics/es/robots-colaborativos/yumi), lanzado en abril de 2015. Esta empresa se inclina hacia la automatización colaborativa, que depende de la programación de rutinas y control de sistemas robóticos, así como la inclusión de estos en el trabajo manual de los operadores en la planta.
+
+![ABB IRB 14000 – YuMi®](https://www07.abb.com/images/librariesprovider89/default-album/robots/yumi/yumi-separator-1183px.jpg?sfvrsn=1)
+
