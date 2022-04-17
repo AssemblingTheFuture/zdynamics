@@ -4,7 +4,7 @@ layout: PageLayout
 sections:
   - type: QuoteSection
     elementId: ''
-    colors: colors-c
+    colors: colors-e
     quote: |2
        
     backgroundImage:
