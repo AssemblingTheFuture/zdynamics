@@ -186,7 +186,7 @@ sections:
               - pr-0
             borderRadius: none
             borderColor: border-primary
-            borderWidth: 1
+            borderWidth: 0
             borderStyle: solid
       - type: FeaturedItem
         text: >
