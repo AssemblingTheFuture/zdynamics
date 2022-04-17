@@ -402,7 +402,7 @@ sections:
           label: Dirección
           hideLabel: false
           placeholder: Tu dirección se solicita para organizar la entrega del equipo
-          isRequired: false
+          isRequired: true
           width: full
       submitLabel: Send Message
     media: null
