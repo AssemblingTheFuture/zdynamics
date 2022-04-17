@@ -118,7 +118,7 @@ sections:
       - type: Link
         label: ¿Indeciso? Revisa nuestras Preguntas Frecuentes
         altText: ''
-        url: /
+        url: '#faq'
         showIcon: false
         icon: arrowRight
         iconPosition: right
