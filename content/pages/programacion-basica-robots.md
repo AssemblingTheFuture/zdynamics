@@ -49,7 +49,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-f
     elementId: ''
-    title: Key value propositions
+    title: Próxima fecha
     subtitle: ''
     items:
       - type: FeaturedItem
