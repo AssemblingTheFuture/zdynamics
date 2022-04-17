@@ -152,7 +152,7 @@ sections:
     title: LO QUE INCLUYE
     items:
       - type: FeaturedItem
-        text: >
+        text: >+
           <p align="center">
 
           <iframe src="https://www.youtube.com/embed/qQnEiMWigpg"
@@ -167,8 +167,8 @@ sections:
 
           <div style="text-align: left">
 
-          *  [ Envío hasta tu domicilio\*\*](#**). Se envía un cobot que puedes
-          instalar en tu hogar
+          *  **[Envío hasta tu domicilio\*\*](#**)**. Se envía un cobot que
+          puedes instalar en tu hogar
 
           *   Catorce días de uso del robot, ¡desde la comodidad de tu hogar!
 
@@ -177,6 +177,7 @@ sections:
           *   Asesoría personalizada ilimitada **SIN COSTO**
 
           </div>
+
         styles:
           self:
             textAlign: center
