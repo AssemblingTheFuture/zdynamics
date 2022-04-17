@@ -53,12 +53,6 @@ sections:
     elementId: ''
     title: PRÓXIMA FECHA
     subtitle: Lunes 2 de Mayo de 2022
-    text: >
-          **Se envía UN robot para ser usado por UNA persona durante catorce
-          días**
-
-
-          \*Pagos flexibles y seguros a través de cripto activos
     items:
       - type: FeaturedItem
         title: $100 USD*
