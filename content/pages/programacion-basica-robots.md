@@ -53,7 +53,7 @@ sections:
     elementId: ''
     title: PRÓXIMA FECHA
     subtitle: Lunes 2 de Mayo de 2022
-    ext: >
+    text: >
           **Se envía UN robot para ser usado por UNA persona durante catorce
           días**
 
