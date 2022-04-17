@@ -88,7 +88,7 @@ sections:
             style: primary
             elementId: ''
       - type: FeaturedItem
-        title: Smarter
+        title: $75 USD
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
