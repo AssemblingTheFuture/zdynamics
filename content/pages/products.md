@@ -1,9 +1,9 @@
 ---
 layout: PageLayout
-metaTitle: null
-metaDescription: null
+metaTitle: Productos
+metaDescription: ¡Más allá de la aburrida teoría!
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/robot.gif
 metaTags: []
 title: Productos
 sections:
