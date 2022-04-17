@@ -123,7 +123,7 @@ sections:
         label: '*Pagos flexibles y seguros a través de cripto activos'
         altText: ''
         url: /
-        showIcon: false
+        showIcon: true
         icon: arrowRight
         iconPosition: right
         elementId: ''
