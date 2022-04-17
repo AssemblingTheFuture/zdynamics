@@ -222,7 +222,6 @@ sections:
               - pb-10
               - pr-10
       - type: FeaturedItem
-        title: Focused
         text: >
           <p align="center">
 
