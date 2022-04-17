@@ -358,12 +358,6 @@ sections:
           placeholder: (+xx) xx xx xx xx xx
           isRequired: 'false'
           width: full
-        - type: TextFormControl
-          name: Domicilio
-          label: Domicilio
-          hideLabel: false
-          isRequired: true
-          width: full
         - type: SelectFormControl
           name: Contrato
           label: >-
