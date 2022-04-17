@@ -408,7 +408,10 @@ sections:
           width: full
         - type: CheckboxFormControl
           name: updates
-          label: Sign me up to receive updates
+          label: >-
+            Autorizo que utilicen los datos proporcionados para comenzar mi
+            proceso de inscripción y recibir mi enlace de pago. Puedo cancelarlo
+            antes de hacer el pago enviando un correo a contact@zdynamics.org
           isRequired: false
           width: full
       submitLabel: Send Message
