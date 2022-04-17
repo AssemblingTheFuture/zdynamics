@@ -116,7 +116,7 @@ sections:
             showIcon: true
             icon: cart
             iconPosition: right
-            style: secondary
+            style: primary
             elementId: ''
     actions: []
     columns: 2
