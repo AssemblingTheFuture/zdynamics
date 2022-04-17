@@ -330,11 +330,7 @@ sections:
     text: |
       <div style="text-align: center">
 
-      <a id="formulario"> 
-
       ### FORMULARIO DE INSCRIPCIÓN
-
-      </a> 
 
       </div>
     form:
