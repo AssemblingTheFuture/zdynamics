@@ -79,3 +79,4 @@ Los cobots antes mencionados no utilizan celdas o jaulas especiales que aumenten
 A pesar de que las grandes empresas están desarrollando y mejorando sus productos, decidimos conceptualizar, diseñar y fabricar un sistema asequible que podría usarse en entornos del mundo real debido a su flexibilidad, simplicidad, bajo consumo de energía y bajo costo.
 
 ![zRobot 0.1 Beta](/../../public/images/zrobot.gif)
+
