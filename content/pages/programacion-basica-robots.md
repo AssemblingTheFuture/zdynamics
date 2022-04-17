@@ -354,7 +354,7 @@ sections:
           width: 1/2
         - type: TextFormControl
           name: Teléfono
-          label: Home address
+          label: Teléfono
           placeholder: Your home address
           isRequired: 'false'
           width: full
