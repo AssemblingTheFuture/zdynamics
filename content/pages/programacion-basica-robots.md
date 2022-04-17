@@ -399,7 +399,7 @@ sections:
           width: full
         - type: TextareaFormControl
           name: Dirección
-          label: Description
+          label: Dirección
           hideLabel: false
           placeholder: Tu dirección se solicita para organizar la entrega del equipo
           isRequired: false
