@@ -150,7 +150,6 @@ sections:
     title: LO QUE INCLUYE
     items:
       - type: FeaturedItem
-        title: Faster
         text: >+
           <iframe width="256" height="256"
           src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
