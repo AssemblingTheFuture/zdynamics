@@ -449,11 +449,15 @@ sections:
           desde el funcionamiento de un algoritmo numérico hasta su uso en
           robots REALES utilizando Python
       - question: ¿En qué se diferencia con otros talleres de robótica?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
+        answer: >
+          Lo que hacemos es explicarte el razonamiento de los fenómenos físicos
+          involucrados en la robótica, luego te enseñamos el razonamiento detrás
+          de sus descripciones matemáticas, posteriormente desarrollas
+          algoritmos numéricos para simular el comportamiento del sistema y al
+          final llevas todo a un robot **REAL**
+
+
+          ****![](/images/flow.png)
       - question: How is this different from what we have today?
         answer: >-
           At the office, working together is often a distraction, on remote, it
