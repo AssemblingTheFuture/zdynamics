@@ -347,7 +347,7 @@ sections:
           width: 1/2
           hideLabel: false
         - type: EmailFormControl
-          name: email
+          name: Correo Electrónico
           label: Email
           placeholder: Your email
           isRequired: 'true'
