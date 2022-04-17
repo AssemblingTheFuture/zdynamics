@@ -449,7 +449,7 @@ sections:
           desde el funcionamiento de un algoritmo numérico hasta su uso en
           robots REALES utilizando Python
       - question: ¿En qué se diferencia con otros talleres de robótica?
-        answer: >+
+        answer: >
           Lo que hacemos es explicarte el razonamiento de los fenómenos físicos
           involucrados en la robótica, luego te enseñamos el razonamiento detrás
           de sus descripciones matemáticas, posteriormente desarrollas
@@ -457,12 +457,11 @@ sections:
           final llevas todo a un robot **REAL**
 
 
-          <div style="text-align: center">
+          <p align="center">
 
           ![](/images/flow.svg)
 
-          </div>
-
+          </p>
       - question: How is this different from what we have today?
         answer: >-
           At the office, working together is often a distraction, on remote, it
