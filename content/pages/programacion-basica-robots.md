@@ -294,7 +294,7 @@ sections:
       APRENDAMOS COSAS BONITAS JUNTOS
       </div>
     backgroundImage:
-      url: /images/bg.jpg
+      url: /images/learn.jpg
       styles:
         self:
           opacity: 70
