@@ -89,9 +89,8 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: $75 USD
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: |
+          \*\*Dos personas (IVA incluido)\*\*
         featuredImage:
           type: ImageBlock
           url: /images/two-persons.png
