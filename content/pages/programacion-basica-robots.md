@@ -289,9 +289,10 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-c
-    quote: |-
-      “It’s great to see someone taking action while still maintaining a
-      sustainable fish supply to home cooks.”
+    quote: |
+      <div style="text-align: center">
+      APRENDAMOS COSAS BONITAS JUNTOS
+      </div>
     backgroundImage:
       url: /images/bg.jpg
       altText: Product Marketing Manager Quote
