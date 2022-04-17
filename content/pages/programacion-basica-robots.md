@@ -488,7 +488,7 @@ sections:
           Una vez con el acceso al contenido digital, **no se hacen
           devoluciones**
       - type: FaqItem
-        question: ¿Puedo pagar con tarjeta?
+        question: ¿Puedo pagar con tarjeta o transferencia?
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation. At the office, working together is often a
