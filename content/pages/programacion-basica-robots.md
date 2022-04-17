@@ -389,7 +389,7 @@ sections:
           width: full
         - type: SelectFormControl
           name: city
-          label: City
+          label: Tipo de pago
           hideLabel: false
           defaultValue: Please choose...
           options:
