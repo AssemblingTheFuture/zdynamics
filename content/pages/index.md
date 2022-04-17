@@ -18,7 +18,7 @@ sections:
         elementId: ''
     media:
       type: ImageBlock
-      url: /images/icon.jpg
+      url: /images/ZD RGB.jpg
       altText: Image alt text
       caption: Image caption
     styles:
