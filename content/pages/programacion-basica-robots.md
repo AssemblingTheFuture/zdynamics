@@ -49,7 +49,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-f
     elementId: ''
-    title: Próxima fecha
+    title: PRÓXIMA FECHA
     subtitle: ''
     items:
       - type: FeaturedItem
