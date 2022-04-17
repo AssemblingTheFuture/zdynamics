@@ -394,7 +394,7 @@ sections:
           defaultValue: Please choose...
           options:
             - Pago en una sola exhibición
-            - San Francisco
+            - Pago diferido
           isRequired: false
           width: full
       submitLabel: Send Message
