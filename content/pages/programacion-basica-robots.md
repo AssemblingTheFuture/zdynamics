@@ -444,11 +444,10 @@ sections:
     actions: []
     items:
       - question: ¿En qué consiste este taller?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
+        answer: >
+          Aquí aprenderás toda la teoría detrás del funcionamiento de un robot,
+          desde el funcionamiento de un algoritmo numérico hasta su uso en
+          robots REALES utilizando Python
       - question: How is this different from what we have today?
         answer: >-
           At the office, working together is often a distraction, on remote, it
