@@ -178,18 +178,25 @@ sections:
           self:
             textAlign: center
       - type: FeaturedItem
-        text: >-
+        text: >
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/x6GeCr5_Jnc" title="YouTube video
+          player" frameborder="0" allow="accelerometer; autoplay;
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+
           #### APRENDIZAJE VIRTUAL
 
 
-          - Puedes acceder a nuestro contenido en línea en cualquier momento
+          *   Puedes acceder a nuestro contenido en línea en cualquier momento
           durante la semana de préstamo del robot o agendar un entrenamiento
-          personalizado*** sin costo adicional
+          personalizado\*\*\* sin costo adicional
 
-          - Temario:
-            - Implementación de algoritmos de Cinemática Directa
-            - Cálculo de Cinemática Inversa en tiempo real
-            - Programación de Rutinas Básicas y Planeación de Trayectorias
+          *   Temario:
+              *   Implementación de algoritmos de Cinemática Directa
+              *   Cálculo de Cinemática Inversa en tiempo real
+              *   Programación de Rutinas Básicas y Planeación de Trayectorias
         featuredImage:
           type: ImageBlock
           altText: Item image
