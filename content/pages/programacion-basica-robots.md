@@ -150,8 +150,8 @@ sections:
     title: LO QUE INCLUYE
     items:
       - type: FeaturedItem
-        text: >
-          <iframe width="280" height="280"
+        text: >+
+          <iframe width="350" height="350"
           src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture"
@@ -173,6 +173,7 @@ sections:
           *   Asesoría personalizada ilimitada SIN COSTO
 
           </div>
+
         styles:
           self:
             textAlign: center
