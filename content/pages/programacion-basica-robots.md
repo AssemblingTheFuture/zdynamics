@@ -53,6 +53,7 @@ sections:
     elementId: ''
     title: PRÓXIMA FECHA
     subtitle: Lunes 2 de Mayo de 2022
+    text: A
     items:
       - type: FeaturedItem
         title: $100 USD*
