@@ -17,7 +17,7 @@ sections:
       los conocimientos teóricos sobre esta hermosa disciplina
     backgroundImage:
       url: /images/robot.gif
-      altText: Product Marketing Manager Quote
+      altText: Cobot
       styles:
         self:
           opacity: 70
