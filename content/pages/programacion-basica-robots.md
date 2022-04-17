@@ -324,7 +324,7 @@ sections:
         fontStyle: normal
         textAlign: left
   - type: ContactSection
-    elementId: ''
+    elementId: '#formulario'
     colors: colors-h
     backgroundSize: full
     text: |
