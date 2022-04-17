@@ -189,9 +189,8 @@ sections:
           <p align="center">
 
           <iframe src="https://www.youtube.com/embed/x6GeCr5_Jnc"
-          title="Programación Básica de Robots con Python" allow="accelerometer;
-          autoplay; clipboard-write; encrypted-media; gyroscope;
-          picture-in-picture" allowfullscreen></iframe>
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
 
           </p>
 
