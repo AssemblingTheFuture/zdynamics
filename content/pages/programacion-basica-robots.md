@@ -48,6 +48,9 @@ sections:
         fontWeight: 400
         fontStyle: normal
         textAlign: left
+    name: >-
+      Dirigido a estudiantes y profesionales que busquen llevar a la práctica
+      conocimientos avanzados sobre esta hermosa disciplina
   - type: FeaturedItemsSection
     colors: colors-e
     elementId: ''
