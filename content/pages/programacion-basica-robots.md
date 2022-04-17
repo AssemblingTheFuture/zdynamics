@@ -472,10 +472,16 @@ sections:
       - type: FaqItem
         question: ¿Puedo recibir el taller gratis?
         answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation. At the office, working together is often a
-          distraction, on remote, it could be motivation. At the office, working
-          together is often a distraction, on remote, it could be motivation.
+          **¡Por supuesto que sí!** A lo largo del año abrimos varias
+          convocatorias para estudiantes universitarios. Los seleccionados
+          reciben todo el contenido y el préstamo del robot **SIN COSTO**, solo
+          envíanos un correo a
+          [contact@zdynamics.org](mailto:contact@zdynamics.org) con tu
+          currículum actualizado y los motivos por los que te gustaría recibir
+          este apoyo; nosotros haremos una evaluación de tu caso con una
+          entrevista remota y tomaremos una decisión basada en tus habilidades y
+          enfoque profesional (el promedio de la escuela NO es un factor para la
+          toma de decisión)
     styles:
       self:
         height: auto
