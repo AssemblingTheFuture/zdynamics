@@ -90,7 +90,7 @@ sections:
       - type: FeaturedItem
         title: $75 USD
         text: |
-          \*\*Dos personas (IVA incluido)\*\*
+          Dos personas (IVA incluido)
         featuredImage:
           type: ImageBlock
           url: /images/two-persons.png
