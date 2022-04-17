@@ -371,7 +371,7 @@ sections:
           isRequired: true
           width: full
         - type: SelectFormControl
-          name: city
+          name: Contrato
           label: City
           hideLabel: false
           defaultValue: Please choose...
