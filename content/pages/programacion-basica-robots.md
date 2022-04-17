@@ -183,7 +183,7 @@ sections:
               - pt-16
               - pl-7
               - pb-10
-              - pr-10
+              - pr-7
       - type: FeaturedItem
         text: >+
           <p align="center">
