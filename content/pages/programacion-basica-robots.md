@@ -384,7 +384,7 @@ sections:
           defaultValue: Please choose...
           options:
             - 'Taller para UNA persona ($100 USD, IVA incluido)'
-            - 'Taller para UNA persona ($100 USD, IVA incluido)'
+            - 'Taller para DOS persona ($100 USD, IVA incluido)'
           isRequired: false
           width: full
       submitLabel: Send Message
