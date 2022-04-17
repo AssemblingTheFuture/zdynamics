@@ -47,7 +47,7 @@ sections:
         fontStyle: normal
         textAlign: left
   - type: FeaturedItemsSection
-    colors: colors-e
+    colors: colors-f
     elementId: ''
     title: PRÓXIMA FECHA
     subtitle: Lunes 2 de Mayo de 2022
