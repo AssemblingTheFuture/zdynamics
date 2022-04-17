@@ -2,43 +2,6 @@
 title: zDynamics | The Future is ROBOTICS
 layout: PageLayout
 sections:
-  - type: QuoteSection
-    elementId: ''
-    colors: colors-f
-    quote: |2
-       
-    backgroundImage:
-      url: /images/intro.gif
-      altText: zDynamics
-      styles:
-        self:
-          opacity: 70
-      caption: zDynamics
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-36
-          - pb-36
-          - pl-4
-          - pr-4
-        justifyContent: center
-      quote:
-        textAlign: left
-      name:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: left
-      title:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: left
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
