@@ -77,6 +77,7 @@ sections:
             borderRadius: medium
             borderColor: border-dark
             borderWidth: 1
+            borderStyle: solid
     actions: []
     columns: 2
     enableHover: true
