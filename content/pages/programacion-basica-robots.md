@@ -50,7 +50,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: PRÓXIMA FECHA
-    subtitle: ''
+    subtitle: 'Lunes '
     items:
       - type: FeaturedItem
         title: Faster
