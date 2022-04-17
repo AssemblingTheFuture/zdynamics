@@ -441,7 +441,7 @@ sections:
     elementId: ''
     colors: colors-a
     subtitle: ''
-    text: >+
+    text: >
       <a id="**"> 
 
       \*\* *Envíos los días Lunes y deben regresarse siete días después. Puede
@@ -449,6 +449,9 @@ sections:
       paquetería no tenga acceso*
 
       </a>
+
+
+      <br>
 
 
       <a id="***"> 
@@ -459,6 +462,9 @@ sections:
       </a>
 
 
+      <br>
+
+
       <a id="****"> 
 
       \*\*\*\* *La logística de envío depende del domicilio del cliente y la
@@ -466,7 +472,6 @@ sections:
       realice el pago y reciba el equipo*
 
       </a>
-
     styles:
       self:
         height: auto
