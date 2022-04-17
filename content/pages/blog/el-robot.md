@@ -8,12 +8,8 @@ metaTags: []
 title: El Robot
 date: '2019-12-19'
 excerpt: >-
-  Cuando se habla de robots colaborativos y trabajo humano, es necesario
-  enfatizar que el trabajo realizado por máquinas tiene la función de apoyar a
-  los trabajadores en actividades que son repetitivas, por lo que estas máquinas
-  no reemplazan el trabajo humano, solo complementan sus capacidades. Su trabajo
-  puede ser levantar objetos pesados, llegar a lugares lejanos para atender
-  procesos peligrosos, etc.
+  Desde 2017 comenzamos a desarrollar un nuevo robot, ¡con características
+  asombrosas!
 featuredImage:
   type: ImageBlock
   url: /images/zrobot01.jpg
