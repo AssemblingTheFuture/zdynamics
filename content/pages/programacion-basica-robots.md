@@ -59,6 +59,9 @@ sections:
         text: >
           **Se envía UN robot para ser usado por UNA persona durante catorce
           días**
+
+
+          \*Pagos flexibles y seguros a través de cripto activos
         featuredImage:
           type: ImageBlock
           url: /images/one-person.png
