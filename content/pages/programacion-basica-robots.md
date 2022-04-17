@@ -487,6 +487,13 @@ sections:
           Sí, **estas se realizan antes de dar acceso al contenido digital**.
           Una vez con el acceso al contenido digital, **no se hacen
           devoluciones**
+      - type: FaqItem
+        question: How is this different from what we have today?
+        answer: >-
+          At the office, working together is often a distraction, on remote, it
+          could be motivation. At the office, working together is often a
+          distraction, on remote, it could be motivation. At the office, working
+          together is often a distraction, on remote, it could be motivation.
     styles:
       self:
         height: auto
