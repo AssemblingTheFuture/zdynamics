@@ -365,7 +365,7 @@ sections:
           width: full
         - type: TextFormControl
           name: Domicilio
-          label: Home address
+          label: Domicilio
           hideLabel: false
           placeholder: Your home address
           isRequired: false
