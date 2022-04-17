@@ -123,6 +123,14 @@ sections:
         iconPosition: right
         elementId: ''
         url: ' '
+      - type: Link
+        label: Learn more
+        altText: ''
+        url: /
+        showIcon: false
+        icon: arrowRight
+        iconPosition: right
+        elementId: ''
     columns: 2
     enableHover: true
     styles:
