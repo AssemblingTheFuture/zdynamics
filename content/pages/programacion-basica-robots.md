@@ -383,7 +383,7 @@ sections:
           hideLabel: false
           defaultValue: Please choose...
           options:
-            - New York
+            - Taller para UNA persona ($100 USD)
             - San Francisco
           isRequired: false
           width: full
