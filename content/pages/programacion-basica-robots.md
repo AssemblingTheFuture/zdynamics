@@ -161,6 +161,8 @@ sections:
           #### USO DE COBOT EN TU HOGAR
 
 
+          <div style="text-align: left">
+
           *   Envío hasta tu domicilio\*\*. Se envía un cobot que puedes
           instalar en tu hogar
 
@@ -169,6 +171,8 @@ sections:
           *   Recolección catorce días después de la entrega
 
           *   Asesoría personalizada ilimitada SIN COSTO
+
+          </div>
         styles:
           self:
             textAlign: center
