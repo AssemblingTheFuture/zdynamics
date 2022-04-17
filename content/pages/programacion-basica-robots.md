@@ -293,7 +293,6 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-    subtitle: '* Pagos flexibles y seguros a través de cripto activos'
   - type: QuoteSection
     elementId: ''
     colors: colors-c
