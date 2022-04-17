@@ -408,10 +408,7 @@ sections:
           width: full
         - type: CheckboxFormControl
           name: Autorización
-          label: >-
-            Autorizo que utilicen los datos proporcionados para comenzar mi
-            proceso de inscripción y recibir mi enlace de pago. Puedo cancelarlo
-            antes de hacer el pago enviando un correo a contact@zdynamics.org
+          label: "Autorizo que utilicen los datos proporcionados para comenzar mi proceso de inscripción y recibir mi enlace de pago. Puedo cancelarlo antes de hacer el pago\_ o de recibir el acceso al contenido digital enviando un correo a contact@zdynamics.org"
           isRequired: true
           width: full
       submitLabel: Send Message
