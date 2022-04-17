@@ -120,7 +120,7 @@ sections:
             elementId: ''
     actions:
       - type: Link
-        label: Learn more
+        label: '*Pagos flexibles y seguros a través de cripto activos'
         altText: ''
         url: /
         showIcon: false
