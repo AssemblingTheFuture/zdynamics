@@ -151,14 +151,14 @@ sections:
     items:
       - type: FeaturedItem
         text: >+
-          <div style="text-align: center">
+          <p align="center">
 
           <iframe src="https://www.youtube.com/embed/qQnEiMWigpg"
           title="#myCobot Pi" frameborder="0" allow="accelerometer; autoplay;
           clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
-          </div>
+          </p>
 
 
           #### USO DE COBOT EN TU HOGAR
