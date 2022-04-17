@@ -387,6 +387,16 @@ sections:
             - 'Taller para DOS personas ($75 USD por persona, IVA incluido)'
           isRequired: true
           width: full
+        - type: SelectFormControl
+          name: city
+          label: City
+          hideLabel: false
+          defaultValue: Please choose...
+          options:
+            - New York
+            - San Francisco
+          isRequired: false
+          width: full
       submitLabel: Send Message
     media: null
     styles:
