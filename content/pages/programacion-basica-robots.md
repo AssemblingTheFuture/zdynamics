@@ -435,6 +435,7 @@ sections:
         textAlign: left
       text:
         textAlign: left
+    title: FORMULARIO DE INSCRIPCIÓN
   - type: TextSection
     elementId: ''
     colors: colors-a
