@@ -254,7 +254,7 @@ sections:
           self:
             textAlign: center
             padding:
-              - pt-10
+              - pt-14
     actions: []
     columns: 3
     enableHover: false
