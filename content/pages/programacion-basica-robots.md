@@ -76,6 +76,7 @@ sections:
             textAlign: center
             borderRadius: medium
             borderColor: border-dark
+            borderWidth: 1
     actions: []
     columns: 2
     enableHover: true
