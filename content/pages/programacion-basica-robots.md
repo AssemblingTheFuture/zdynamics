@@ -327,10 +327,11 @@ sections:
     elementId: ''
     colors: colors-h
     backgroundSize: full
-    text: |
+    text: |+
       <div style="text-align: center">
-      ### Formulario de Inscripción
+      ## FORMULARIO DE INSCRIPCIÓN
       </div>
+
     form:
       type: FormBlock
       variant: variant-a
