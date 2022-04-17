@@ -63,6 +63,19 @@ Con el tiempo, a medida que los robots dejen de ser herramientas pasivas para lo
 Empresas de todo el mundo han comenzado a desarrollar robots que pueden trabajar de la mano del hombre, entre ellos ABB Robotics con su robot [IRB 14000 – YuMi®](https://new.abb.com/products/robotics/es/robots-colaborativos/yumi), lanzado en abril de 2015. Esta empresa se inclina hacia la automatización colaborativa, que depende de la programación de rutinas y control de sistemas robóticos, así como la inclusión de estos en el trabajo manual de los operadores en la planta.
 
 ![ABB IRB 14000 – YuMi®](https://www07.abb.com/images/librariesprovider89/default-album/robots/yumi/yumi-separator-1183px.jpg?sfvrsn=1)
+
 <div style="text-align: center">ABB IRB 14000 – YuMi®</div>
 
+Por otro lado, KUKA AG ha desarrollado un robot colaborativo denominado [LBR iiwa®](https://www.kuka.com/es-mx/productos-servicios/sistemas-de-robot/robot-industrial/lbr-iiwa) que utiliza tecnología de control inteligente, sensores de alto rendimiento y software de última generación, aportando así nuevas soluciones colaborativas en tecnologías de producción. Incluso las tareas más difíciles que antes se realizaban manualmente ahora se pueden automatizar de forma económica.
 
+![KUKA LBR iiwa®](https://www.kuka.com/-/media/kuka-corporate/images/about-kuka/kuka-roboter-produkte.jpg?rev=-1&w=1900&hash=FE99E19AE978DC527E7EC22A2AED55E9)
+
+<div style="text-align: center">KUKA LBR iiwa®</div>
+
+Los cobots antes mencionados no utilizan celdas o jaulas especiales que aumenten su adquisición, ya que cuentan con sensores que evitan colisiones. Sin embargo, existen más productos de otras empresas como [Kinova, Inc](https://www.kinovarobotics.com/en); [Rethink Robotics GmbH](https://www.rethinkrobotics.com/), [Techman Robot, Inc.](https://www.tm-robot.com/en), etcétera, con soluciones novedosas que fomentan la sana competencia en esta Nueva Revolución Industrial.
+
+#### Nuestro Cobot: zRobot 0.1 Beta
+
+A pesar de que las grandes empresas están desarrollando y mejorando sus productos, decidimos conceptualizar, diseñar y fabricar un sistema asequible que podría usarse en entornos del mundo real debido a su flexibilidad, simplicidad, bajo consumo de energía y bajo costo.
+
+![zRobot 0.1 Beta](/public/)
