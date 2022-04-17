@@ -150,7 +150,7 @@ sections:
     title: LO QUE INCLUYE
     items:
       - type: FeaturedItem
-        text: >+
+        text: >
           <p align="center">
 
           <iframe src="https://www.youtube.com/embed/qQnEiMWigpg"
@@ -173,10 +173,9 @@ sections:
 
           *   Recolección catorce días después de la entrega
 
-          *   Asesoría personalizada ilimitada SIN COSTO
+          *   Asesoría personalizada ilimitada **SIN COSTO**
 
           </div>
-
         styles:
           self:
             textAlign: center
