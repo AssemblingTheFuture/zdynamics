@@ -372,7 +372,9 @@ sections:
           width: full
         - type: SelectFormControl
           name: Contrato
-          label: ¿?
+          label: >-
+            ¿Estás de acuerdo en firmar un contrato para el préstamo y uso del
+            equipo durante tu entrenamiento?
           hideLabel: false
           defaultValue: Please choose...
           options:
