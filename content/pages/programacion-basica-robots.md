@@ -150,8 +150,8 @@ sections:
     title: LO QUE INCLUYE
     items:
       - type: FeaturedItem
-        text: >+
-          <iframe width="256" height="256"
+        text: >
+          <iframe width="300" height="300"
           src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture"
@@ -169,7 +169,6 @@ sections:
           *   Recolección catorce días después de la entrega
 
           *   Asesoría personalizada ilimitada SIN COSTO
-
         styles:
           self:
             textAlign: center
