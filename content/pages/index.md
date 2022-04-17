@@ -13,6 +13,7 @@ sections:
       styles:
         self:
           opacity: 70
+      caption: zDynamics
     styles:
       self:
         height: auto
