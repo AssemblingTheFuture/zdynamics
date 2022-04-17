@@ -14,9 +14,9 @@ sections:
       <div style="text-align: center">
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
       </div>
-    title: |-
-      >-
-          Dirigido a estudiantes y profesionales que busquen llevar a la práctica conocimientos avanzados sobre esta hermosa disciplina
+    title: >-
+      Dirigido a estudiantes y profesionales que busquen llevar a la práctica
+      conocimientos avanzados sobre esta hermosa disciplina
     backgroundImage:
       url: /images/robot.gif
       altText: Cobot
