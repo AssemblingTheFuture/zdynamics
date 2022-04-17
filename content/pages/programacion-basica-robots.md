@@ -383,7 +383,7 @@ sections:
           hideLabel: false
           defaultValue: Please choose...
           options:
-            - Taller para UNA persona ($100 USD)
+            - 'Taller para UNA persona ($100 USD, IVA incluido)'
             - San Francisco
           isRequired: false
           width: full
