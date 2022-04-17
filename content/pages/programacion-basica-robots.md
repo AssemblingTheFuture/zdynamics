@@ -388,7 +388,7 @@ sections:
           isRequired: true
           width: full
         - type: SelectFormControl
-          name: city
+          name: Pago
           label: Tipo de pago
           hideLabel: false
           defaultValue: Please choose...
