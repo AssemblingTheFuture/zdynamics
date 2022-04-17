@@ -181,7 +181,7 @@ sections:
             textAlign: center
             padding:
               - pt-16
-              - pl-7
+              - pl-0
               - pb-0
               - pr-7
       - type: FeaturedItem
