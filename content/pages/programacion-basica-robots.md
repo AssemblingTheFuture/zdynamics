@@ -151,7 +151,7 @@ sections:
     items:
       - type: FeaturedItem
         text: >+
-          <div style="text-align: left">
+          <div style="text-align: center">
 
           <iframe src="https://www.youtube.com/embed/qQnEiMWigpg"
           title="#myCobot Pi" frameborder="0" allow="accelerometer; autoplay;
