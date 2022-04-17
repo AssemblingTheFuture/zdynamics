@@ -180,10 +180,10 @@ sections:
           self:
             textAlign: center
             padding:
-              - pt-10
-              - pl-10
-              - pb-10
-              - pr-10
+              - pt-11
+              - pl-11
+              - pb-11
+              - pr-11
       - type: FeaturedItem
         text: >+
           <p align="center">
