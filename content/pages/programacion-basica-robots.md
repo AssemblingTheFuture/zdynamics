@@ -360,7 +360,7 @@ sections:
           width: full
         - type: TextareaFormControl
           name: Dirección
-          label: Dirección
+          label: Dirección****
           hideLabel: false
           placeholder: >-
             Tu dirección se solicita con fines de distribución y logística para
