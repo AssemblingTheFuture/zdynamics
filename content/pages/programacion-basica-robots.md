@@ -365,11 +365,6 @@ sections:
           placeholder: Tu dirección se solicita para organizar la entrega del equipo
           isRequired: true
           width: full
-        - type: CheckboxFormControl
-          name: updates
-          label: Sign me up to receive updates
-          isRequired: true
-          width: full
         - type: SelectFormControl
           name: Contrato
           label: >-
