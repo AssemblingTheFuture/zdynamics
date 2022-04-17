@@ -184,6 +184,7 @@ sections:
               - pl-0
               - pb-0
               - pr-0
+            borderRadius: medium
       - type: FeaturedItem
         text: >
           <p align="center">
