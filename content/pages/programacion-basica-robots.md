@@ -54,9 +54,12 @@ sections:
     items:
       - type: FeaturedItem
         title: $150 USD*
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          **Se envía UN robot para ser usado por UNA persona durante catorce
+          días**
+
+
+          *Pagos flexibles y seguros en cripto activos
         featuredImage: null
         styles:
           self:
