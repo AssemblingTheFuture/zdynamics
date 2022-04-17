@@ -442,8 +442,6 @@ sections:
     colors: colors-a
     subtitle: ''
     text: >
-      ---
-
       <a id="**"> 
 
       \*\*\*\* *Envíos los días Lunes y deben regresarse siete días después.
@@ -459,7 +457,6 @@ sections:
       agendarse con dos semanas de anticipación.*
 
       </a>
-
 
 
       <a id="****"> 
