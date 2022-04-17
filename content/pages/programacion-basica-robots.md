@@ -182,14 +182,14 @@ sections:
             textAlign: center
       - type: FeaturedItem
         text: >+
-          <div style="text-align: center">
+          <p align="center">
 
           <iframe src="https://www.youtube.com/embed/x6GeCr5_Jnc" title="YouTube
           video player" frameborder="0" allow="accelerometer; autoplay;
           clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
-          </div>
+          </p>
 
 
           #### APRENDIZAJE VIRTUAL
