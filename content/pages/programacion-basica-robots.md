@@ -154,8 +154,8 @@ sections:
           <p align="center">
 
           <iframe src="https://www.youtube.com/embed/qQnEiMWigpg"
-          title="#myCobot Pi" frameborder="0" allow="accelerometer; autoplay;
-          clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          title="#myCobot Pi" allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
           </p>
