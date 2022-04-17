@@ -181,12 +181,11 @@ sections:
           self:
             textAlign: center
       - type: FeaturedItem
-        text: >
-          <div style="text-align: left">
+        text: >+
+          <div style="text-align: center">
 
-          <iframe width="128" height="128"
-          src="https://www.youtube.com/embed/x6GeCr5_Jnc" title="YouTube video
-          player" frameborder="0" allow="accelerometer; autoplay;
+          <iframe src="https://www.youtube.com/embed/x6GeCr5_Jnc" title="YouTube
+          video player" frameborder="0" allow="accelerometer; autoplay;
           clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
@@ -207,6 +206,7 @@ sections:
               *   Cálculo de Cinemática Inversa en tiempo real
               *   Programación de Rutinas Básicas y Planeación de Trayectorias
           </div>
+
         featuredImage:
           type: ImageBlock
           altText: Item image
