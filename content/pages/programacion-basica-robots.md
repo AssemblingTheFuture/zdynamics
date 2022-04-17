@@ -151,9 +151,25 @@ sections:
     items:
       - type: FeaturedItem
         title: Faster
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+          encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+
+
+          #### USO DE COBOT EN TU HOGAR
+
+
+          - Envío hasta tu domicilio**. Se envía un cobot que puedes instalar en
+          tu hogar
+
+          - Catorce días de uso del robot, ¡desde la comodidad de tu hogar!
+
+          - Recolección catorce días después de la entrega
+
+          - Asesoría personalizada ilimitada SIN COSTO
         featuredImage:
           type: ImageBlock
           url: /images/faster.svg
