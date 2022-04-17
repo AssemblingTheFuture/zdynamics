@@ -249,6 +249,8 @@ sections:
         styles:
           self:
             textAlign: center
+            padding:
+              - pt-7
     actions: []
     columns: 3
     enableHover: false
