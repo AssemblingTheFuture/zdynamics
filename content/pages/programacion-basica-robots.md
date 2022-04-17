@@ -489,11 +489,10 @@ sections:
           devoluciones**
       - type: FaqItem
         question: ¿Puedo pagar con tarjeta o transferencia?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation. At the office, working together is often a
-          distraction, on remote, it could be motivation. At the office, working
-          together is often a distraction, on remote, it could be motivation.
+        answer: >
+          Sí, aunque eso incrementa el costo debido a las comisiones de las
+          plataformas y/o bancos centralizados. El pago con cripto activos
+          reduce las comisiones
     styles:
       self:
         height: auto
