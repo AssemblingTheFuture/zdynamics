@@ -185,6 +185,7 @@ sections:
               - pb-0
               - pr-0
             borderRadius: medium
+            borderColor: border-primary
       - type: FeaturedItem
         text: >
           <p align="center">
