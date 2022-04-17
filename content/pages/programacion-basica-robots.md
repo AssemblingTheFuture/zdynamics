@@ -287,7 +287,7 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-    subtitle: '* '
+    subtitle: '* Pagos flexibles y seguros a través de'
   - type: QuoteSection
     elementId: ''
     colors: colors-c
