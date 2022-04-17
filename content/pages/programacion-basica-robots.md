@@ -358,17 +358,17 @@ sections:
           placeholder: (+xx) xx xx xx xx xx
           isRequired: 'false'
           width: full
-        - type: CheckboxFormControl
-          name: updates
-          label: Sign me up to receive updates
-          isRequired: 'false'
-          width: full
         - type: TextFormControl
           name: Domicilio
           label: Domicilio
           hideLabel: false
           placeholder: Domicilio
           isRequired: false
+          width: full
+        - type: CheckboxFormControl
+          name: updates
+          label: Sign me up to receive updates
+          isRequired: 'false'
           width: full
       submitLabel: Send Message
     media: null
