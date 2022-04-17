@@ -379,7 +379,7 @@ sections:
           width: full
         - type: SelectFormControl
           name: Producto
-          label: ¿Qué producto comprarás?
+          label: Escoge la modalidad del taller
           hideLabel: false
           defaultValue: Please choose...
           options:
