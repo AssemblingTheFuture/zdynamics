@@ -362,7 +362,9 @@ sections:
           name: Domicilio
           label: Domicilio
           hideLabel: false
-          placeholder: Domicilio
+          placeholder: >-
+            Tu dirección se solicita con fines de distribución y logística para
+            organizar la entrega del equipo a los diferentes estudiantes
           isRequired: true
           width: full
         - type: CheckboxFormControl
