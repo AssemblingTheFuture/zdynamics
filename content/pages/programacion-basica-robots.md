@@ -385,7 +385,7 @@ sections:
           options:
             - 'Taller para UNA persona ($100 USD, IVA incluido)'
             - 'Taller para DOS personas ($75 USD por persona, IVA incluido)'
-          isRequired: false
+          isRequired: true
           width: full
       submitLabel: Send Message
     media: null
