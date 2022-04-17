@@ -16,7 +16,7 @@ sections:
       </div>
     title: <div style="text-align: center">
       Dirigido a estudiantes y profesionales que busquen llevar a la práctica
-      conocimientos avanzados sobre esta hermosa disciplina
+      conocimientos avanzados sobre esta hermosa disciplina </div>
     backgroundImage:
       url: /images/robot.gif
       altText: Cobot
