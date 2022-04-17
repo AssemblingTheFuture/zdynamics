@@ -7,7 +7,6 @@ sections:
     colors: colors-c
     quote: |2
        
-    title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/intro.gif
       altText: Product Marketing Manager Quote
