@@ -329,7 +329,7 @@ sections:
     backgroundSize: full
     text: |+
       <div style="text-align: center">
-      ## FORMULARIO DE INSCRIPCIÓN
+      ### FORMULARIO DE INSCRIPCIÓN
       </div>
 
     form:
