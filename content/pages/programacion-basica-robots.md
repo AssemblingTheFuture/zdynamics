@@ -50,7 +50,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: PRÓXIMA FECHA
-    subtitle: 'Lunes '
+    subtitle: Lunes 2 de Mayo de 2022
     items:
       - type: FeaturedItem
         title: Faster
