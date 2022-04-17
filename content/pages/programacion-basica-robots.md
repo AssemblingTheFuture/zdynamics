@@ -444,7 +444,7 @@ sections:
     actions: []
     items:
       - type: FaqItem
-        question: ¿Puedo recibir el taller gratis?
+        question: ¿Puedo recibir el taller GRATIS?
         answer: >
           **¡Por supuesto que sí!** A lo largo del año abrimos varias
           convocatorias para estudiantes universitarios. Los seleccionados
