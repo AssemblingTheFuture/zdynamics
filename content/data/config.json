@@ -96,7 +96,7 @@
             "addressAltText": "Dirección",
             "phoneNumber": "+553320807567"
         },
-        "copyrightText": "Powered with ♡ by [Stackbit](https://www.stackbit.com/)\n",
+        "copyrightText": "Powered with ♡ by [Stackbit](https://www.stackbit.com/) and [Netlify](https://www.netlify.com/)",
         "primaryLinks": [
             {
                 "type": "Link",
