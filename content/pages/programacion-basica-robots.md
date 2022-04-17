@@ -247,10 +247,6 @@ sections:
               *   Cálculo de Cinemática Inversa en tiempo real
               *   Programación de Rutinas Básicas y Planeación de Trayectorias
           </div>
-        featuredImage:
-          type: ImageBlock
-          url: /images/focused.svg
-          altText: Item image
         styles:
           self:
             textAlign: center
