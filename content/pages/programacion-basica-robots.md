@@ -448,7 +448,7 @@ sections:
           Aquí aprenderás toda la teoría detrás del funcionamiento de un robot,
           desde el funcionamiento de un algoritmo numérico hasta su uso en
           robots REALES utilizando Python
-      - question: ¿En qué se diferencía con otros talleres?
+      - question: ¿En qué se diferencia con otros talleres?
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation, At the office, working together is often a
