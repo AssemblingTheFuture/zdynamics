@@ -9,7 +9,7 @@ title: Programación Básica de Robots con Python
 sections:
   - type: QuoteSection
     elementId: ''
-    colors: colors-e
+    colors: colors-a
     quote: |
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
     title: >-
