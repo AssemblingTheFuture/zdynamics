@@ -3,7 +3,7 @@ layout: PageLayout
 metaTitle: Programación Básica de Robots con Python
 metaDescription: ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/robot.gif
 metaTags: []
 title: Programación Básica de Robots con Python
 sections:
