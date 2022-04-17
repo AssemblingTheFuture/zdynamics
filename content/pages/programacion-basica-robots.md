@@ -116,7 +116,7 @@ sections:
             elementId: ''
     actions:
       - type: Link
-        label: Learn more
+        label: ¿Indeciso? Revisa nuestras Preguntas Frecuentes
         altText: ''
         url: /
         showIcon: false
