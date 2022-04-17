@@ -372,7 +372,7 @@ sections:
           width: full
         - type: SelectFormControl
           name: Contrato
-          label: City
+          label: ¿?
           hideLabel: false
           defaultValue: Please choose...
           options:
