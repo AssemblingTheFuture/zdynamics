@@ -401,7 +401,7 @@ sections:
           name: description
           label: Description
           hideLabel: false
-          placeholder: Please describe
+          placeholder: Tu dirección se solicita para organizar la entrega del equipo
           isRequired: false
           width: full
       submitLabel: Send Message
