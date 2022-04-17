@@ -378,7 +378,7 @@ sections:
           hideLabel: false
           defaultValue: Please choose...
           options:
-            - New York
+            - Sí
             - San Francisco
           isRequired: false
           width: full
