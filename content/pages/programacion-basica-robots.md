@@ -63,7 +63,6 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/one-person.png
-          altText: altText of the image
           caption: Caption of the image
           elementId: ''
           styles:
