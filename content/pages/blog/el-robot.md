@@ -1,7 +1,7 @@
 ---
 layout: PostLayout
 metaTitle: zRobot 0.1 Beta
-metaDescription: null
+metaDescription: Nuestro robot colaborativo
 addTitleSuffix: true
 socialImage: null
 metaTags: []
