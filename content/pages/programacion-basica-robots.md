@@ -108,7 +108,7 @@ sections:
           - type: Button
             label: REGÍSTRATE AHORA
             altText: ''
-            url: /
+            url: '#formulario'
             showIcon: true
             icon: cart
             iconPosition: right
