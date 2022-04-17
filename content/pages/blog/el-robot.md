@@ -1,6 +1,6 @@
 ---
 layout: PostLayout
-metaTitle: null
+metaTitle: zRobot 0.1 Beta
 metaDescription: null
 addTitleSuffix: true
 socialImage: null
