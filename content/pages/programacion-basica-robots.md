@@ -340,7 +340,7 @@ sections:
       destination: ''
       fields:
         - type: TextFormControl
-          name: name
+          name: Nombre
           label: Name
           placeholder: Your name
           isRequired: 'true'
