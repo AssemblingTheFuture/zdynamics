@@ -11,7 +11,9 @@ sections:
     elementId: ''
     colors: colors-a
     quote: |
+      <div style="text-align: left">
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
+      </div>
     title: >-
       Dirigido a estudiantes y profesionales que busquen llevar a la práctica
       conocimientos avanzados sobre esta hermosa disciplina
