@@ -192,7 +192,6 @@ sections:
             - Programación de Rutinas Básicas y Planeación de Trayectorias
         featuredImage:
           type: ImageBlock
-          url: /images/smarter.svg
           altText: Item image
         styles:
           self:
