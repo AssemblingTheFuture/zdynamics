@@ -327,12 +327,9 @@ sections:
     elementId: ''
     colors: colors-h
     backgroundSize: full
-    text: |
-      <div style="text-align: center">
-
-      ### FORMULARIO DE INSCRIPCIÓN
-
-      </div>
+    text: >-
+      * Una vez concretada la compra y con acceso al contenido digital, **no se
+      hacen devoluciones**
     form:
       type: FormBlock
       variant: variant-a
