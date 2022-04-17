@@ -178,16 +178,22 @@ sections:
           self:
             textAlign: center
       - type: FeaturedItem
-        text: >+
+        text: >
+          <div style="text-align: left">
+
           <iframe width="128" height="128"
           src="https://www.youtube.com/embed/x6GeCr5_Jnc" title="YouTube video
           player" frameborder="0" allow="accelerometer; autoplay;
           clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
 
+          </div>
+
 
           #### APRENDIZAJE VIRTUAL
 
+
+          <div style="text-align: left">
 
           *   Puedes acceder a nuestro contenido en línea en cualquier momento
           durante la semana de préstamo del robot o agendar un entrenamiento
@@ -197,7 +203,7 @@ sections:
               *   Implementación de algoritmos de Cinemática Directa
               *   Cálculo de Cinemática Inversa en tiempo real
               *   Programación de Rutinas Básicas y Planeación de Trayectorias
-
+          </div>
         featuredImage:
           type: ImageBlock
           altText: Item image
