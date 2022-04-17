@@ -108,6 +108,16 @@ sections:
             borderWidth: 1
             borderStyle: solid
         subtitle: 'Dos personas (Precio por persona, IVA incluido)'
+        actions:
+          - type: Button
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            style: secondary
+            elementId: ''
     actions: []
     columns: 2
     enableHover: true
