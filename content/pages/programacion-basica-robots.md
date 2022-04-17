@@ -180,7 +180,7 @@ sections:
           self:
             textAlign: center
             padding:
-              - pt-12
+              - pt-16
               - pl-10
               - pb-10
               - pr-10
