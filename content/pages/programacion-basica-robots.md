@@ -11,7 +11,7 @@ sections:
     elementId: ''
     colors: colors-a
     quote: |
-      <div style="text-align: left">
+      <div style="text-align: center">
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
       </div>
     title: >-
