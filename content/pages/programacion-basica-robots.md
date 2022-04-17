@@ -114,7 +114,7 @@ sections:
             altText: ''
             url: /
             showIcon: true
-            icon: arrowRight
+            icon: cart
             iconPosition: right
             style: secondary
             elementId: ''
