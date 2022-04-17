@@ -349,7 +349,7 @@ sections:
         - type: EmailFormControl
           name: Correo Electrónico
           label: Correo Electrónico
-          placeholder: Your email
+          placeholder: bob@eltrompas.com
           isRequired: 'true'
           width: 1/2
         - type: TextFormControl
