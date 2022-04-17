@@ -59,7 +59,7 @@ sections:
           días**
 
 
-          *Pagos flexibles y seguros en cripto activos
+          \*Pagos flexibles y seguros a través de cripto activos
         featuredImage:
           type: ImageBlock
           url: /images/one-person.png
