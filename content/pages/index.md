@@ -6,7 +6,6 @@ sections:
     elementId: homepage-hero-1
     colors: colors-a
     title: The Future is ROBOTICS
-    subtitle: The Future is ROBOTICS
     actions:
       - type: Button
         label: MÁS INFORMACIÓN
