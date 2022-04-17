@@ -442,12 +442,9 @@ sections:
     colors: colors-a
     subtitle: ''
     text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      **** La logística de envío depende del domicilio del cliente y la
+      disponibilidad del equipo. Los precios son respetados hasta que el cliente
+      realice el pago y reciba el equipo
     styles:
       self:
         height: auto
