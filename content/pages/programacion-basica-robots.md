@@ -463,7 +463,7 @@ sections:
 
           </p>
 
-      - question: How is this different from what we have today?
+      - question: ¿Obtendré algún certificado al finalizar el taller?
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation, At the office, working together is often a
