@@ -64,6 +64,7 @@ sections:
             borderRadius: medium
             borderColor: border-dark
             borderWidth: 1
+            borderStyle: solid
       - type: FeaturedItem
         title: Smarter
         text: >-
