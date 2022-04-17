@@ -13,7 +13,7 @@ sections:
     quote: |
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
     title: >-
-      Enfocado a Estudiantes y profesionales que busquen llevar a la práctica
+      Dirigido a estudiantes y profesionales que busquen llevar a la práctica
       los conocimientos teóricos sobre esta hermosa disciplina
     backgroundImage:
       url: /images/robot.gif
