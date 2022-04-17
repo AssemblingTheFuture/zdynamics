@@ -223,9 +223,30 @@ sections:
               - pr-10
       - type: FeaturedItem
         title: Focused
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: >
+          <p align="center">
+
+          <iframe src="https://www.youtube.com/embed/x6GeCr5_Jnc"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </p>
+
+
+          #### APRENDIZAJE VIRTUAL
+
+
+          <div style="text-align: left">
+
+          *   Puedes acceder a nuestro contenido en línea en cualquier momento
+          durante la semana de préstamo del robot o agendar un entrenamiento
+          personalizado\*\*\* sin costo adicional
+
+          *   Temario:
+              *   Implementación de algoritmos de Cinemática Directa
+              *   Cálculo de Cinemática Inversa en tiempo real
+              *   Programación de Rutinas Básicas y Planeación de Trayectorias
+          </div>
         featuredImage:
           type: ImageBlock
           url: /images/focused.svg
