@@ -10,9 +10,8 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-c
-    quote: |-
-      “It’s great to see someone taking action while still maintaining a
-      sustainable fish supply to home cooks.”
+    quote: |
+      ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
     name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage:
