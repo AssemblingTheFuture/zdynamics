@@ -78,7 +78,7 @@ sections:
           - type: Button
             label: REGÍSTRATE AHORA
             altText: ''
-            url: '#formulario-de-inscripción'
+            url: FOR
             showIcon: true
             icon: cart
             iconPosition: right
