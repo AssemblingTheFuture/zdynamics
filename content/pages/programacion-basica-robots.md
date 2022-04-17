@@ -380,7 +380,7 @@ sections:
           options:
             - Sí
             - 'No'
-          isRequired: false
+          isRequired: true
           width: full
       submitLabel: Send Message
     media: null
