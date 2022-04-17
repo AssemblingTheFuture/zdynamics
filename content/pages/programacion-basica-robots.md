@@ -328,7 +328,7 @@ sections:
     colors: colors-h
     backgroundSize: full
     text: >
-      *Una vez concretada la compra y con acceso al contenido digital, **no se
+      \* Una vez concretada la compra y con acceso al contenido digital, **no se
       hacen devoluciones**
     form:
       type: FormBlock
