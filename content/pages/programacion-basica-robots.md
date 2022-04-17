@@ -108,7 +108,7 @@ sections:
             borderColor: border-dark
             borderWidth: 1
             borderStyle: solid
-        subtitle: Dos personas (IVA incluido)
+        subtitle: 'Dos personas (Precio por persona, IVA incluido)'
     actions: []
     columns: 2
     enableHover: true
