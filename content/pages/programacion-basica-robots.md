@@ -53,7 +53,7 @@ sections:
     subtitle: Lunes 2 de Mayo de 2022
     items:
       - type: FeaturedItem
-        title: $100 USD*
+        title: $100 USD
         text: >
           **Se envía UN robot para ser usado por UNA persona durante catorce
           días**
