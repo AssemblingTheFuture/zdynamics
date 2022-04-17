@@ -287,6 +287,7 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
+    subtitle: '* '
   - type: QuoteSection
     elementId: ''
     colors: colors-c
