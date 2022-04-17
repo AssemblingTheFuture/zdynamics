@@ -398,7 +398,7 @@ sections:
           isRequired: false
           width: full
         - type: TextareaFormControl
-          name: description
+          name: Dirección
           label: Description
           hideLabel: false
           placeholder: Tu dirección se solicita para organizar la entrega del equipo
