@@ -151,7 +151,7 @@ sections:
     items:
       - type: FeaturedItem
         text: >+
-          <iframe width="380" height="380"
+          <iframe width="390" height="390"
           src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture"
