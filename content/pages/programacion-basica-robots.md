@@ -327,7 +327,10 @@ sections:
     elementId: ''
     colors: colors-h
     backgroundSize: full
-    text: We look forward to hearing from you.
+    text: |
+      <div style="text-align: center">
+      ### Formulario de Inscripción
+      </div>
     form:
       type: FormBlock
       variant: variant-a
