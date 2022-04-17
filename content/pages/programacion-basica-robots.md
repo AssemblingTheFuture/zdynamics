@@ -358,6 +358,13 @@ sections:
           placeholder: (+xx) xx xx xx xx xx
           isRequired: 'false'
           width: full
+        - type: TextareaFormControl
+          name: Dirección
+          label: Dirección
+          hideLabel: false
+          placeholder: Tu dirección se solicita para organizar la entrega del equipo
+          isRequired: true
+          width: full
         - type: SelectFormControl
           name: Contrato
           label: >-
@@ -396,13 +403,6 @@ sections:
           hideLabel: false
           placeholder: ':D'
           isRequired: false
-          width: full
-        - type: TextareaFormControl
-          name: Dirección
-          label: Dirección
-          hideLabel: false
-          placeholder: Tu dirección se solicita para organizar la entrega del equipo
-          isRequired: true
           width: full
       submitLabel: Send Message
     media: null
