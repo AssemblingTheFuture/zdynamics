@@ -441,12 +441,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: Preguntas Frecuentes
-    actions:
-      - type: Link
-        label: See all
-        url: /
-        showIcon: true
-        icon: arrowRight
+    actions: []
     items:
       - question: How is this different from what we have today?
         answer: >-
