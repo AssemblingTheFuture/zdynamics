@@ -110,7 +110,7 @@ sections:
         subtitle: 'Dos personas (Precio por persona, IVA incluido)'
         actions:
           - type: Button
-            label: Learn more
+            label: REGÍSTRATE AHORA
             altText: ''
             url: /
             showIcon: false
