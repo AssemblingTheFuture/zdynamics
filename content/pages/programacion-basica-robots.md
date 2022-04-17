@@ -208,8 +208,8 @@ sections:
           <div style="text-align: left">
 
           *   Puedes acceder a nuestro contenido en línea en cualquier momento
-          durante la semana de préstamo del robot o agendar un entrenamiento
-          personalizado\*\*\* sin costo adicional
+          durante la semana de préstamo del robot o agendar un **[entrenamiento
+          personalizado\*\*\*](#***)** sin costo adicional
 
           *   Temario:
               *   Implementación de algoritmos de Cinemática Directa
