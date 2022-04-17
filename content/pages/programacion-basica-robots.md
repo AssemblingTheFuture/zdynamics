@@ -220,7 +220,7 @@ sections:
               - pt-10
               - pl-0
               - pb-0
-              - pr-7
+              - pr-0
       - type: FeaturedItem
         text: >
           <p align="center">
