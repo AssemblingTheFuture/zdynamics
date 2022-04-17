@@ -182,7 +182,7 @@ sections:
             padding:
               - pt-16
               - pl-7
-              - pb-10
+              - pb-0
               - pr-7
       - type: FeaturedItem
         text: >+
