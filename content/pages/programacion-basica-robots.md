@@ -191,7 +191,7 @@ sections:
             borderWidth: 0
             borderStyle: none
       - type: FeaturedItem
-        text: >
+        text: >+
           <p align="center">
 
           <iframe
@@ -211,11 +211,12 @@ sections:
           durante la semana de préstamo del robot o agendar un **[entrenamiento
           personalizado\*\*\*](#***)** sin costo adicional
 
-          *   Temario:
+          *   Temario (**simplificado**):
               *   Implementación de algoritmos de Cinemática Directa
               *   Cálculo de Cinemática Inversa en tiempo real
               *   Programación de Rutinas Básicas y Planeación de Trayectorias
           </div>
+
         featuredImage:
           type: ImageBlock
           altText: Item image
