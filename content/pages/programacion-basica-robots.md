@@ -395,7 +395,7 @@ sections:
           options:
             - Pago en una sola exhibición
             - Pago diferido
-          isRequired: false
+          isRequired: true
           width: full
       submitLabel: Send Message
     media: null
