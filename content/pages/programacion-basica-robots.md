@@ -363,7 +363,7 @@ sections:
           label: Domicilio
           hideLabel: false
           placeholder: Domicilio
-          isRequired: false
+          isRequired: true
           width: full
         - type: CheckboxFormControl
           name: updates
