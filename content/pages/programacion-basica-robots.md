@@ -485,7 +485,7 @@ sections:
         textAlign: left
   - type: FaqSection
     colors: colors-f
-    elementId: ''
+    elementId: faq
     title: Preguntas Frecuentes
     actions: []
     items:
