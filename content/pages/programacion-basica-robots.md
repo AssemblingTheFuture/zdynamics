@@ -367,7 +367,7 @@ sections:
           name: Domicilio
           label: Domicilio
           hideLabel: false
-          placeholder: Your home address
+          placeholder: Domicilio
           isRequired: false
           width: full
       submitLabel: Send Message
