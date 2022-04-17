@@ -342,7 +342,7 @@ sections:
         - type: TextFormControl
           name: Nombre
           label: Nombre
-          placeholder: Your name
+          placeholder: Bob el Trompas
           isRequired: 'true'
           width: 1/2
           hideLabel: false
