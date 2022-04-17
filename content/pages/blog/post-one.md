@@ -21,9 +21,9 @@ bottomSections:
     title: Referencias
     subtitle: ''
     text: >
-      <a id="1"> [1] </a> Huelke, Michael (2019, February 07). Collaborative
+      <a id="1">[1]</a> Huelke, Michael (2019, February 07). Collaborative
       robots (COBOTS): Safe co-operation between human beings and robots. German
-      Social Accident Insurance (DGUV). (Retrieved on 01/29/2018) 
+      Social Accident Insurance (DGUV). (Retrieved on 01/29/2018)
 
 
       <br>
