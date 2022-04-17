@@ -328,9 +328,13 @@ sections:
     colors: colors-h
     backgroundSize: full
     text: |+
+      <a id="formulario"> 
+
       <div style="text-align: center">
       ### FORMULARIO DE INSCRIPCIÓN
       </div>
+
+      </a> 
 
     form:
       type: FormBlock
