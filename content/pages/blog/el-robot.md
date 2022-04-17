@@ -3,7 +3,7 @@ layout: PostLayout
 metaTitle: zRobot 0.1 Beta
 metaDescription: Nuestro robot colaborativo
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/zrobot01.jpg
 metaTags: []
 title: El Robot
 date: '2019-12-19'
