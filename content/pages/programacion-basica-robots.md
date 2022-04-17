@@ -153,7 +153,7 @@ sections:
         text: >+
           <div style="text-align: center">
 
-          <iframe width="400" height="400"
+          <iframe width="350" height="350"
           src="https://www.youtube.com/embed/qQnEiMWigpg" title="#myCobot Pi"
           frameborder="0" allow="accelerometer; autoplay; clipboard-write;
           encrypted-media; gyroscope; picture-in-picture"
