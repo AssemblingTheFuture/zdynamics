@@ -407,7 +407,7 @@ sections:
           isRequired: false
           width: full
         - type: CheckboxFormControl
-          name: updates
+          name: Autorización
           label: >-
             Autorizo que utilicen los datos proporcionados para comenzar mi
             proceso de inscripción y recibir mi enlace de pago. Puedo cancelarlo
