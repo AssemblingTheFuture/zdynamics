@@ -5,8 +5,7 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
-    title: zDynamics
-    subtitle: The Future is ROBOTICS
+    title: The Future is ROBOTICS
     actions:
       - type: Button
         label: MÁS INFORMACIÓN
@@ -19,7 +18,7 @@ sections:
         elementId: ''
     media:
       type: ImageBlock
-      url: /images/ZD RGB.png
+      url: /images/ZD RGB.jpg
       altText: Image alt text
       caption: Image caption
     styles:
