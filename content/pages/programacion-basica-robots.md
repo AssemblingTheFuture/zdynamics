@@ -440,10 +440,10 @@ sections:
     elementId: ''
     colors: colors-a
     subtitle: ''
-    text: >
+    text: >+
       <a id="**"> 
 
-      \*\* *Envíos los días Lunes y deben regresarse siete días después. Puede
+      \*\* *Envíos los días Lunes y deben regresarse catorce días después. Puede
       incrementar el precio si el robot se envía a zonas donde el servicio de
       paquetería no tenga acceso*
 
@@ -465,6 +465,7 @@ sections:
       realice el pago y reciba el equipo*
 
       </a>
+
     styles:
       self:
         height: auto
