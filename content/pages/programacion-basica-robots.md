@@ -378,7 +378,7 @@ sections:
           isRequired: true
           width: full
         - type: SelectFormControl
-          name: city
+          name: Producto
           label: City
           hideLabel: false
           defaultValue: Please choose...
