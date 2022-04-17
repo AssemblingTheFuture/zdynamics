@@ -185,10 +185,11 @@ sections:
               - pb-0
               - pr-7
       - type: FeaturedItem
-        text: >+
+        text: >
           <p align="center">
 
-          <iframe src="https://www.youtube.com/embed/x6GeCr5_Jnc"
+          <iframe
+          src="https://www.youtube.com/embed/videoseries?list=PLqtXur0u_1P2F7unaR4nZleVDJgQPPrbd"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media;
           gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -209,7 +210,6 @@ sections:
               *   Cálculo de Cinemática Inversa en tiempo real
               *   Programación de Rutinas Básicas y Planeación de Trayectorias
           </div>
-
         featuredImage:
           type: ImageBlock
           altText: Item image
