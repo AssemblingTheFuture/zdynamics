@@ -171,10 +171,6 @@ sections:
 
           *   Asesoría personalizada ilimitada SIN COSTO
 
-        featuredImage:
-          type: ImageBlock
-          url: /images/faster.svg
-          altText: Item image
         styles:
           self:
             textAlign: center
