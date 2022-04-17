@@ -98,7 +98,6 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/two-persons.png
-          altText: two
           caption: Caption of the image
           elementId: ''
           styles:
