@@ -53,7 +53,7 @@ sections:
     subtitle: Lunes 2 de Mayo de 2022
     items:
       - type: FeaturedItem
-        title: Faster
+        title: $150 USD
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
