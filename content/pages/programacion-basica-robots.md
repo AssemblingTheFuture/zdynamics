@@ -446,14 +446,14 @@ sections:
       - type: FaqItem
         question: ¿Puedo recibir el taller GRATIS?
         answer: >
-          **¡Por supuesto que sí!** A lo largo del año abrimos varias
-          convocatorias para estudiantes universitarios. Los seleccionados
-          reciben todo el contenido y el préstamo del robot **SIN COSTO**, solo
-          envíanos un correo a <contact@zdynamics.org> con tu currículum
-          actualizado y los motivos por los que te gustaría recibir este apoyo;
-          nosotros haremos una evaluación de tu caso con una entrevista remota y
-          tomaremos una decisión basada en tus habilidades y enfoque profesional
-          (el promedio escolar **NO** es un factor para la toma de decisión)
+          **¡Por supuesto que sí!** A lo largo del año invitamos a estudiantes
+          universitarios para que reciban todo el contenido y el préstamo del
+          robot **SIN COSTO**, solo envíanos un correo a <contact@zdynamics.org>
+          con tu currículum actualizado y los motivos por los que te gustaría
+          recibir este apoyo; nosotros haremos una evaluación de tu caso con una
+          entrevista remota y tomaremos una decisión basada en tus habilidades y
+          enfoque profesional (el promedio escolar **NO** es un factor para la
+          toma de decisión)
       - question: ¿En qué consiste este taller?
         answer: >
           Aquí aprenderás toda la teoría detrás del funcionamiento de un robot,
