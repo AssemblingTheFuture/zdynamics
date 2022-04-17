@@ -126,6 +126,7 @@ sections:
         icon: arrowRight
         iconPosition: right
         elementId: ''
+        url: ' '
     columns: 2
     enableHover: true
     styles:
