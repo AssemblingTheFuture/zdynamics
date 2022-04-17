@@ -401,7 +401,7 @@ sections:
           name: Comentarios
           label: ¿Te gustaría comentarnos algo?
           hideLabel: false
-          placeholder: Please describe
+          placeholder: ':D'
           isRequired: false
           width: full
       submitLabel: Send Message
