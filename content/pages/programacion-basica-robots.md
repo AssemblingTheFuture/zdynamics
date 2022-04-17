@@ -232,19 +232,21 @@ sections:
           </p>
 
 
-          #### APRENDIZAJE VIRTUAL
+          #### ENTRENAMIENTO AVANZADO GRATIS
 
 
           <div style="text-align: left">
 
-          *   Puedes acceder a nuestro contenido en línea en cualquier momento
-          durante la semana de préstamo del robot o agendar un entrenamiento
-          personalizado\*\*\* sin costo adicional
+          Incluimos los siguientes talleres en línea **completamente gratis**
 
-          *   Temario:
-              *   Implementación de algoritmos de Cinemática Directa
-              *   Cálculo de Cinemática Inversa en tiempo real
-              *   Programación de Rutinas Básicas y Planeación de Trayectorias
+
+          - **[Métodos Numéricos con Aplicaciones de
+          Ingeniería](https://bit.ly/NumericZ)**
+
+          - **[Control de Sistemas Dinámicos](https://bit.ly/zControl)**
+
+          - **[Robótica: de la Cinemática al Control](https://bit.ly/RoboticZ)**
+
           </div>
         styles:
           self:
