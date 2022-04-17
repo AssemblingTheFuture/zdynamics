@@ -225,7 +225,7 @@ sections:
         text: >
           <p align="center">
 
-          <iframe src="https://www.youtube.com/embed/x6GeCr5_Jnc"
+          <iframe src="https://www.youtube.com/embed/FhrQv-p4N0E"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media;
           gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -240,12 +240,14 @@ sections:
           Incluimos los siguientes talleres en línea **completamente gratis**
 
 
-          - **[Métodos Numéricos con Aplicaciones de
-          Ingeniería](https://bit.ly/NumericZ)**
+          *   [**Métodos Numéricos con Aplicaciones de
+          Ingeniería**](https://bit.ly/NumericZ)
 
-          - **[Control de Sistemas Dinámicos](https://bit.ly/zControl)**
+          *   [**Control de Sistemas Dinámicos**](https://bit.ly/zControl)
 
-          - **[Robótica: de la Cinemática al Control](https://bit.ly/RoboticZ)**
+          *   [**Robótica: de la Cinemática al
+          Control**](https://bit.ly/RoboticZ)
+
 
           </div>
         styles:
