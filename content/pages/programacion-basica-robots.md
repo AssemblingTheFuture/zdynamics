@@ -443,6 +443,19 @@ sections:
     title: Preguntas Frecuentes
     actions: []
     items:
+      - type: FaqItem
+        question: ¿Puedo recibir el taller gratis?
+        answer: >-
+          **¡Por supuesto que sí!** A lo largo del año abrimos varias
+          convocatorias para estudiantes universitarios. Los seleccionados
+          reciben todo el contenido y el préstamo del robot **SIN COSTO**, solo
+          envíanos un correo a
+          [contact@zdynamics.org](mailto:contact@zdynamics.org) con tu
+          currículum actualizado y los motivos por los que te gustaría recibir
+          este apoyo; nosotros haremos una evaluación de tu caso con una
+          entrevista remota y tomaremos una decisión basada en tus habilidades y
+          enfoque profesional (el promedio de la escuela NO es un factor para la
+          toma de decisión)
       - question: ¿En qué consiste este taller?
         answer: >
           Aquí aprenderás toda la teoría detrás del funcionamiento de un robot,
@@ -469,19 +482,6 @@ sections:
           obtener tu certificado con un código de validación que podrás usar en
           LinkedIn. Mientras la terminamos, te enviaremos una copia digital
           firmada para que puedas usarla como referencia ;)
-      - type: FaqItem
-        question: ¿Puedo recibir el taller gratis?
-        answer: >-
-          **¡Por supuesto que sí!** A lo largo del año abrimos varias
-          convocatorias para estudiantes universitarios. Los seleccionados
-          reciben todo el contenido y el préstamo del robot **SIN COSTO**, solo
-          envíanos un correo a
-          [contact@zdynamics.org](mailto:contact@zdynamics.org) con tu
-          currículum actualizado y los motivos por los que te gustaría recibir
-          este apoyo; nosotros haremos una evaluación de tu caso con una
-          entrevista remota y tomaremos una decisión basada en tus habilidades y
-          enfoque profesional (el promedio de la escuela NO es un factor para la
-          toma de decisión)
     styles:
       self:
         height: auto
