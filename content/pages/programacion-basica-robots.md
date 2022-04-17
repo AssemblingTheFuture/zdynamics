@@ -184,7 +184,7 @@ sections:
               - pl-0
               - pb-0
               - pr-0
-            borderRadius: medium
+            borderRadius: none
             borderColor: border-primary
             borderWidth: 1
             borderStyle: solid
