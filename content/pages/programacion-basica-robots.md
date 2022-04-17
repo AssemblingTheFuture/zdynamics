@@ -61,6 +61,7 @@ sections:
         styles:
           self:
             textAlign: center
+            borderRadius: medium
       - type: FeaturedItem
         title: Smarter
         text: >-
