@@ -12,7 +12,6 @@ sections:
     colors: colors-c
     quote: |
       ¡EL MEJOR ENTRENAMIENTO PARA COMENZAR EN EL MUNDO DE LA ROBÓTICA!
-    name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/robot.gif
