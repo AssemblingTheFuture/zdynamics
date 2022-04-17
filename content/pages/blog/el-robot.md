@@ -86,7 +86,9 @@ bottomSections:
     type: RecentPostsSection
 author: content/data/team/dianne-ameter.json
 ---
-#### ¿QUÉ ES UN ROBOT COLABORATIVO?
+Cuando se habla de robots colaborativos y trabajo humano, es necesario enfatizar que el trabajo realizado por máquinas tiene la función de apoyar a los trabajadores en actividades que son repetitivas, por lo que estas máquinas no reemplazan el trabajo humano, solo complementan sus capacidades. Su trabajo puede ser levantar objetos pesados, llegar a lugares lejanos para atender procesos peligrosos, etc.
+
+¿QUÉ ES UN ROBOT COLABORATIVO?
 
 Los Robots Colaborativos (también conocidos como Cobots) **se definen como máquinas complejas que trabajan mano a mano con los seres humanos**. En un proceso de trabajo compartido, apoyan y ayudan al operador humano. \[[1](#1)]
 
