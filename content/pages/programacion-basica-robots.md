@@ -441,7 +441,6 @@ sections:
     colors: colors-f
     elementId: ''
     title: Preguntas Frecuentes
-    subtitle: We are here to help
     actions:
       - type: Link
         label: See all
