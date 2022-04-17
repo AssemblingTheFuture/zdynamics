@@ -328,7 +328,7 @@ sections:
     colors: colors-h
     backgroundSize: full
     text: |
-      ****
+      ***
     form:
       type: FormBlock
       variant: variant-a
