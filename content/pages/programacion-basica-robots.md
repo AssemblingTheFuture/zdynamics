@@ -353,7 +353,7 @@ sections:
           isRequired: 'true'
           width: 1/2
         - type: TextFormControl
-          name: address
+          name: Teléfono
           label: Home address
           placeholder: Your home address
           isRequired: 'false'
