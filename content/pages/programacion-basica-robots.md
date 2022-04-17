@@ -83,7 +83,7 @@ sections:
             style: primary
             elementId: ''
       - type: FeaturedItem
-        title: $75 USD
+        title: $75 USD*
         text: >-
           **Se envía UN robot para ser usado por DOS personas durante catorce
           días**
