@@ -65,6 +65,7 @@ sections:
             borderColor: border-dark
             borderWidth: 1
             borderStyle: solid
+        subtitle: Una persona (IVA Incluido)
       - type: FeaturedItem
         title: Smarter
         text: >-
