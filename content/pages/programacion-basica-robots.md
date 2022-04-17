@@ -483,11 +483,10 @@ sections:
           firmada para que puedas usarla como referencia ;)
       - type: FaqItem
         question: ¿Hacen devoluciones?
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation. At the office, working together is often a
-          distraction, on remote, it could be motivation. At the office, working
-          together is often a distraction, on remote, it could be motivation.
+        answer: >
+          Sí, **estas se realizan antes de dar acceso al contenido digital**.
+          Una vez con el acceso al contenido digital, **no se hacen
+          devoluciones**
     styles:
       self:
         height: auto
