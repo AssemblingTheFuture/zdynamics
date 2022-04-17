@@ -393,7 +393,7 @@ sections:
           hideLabel: false
           defaultValue: Please choose...
           options:
-            - 'Pago en una sola exhibición ($100 USD o $75 USD, IVA Incluido)'
+            - Pago en una sola exhibición
             - San Francisco
           isRequired: false
           width: full
