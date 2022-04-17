@@ -355,7 +355,7 @@ sections:
         - type: TextFormControl
           name: Teléfono
           label: Teléfono
-          placeholder: Your home address
+          placeholder: Teléfono
           isRequired: 'false'
           width: full
         - type: CheckboxFormControl
