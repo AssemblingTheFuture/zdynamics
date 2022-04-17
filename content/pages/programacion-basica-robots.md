@@ -399,7 +399,7 @@ sections:
           width: full
         - type: TextareaFormControl
           name: Comentarios
-          label: Description
+          label: ¿Te gustaría comentarnos algo?
           hideLabel: false
           placeholder: Please describe
           isRequired: false
