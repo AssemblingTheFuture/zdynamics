@@ -398,7 +398,7 @@ sections:
           isRequired: true
           width: full
         - type: TextareaFormControl
-          name: description
+          name: Comentarios
           label: Description
           hideLabel: false
           placeholder: Please describe
