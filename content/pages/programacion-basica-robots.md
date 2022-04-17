@@ -123,13 +123,6 @@ sections:
         icon: arrowRightCircle
         iconPosition: right
         elementId: ''
-      - type: Link
-        altText: ''
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        elementId: ''
-        url: ' '
     columns: 2
     enableHover: true
     styles:
