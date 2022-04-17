@@ -84,7 +84,7 @@ En esta etapa inicial, estamos considerando que **el sistema de control del robo
 
 <div class="sketchfab-embed-wrapper"; style="text-align: center">
 
-<iframe title="zRobot 1.0" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="800" height="1000" src="https://sketchfab.com/models/774702d30f8d46b8aa932ef702339017/embed?ui_theme=dark"> 
+<iframe title="zRobot 1.0" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="800" height="900" src="https://sketchfab.com/models/774702d30f8d46b8aa932ef702339017/embed?ui_theme=dark"> 
 </iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
