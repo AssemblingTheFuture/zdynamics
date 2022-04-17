@@ -295,7 +295,6 @@ sections:
       </div>
     backgroundImage:
       url: /images/bg.jpg
-      altText: Product Marketing Manager Quote
       styles:
         self:
           opacity: 70
