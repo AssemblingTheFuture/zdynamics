@@ -458,7 +458,7 @@ sections:
         answer: >
           Aquí aprenderás toda la teoría detrás del funcionamiento de un robot,
           desde los fenómenos físicos hasta su interpretación matemática e
-          implementación en algoritmos numéricos, utilizando un robot REALES y
+          implementación en algoritmos numéricos, utilizando un robot REAL y
           Python como lenguaje de programación
       - question: ¿En qué se diferencia con otros talleres de robótica?
         answer: >+
