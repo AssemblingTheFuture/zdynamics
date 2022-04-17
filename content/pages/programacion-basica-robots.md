@@ -119,7 +119,7 @@ sections:
         label: ¿Indeciso? Revisa nuestras Preguntas Frecuentes
         altText: ''
         url: '#faq'
-        showIcon: false
+        showIcon: true
         icon: arrowRight
         iconPosition: right
         elementId: ''
