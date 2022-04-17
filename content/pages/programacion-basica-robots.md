@@ -77,6 +77,16 @@ sections:
             borderWidth: 1
             borderStyle: solid
         subtitle: Una persona (IVA Incluido)
+        actions:
+          - type: Button
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            style: secondary
+            elementId: ''
       - type: FeaturedItem
         title: Smarter
         text: >-
