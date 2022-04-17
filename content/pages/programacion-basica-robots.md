@@ -468,7 +468,7 @@ sections:
           ¡Claro que sí! Estamos trabajando en una plataforma donde podrás
           obtener tu certificado con un código de validación que podrás usar en
           LinkedIn. Mientras la terminamos, te enviaremos una copia digital
-          firmada para que puedas usarla como referencia :wink:
+          firmada para que puedas usarla como referencia ;)
     styles:
       self:
         height: auto
