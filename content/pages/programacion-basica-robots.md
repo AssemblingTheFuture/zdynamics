@@ -343,7 +343,7 @@ sections:
           name: Nombre
           label: Nombre
           placeholder: Bob el Trompas
-          isRequired: 'true'
+          isRequired: true
           width: 1/2
           hideLabel: false
         - type: EmailFormControl
