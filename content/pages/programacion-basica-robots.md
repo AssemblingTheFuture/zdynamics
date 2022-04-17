@@ -379,7 +379,7 @@ sections:
           width: full
         - type: SelectFormControl
           name: Producto
-          label: ¿Qué producto ?
+          label: ¿Qué producto comprarás?
           hideLabel: false
           defaultValue: Please choose...
           options:
