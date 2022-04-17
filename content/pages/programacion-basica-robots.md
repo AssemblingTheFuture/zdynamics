@@ -120,7 +120,7 @@ sections:
         altText: ''
         url: '#faq'
         showIcon: true
-        icon: arrowRight
+        icon: arrowRightCircle
         iconPosition: right
         elementId: ''
       - type: Link
