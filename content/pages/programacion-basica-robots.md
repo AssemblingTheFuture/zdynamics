@@ -89,8 +89,9 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: $75 USD
-        text: |
-          Dos personas (IVA incluido)
+        text: >
+          **Se envía UN robot para ser usado por DOS personas durante catorce
+          días**
         featuredImage:
           type: ImageBlock
           url: /images/two-persons.png
