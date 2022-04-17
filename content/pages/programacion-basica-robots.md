@@ -362,9 +362,7 @@ sections:
           name: Domicilio
           label: Domicilio
           hideLabel: false
-          placeholder: >-
-            Tu dirección se solicita para organizar la entrega del equipo a los
-            diferentes estudiantes
+          placeholder: Tu dirección se solicita para organizar la entrega del equipo
           isRequired: true
           width: full
         - type: CheckboxFormControl
