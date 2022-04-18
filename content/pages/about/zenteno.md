@@ -89,7 +89,7 @@ sections:
     colors: colors-f
     elementId: ''
     title: What (I think) I know to do?
-    subtitle: We are here to help
+    subtitle: 'I''m not an expert, but I enjoy working!'
     actions:
       - type: Link
         label: See all
