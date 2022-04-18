@@ -255,10 +255,7 @@ sections:
     colors: colors-h
     title: 'Ford Motor Company, Mexico'
     subtitle: ''
-    text: >-
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    text: (2019 -  2021)
     actions: []
     media:
       type: ImageBlock
