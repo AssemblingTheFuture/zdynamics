@@ -102,7 +102,7 @@ sections:
           - Self confidence
           - Relationship development
           - Customer service
-      - question: How is this different from what we have today?
+      - question: Hard Skills
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation, At the office, working together is often a
