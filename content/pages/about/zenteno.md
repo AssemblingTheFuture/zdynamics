@@ -264,10 +264,6 @@ sections:
         label: Sign Up
         url: /
         style: primary
-      - type: Button
-        label: Learn More
-        url: /
-        style: secondary
     media:
       type: ImageBlock
       url: /images/hero-3.jpg
