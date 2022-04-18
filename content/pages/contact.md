@@ -3,7 +3,7 @@ layout: PageLayout
 metaTitle: Contáctanos
 metaDescription: ;)
 addTitleSuffix: true
-socialImage: /images/vision.png
+socialImage: /images/bny-rgb-2.png
 metaTags: []
 title: Contacto
 sections:
