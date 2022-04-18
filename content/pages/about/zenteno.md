@@ -153,7 +153,7 @@ sections:
       </div>
     backgroundImage:
       url: /images/bny-rgb-2.png
-      altText: Product Marketing Manager Quote
+      altText: Assembling the Future
       styles:
         self:
           opacity: 70
