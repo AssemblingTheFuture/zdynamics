@@ -94,7 +94,7 @@ sections:
     subtitle: 'I''m not an expert, but I enjoy working!'
     actions: []
     items:
-      - question: How is this different from what we have today?
+      - question: Soft Skills
         answer: >-
           At the office, working together is often a distraction, on remote, it
           could be motivation, At the office, working together is often a
