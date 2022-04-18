@@ -142,31 +142,6 @@ sections:
         fontWeight: '400'
         fontStyle: normal
         textAlign: left
-  - type: TextSection
-    elementId: ''
-    colors: colors-c
-    title: Work Experience
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-24
-          - pb-24
-          - pl-4
-          - pr-4
-        justifyContent: center
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      text:
-        textAlign: center
   - type: QuoteSection
     elementId: ''
     colors: colors-c
