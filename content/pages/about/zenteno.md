@@ -145,7 +145,7 @@ sections:
   - type: TextSection
     elementId: ''
     colors: colors-c
-    title: The Section Title
+    title: Work Experience
     styles:
       self:
         height: auto
