@@ -14,7 +14,7 @@ sections:
       *«I want to leave a positive mark on people by communicating my passion
       for living. This will raise my spiritual awareness and will echo as my
       legacy for all the eternity»*
-    name: Johnna Doe
+    name: David Zenteno
     title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/bg.jpg
