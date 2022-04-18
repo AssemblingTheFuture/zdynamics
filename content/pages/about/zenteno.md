@@ -51,7 +51,8 @@ sections:
     colors: colors-a
     title: Me at a Glance
     subtitle: ''
-    text: >
+    text: >2
+       <div align="justify">
       I started my professional career in 2015 as a **Teaching Assitant** at the
       Mechanical Engineering department of my university. I was involved in
       performing my social and engineering abilities, such as mentorship, public
@@ -59,11 +60,12 @@ sections:
       tools students and professors used for their classes. After finishing my
       bacherlor's degree, **I founded a (very) small company on robotics and
       automation** that closed in 2018, but then the idea evolved to
-      **[zDynamics](https://zdynamics.org/): the first educational group of
+      [**zDynamics**](https://zdynamics.org/)**: the first educational group of
       advanced robotics in Mexico**. At the same time, *I have worked as a
       software employee* in some some other companies (but I do not consider
       myself as a *software developer*). Nowadays, I have developed new skills
       and improved the already existing ones :)
+       </div>
     styles:
       self:
         height: auto
