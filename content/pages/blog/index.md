@@ -20,4 +20,5 @@ styles:
   title:
     textAlign: center
 metaTitle: Blog
+metaDescription: Temas sobre robótica y afines
 ---
