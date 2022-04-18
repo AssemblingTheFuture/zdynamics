@@ -16,7 +16,7 @@ sections:
       legacy for all the eternity»*
     name: David Zenteno
     backgroundImage:
-      url: /images/bg.jpg
+      url: /images/seta.jpg
       altText: ola seta
       styles:
         self:
