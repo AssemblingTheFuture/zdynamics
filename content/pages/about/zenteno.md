@@ -103,11 +103,20 @@ sections:
           - Relationship development
           - Customer service
       - question: Hard Skills
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
+        answer: |-
+          - Autodesk Fusion 360 (Intermediate)
+          - Autodesk AutoCAD (Intermediate)
+          - C/C++ (Intermediate)
+          - C# (Intermediate)
+          - Embedded Systems (Basic)
+          - Java (Basic)
+          - LaTeX (Intermediate)
+          - Linux - based OS (Basic)
+          - MATLAB / Simulink (Intermediate)
+          - Python (Intermediate)
+          - Robotics Development (Advanced)
+          - SolidWorks (Intermediate)
+          - Wolfram Mathematica / System Modeler (Intermediate)
       - question: How is this different from what we have today?
         answer: >-
           At the office, working together is often a distraction, on remote, it
