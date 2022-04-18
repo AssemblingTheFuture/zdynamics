@@ -553,4 +553,8 @@ metaTitle: zDynamics
 metaDescription: The Future is ROBOTICS
 socialImage: /images/ZD RGB.jpg
 addTitleSuffix: true
+metaTags:
+  - type: MetaTag
+    property: 'og:title'
+    content: ''
 ---
