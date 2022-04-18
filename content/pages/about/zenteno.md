@@ -231,7 +231,7 @@ sections:
         justifyContent: flex-start
   - type: QuoteSection
     elementId: ''
-    colors: colors-c
+    colors: colors-e
     quote: |-
       <div style = "text-align:center">
       Ford Motor Company, Mexico
