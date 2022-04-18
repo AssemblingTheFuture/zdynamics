@@ -180,7 +180,7 @@ sections:
   - type: HeroSection
     elementId: ''
     colors: colors-h
-    title: Love where you work
+    title: Assembling the Future S.A.S.
     subtitle: ''
     text: >-
       One platform, one community, getting to the bottom line of everything
