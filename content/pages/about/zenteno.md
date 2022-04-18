@@ -10,9 +10,11 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-c
-    quote: |-
-      “It’s great to see someone taking action while still maintaining a
-      sustainable fish supply to home cooks.”
+    quote: >
+      "I am very clear that my goal in this life is to transmit my passion for
+      emerging technologies to people who don't know the wonders that this can
+      bring to our society. My personal and professional development is not a
+      goal, but a way to my spiritual transcendence"
     name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage:
