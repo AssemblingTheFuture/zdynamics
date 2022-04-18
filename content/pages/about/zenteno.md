@@ -233,8 +233,9 @@ sections:
     elementId: ''
     colors: colors-c
     quote: |-
-      “It’s great to see someone taking action while still maintaining a
-      sustainable fish supply to home cooks.”
+      <div style = "text-align:center">
+      Ford Motor Company, Mexico
+      </div>
     name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage:
