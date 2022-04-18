@@ -174,7 +174,6 @@ sections:
       “It’s great to see someone taking action while still maintaining a
       sustainable fish supply to home cooks.”
     name: Johnna Doe
-    title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/bg.jpg
       altText: Product Marketing Manager Quote
