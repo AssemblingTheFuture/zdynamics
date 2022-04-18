@@ -53,7 +53,7 @@ sections:
           label: 'Quiero que me envíen actualizaciones de sus proyectos :D'
           isRequired: false
           width: full
-      submitLabel: Send Message
+      submitLabel: Enviar
     media: null
     styles:
       self:
