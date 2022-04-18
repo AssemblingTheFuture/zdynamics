@@ -232,10 +232,9 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-e
-    quote: |-
-      <div style = "text-align:center">
-      Ford Motor Company, Mexico
-      </div>
+    quote: |2+
+       
+
     backgroundImage:
       url: /images/ford.png
       altText: Faaaaaard
