@@ -236,7 +236,6 @@ sections:
       <div style = "text-align:center">
       Ford Motor Company, Mexico
       </div>
-    title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/bg.jpg
       altText: Product Marketing Manager Quote
