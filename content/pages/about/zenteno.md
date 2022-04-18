@@ -49,7 +49,7 @@ sections:
   - type: TextSection
     elementId: ''
     colors: colors-a
-    title: The Section Title
+    title: Me at a Glance
     subtitle: ''
     text: >
       I started my professional career in 2015 as a **Teaching Assitant** at the
