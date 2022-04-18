@@ -95,11 +95,13 @@ sections:
     actions: []
     items:
       - question: Soft Skills
-        answer: >-
-          At the office, working together is often a distraction, on remote, it
-          could be motivation, At the office, working together is often a
-          distraction, on remote, it could be motivation, At the office, working
-          together is often a distraction, on remote, it could be motivation
+        answer: |-
+          - Team leadership
+          - Extremely organized
+          - Self commitment
+          - Self confidence
+          - Relationship development
+          - Customer service
       - question: How is this different from what we have today?
         answer: >-
           At the office, working together is often a distraction, on remote, it
