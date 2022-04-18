@@ -88,7 +88,7 @@ sections:
   - type: FaqSection
     colors: colors-f
     elementId: ''
-    title: Need Answers?
+    title: What (I think) I know to do?
     subtitle: We are here to help
     actions:
       - type: Link
