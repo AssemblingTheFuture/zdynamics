@@ -15,7 +15,6 @@ sections:
       for living. This will raise my spiritual awareness and will echo as my
       legacy for all the eternity»*
     name: David Zenteno
-    title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/bg.jpg
       altText: Product Marketing Manager Quote
