@@ -176,7 +176,6 @@ sections:
       Assembling the Future S.A.S.
 
       </div>
-    name: Johnna Doe
     backgroundImage:
       url: /images/bg.jpg
       altText: Product Marketing Manager Quote
