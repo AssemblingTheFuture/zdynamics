@@ -185,10 +185,6 @@ sections:
     text: (2017 - Ongoing)
     actions:
       - type: Button
-        label: Sign Up
-        url: /
-        style: primary
-      - type: Button
         label: Learn More
         url: /
         style: secondary
