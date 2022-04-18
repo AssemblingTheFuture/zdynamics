@@ -57,13 +57,13 @@ sections:
       performing my social and engineering abilities, such as mentorship, public
       speaking, mechanical design and programming to develop or improve the
       tools students and professors used for their classes. After finishing my
-      bacherlor's degree, I founded a (very) small company on robotics and
-      automation that closed in 2018, but then the idea evolved to
-      [zDynamics](https://zdynamics.org/): the first educational group of
-      advanced robotics in Mexico; at the same time, I was a software employee
-      in some some other companies (but I do not consider myself as a *software
-      developer*). Nowadays, I have developed new skills and improved the
-      already existing ones :)
+      bacherlor's degree, **I founded a (very) small company on robotics and
+      automation** that closed in 2018, but then the idea evolved to
+      **[zDynamics](https://zdynamics.org/): the first educational group of
+      advanced robotics in Mexico**. At the same time, *I have worked as a
+      software employee* in some some other companies (but I do not consider
+      myself as a *software developer*). Nowadays, I have developed new skills
+      and improved the already existing ones :)
     styles:
       self:
         height: auto
