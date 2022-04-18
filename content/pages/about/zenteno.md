@@ -146,7 +146,6 @@ sections:
     elementId: ''
     colors: colors-c
     title: The Section Title
-    subtitle: The section subtitle
     styles:
       self:
         height: auto
