@@ -17,7 +17,7 @@ sections:
     name: David Zenteno
     backgroundImage:
       url: /images/bg.jpg
-      altText: Product Marketing Manager Quote
+      altText: ola seta
       styles:
         self:
           opacity: 70
