@@ -144,7 +144,7 @@ sections:
         textAlign: left
   - type: TextSection
     elementId: ''
-    colors: colors-f
+    colors: colors-c
     title: The Section Title
     subtitle: The section subtitle
     text: >-
