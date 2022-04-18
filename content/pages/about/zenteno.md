@@ -144,7 +144,7 @@ sections:
         textAlign: left
   - type: QuoteSection
     elementId: ''
-    colors: colors-f
+    colors: colors-b
     quote: |
       <div style = "text-align:center">
 
