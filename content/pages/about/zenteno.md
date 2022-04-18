@@ -90,12 +90,7 @@ sections:
     elementId: ''
     title: What (I think) I know to do?
     subtitle: 'I''m not an expert, but I enjoy working!'
-    actions:
-      - type: Link
-        label: See all
-        url: /
-        showIcon: true
-        icon: arrowRight
+    actions: []
     items:
       - question: How is this different from what we have today?
         answer: >-
