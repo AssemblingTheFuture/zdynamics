@@ -237,7 +237,7 @@ sections:
       Ford Motor Company, Mexico
       </div>
     backgroundImage:
-      url: /images/bg.jpg
+      url: /images/ford.png
       altText: Faaaaaard
       styles:
         self:
