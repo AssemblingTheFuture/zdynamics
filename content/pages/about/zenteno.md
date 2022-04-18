@@ -145,12 +145,7 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-b
-    quote: |
-      <div style = "text-align:center">
-
-      Assembling the Future S.A.S.
-
-      </div>
+    quote: ' '
     backgroundImage:
       url: /images/bny-rgb-2.png
       altText: Assembling the Future
