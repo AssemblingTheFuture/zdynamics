@@ -183,11 +183,7 @@ sections:
     title: Assembling the Future S.A.S.
     subtitle: ''
     text: (2017 - Ongoing)
-    actions:
-      - type: Button
-        label: Learn More
-        url: /
-        style: secondary
+    actions: []
     media:
       type: ImageBlock
       url: /images/hero-3.jpg
