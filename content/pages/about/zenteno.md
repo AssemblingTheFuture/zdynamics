@@ -51,13 +51,18 @@ sections:
     colors: colors-a
     title: The Section Title
     subtitle: ''
-    text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    text: >
+      I started my professional career in 2015 as a Teaching Assitant at the
+      Mechanical Engineering department of my university. I was involved in
+      performing my social and engineering abilities, such as mentorship, public
+      speaking, mechanical design and programming to develop or improve the
+      tools students and professors used for their classes. Then I founded a
+      (very) small company on robotics and automation that closed in 2018, but
+      then the idea evolved to [zDynamics](https://zdynamics.org/): the first
+      educational group of advanced robotics in Mexico; at the same time, I was
+      a software employee in some some other companies (but I do not consider
+      myself as a *software developer*). Nowadays, I have developed new skills
+      and improved the already existing ones
     styles:
       self:
         height: auto
