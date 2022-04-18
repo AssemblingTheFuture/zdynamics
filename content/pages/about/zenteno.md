@@ -152,7 +152,7 @@ sections:
 
       </div>
     backgroundImage:
-      url: /images/bg.jpg
+      url: /images/bny-rgb-2.png
       altText: Product Marketing Manager Quote
       styles:
         self:
