@@ -90,7 +90,7 @@ sections:
   - type: FaqSection
     colors: colors-f
     elementId: ''
-    title: What (I think) I know to do?
+    title: What (I think that) I know to do?
     subtitle: 'I''m not an expert, but I enjoy working!'
     actions: []
     items:
