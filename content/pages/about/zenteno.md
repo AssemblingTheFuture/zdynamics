@@ -11,10 +11,9 @@ sections:
     elementId: ''
     colors: colors-c
     quote: >
-      "I am very clear that my goal in this life is to transmit my passion for
-      emerging technologies to people who don't know the wonders that this can
-      bring to our society. My personal and professional development is not a
-      goal, but a way to my spiritual transcendence"
+      *«I want to leave a positive mark on people by communicating my passion
+      for living. This will raise my spiritual awareness and will echo as my
+      legacy for all the eternity»*
     name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage:
