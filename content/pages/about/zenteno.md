@@ -170,7 +170,12 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-c
-    quote: Assembling the Future S.A.S.
+    quote: |
+      <div style = "text-align:center">
+
+      Assembling the Future S.A.S.
+
+      </div>
     name: Johnna Doe
     backgroundImage:
       url: /images/bg.jpg
