@@ -802,7 +802,7 @@ sections:
           </div>
         featuredImage:
           type: ImageBlock
-          url: /images/focused.svg
+          url: /images/managementskills.webp
           altText: Item image
         styles:
           self:
