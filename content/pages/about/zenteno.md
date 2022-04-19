@@ -881,7 +881,7 @@ sections:
         justifyContent: center
   - type: QuoteSection
     elementId: ''
-    colors: colors-a
+    colors: colors-e
     quote: |-
       “It’s great to see someone taking action while still maintaining a
       sustainable fish supply to home cooks.”
