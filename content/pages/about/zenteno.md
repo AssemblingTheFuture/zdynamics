@@ -798,6 +798,28 @@ sections:
             icon: github
             iconPosition: right
             elementId: ''
+      type: FeaturedItem
+        text: |
+          ##### zRobotics 0.2: 
+          ###### A powerful (Python) library for robot analysis
+
+          zDynamics | Ongoing
+        featuredImage:
+          type: ImageBlock
+          url: /images/robotics.png
+          altText: Item image
+        styles:
+          self:
+            textAlign: center
+        actions:
+          - type: Link
+            label: Code
+            altText: ''
+            url: /blog/el-robot
+            showIcon: true
+            icon: github
+            iconPosition: right
+            elementId: ''
       - type: FeaturedItem
         elementId: ''
         subtitle: ''
