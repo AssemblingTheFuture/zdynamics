@@ -812,7 +812,7 @@ sections:
             label: Certificate
             altText: ''
             url: 'https://www.udemy.com/certificate/UC-XP9JXX6W/'
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
