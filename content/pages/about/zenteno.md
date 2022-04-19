@@ -1,7 +1,10 @@
 ---
 layout: PageLayout
 metaTitle: Zenteno con Z
-metaDescription: null
+metaDescription: >-
+  «I want to leave a positive mark on people by communicating my passion for
+  living. This will raise my spiritual awareness and will echo as my legacy for
+  all the eternity»
 addTitleSuffix: true
 socialImage: /images/z.png
 metaTags: []
