@@ -49,7 +49,7 @@ sections:
   - type: TextSection
     elementId: ''
     colors: colors-a
-    title: The Section Title
+    title: Content
     subtitle: ''
     text: >-
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
