@@ -708,7 +708,7 @@ sections:
     elementId: ''
     colors: colors-a
     quote: |
-      **Continuing Education, Projects and R&D**
+      **Continuing Education**
     backgroundImage: null
     styles:
       self:
