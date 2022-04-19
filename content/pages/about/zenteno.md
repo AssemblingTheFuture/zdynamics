@@ -885,6 +885,44 @@ sections:
         fontWeight: 400
         fontStyle: normal
         textAlign: left
+  - type: HeroSection
+    elementId: ''
+    colors: colors-c
+    title: Instituto Politécnico Nacional
+    subtitle: ''
+    text: >-
+      (**High School:** 2009 - 2012, **University:** 2012 - 2016, **Master's
+      Degree:** 2017 - 2019)
+    actions: []
+    media:
+      type: ImageBlock
+      url: /images/school.svg
+      altText: Hero image
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-5
+          - pb-5
+          - pl-4
+          - pr-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: col
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
   - type: FeaturedItemsSection
     colors: colors-c
     elementId: ''
@@ -1029,44 +1067,6 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-  - type: HeroSection
-    elementId: ''
-    colors: colors-c
-    title: Instituto Politécnico Nacional
-    subtitle: ''
-    text: >-
-      (**High School:** 2009 - 2012, **University:** 2012 - 2016, **Master's
-      Degree:** 2017 - 2019)
-    actions: []
-    media:
-      type: ImageBlock
-      url: /images/school.svg
-      altText: Hero image
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-5
-          - pb-5
-          - pl-4
-          - pr-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: col
-      title:
-        textAlign: left
-      subtitle:
-        textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start
   - type: TextSection
     elementId: ''
     colors: colors-c
