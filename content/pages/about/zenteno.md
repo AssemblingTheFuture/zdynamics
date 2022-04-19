@@ -634,7 +634,7 @@ sections:
     quote: |2
        
     backgroundImage:
-      url: /images/bg.jpg
+      url: /images/ipn.png
       altText: Instituto Politécnico Nacional
       styles:
         self:
