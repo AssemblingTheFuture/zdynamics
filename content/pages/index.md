@@ -243,7 +243,7 @@ sections:
             elementId: ''
         styles:
           self:
-            textAlign: CENTER
+            textAlign: center
             padding:
               - pt-4
               - pl-4
