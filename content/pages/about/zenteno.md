@@ -825,7 +825,7 @@ sections:
         text: |
           ##### zRobot 0.1 Beta:
 
-          ###### Controller for Uncertain Dynamic Systems
+          ###### A modular - reconfigurable cobot
 
           zDynamics | Ongoing
         featuredImage:
