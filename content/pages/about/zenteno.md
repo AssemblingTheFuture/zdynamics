@@ -708,7 +708,6 @@ sections:
     elementId: ''
     colors: colors-a
     quote: '**Continuing Education**'
-    name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage: null
     styles:
