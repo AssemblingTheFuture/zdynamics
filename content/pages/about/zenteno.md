@@ -51,10 +51,13 @@ sections:
     colors: colors-c
     title: Content
     subtitle: ''
-    text: |-
+    text: |
       <div style = "text-align:justify">
-      - A
-      - B
+      - Me at a Glance
+      - Work Experience
+      - MOOCs, Licenses & Certifications
+      - Education
+      - Contact me!
       </div>
     styles:
       self:
