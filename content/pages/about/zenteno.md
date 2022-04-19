@@ -800,7 +800,7 @@ sections:
             label: Email
             altText: ''
             url: 'mailto:dzentenol@gmail.com'
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
