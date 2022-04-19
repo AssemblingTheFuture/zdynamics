@@ -549,12 +549,34 @@ sections:
     colors: colors-e
     subtitle: ''
     text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      #### Teaching Assistant
+
+
+      -  Worked in Mechanical Design department creating prototypes of new
+      designs and training products for bachelors (such as oscillator analyzer
+      and motor’s controllers with its respective GUIs)
+
+      - Projects were developed using mechanical drafting and simulation
+      software (SolidWorks) + PyCharm IDE (to create GUIs that were deployed
+      into Raspberry Pi)
+
+      - Participated with preparation of design documents for track-work,
+      including alignments, specifications, criteria details and billing
+      estimates
+
+
+      #### Brigade Chief (Volunteering)
+
+
+      - Monitored service capabilities and collaborated cross-functionally to
+      ensure needs were met and escalated issues were resolved
+
+      - Provided patients and families with emotional support and instruction in
+      preparing healthy meals, independent living and adaptation to disability
+      or illness
+
+      - Volunteered at local charity events, in addition to increased experience
+      in social engagements and public speaking
     styles:
       self:
         height: auto
