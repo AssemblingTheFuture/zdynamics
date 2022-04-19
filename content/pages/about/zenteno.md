@@ -792,9 +792,14 @@ sections:
             elementId: ''
       - type: FeaturedItem
         title: Focused
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: |
+          <div style = "text-align:center">
+
+          #### Management Skills: New Manager Training in Essential Skills
+
+          Udemy, Inc. | April, 2019
+
+          </div>
         featuredImage:
           type: ImageBlock
           url: /images/focused.svg
