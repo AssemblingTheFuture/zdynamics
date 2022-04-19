@@ -825,7 +825,7 @@ sections:
             label: Phone
             altText: ''
             url: 'tel:+525562494512'
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
