@@ -1,6 +1,6 @@
 ---
 layout: PageLayout
-metaTitle: null
+metaTitle: Zenteno con Z
 metaDescription: null
 addTitleSuffix: true
 socialImage: null
