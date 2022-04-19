@@ -633,7 +633,6 @@ sections:
     colors: colors-c
     quote: |2
        
-    name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/bg.jpg
