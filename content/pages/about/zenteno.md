@@ -705,7 +705,7 @@ sections:
       text:
         textAlign: left
   - type: QuoteSection
-    elementId: ''
+    elementId: education
     colors: colors-c
     quote: '**Education**'
     backgroundImage: null
