@@ -257,34 +257,45 @@ sections:
     elementId: ''
     colors: colors-e
     subtitle: ''
-    text: >-
-      - Creator of Numerical Methods with Engineering Applications: math and
-      algorithms with real-life engineering applications
+    text: >
+      *   Creator of [**Basic Robot Programming using
+      Python**](https://bit.ly/CertificationZ): a remote online workshop where
+      you can learn how a robot works using a lended robot, everything from your
+      house!
 
-      - Developer of zRobotics 0.2: A powerful (Python) library for robotics
-      analysis using Dual Quaternions
+      *   Creator of [**Numerical Methods with Engineering
+      Applications**](https://bit.ly/NumericZ): math and algorithms with
+      real-life engineering applications
 
-      - Creator of Robotics: from Kinematics to Control: advanced robotics
-      training using dual quaternions with almost 200 students in more than 15
-      countries
+      *   Developer of [**zRobotics
+      0.2**](https://github.com/AssemblingTheFuture/zRobotics): A powerful
+      (Python) library for robotics analysis using Dual Quaternions
 
-      - Founder of zDynamics.org: first educational company for advanced
-      robotics in Mexico
+      *   Creator of [**Robotics: from Kinematics to
+      Control**](https://bit.ly/RoboticZ): advanced robotics training using dual
+      quaternions with more than 300 students in 15 countries
 
-      - Creator of Control of Dynamical Systems: a high level online training
-      with more than 350 students in 22 countries
+      *   Creator of [**Control of Dynamical
+      Systems**](https://bit.ly/zControl): a high level online training with
+      more than 500 students in 22 countries
 
-      - Developer of zController 0.1 Beta: A plug & play adaptive controller for
-      systems without dynamical model
+      *   Developer of [**zController 0.1
+      Beta**](https://github.com/AssemblingTheFuture/zController): A plug & play
+      adaptive controller for systems without dynamical model
 
-      - Designer of zRobot 0.1 Beta: first modular collaborative robot in Mexico
+      *   Founder of [**zDynamics.org**](https://zdynamics.org/): first
+      educational company for advanced robotics in Mexico
 
-      - Designer of a wide variety of mechanical & automated systems on –
+      *   Designer of [**zRobot 0.1
+      Beta**](https://zdynamics.org/blog/el-robot/): first modular collaborative
+      robot in Mexico
+
+      *   Designer of a wide variety of mechanical & automated systems on –
       demand, including UR+ robots deployment and training, using Polyscope GUI
       and UR Script Language
 
-      - Software developer using Python, Java and C# for multipurpose tasks such
-      as mechanical analysis, robot simulation and GUIs for robots
+      *   Software developer using Python, Java and C# for multipurpose tasks
+      such as mechanical analysis, robot simulation and GUIs for robots
     styles:
       self:
         height: auto
