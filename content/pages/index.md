@@ -139,7 +139,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Comprar (de  ̶$̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ $5 USD)
+            label: Comprar (de  $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ $5 USD)
             altText: ''
             url: 'https://bit.ly/NumericZ'
             showIcon: true
