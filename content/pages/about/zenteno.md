@@ -704,7 +704,7 @@ sections:
         justifyContent: flex-start
   - type: TextSection
     elementId: ''
-    colors: colors-a
+    colors: colors-c
     title: The Section Title
     subtitle: ''
     text: >-
