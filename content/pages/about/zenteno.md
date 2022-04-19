@@ -290,7 +290,7 @@ sections:
     actions: []
     media:
       type: ImageBlock
-      url: /images/faaaaaaaaaaaaaaaaaaaaaard.svg
+      url: /images/fard.svg
       altText: Hero image
     styles:
       self:
