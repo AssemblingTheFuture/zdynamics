@@ -968,7 +968,7 @@ sections:
             altText: ''
             url: /blog/el-robot
             showIcon: true
-            icon: arrowRight
+            icon: arrowRightCircle
             iconPosition: right
             elementId: ''
     actions: []
