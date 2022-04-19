@@ -396,7 +396,7 @@ sections:
         textAlign: left
   - type: HeroSection
     elementId: ''
-    colors: colors-h
+    colors: colors-e
     title: Love where you work
     subtitle: ''
     text: >-
