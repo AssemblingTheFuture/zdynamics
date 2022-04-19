@@ -89,7 +89,7 @@ sections:
     actions: []
     media:
       type: ImageBlock
-      url: /images/roadmap.svg
+      url: /images/Roadmap.svg
       altText: Roadmap
       caption: Roadmap
     styles:
