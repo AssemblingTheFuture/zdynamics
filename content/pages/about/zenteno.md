@@ -91,7 +91,7 @@ sections:
     colors: colors-a
     elementId: ''
     title: What (I think that) I know to do?
-    subtitle: 'I do not consider myself an expert, but I enjoy what I do!'
+    subtitle: 'I do not consider myself an expert, but I really enjoy what I do!'
     actions: []
     items:
       - question: Soft Skills
