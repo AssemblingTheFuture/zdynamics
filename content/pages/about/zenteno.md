@@ -813,7 +813,7 @@ sections:
             altText: ''
             url: 'https://www.udemy.com/certificate/UC-XP9JXX6W/'
             showIcon: true
-            icon: arrowRight
+            icon: playCircle
             iconPosition: right
             elementId: ''
     actions: []
