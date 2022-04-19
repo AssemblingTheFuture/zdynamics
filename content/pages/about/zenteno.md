@@ -182,7 +182,8 @@ sections:
     colors: colors-h
     title: Assembling the Future S.A.S.
     subtitle: ''
-    text: (2017 - Ongoing)
+    text: |
+      (February 2017 - Ongoing)
     actions: []
     media:
       type: ImageBlock
