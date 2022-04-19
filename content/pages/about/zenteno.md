@@ -739,7 +739,6 @@ sections:
     elementId: ''
     items:
       - type: FeaturedItem
-        title: Become a Technical Program Manager
         text: |
           LinkedIn, Inc. | June, 2020
         featuredImage:
