@@ -740,7 +740,7 @@ sections:
     items:
       - type: FeaturedItem
         text: |
-          LinkedIn, Inc. | June, 2020
+          Become a Technical Program Manager
         featuredImage:
           type: ImageBlock
           url: /images/technicalprogrammanager.webp
