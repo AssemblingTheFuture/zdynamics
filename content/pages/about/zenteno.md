@@ -9,7 +9,7 @@ title: David Zenteno
 sections:
   - type: QuoteSection
     elementId: ''
-    colors: colors-c
+    colors: colors-a
     quote: >
       *«I want to leave a positive mark on people by communicating my passion
       for living. This will raise my spiritual awareness and will echo as my
