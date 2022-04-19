@@ -710,34 +710,34 @@ sections:
       #### Master's Degree
 
 
-      - Graduated score: **9.55/10**
+      *   Graduated score: **9.55/10**
 
-      - Major: **Robotics & Automatic Control**
+      *   Major: **Robotics & Automatic Control**
 
-      - Thesis: *[**Design of an Adaptive Position and Speed Controller for
+      *   Thesis: [***Design of an Adaptive Position and Speed Controller for
       Collaborative Robots with Unknown
-      Dynamics**](https://tesis.ipn.mx/jspui/handle/123456789/29237?mode=full)*
+      Dynamics***](https://tesis.ipn.mx/jspui/handle/123456789/29237?mode=full)
 
 
       #### Bachelor's Degree
 
 
-      - Graduated score: **8.81/10**
+      *   Graduated score: **8.81/10**
 
-      - Major: **Mechanics, Robotics & Control Systems**
+      *   Major: **Mechanics, Robotics & Control Systems**
 
-      - Thesis: *[**Modular System for Soldering and Desoldering SMD -Type
-      Components**](https://drive.google.com/file/d/0B24R7YvGXY9hS0JlamVpVGtranM/view?usp=sharing)*
+      *   Thesis: [***Modular System for Soldering and Desoldering SMD -Type
+      Components***](https://drive.google.com/file/d/0B24R7YvGXY9hS0JlamVpVGtranM/view?usp=sharing)
 
 
       #### High School
 
 
-      - Graduated score: **7.4/10**
+      *   Graduated score: **7.4/10**
 
-      - Major: **Machine & Automated Systems**
+      *   Major: **Machine & Automated Systems**
 
-      - Thesis: *[**MIntelligent Rainwater Capture System.**]()*
+      *   Thesis: [***Intelligent Rainwater Capture System.***]()
     styles:
       self:
         height: auto
