@@ -331,7 +331,6 @@ sections:
     elementId: ''
     colors: colors-c
     quote: ' '
-    title: Product Marketing Manager at Acme
     backgroundImage:
       url: /images/bg.jpg
       altText: Product Marketing Manager Quote
