@@ -404,7 +404,7 @@ sections:
     actions: []
     media:
       type: ImageBlock
-      url: /images/hero-3.jpg
+      url: /images/tata.svg
       altText: Hero image
     styles:
       self:
