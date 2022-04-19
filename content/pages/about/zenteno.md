@@ -798,7 +798,7 @@ sections:
             icon: github
             iconPosition: right
             elementId: ''
-      type: FeaturedItem
+      - type: FeaturedItem
         text: |
           ##### zController 0.1 Beta:
           ###### Controller for Uncertain Dynamic Systems based on its feedback
