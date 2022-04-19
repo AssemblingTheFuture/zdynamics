@@ -51,7 +51,7 @@ sections:
       actions:
         justifyContent: flex-start
   - type: QuoteSection
-    colors: colors-h
+    colors: colors-e
     quote: >+
       ### *No estamos seguros de lo que hacemos ni hasta dónde llegaremos, pero
       sí tenemos claro que algo cambiaremos en la robótica en México y
