@@ -773,7 +773,7 @@ sections:
     colors: colors-e
     elementId: ''
     title: Let's talk!
-    subtitle: 'You can contact me using the following links:'
+    subtitle: 'You can contact me using any of following links :D'
     items:
       - type: FeaturedItem
         styles:
