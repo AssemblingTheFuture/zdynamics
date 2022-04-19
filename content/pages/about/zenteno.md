@@ -791,7 +791,6 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        title: Focused
         text: |
           <div style = "text-align:center">
 
