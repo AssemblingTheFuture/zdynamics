@@ -794,7 +794,7 @@ sections:
             altText: ''
             url: /blog/el-robot
             showIcon: true
-            icon: arrowRightCircle
+            icon: github
             iconPosition: right
             elementId: ''
     actions: []
