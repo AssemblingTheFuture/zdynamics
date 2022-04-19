@@ -707,7 +707,7 @@ sections:
         textAlign: left
   - type: QuoteSection
     elementId: projects
-    colors: colors-e
+    colors: colors-a
     quote: 'Projects, Research and Developments'
     backgroundImage: null
     styles:
