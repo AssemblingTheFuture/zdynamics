@@ -709,7 +709,8 @@ sections:
   - type: QuoteSection
     elementId: projects
     colors: colors-e
-    quote: 'Projects, Research and Developments'
+    quote: |
+      **Projects, Publications and Developments**
     backgroundImage: null
     styles:
       self:
