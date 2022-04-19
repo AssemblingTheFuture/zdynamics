@@ -772,7 +772,7 @@ sections:
   - type: FeaturedItemsSection
     colors: colors-e
     elementId: ''
-    title: Contact me!
+    title: Let's talk!
     subtitle: >-
       These are all excellent features that will provide exactly the things
       you’re looking for.
