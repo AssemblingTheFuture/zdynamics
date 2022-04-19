@@ -51,15 +51,16 @@ sections:
     colors: colors-c
     title: Content
     subtitle: ''
-    text: |
+    text: |+
       <div style = "text-align:justify">
-      - [Me at a Glance](#me)
-      - [Work Experience](#work-experience)
-      - [Projects, Research and Developments](#projects)
-      - [Education](#education)
-      - [Continuing Education](#continuing-education)
-      - [Contact me!](#contact)
+      - [**Me at a Glance**](#me)
+      - [**Work Experience**](#work-experience)
+      - [**Projects, Research and Developments**](#projects)
+      - [**Education**](#education)
+      - [**Continuing Education**](#continuing-education)
+      - [**Contact me!**](#contact)
       </div>
+
     styles:
       self:
         height: auto
