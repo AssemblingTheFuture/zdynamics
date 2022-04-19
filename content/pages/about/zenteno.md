@@ -784,7 +784,8 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: /
+            url: >-
+              https://www.coursera.org/account/accomplishments/professional-cert/KDL47AF9LAE4
             showIcon: false
             icon: arrowRight
             iconPosition: right
