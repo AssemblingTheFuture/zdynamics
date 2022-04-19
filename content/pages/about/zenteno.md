@@ -819,37 +819,6 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-  - type: QuoteSection
-    elementId: continuing-education
-    colors: colors-c
-    quote: |
-      **Continuing Education**
-    backgroundImage: null
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-5
-          - pb-5
-          - pl-4
-          - pr-4
-        justifyContent: center
-      quote:
-        textAlign: center
-      name:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: center
-      title:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: center
   - type: FeaturedItemsSection
     colors: colors-c
     elementId: ''
@@ -994,6 +963,37 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
+  - type: QuoteSection
+    elementId: continuing-education
+    colors: colors-c
+    quote: |
+      **Continuing Education**
+    backgroundImage: null
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-5
+          - pb-5
+          - pl-4
+          - pr-4
+        justifyContent: center
+      quote:
+        textAlign: center
+      name:
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: center
+      title:
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: center
   - type: QuoteSection
     elementId: education
     colors: colors-c
