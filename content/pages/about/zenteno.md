@@ -1054,7 +1054,7 @@ sections:
           </div>
         featuredImage:
           type: ImageBlock
-          url: /images/technicalprogrammanager.webp
+          url: /images/coming-soon.png
           altText: IELTS
         styles:
           self:
