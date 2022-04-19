@@ -882,7 +882,7 @@ sections:
       actions:
         justifyContent: center
   - type: QuoteSection
-    elementId: ''
+    elementId: projects
     colors: colors-e
     quote: 'Projects, Research and Developments'
     backgroundImage: null
