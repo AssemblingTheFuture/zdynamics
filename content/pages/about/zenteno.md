@@ -759,7 +759,7 @@ sections:
             label: Certificate
             altText: ''
             url: /
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
