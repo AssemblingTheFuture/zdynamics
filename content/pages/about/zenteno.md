@@ -334,7 +334,7 @@ sections:
     colors: colors-c
     quote: ' '
     backgroundImage:
-      url: /images/bg.jpg
+      url: /images/tata.png
       altText: Tata Consultancy Services
       styles:
         self:
