@@ -145,7 +145,8 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-e
-    quote: '**Work History**'
+    quote: |
+      **Work Experience**
     backgroundImage: null
     styles:
       self:
