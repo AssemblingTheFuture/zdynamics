@@ -966,7 +966,7 @@ sections:
           - type: Link
             label: More information
             altText: ''
-            url: /
+            url: /blog/el-robot
             showIcon: false
             icon: arrowRight
             iconPosition: right
