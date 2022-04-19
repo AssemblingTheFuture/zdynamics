@@ -110,7 +110,7 @@ sections:
         justifyContent: center
         flexDirection: col
       title:
-        textAlign: left
+        textAlign: center
       subtitle:
         textAlign: left
       text:
