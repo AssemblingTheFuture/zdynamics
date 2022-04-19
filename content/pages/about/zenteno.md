@@ -812,7 +812,7 @@ sections:
           zDynamics | Ongoing
         featuredImage:
           type: ImageBlock
-          url: /images/lorenz.png
+          url: /images/robotics.png
           altText: Item image
         actions: []
         styles:
