@@ -445,28 +445,20 @@ sections:
     subtitle: ''
     text: >+
       <a id="**"> 
-
       \*\* *Envíos los días Lunes y deben regresarse catorce días después. Puede
       incrementar el precio si el robot se envía a zonas donde el servicio de
       paquetería no tenga acceso*
-
       </a>
-
 
       <a id="***"> 
-
       \*\*\* *Sujeto al número de estudiantes que soliciten la modalidad. Debe
       agendarse con dos semanas de anticipación.*
-
       </a>
 
-
       <a id="****"> 
-
       \*\*\*\* *La logística de envío depende del domicilio del cliente y la
       disponibilidad del equipo. Los precios son respetados hasta que el cliente
       realice el pago y reciba el equipo*
-
       </a>
 
     styles:

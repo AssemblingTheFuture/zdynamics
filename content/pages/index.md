@@ -85,11 +85,11 @@ sections:
         borderRadius: xx-large
         boxShadow: xx-large
       title:
-        textAlign: left
+        textAlign: center
       subtitle:
-        textAlign: left
+        textAlign: center
       text:
-        textAlign: left
+        textAlign: center
       actions:
         justifyContent: flex-start
     type: FeatureHighlightSection
@@ -127,7 +127,7 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: left
+            textAlign: center
             borderColor: border-dark
             borderWidth: 1
             borderStyle: solid
@@ -139,7 +139,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Comprar ($5 USD)
+            label: De  $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ a $5 USD
             altText: ''
             url: 'https://bit.ly/NumericZ'
             showIcon: true
@@ -164,7 +164,7 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: left
+            textAlign: center
             borderColor: border-dark
             borderWidth: 1
             borderStyle: solid
@@ -176,7 +176,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Comprar ($5 USD)
+            label: De  $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ a $5 USD
             altText: ''
             url: 'https://bit.ly/zControl'
             showIcon: true
@@ -200,7 +200,7 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: left
+            textAlign: center
             borderColor: border-dark
             borderWidth: 1
             borderStyle: solid
@@ -212,7 +212,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Comprar ($5 USD)
+            label: De  $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ a $5 USD
             altText: ''
             url: 'https://bit.ly/RoboticZ'
             showIcon: true
@@ -243,7 +243,7 @@ sections:
             elementId: ''
         styles:
           self:
-            textAlign: left
+            textAlign: center
             padding:
               - pt-4
               - pl-4

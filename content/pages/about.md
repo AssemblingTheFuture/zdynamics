@@ -9,7 +9,7 @@ title: ¿Quién @$@% somos?
 sections:
   - type: HeroSection
     elementId: ''
-    colors: colors-h
+    colors: colors-c
     title: ¿Quién @$@% somos?
     subtitle: ''
     text: >
@@ -51,7 +51,7 @@ sections:
       actions:
         justifyContent: flex-start
   - type: QuoteSection
-    colors: colors-h
+    colors: colors-c
     quote: >+
       ### *No estamos seguros de lo que hacemos ni hasta dónde llegaremos, pero
       sí tenemos claro que algo cambiaremos en la robótica en México y
@@ -80,7 +80,7 @@ sections:
         textAlign: center
   - type: HeroSection
     elementId: ''
-    colors: colors-e
+    colors: colors-a
     title: 'Nuestro camino :D'
     subtitle: ''
     text: >
@@ -89,7 +89,7 @@ sections:
     actions: []
     media:
       type: ImageBlock
-      url: /images/roadmap.svg
+      url: /images/Roadmap.svg
       altText: Roadmap
       caption: Roadmap
     styles:
@@ -110,24 +110,24 @@ sections:
         justifyContent: center
         flexDirection: col
       title:
-        textAlign: left
+        textAlign: center
       subtitle:
-        textAlign: left
+        textAlign: center
       text:
-        textAlign: left
+        textAlign: center
       actions:
         justifyContent: flex-start
   - type: FeaturedPeopleSection
     elementId: ''
     variant: variant-a
-    colors: colors-c
+    colors: colors-e
     title: ¡Conócenos!
     subtitle: 'No hay ejércitos de un solo hombre :D'
     actions: []
     people:
-      - content/data/team/desmond-eagle.json
-      - content/data/team/dianne-ameter.json
-      - content/data/team/hilary-ouse.json
+      - content/data/team/david-zenteno.json
+      - content/data/team/itzel-torres.json
+      - content/data/team/luis-boyzo.json
     styles:
       self:
         height: auto
