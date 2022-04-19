@@ -830,7 +830,7 @@ sections:
           self:
             textAlign: left
     actions: []
-    columns: 3
+    columns: 4
     enableHover: true
     styles:
       self:
