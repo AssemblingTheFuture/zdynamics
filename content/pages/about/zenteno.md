@@ -51,15 +51,14 @@ sections:
     colors: colors-c
     title: Content
     subtitle: ''
-    text: |+
-      \<div style = "text-align:justify">
-      \- \[Me at a Glance]\(#me)
-      \- \[Work Experience]\(#work-experience)
-      \- \[MOOCs, Licenses & Certifications]\(#continuing-education)
-      \- \[Education]\(#education)
-      \- \[Contact me!]\(#contact)
-      \</div>
-
+    text: |-
+      <div style = "text-align:justify">
+      - [Me at a Glance](#me)
+      - [Work Experience](#work-experience)
+      - [MOOCs, Licenses & Certifications](#continuing-education)
+      - [Education](#education)
+      - [Contact me!](#contact)
+      </div>
     styles:
       self:
         height: auto
