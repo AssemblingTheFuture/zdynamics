@@ -707,7 +707,8 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-a
-    quote: '**Continuing Education**'
+    quote: |
+      **Continuing Education, Projects and R&D**
     backgroundImage: null
     styles:
       self:
