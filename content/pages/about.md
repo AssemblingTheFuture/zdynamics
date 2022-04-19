@@ -127,7 +127,7 @@ sections:
     people:
       - content/data/team/david-zenteno.json
       - content/data/team/itzel-torres.json
-      - content/data/team/hilary-ouse.json
+      - content/data/team/luis-boyzo.json
     styles:
       self:
         height: auto
