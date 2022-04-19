@@ -399,10 +399,7 @@ sections:
     colors: colors-e
     title: 'Tata Consultancy Services, Guadalajara'
     subtitle: ''
-    text: >-
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    text: (July 2019 - December 2019)
     actions: []
     media:
       type: ImageBlock
