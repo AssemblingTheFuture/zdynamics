@@ -31,7 +31,7 @@ sections:
             borderStyle: solid
         actions:
           - type: Link
-            label: Comprar ($5 USD)
+            label: DE $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ A $5 USD
             altText: ''
             url: 'https://bit.ly/NumericZ'
             showIcon: true
