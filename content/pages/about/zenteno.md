@@ -436,12 +436,21 @@ sections:
     colors: colors-e
     subtitle: ''
     text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      - Provided engineering support (Run The Bank, RTB) to customers using
+      Linux/UNIX + Python Environments
+
+      - Worked with ITRS Geneos and PuTTY to solve problems, improve operations
+      and provide exceptional customer service
+
+      - Attended insourced and outsourced team, developing solutions to improve
+      efficiency and customer satisfaction
+
+      - Collaborated with team to define business requirements for customers
+      processes, achieve productivity standards and adhere to accuracy standards
+      (based on Agile – SCRUM framework)
+
+      - Collected requirements from end-customers and business partners for
+      product upgrades to be escalated to Level 3 (Build The Bank, BTB)
     styles:
       self:
         height: auto
