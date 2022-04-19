@@ -816,7 +816,7 @@ sections:
           - type: Link
             label: Twitter
             altText: ''
-            url: /
+            url: 'https://twitter.com/dzentenol'
             showIcon: false
             icon: arrowRight
             iconPosition: right
