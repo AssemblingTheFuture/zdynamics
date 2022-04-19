@@ -740,7 +740,8 @@ sections:
     items:
       - type: FeaturedItem
         title: Become a Technical Program Manager
-        text: LinkedIn Learning Path
+        text: |
+          LinkedIn, Inc. | June, 2020
         featuredImage:
           type: ImageBlock
           url: /images/technicalprogrammanager.webp
