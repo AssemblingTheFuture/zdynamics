@@ -120,7 +120,7 @@ sections:
   - type: FeaturedPeopleSection
     elementId: ''
     variant: variant-a
-    colors: colors-c
+    colors: colors-e
     title: ¡Conócenos!
     subtitle: 'No hay ejércitos de un solo hombre :D'
     actions: []
