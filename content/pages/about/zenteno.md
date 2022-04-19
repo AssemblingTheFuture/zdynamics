@@ -48,7 +48,7 @@ sections:
         textAlign: left
   - type: TextSection
     elementId: ''
-    colors: colors-a
+    colors: colors-c
     title: Content
     subtitle: ''
     text: |-
