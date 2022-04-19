@@ -776,7 +776,6 @@ sections:
     subtitle: 'You can contact me using the following links:'
     items:
       - type: FeaturedItem
-        title: LinkedIn
         styles:
           self:
             textAlign: center
