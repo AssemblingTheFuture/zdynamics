@@ -922,7 +922,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/humbertillo.webp
+          url: /images/comingsoon.webp
           altText: Item image
         styles:
           self:
