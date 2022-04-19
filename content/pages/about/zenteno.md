@@ -144,7 +144,7 @@ sections:
         textAlign: left
   - type: QuoteSection
     elementId: ''
-    colors: colors-b
+    colors: colors-e
     quote: ' '
     backgroundImage:
       url: /images/bny-rgb-2.png
