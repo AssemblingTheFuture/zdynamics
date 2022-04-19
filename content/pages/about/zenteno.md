@@ -767,6 +767,90 @@ sections:
         fontStyle: normal
         textAlign: center
   - type: FeaturedItemsSection
+    colors: colors-e
+    elementId: ''
+    items:
+      - type: FeaturedItem
+        text: |-
+          ##### Newton - Euler Recursive Algorithm using Dual Quaternions
+
+          Under development
+        featuredImage:
+          type: ImageBlock
+          url: /images/coming-soon.png
+          altText: Coming Soon
+        styles:
+          self:
+            textAlign: center
+      - type: FeaturedItem
+        text: >
+          ##### Synchronization of Multi character Nazarimehr System using
+          Active Control
+
+
+          IJSER | June, 2018
+        featuredImage:
+          type: ImageBlock
+          url: /images/humbertillo.webp
+        styles:
+          self:
+            textAlign: center
+        actions:
+          - type: Link
+            label: Read Publication
+            altText: ''
+            url: >-
+              https://www.ijser.org/researchpaper/Synchronization-of-Multi-character-Nazarimehr-System-using-Active-Control.pdf
+            showIcon: true
+            icon: playCircle
+            iconPosition: right
+            elementId: ''
+      - type: FeaturedItem
+        text: |-
+          ##### zRobot 0.1 Beta
+
+          zDynamics | February, 2017 – Ongoing
+        featuredImage:
+          type: ImageBlock
+          url: /images/render.png
+          altText: Item image
+        styles:
+          self:
+            textAlign: center
+        actions:
+          - type: Link
+            label: More information
+            altText: ''
+            url: /blog/el-robot
+            showIcon: true
+            icon: arrowRightCircle
+            iconPosition: right
+            elementId: ''
+    actions: []
+    columns: 3
+    enableHover: false
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-5
+          - pb-5
+          - pl-4
+          - pr-4
+        justifyContent: center
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+      actions:
+        justifyContent: center
+  - type: FeaturedItemsSection
     colors: colors-h
     elementId: ''
     items:
@@ -886,90 +970,6 @@ sections:
         styles:
           self:
             textAlign: left
-    actions: []
-    columns: 3
-    enableHover: false
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-5
-          - pb-5
-          - pl-4
-          - pr-4
-        justifyContent: center
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      actions:
-        justifyContent: center
-  - type: FeaturedItemsSection
-    colors: colors-e
-    elementId: ''
-    items:
-      - type: FeaturedItem
-        text: |-
-          ##### Newton - Euler Recursive Algorithm using Dual Quaternions
-
-          Under development
-        featuredImage:
-          type: ImageBlock
-          url: /images/coming-soon.png
-          altText: Coming Soon
-        styles:
-          self:
-            textAlign: center
-      - type: FeaturedItem
-        text: >
-          ##### Synchronization of Multi character Nazarimehr System using
-          Active Control
-
-
-          IJSER | June, 2018
-        featuredImage:
-          type: ImageBlock
-          url: /images/humbertillo.webp
-        styles:
-          self:
-            textAlign: center
-        actions:
-          - type: Link
-            label: Read Publication
-            altText: ''
-            url: >-
-              https://www.ijser.org/researchpaper/Synchronization-of-Multi-character-Nazarimehr-System-using-Active-Control.pdf
-            showIcon: true
-            icon: playCircle
-            iconPosition: right
-            elementId: ''
-      - type: FeaturedItem
-        text: |-
-          ##### zRobot 0.1 Beta
-
-          zDynamics | February, 2017 – Ongoing
-        featuredImage:
-          type: ImageBlock
-          url: /images/render.png
-          altText: Item image
-        styles:
-          self:
-            textAlign: center
-        actions:
-          - type: Link
-            label: More information
-            altText: ''
-            url: /blog/el-robot
-            showIcon: true
-            icon: arrowRightCircle
-            iconPosition: right
-            elementId: ''
     actions: []
     columns: 3
     enableHover: false
