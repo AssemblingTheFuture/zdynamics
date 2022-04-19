@@ -126,7 +126,7 @@ sections:
     actions: []
     people:
       - content/data/team/david-zenteno.json
-      - content/data/team/itzel-torres.json
+      - content/data/team/dianne-ameter.json
       - content/data/team/hilary-ouse.json
     styles:
       self:
