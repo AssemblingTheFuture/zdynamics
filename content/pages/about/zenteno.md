@@ -770,7 +770,7 @@ sections:
       text:
         textAlign: left
   - type: FeaturedItemsSection
-    colors: colors-h
+    colors: colors-e
     elementId: ''
     title: Remote doesn’t mean alone. Here are so great features
     subtitle: >-
