@@ -740,7 +740,9 @@ sections:
     items:
       - type: FeaturedItem
         text: |
-          Become a Technical Program Manager
+          #### Become a Technical Program Manager
+
+          LinkedIn, Inc. | June, 2020
         featuredImage:
           type: ImageBlock
           url: /images/technicalprogrammanager.webp
