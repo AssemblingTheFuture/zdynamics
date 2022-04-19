@@ -741,10 +741,14 @@ sections:
       - type: FeaturedItem
         elementId: ''
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: |-
+          <div style = "text-align:center">
+
+          #### International English Language Testing
+
+          The British Council Mexico | March, 2022
+
+          </div>
         featuredImage:
           type: ImageBlock
           url: >-
