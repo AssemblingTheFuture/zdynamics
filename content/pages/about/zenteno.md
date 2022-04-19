@@ -282,6 +282,42 @@ sections:
         fontWeight: 400
         fontStyle: normal
         textAlign: left
+  - type: HeroSection
+    elementId: ''
+    colors: colors-e
+    title: 'Ford Motor Company, Mexico'
+    text: |
+      (December 2019 -  August 2021)
+    actions: []
+    media:
+      type: ImageBlock
+      url: /images/fard.svg
+      altText: Hero image
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-5
+          - pb-5
+          - pl-4
+          - pr-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: col
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+      text:
+        textAlign: left
+      actions:
+        justifyContent: flex-start
   - type: TextSection
     elementId: ''
     colors: colors-e
@@ -324,42 +360,6 @@ sections:
         textAlign: left
       text:
         textAlign: left
-  - type: HeroSection
-    elementId: ''
-    colors: colors-e
-    title: 'Ford Motor Company, Mexico'
-    text: |
-      (December 2019 -  August 2021)
-    actions: []
-    media:
-      type: ImageBlock
-      url: /images/fard.svg
-      altText: Hero image
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-5
-          - pb-5
-          - pl-4
-          - pr-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: col
-      title:
-        textAlign: left
-      subtitle:
-        textAlign: left
-      text:
-        textAlign: left
-      actions:
-        justifyContent: flex-start
   - type: QuoteSection
     elementId: ''
     colors: colors-e
