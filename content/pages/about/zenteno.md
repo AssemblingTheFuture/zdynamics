@@ -760,9 +760,7 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: IBM Data Science Professional Certificate
         featuredImage:
           type: ImageBlock
           url: /images/ibmcoursera.webp
