@@ -456,7 +456,6 @@ sections:
       </a>
 
       <a id="****"> 
-
       \*\*\*\* *La logística de envío depende del domicilio del cliente y la
       disponibilidad del equipo. Los precios son respetados hasta que el cliente
       realice el pago y reciba el equipo*
