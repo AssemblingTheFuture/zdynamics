@@ -844,7 +844,7 @@ sections:
             iconPosition: right
             elementId: ''
     actions: []
-    columns: 4
+    columns: 3
     enableHover: false
     styles:
       self:
