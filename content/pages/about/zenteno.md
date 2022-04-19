@@ -750,7 +750,6 @@ sections:
         styles:
           self:
             textAlign: center
-        subtitle: Become a Technical Program Manager
       - type: FeaturedItem
         title: Smarter
         text: >-
