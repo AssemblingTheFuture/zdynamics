@@ -916,9 +916,10 @@ sections:
     elementId: ''
     items:
       - type: FeaturedItem
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: |-
+          ##### Newton - Euler Recursive Algorithm using Dual Quaternions
+
+          Under development
         featuredImage:
           type: ImageBlock
           url: /images/comingsoon.webp
