@@ -80,7 +80,7 @@ sections:
         textAlign: center
   - type: HeroSection
     elementId: ''
-    colors: colors-c
+    colors: colors-a
     title: 'Nuestro camino :D'
     subtitle: ''
     text: >
