@@ -786,7 +786,7 @@ sections:
             altText: ''
             url: 'https://linkedin.com/in/dzentenol'
             showIcon: true
-            icon: arrowRight
+            icon: linkedin
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
