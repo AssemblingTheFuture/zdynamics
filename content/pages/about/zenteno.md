@@ -209,7 +209,7 @@ sections:
         textAlign: left
   - type: HeroSection
     elementId: ''
-    colors: colors-c
+    colors: colors-e
     title: Assembling the Future S.A.S.
     subtitle: ''
     text: |
