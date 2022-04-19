@@ -1063,7 +1063,7 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: /
+            url: /about/zenteno/
             showIcon: true
             icon: linkedin
             iconPosition: right
