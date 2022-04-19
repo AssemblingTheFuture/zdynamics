@@ -839,7 +839,7 @@ sections:
           - type: Link
             label: Code
             altText: ''
-            url: 'https://github.com/AssemblingTheFuture/zController'
+            url: '/blog/el-robot'
             showIcon: true
             icon: github
             iconPosition: right
