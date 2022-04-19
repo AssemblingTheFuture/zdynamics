@@ -745,7 +745,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/faster.svg
+          url: /images/technicalprogrammanager.webp
           altText: Item image
         styles:
           self:
