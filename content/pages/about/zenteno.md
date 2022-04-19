@@ -793,16 +793,19 @@ sections:
           - type: Link
             label: Code
             altText: ''
-            url: https://github.com/AssemblingTheFuture/zRobotics
+            url: 'https://github.com/AssemblingTheFuture/zRobotics'
             showIcon: true
             icon: github
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        text: |
+        text: >
           ##### zController 0.1 Beta:
+
+
           ###### Controller for Uncertain Dynamic Systems based on its feedback
           data
+
 
           zDynamics | Ongoing
         featuredImage:
@@ -816,7 +819,7 @@ sections:
           - type: Link
             label: Code
             altText: ''
-            url: https://github.com/AssemblingTheFuture/zController
+            url: 'https://github.com/AssemblingTheFuture/zController'
             showIcon: true
             icon: github
             iconPosition: right
