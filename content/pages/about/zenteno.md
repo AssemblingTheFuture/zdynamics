@@ -787,7 +787,7 @@ sections:
             url: >-
               https://www.coursera.org/account/accomplishments/professional-cert/KDL47AF9LAE4
             showIcon: true
-            icon: arrowRight
+            icon: playCircle
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
