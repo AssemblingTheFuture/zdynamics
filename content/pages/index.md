@@ -85,7 +85,7 @@ sections:
         borderRadius: xx-large
         boxShadow: xx-large
       title:
-        textAlign: left
+        textAlign: center
       subtitle:
         textAlign: left
       text:
