@@ -821,7 +821,7 @@ sections:
         justifyContent: center
   - type: QuoteSection
     elementId: continuing-education
-    colors: colors-a
+    colors: colors-e
     quote: |
       **Continuing Education**
     backgroundImage: null
