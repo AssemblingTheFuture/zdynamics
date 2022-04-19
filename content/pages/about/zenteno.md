@@ -819,6 +819,36 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
+  - type: QuoteSection
+    elementId: education
+    colors: colors-c
+    quote: '**Education**'
+    backgroundImage: null
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-7
+          - pb-7
+          - pl-4
+          - pr-4
+        justifyContent: center
+      quote:
+        textAlign: center
+      name:
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: center
+      title:
+        fontWeight: 400
+        fontStyle: normal
+        textAlign: center
   - type: FeaturedItemsSection
     colors: colors-c
     elementId: ''
@@ -963,36 +993,6 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-  - type: QuoteSection
-    elementId: education
-    colors: colors-c
-    quote: '**Education**'
-    backgroundImage: null
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-7
-          - pb-7
-          - pl-4
-          - pr-4
-        justifyContent: center
-      quote:
-        textAlign: center
-      name:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: center
-      title:
-        fontWeight: 400
-        fontStyle: normal
-        textAlign: center
   - type: QuoteSection
     elementId: ''
     colors: colors-c
