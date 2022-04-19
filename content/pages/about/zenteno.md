@@ -1065,7 +1065,7 @@ sections:
             altText: ''
             url: '/about/zenteno/#continuing-education'
             showIcon: true
-            icon: linkedin
+            icon: playCircle
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
