@@ -510,7 +510,7 @@ sections:
         textAlign: left
   - type: HeroSection
     elementId: ''
-    colors: colors-h
+    colors: colors-e
     title: Instituto Politécnico Nacional
     subtitle: ''
     text: (August 2015 - July 2016)
