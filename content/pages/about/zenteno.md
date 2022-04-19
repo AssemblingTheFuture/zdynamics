@@ -801,7 +801,10 @@ sections:
       - type: FeaturedItem
         elementId: ''
         subtitle: ''
-        text: >
+        text: >-
+          <div style = "text-align:center">
+
+
           ##### zController 0.1 Beta:
 
 
@@ -810,6 +813,9 @@ sections:
 
 
           zDynamics | Ongoing
+
+
+          </div>
         featuredImage:
           type: ImageBlock
           url: /images/robotics.png
