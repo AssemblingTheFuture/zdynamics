@@ -799,7 +799,7 @@ sections:
           - type: Link
             label: Email
             altText: ''
-            url: /
+            url: 'mailto:dzentenol@gmail.com'
             showIcon: false
             icon: arrowRight
             iconPosition: right
