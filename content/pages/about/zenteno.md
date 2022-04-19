@@ -55,7 +55,7 @@ sections:
       <div style = "text-align:justify">
       - [**Me at a Glance**](#me)
       - [**Work Experience**](#work-experience)
-      - [**Projects, Research and Developments**](#projects)
+      - [**Projects, Publications and Developments**](#projects)
       - [**Education**](#education)
       - [**Continuing Education**](#continuing-education)
       - [**Contact me!**](#contact)
