@@ -708,7 +708,6 @@ sections:
     elementId: ''
     colors: colors-a
     quote: '**Continuing Education**'
-    title: Product Marketing Manager at Acme
     backgroundImage: null
     styles:
       self:
