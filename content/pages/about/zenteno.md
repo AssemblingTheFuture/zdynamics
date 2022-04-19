@@ -883,7 +883,6 @@ sections:
     elementId: ''
     colors: colors-e
     quote: 'Projects, Research and Developments'
-    name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage: null
     styles:
