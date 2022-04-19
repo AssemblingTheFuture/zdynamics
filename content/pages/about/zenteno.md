@@ -942,7 +942,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Publication
+            label: Read Publication
             altText: ''
             url: /
             showIcon: false
