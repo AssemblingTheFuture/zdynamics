@@ -783,7 +783,7 @@ sections:
           zDynamics | February, 2017 – Ongoing
         featuredImage:
           type: ImageBlock
-          url: /images/render.png
+          url: /images/render.jpg
           altText: Item image
         styles:
           self:
