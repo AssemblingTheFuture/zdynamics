@@ -782,7 +782,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: LinkedIn
             altText: ''
             url: 'https://linkedin.com/in/dzentenol'
             showIcon: false
