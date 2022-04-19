@@ -513,10 +513,7 @@ sections:
     colors: colors-h
     title: Instituto Politécnico Nacional
     subtitle: ''
-    text: >-
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+    text: (August 2015 - July 2016)
     actions:
       - type: Button
         label: Sign Up
