@@ -869,7 +869,7 @@ sections:
         textAlign: left
   - type: FeaturedItemsSection
     colors: colors-e
-    elementId: ''
+    elementId: contact
     title: Let's talk!
     subtitle: 'You can contact me using any of following links :D'
     items:
