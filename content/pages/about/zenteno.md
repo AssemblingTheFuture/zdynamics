@@ -707,9 +707,7 @@ sections:
   - type: QuoteSection
     elementId: ''
     colors: colors-a
-    quote: |-
-      “It’s great to see someone taking action while still maintaining a
-      sustainable fish supply to home cooks.”
+    quote: '**Continuing Education**'
     name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage: null
