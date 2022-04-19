@@ -778,7 +778,8 @@ sections:
             elementId: ''
       - type: FeaturedItem
         text: |
-          ##### zRobotics 0.2: A powerful (Python) library for robot analysis
+          ##### zRobotics 0.2: 
+          ###### A powerful (Python) library for robot analysis
 
           zDynamics | Ongoing
         featuredImage:
