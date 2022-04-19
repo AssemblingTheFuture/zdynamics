@@ -799,13 +799,10 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        text: >
+        text: |
           ##### zController 0.1 Beta:
 
-
-          ###### Controller for Uncertain Dynamic Systems based on its feedback
-          data
-
+          ###### Controller for Uncertain Dynamic Systems
 
           zDynamics | Ongoing
         featuredImage:
