@@ -826,7 +826,7 @@ sections:
             altText: ''
             url: 'tel:+525562494512'
             showIcon: true
-            icon: arrowRight
+            icon: send
             iconPosition: right
             elementId: ''
         styles:
