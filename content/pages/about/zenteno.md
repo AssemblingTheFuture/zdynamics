@@ -258,12 +258,33 @@ sections:
     colors: colors-e
     subtitle: ''
     text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      - Creator of Numerical Methods with Engineering Applications: math and
+      algorithms with real-life engineering applications
+
+      - Developer of zRobotics 0.2: A powerful (Python) library for robotics
+      analysis using Dual Quaternions
+
+      - Creator of Robotics: from Kinematics to Control: advanced robotics
+      training using dual quaternions with almost 200 students in more than 15
+      countries
+
+      - Founder of zDynamics.org: first educational company for advanced
+      robotics in Mexico
+
+      - Creator of Control of Dynamical Systems: a high level online training
+      with more than 350 students in 22 countries
+
+      - Developer of zController 0.1 Beta: A plug & play adaptive controller for
+      systems without dynamical model
+
+      - Designer of zRobot 0.1 Beta: first modular collaborative robot in Mexico
+
+      - Designer of a wide variety of mechanical & automated systems on –
+      demand, including UR+ robots deployment and training, using Polyscope GUI
+      and UR Script Language
+
+      - Software developer using Python, Java and C# for multipurpose tasks such
+      as mechanical analysis, robot simulation and GUIs for robots
     styles:
       self:
         height: auto
