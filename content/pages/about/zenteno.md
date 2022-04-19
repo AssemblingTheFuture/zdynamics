@@ -766,7 +766,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/smarter.svg
+          url: /images/ibmcoursera.webp
           altText: Item image
         styles:
           self:
