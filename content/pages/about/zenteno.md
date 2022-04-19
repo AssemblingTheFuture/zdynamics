@@ -740,9 +740,7 @@ sections:
     items:
       - type: FeaturedItem
         title: Become a Technical Program Manager
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
+        text: LinkedIn Learning Path
         featuredImage:
           type: ImageBlock
           url: /images/technicalprogrammanager.webp
