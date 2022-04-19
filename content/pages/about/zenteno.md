@@ -283,7 +283,7 @@ sections:
         textAlign: left
   - type: HeroSection
     elementId: ''
-    colors: colors-h
+    colors: colors-e
     title: 'Ford Motor Company, Mexico'
     text: |
       (December 2019 -  August 2021)
