@@ -923,7 +923,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/comingsoon.webp
-          altText: Item image
+          altText: Coming Soon
         styles:
           self:
             textAlign: center
