@@ -777,10 +777,10 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        text: |-
-          ##### zRobot 0.1 Beta
+        text: |
+          ##### zRobotics 0.2
 
-          zDynamics | February, 2017 – Ongoing
+          zDynamics | Ongoing
         featuredImage:
           type: ImageBlock
           url: /images/robotics.png
