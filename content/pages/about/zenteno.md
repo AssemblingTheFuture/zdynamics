@@ -254,7 +254,14 @@ sections:
     elementId: ''
     colors: colors-h
     title: 'Ford Motor Company, Mexico'
-    subtitle: ''
+    subtitle: >-
+      Deployed efficiently large-scale software releases for prototype and
+      production vehicles.
+
+      Maintained software release levels consistent with business requirements.
+
+      Updated quality control standards, methods and procedures to meet
+      compliance requirements.
     text: (2019 -  2021)
     actions: []
     media:
