@@ -1055,7 +1055,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/coming-soon.png
-          altText: Become a Technical Program Manager
+          altText: IELTS
         styles:
           self:
             textAlign: center
