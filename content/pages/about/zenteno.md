@@ -781,7 +781,7 @@ sections:
             textAlign: center
             borderRadius: none
             borderWidth: 0
-            borderStyle: solid
+            borderStyle: none
         actions:
           - type: Link
             label: LinkedIn
