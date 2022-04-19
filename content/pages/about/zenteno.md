@@ -818,7 +818,7 @@ sections:
             altText: ''
             url: 'https://twitter.com/dzentenol'
             showIcon: true
-            icon: arrowRight
+            icon: twitter
             iconPosition: right
             elementId: ''
     actions: []
