@@ -777,9 +777,6 @@ sections:
     items:
       - type: FeaturedItem
         title: LinkedIn
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
         styles:
           self:
             textAlign: center
