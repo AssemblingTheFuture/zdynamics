@@ -174,7 +174,7 @@ sections:
         textAlign: center
   - type: QuoteSection
     elementId: ''
-    colors: colors-c
+    colors: colors-e
     quote: ' '
     backgroundImage:
       url: /images/bny-rgb-2.png
