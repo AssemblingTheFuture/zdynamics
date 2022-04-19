@@ -797,7 +797,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: Email
             altText: ''
             url: /
             showIcon: false
