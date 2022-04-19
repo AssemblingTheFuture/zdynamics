@@ -831,7 +831,6 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/robotics.png
-          altText: Item image
         styles:
           self:
             textAlign: center
@@ -839,7 +838,7 @@ sections:
           - type: Link
             label: Code
             altText: ''
-            url: '/blog/el-robot'
+            url: /blog/el-robot
             showIcon: true
             icon: github
             iconPosition: right
