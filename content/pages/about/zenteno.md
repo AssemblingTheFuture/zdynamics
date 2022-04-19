@@ -290,12 +290,22 @@ sections:
     colors: colors-a
     subtitle: ''
     text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      - Deployed efficiently large-scale software releases for prototype and
+      production vehicles, also for vehicles with Ford’s SYNC® 3 Infotainment
+      System
+
+      - Worked with suppliers and D&R Engineers to manage and deliver software
+      to consumers and dealers
+
+      - Developed standard operating procedures, documents and automation tools
+      using Python and C# to improve workflows for current and future process
+      steps.
+
+      - Maintained software release levels consistent with business
+      requirements.
+
+      - Updated quality control standards, methods and procedures to meet
+      compliance requirements.
     styles:
       self:
         height: auto
