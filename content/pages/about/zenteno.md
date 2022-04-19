@@ -923,6 +923,65 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
+  - type: TextSection
+    elementId: ''
+    colors: colors-c
+    subtitle: ''
+    text: >
+      #### Master's Degree
+
+
+      *   Graduated score: **9.55/10**
+
+      *   Major: **Robotics & Automatic Control**
+
+      *   Thesis: [***Design of an Adaptive Position and Speed Controller for
+      Collaborative Robots with Unknown
+      Dynamics***](https://tesis.ipn.mx/jspui/handle/123456789/29237?mode=full)
+
+
+      #### Bachelor's Degree
+
+
+      *   Graduated score: **8.81/10**
+
+      *   Major: **Mechanics, Robotics & Control Systems**
+
+      *   Thesis: [***Modular System for Soldering and Desoldering SMD -Type
+      Components***](https://drive.google.com/file/d/0B24R7YvGXY9hS0JlamVpVGtranM/view?usp=sharing)
+
+
+      #### High School
+
+
+      *   Graduated score: **7.4/10**
+
+      *   Major: **Machine & Automated Systems**
+
+      *   Thesis: [***Intelligent Rainwater Capture System.***]()
+
+      *   Awarded with **Ing. Bernardo Quintana Arrioja** Medal
+    styles:
+      self:
+        height: auto
+        width: narrow
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-5
+          - pb-5
+          - pl-4
+          - pr-4
+        justifyContent: center
+      title:
+        textAlign: left
+      subtitle:
+        textAlign: left
+      text:
+        textAlign: left
   - type: FeaturedItemsSection
     colors: colors-c
     elementId: ''
@@ -1067,65 +1126,6 @@ sections:
         textAlign: center
       actions:
         justifyContent: center
-  - type: TextSection
-    elementId: ''
-    colors: colors-c
-    subtitle: ''
-    text: >
-      #### Master's Degree
-
-
-      *   Graduated score: **9.55/10**
-
-      *   Major: **Robotics & Automatic Control**
-
-      *   Thesis: [***Design of an Adaptive Position and Speed Controller for
-      Collaborative Robots with Unknown
-      Dynamics***](https://tesis.ipn.mx/jspui/handle/123456789/29237?mode=full)
-
-
-      #### Bachelor's Degree
-
-
-      *   Graduated score: **8.81/10**
-
-      *   Major: **Mechanics, Robotics & Control Systems**
-
-      *   Thesis: [***Modular System for Soldering and Desoldering SMD -Type
-      Components***](https://drive.google.com/file/d/0B24R7YvGXY9hS0JlamVpVGtranM/view?usp=sharing)
-
-
-      #### High School
-
-
-      *   Graduated score: **7.4/10**
-
-      *   Major: **Machine & Automated Systems**
-
-      *   Thesis: [***Intelligent Rainwater Capture System.***]()
-
-      *   Awarded with **Ing. Bernardo Quintana Arrioja** Medal
-    styles:
-      self:
-        height: auto
-        width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-5
-          - pb-5
-          - pl-4
-          - pr-4
-        justifyContent: center
-      title:
-        textAlign: left
-      subtitle:
-        textAlign: left
-      text:
-        textAlign: left
   - type: QuoteSection
     elementId: continuing-education
     colors: colors-c
