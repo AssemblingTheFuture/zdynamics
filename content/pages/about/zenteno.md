@@ -762,6 +762,7 @@ sections:
             icon: playCircle
             iconPosition: right
             elementId: ''
+            url: /
         styles:
           self:
             textAlign: left
