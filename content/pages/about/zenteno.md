@@ -635,7 +635,7 @@ sections:
        
     backgroundImage:
       url: /images/bg.jpg
-      altText: Product Marketing Manager Quote
+      altText: Instituto Politécnico Nacional
       styles:
         self:
           opacity: 70
