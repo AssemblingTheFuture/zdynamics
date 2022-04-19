@@ -1063,7 +1063,7 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: /about/zenteno/
+            url: '/about/zenteno/#continuing-education'
             showIcon: true
             icon: linkedin
             iconPosition: right
