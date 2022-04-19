@@ -754,15 +754,7 @@ sections:
           url: >-
             https://assets.stackbit.com/components/images/default/default-image.png
           altText: Item image
-        actions:
-          - type: Link
-            label: Certificate
-            altText: ''
-            showIcon: true
-            icon: playCircle
-            iconPosition: right
-            elementId: ''
-            url: /
+        actions: []
         styles:
           self:
             textAlign: left
