@@ -792,9 +792,6 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        featuredImage:
-          type: ImageBlock
-          altText: Item image
         styles:
           self:
             textAlign: center
