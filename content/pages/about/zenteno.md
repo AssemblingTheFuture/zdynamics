@@ -957,7 +957,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/focused.svg
+          url: /images/zrobot01.jpg
           altText: Item image
         styles:
           self:
