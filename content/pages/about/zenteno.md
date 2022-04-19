@@ -1090,6 +1090,32 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
+        text: |-
+          <div style = "text-align:center">
+
+          #### Become a Technical Program Manager
+
+          LinkedIn, Inc. | June, 2020
+
+          </div>
+        featuredImage:
+          type: ImageBlock
+          url: /images/technicalprogrammanager.webp
+          altText: Become a Technical Program Manager
+        styles:
+          self:
+            textAlign: center
+        actions:
+          - type: Link
+            label: Certificate
+            altText: ''
+            url: >-
+              https://www.linkedin.com/posts/dzentenol_learning-path-become-a-technical-program-activity-6681620919896670208-JkRH/
+            showIcon: true
+            icon: linkedin
+            iconPosition: right
+            elementId: ''
+      - type: FeaturedItem
         text: |
           <div style = "text-align:center">
 
