@@ -784,7 +784,7 @@ sections:
           - type: Link
             label: Learn more
             altText: ''
-            url: /
+            url: 'https://linkedin.com/in/dzentenol'
             showIcon: false
             icon: arrowRight
             iconPosition: right
