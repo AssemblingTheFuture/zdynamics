@@ -946,7 +946,7 @@ sections:
             altText: ''
             url: >-
               https://www.ijser.org/researchpaper/Synchronization-of-Multi-character-Nazarimehr-System-using-Active-Control.pdf
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
