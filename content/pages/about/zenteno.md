@@ -814,7 +814,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: Twitter
             altText: ''
             url: /
             showIcon: false
