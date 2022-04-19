@@ -883,7 +883,6 @@ sections:
     elementId: ''
     colors: colors-e
     quote: 'Projects, Research and Developments'
-    title: Product Marketing Manager at Acme
     backgroundImage: null
     styles:
       self:
