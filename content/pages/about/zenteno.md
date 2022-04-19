@@ -739,10 +739,14 @@ sections:
     elementId: ''
     items:
       - type: FeaturedItem
-        text: |
+        text: |-
+          <div style = "text-align:center">
+
           #### Become a Technical Program Manager
 
           LinkedIn, Inc. | June, 2020
+
+          </div>
         featuredImage:
           type: ImageBlock
           url: /images/technicalprogrammanager.webp
