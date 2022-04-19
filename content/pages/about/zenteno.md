@@ -736,7 +736,7 @@ sections:
         fontStyle: normal
         textAlign: center
   - type: FeaturedItemsSection
-    colors: colors-e
+    colors: colors-a
     elementId: ''
     items:
       - type: FeaturedItem
