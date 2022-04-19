@@ -335,7 +335,7 @@ sections:
     quote: ' '
     backgroundImage:
       url: /images/bg.jpg
-      altText: Product Marketing Manager Quote
+      altText: Tata Consultancy Services
       styles:
         self:
           opacity: 70
