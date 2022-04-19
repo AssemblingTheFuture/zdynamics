@@ -821,7 +821,29 @@ sections:
             icon: github
             iconPosition: right
             elementId: ''
-      
+      - type: FeaturedItem
+        text: |
+          ##### zController 0.1 Beta:
+
+          ###### Controller for Uncertain Dynamic Systems
+
+          zDynamics | Ongoing
+        featuredImage:
+          type: ImageBlock
+          url: /images/robotics.png
+          altText: Item image
+        styles:
+          self:
+            textAlign: center
+        actions:
+          - type: Link
+            label: Code
+            altText: ''
+            url: 'https://github.com/AssemblingTheFuture/zController'
+            showIcon: true
+            icon: github
+            iconPosition: right
+            elementId: ''
     actions: []
     columns: 4
     enableHover: false
