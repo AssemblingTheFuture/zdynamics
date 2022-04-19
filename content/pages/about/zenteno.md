@@ -670,9 +670,8 @@ sections:
     title: Instituto Politécnico Nacional
     subtitle: ''
     text: >-
-      One platform, one community, getting to the bottom line of everything
-      employment.  Figure out your benefits, practice for interviews, get
-      mentored, help peers, get helped in return.
+      (**High School:** 2009 - 2012, **University:** 2012 - 2016, **Master's
+      Degree:** 2017 - 2019)
     actions: []
     media:
       type: ImageBlock
