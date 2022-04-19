@@ -185,7 +185,7 @@ sections:
         fontStyle: normal
         textAlign: left
   - type: QuoteSection
-    elementId: ''
+    elementId: work-experience
     colors: colors-e
     quote: |
       **Work Experience**
