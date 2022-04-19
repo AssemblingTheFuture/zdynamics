@@ -922,7 +922,7 @@ sections:
           Under development
         featuredImage:
           type: ImageBlock
-          url: /images/comingsoon.webp
+          url: /images/coming-soon.png
           altText: Coming Soon
         styles:
           self:
