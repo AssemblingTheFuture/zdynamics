@@ -1069,7 +1069,7 @@ sections:
 
           #### International English Language Testing
 
-          LinkedIn, Inc. | June, 2020
+          The British Council Mexico | March, 2022
 
           </div>
         featuredImage:
