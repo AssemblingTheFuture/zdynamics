@@ -746,7 +746,7 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/technicalprogrammanager.webp
-          altText: Item image
+          altText: Become a Technical Program Manager
         styles:
           self:
             textAlign: center
