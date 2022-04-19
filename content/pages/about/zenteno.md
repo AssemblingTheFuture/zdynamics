@@ -255,7 +255,8 @@ sections:
     elementId: ''
     colors: colors-h
     title: 'Ford Motor Company, Mexico'
-    text: (2019 -  2021)
+    text: |
+      (December 2019 -  August 2021)
     actions: []
     media:
       type: ImageBlock
