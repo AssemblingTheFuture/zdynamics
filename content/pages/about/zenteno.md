@@ -916,7 +916,6 @@ sections:
     elementId: ''
     items:
       - type: FeaturedItem
-        title: Faster
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
