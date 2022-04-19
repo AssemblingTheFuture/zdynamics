@@ -822,7 +822,7 @@ sections:
         subtitle: ''
         actions:
           - type: Link
-            label: GitHub
+            label: Phone
             altText: ''
             url: /
             showIcon: false
