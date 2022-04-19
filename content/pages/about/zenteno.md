@@ -812,6 +812,15 @@ sections:
         styles:
           self:
             textAlign: center
+        actions:
+          - type: Link
+            label: Learn more
+            altText: ''
+            url: /
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            elementId: ''
     actions: []
     columns: 3
     enableHover: false
