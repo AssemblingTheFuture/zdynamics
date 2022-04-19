@@ -63,8 +63,16 @@ sections:
       [**zDynamics**](https://zdynamics.org/)**: the first educational group of
       advanced robotics in Mexico**. At the same time, *I have worked as a
       software employee* in some some other companies (but I do not consider
-      myself as a *software developer*). Nowadays, I have developed new skills
-      and improved the already existing ones :)
+      myself as a *software developer*). 
+
+
+      With this in mind, I **think** I'm a human being with the ability to
+      perform a wide variety of tasks, specially developing multidisciplinary
+      research and development projects. Team-working and independence in
+      fast-paced environments are part of my daily basis
+
+      Nowadays, I have developed new skills and improved the already existing
+      ones :)
        </div>
     styles:
       self:
