@@ -964,7 +964,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Learn more
+            label: More information
             altText: ''
             url: /
             showIcon: false
