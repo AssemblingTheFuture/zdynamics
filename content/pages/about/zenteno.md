@@ -56,8 +56,8 @@ sections:
       - [Me at a Glance](#me)
       - [Work Experience](#work-experience)
       - [Projects, Research and Developments](#projects)
-      - [Continuing Education](#continuing-education)
       - [Education](#education)
+      - [Continuing Education](#continuing-education)
       - [Contact me!](#contact)
       </div>
     styles:
