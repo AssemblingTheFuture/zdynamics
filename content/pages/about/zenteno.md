@@ -780,7 +780,7 @@ sections:
           self:
             textAlign: center
             borderRadius: none
-            borderWidth: 1
+            borderWidth: 0
             borderStyle: solid
         actions:
           - type: Link
