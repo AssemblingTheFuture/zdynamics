@@ -934,7 +934,7 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/smarter.svg
+          url: /images/humbertillo.webp
           altText: Item image
         styles:
           self:
