@@ -319,7 +319,7 @@ sections:
         justifyContent: flex-start
   - type: TextSection
     elementId: ''
-    colors: colors-a
+    colors: colors-e
     subtitle: ''
     text: >-
       - Deployed efficiently large-scale software releases for prototype and
