@@ -929,7 +929,7 @@ sections:
             textAlign: center
       - type: FeaturedItem
         text: >
-          \##### Synchronization of Multi character Nazarimehr System using
+          ##### Synchronization of Multi character Nazarimehr System using
           Active Control
 
 
