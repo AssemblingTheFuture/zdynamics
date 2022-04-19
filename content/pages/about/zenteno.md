@@ -792,9 +792,6 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        text: >-
-          Learn how top tech companies have learned working remote using our
-          product.
         featuredImage:
           type: ImageBlock
           altText: Item image
