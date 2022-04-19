@@ -801,10 +801,15 @@ sections:
       - type: FeaturedItem
         elementId: ''
         subtitle: ''
-        text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+        text: >
+          ##### zController 0.1 Beta:
+
+
+          ###### Controller for Uncertain Dynamic Systems based on its feedback
+          data
+
+
+          zDynamics | Ongoing
         featuredImage:
           type: ImageBlock
           url: /images/lorenz.png
