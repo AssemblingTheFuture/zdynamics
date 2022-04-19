@@ -666,7 +666,7 @@ sections:
         textAlign: left
   - type: HeroSection
     elementId: ''
-    colors: colors-h
+    colors: colors-c
     title: Instituto Politécnico Nacional
     subtitle: ''
     text: >-
