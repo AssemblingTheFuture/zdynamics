@@ -934,7 +934,6 @@ sections:
         featuredImage:
           type: ImageBlock
           url: /images/humbertillo.webp
-          altText: Item image
         styles:
           self:
             textAlign: center
