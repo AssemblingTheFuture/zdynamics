@@ -3,7 +3,7 @@ layout: PageLayout
 metaTitle: Zenteno con Z
 metaDescription: null
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/z.png
 metaTags: []
 title: David Zenteno
 sections:
