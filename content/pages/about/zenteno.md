@@ -786,7 +786,7 @@ sections:
             altText: ''
             url: >-
               https://www.coursera.org/account/accomplishments/professional-cert/KDL47AF9LAE4
-            showIcon: false
+            showIcon: true
             icon: arrowRight
             iconPosition: right
             elementId: ''
