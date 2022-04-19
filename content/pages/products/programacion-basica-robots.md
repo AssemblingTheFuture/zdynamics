@@ -453,9 +453,7 @@ sections:
       <a id="***"> 
       \*\*\* *Sujeto al número de estudiantes que soliciten la modalidad. Debe
       agendarse con dos semanas de anticipación.*
-
       </a>
-
 
       <a id="****"> 
 
