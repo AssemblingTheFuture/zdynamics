@@ -331,7 +331,7 @@ sections:
         textAlign: left
   - type: QuoteSection
     elementId: ''
-    colors: colors-a
+    colors: colors-e
     quote: ' '
     backgroundImage:
       url: /images/tata.png
