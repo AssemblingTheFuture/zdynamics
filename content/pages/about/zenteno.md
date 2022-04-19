@@ -929,8 +929,11 @@ sections:
             textAlign: center
       - type: FeaturedItem
         text: >
-          Learn how top tech companies have learned working remote using our
-          product.
+          \##### Synchronization of Multi character Nazarimehr System using
+          Active Control
+
+
+          IJSER | June, 2018
         featuredImage:
           type: ImageBlock
           url: /images/humbertillo.webp
