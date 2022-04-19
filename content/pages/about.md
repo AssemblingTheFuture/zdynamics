@@ -9,7 +9,7 @@ title: ¿Quién @$@% somos?
 sections:
   - type: HeroSection
     elementId: ''
-    colors: colors-h
+    colors: colors-c
     title: ¿Quién @$@% somos?
     subtitle: ''
     text: >
