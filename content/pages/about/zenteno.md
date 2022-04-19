@@ -758,7 +758,6 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: /
             showIcon: true
             icon: playCircle
             iconPosition: right
