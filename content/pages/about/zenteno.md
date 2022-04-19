@@ -707,7 +707,7 @@ sections:
       text:
         textAlign: left
   - type: QuoteSection
-    elementId: ''
+    elementId: continuing-education
     colors: colors-a
     quote: |
       **Continuing Education**
