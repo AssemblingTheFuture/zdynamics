@@ -811,7 +811,7 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: /
+            url: 'https://www.udemy.com/certificate/UC-XP9JXX6W/'
             showIcon: false
             icon: arrowRight
             iconPosition: right
