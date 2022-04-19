@@ -218,7 +218,7 @@ sections:
     actions: []
     media:
       type: ImageBlock
-      url: /images/roadmap.svg
+      url: /images/Roadmap.svg
       altText: Hero image
     styles:
       self:
