@@ -706,13 +706,38 @@ sections:
     elementId: ''
     colors: colors-c
     subtitle: ''
-    text: >-
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium
-      doloremque laudantium, totam rem aperiam. Eaque ipsa quae ab illo
-      inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+    text: >
+      #### Master's Degree
+
+
+      - Graduated score: **9.55/10**
+
+      - Major: **Robotics & Automatic Control**
+
+      - Thesis: *[**Design of an Adaptive Position and Speed Controller for
+      Collaborative Robots with Unknown
+      Dynamics**](https://tesis.ipn.mx/jspui/handle/123456789/29237?mode=full)*
+
+
+      #### Bachelor's Degree
+
+
+      - Graduated score: **8.81/10**
+
+      - Major: **Mechanics, Robotics & Control Systems**
+
+      - Thesis: *[**Modular System for Soldering and Desoldering SMD -Type
+      Components**](https://drive.google.com/file/d/0B24R7YvGXY9hS0JlamVpVGtranM/view?usp=sharing)*
+
+
+      #### High School
+
+
+      - Graduated score: **7.4/10**
+
+      - Major: **Machine & Automated Systems**
+
+      - Thesis: *[**MIntelligent Rainwater Capture System.**]()*
     styles:
       self:
         height: auto
