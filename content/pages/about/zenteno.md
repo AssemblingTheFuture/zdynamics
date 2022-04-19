@@ -790,7 +790,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: More information
+            label: Code
             altText: ''
             url: /blog/el-robot
             showIcon: true
