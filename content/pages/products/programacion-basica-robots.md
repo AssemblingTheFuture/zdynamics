@@ -452,7 +452,6 @@ sections:
 
       </a>
 
-
       <a id="***"> 
 
       \*\*\* *Sujeto al número de estudiantes que soliciten la modalidad. Debe
