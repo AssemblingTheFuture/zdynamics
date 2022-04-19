@@ -546,7 +546,7 @@ sections:
         justifyContent: flex-start
   - type: TextSection
     elementId: ''
-    colors: colors-a
+    colors: colors-e
     subtitle: ''
     text: >-
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
