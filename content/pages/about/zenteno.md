@@ -816,7 +816,7 @@ sections:
             iconPosition: right
             elementId: ''
     actions: []
-    columns: 3
+    columns: 2
     enableHover: false
     styles:
       self:
