@@ -833,7 +833,7 @@ sections:
             iconPosition: right
             elementId: ''
     actions: []
-    columns: 2
+    columns: 4
     enableHover: false
     styles:
       self:
