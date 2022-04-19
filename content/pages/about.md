@@ -125,7 +125,7 @@ sections:
     subtitle: 'No hay ejércitos de un solo hombre :D'
     actions: []
     people:
-      - content/data/team/desmond-eagle.json
+      - content/data/team/david-zenteno.json
       - content/data/team/dianne-ameter.json
       - content/data/team/hilary-ouse.json
     styles:
