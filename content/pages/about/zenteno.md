@@ -823,7 +823,7 @@ sections:
             elementId: ''
       - type: FeaturedItem
         text: |
-          ##### zController 0.1 Beta:
+          ##### zRobot 0.1 Beta:
 
           ###### Controller for Uncertain Dynamic Systems
 
