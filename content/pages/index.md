@@ -127,7 +127,7 @@ sections:
           type: ImageBlock
         styles:
           self:
-            textAlign: left
+            textAlign: center
             borderColor: border-dark
             borderWidth: 1
             borderStyle: solid
