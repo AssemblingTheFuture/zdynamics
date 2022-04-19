@@ -776,7 +776,7 @@ sections:
     subtitle: 'You can contact me using the following links:'
     items:
       - type: FeaturedItem
-        title: Faster
+        title: LinkedIn
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
