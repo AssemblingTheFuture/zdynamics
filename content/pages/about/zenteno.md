@@ -1,9 +1,12 @@
 ---
 layout: PageLayout
-metaTitle: null
-metaDescription: null
+metaTitle: Zenteno con Z
+metaDescription: >-
+  «I want to leave a positive mark on people by communicating my passion for
+  living. This will raise my spiritual awareness and will echo as my legacy for
+  all the eternity»
 addTitleSuffix: true
-socialImage: null
+socialImage: /images/z.png
 metaTags: []
 title: David Zenteno
 sections:
