@@ -756,7 +756,7 @@ sections:
             url: >-
               https://www.linkedin.com/posts/dzentenol_learning-path-become-a-technical-program-activity-6681620919896670208-JkRH/
             showIcon: true
-            icon: arrowRight
+            icon: linkedin
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
