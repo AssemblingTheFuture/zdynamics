@@ -445,11 +445,9 @@ sections:
     subtitle: ''
     text: >+
       <a id="**"> 
-
       \*\* *Envíos los días Lunes y deben regresarse catorce días después. Puede
       incrementar el precio si el robot se envía a zonas donde el servicio de
       paquetería no tenga acceso*
-
       </a>
 
       <a id="***"> 
