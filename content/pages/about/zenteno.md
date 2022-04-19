@@ -821,28 +821,6 @@ sections:
             icon: github
             iconPosition: right
             elementId: ''
-      - type: FeaturedItem
-        elementId: ''
-        subtitle: ''
-        text: >-
-          <div style = "text-align:center">
-
-
-          
-
-
-          zDynamics | Ongoing
-
-
-          </div>
-        featuredImage:
-          type: ImageBlock
-          url: /images/robotics.png
-          altText: Item image
-        actions: []
-        styles:
-          self:
-            textAlign: left
     actions: []
     columns: 4
     enableHover: false
