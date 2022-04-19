@@ -851,7 +851,7 @@ sections:
         fontStyle: normal
         textAlign: center
   - type: FeaturedItemsSection
-    colors: colors-e
+    colors: colors-c
     elementId: ''
     items:
       - type: FeaturedItem
