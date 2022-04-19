@@ -87,9 +87,9 @@ sections:
       title:
         textAlign: center
       subtitle:
-        textAlign: left
+        textAlign: center
       text:
-        textAlign: left
+        textAlign: center
       actions:
         justifyContent: flex-start
     type: FeatureHighlightSection
