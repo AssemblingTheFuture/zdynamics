@@ -144,7 +144,7 @@ sections:
         textAlign: left
   - type: QuoteSection
     elementId: ''
-    colors: colors-c
+    colors: colors-h
     quote: |-
       “It’s great to see someone taking action while still maintaining a
       sustainable fish supply to home cooks.”
