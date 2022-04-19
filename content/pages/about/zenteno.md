@@ -827,11 +827,7 @@ sections:
           <div style = "text-align:center">
 
 
-          ##### zController 0.1 Beta:
-
-
-          ###### Controller for Uncertain Dynamic Systems based on its feedback
-          data
+          
 
 
           zDynamics | Ongoing
