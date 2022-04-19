@@ -773,9 +773,7 @@ sections:
     colors: colors-e
     elementId: ''
     title: Let's talk!
-    subtitle: >-
-      These are all excellent features that will provide exactly the things
-      you’re looking for.
+    subtitle: 'You can contact me using the following links:'
     items:
       - type: FeaturedItem
         title: Faster
