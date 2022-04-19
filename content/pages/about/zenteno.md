@@ -144,7 +144,7 @@ sections:
         textAlign: left
   - type: QuoteSection
     elementId: ''
-    colors: colors-h
+    colors: colors-c
     quote: '**Work History**'
     backgroundImage: null
     styles:
