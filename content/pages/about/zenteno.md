@@ -405,10 +405,6 @@ sections:
       mentored, help peers, get helped in return.
     actions:
       - type: Button
-        label: Sign Up
-        url: /
-        style: primary
-      - type: Button
         label: Learn More
         url: /
         style: secondary
