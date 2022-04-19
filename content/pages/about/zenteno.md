@@ -516,10 +516,6 @@ sections:
     text: (August 2015 - July 2016)
     actions:
       - type: Button
-        label: Sign Up
-        url: /
-        style: primary
-      - type: Button
         label: Learn More
         url: /
         style: secondary
