@@ -146,7 +146,6 @@ sections:
     elementId: ''
     colors: colors-h
     quote: '**Work History**'
-    name: Johnna Doe
     title: Product Marketing Manager at Acme
     backgroundImage: null
     styles:
