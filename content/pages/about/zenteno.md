@@ -1006,7 +1006,7 @@ sections:
 
       *   Major: **Machine & Automated Systems**
 
-      *   Thesis: [***Intelligent Rainwater Capture System.***]()
+      *   Thesis: [***Intelligent Rainwater Capture System.***](#education)
 
       *   Awarded with **Ing. Bernardo Quintana Arrioja** Medal
     styles:
