@@ -706,10 +706,9 @@ sections:
       text:
         textAlign: left
   - type: QuoteSection
-    elementId: continuing-education
-    colors: colors-a
-    quote: |
-      **Continuing Education**
+    elementId: projects
+    colors: colors-e
+    quote: 'Projects, Research and Developments'
     backgroundImage: null
     styles:
       self:
@@ -737,9 +736,10 @@ sections:
         fontStyle: normal
         textAlign: center
   - type: QuoteSection
-    elementId: projects
-    colors: colors-e
-    quote: 'Projects, Research and Developments'
+    elementId: continuing-education
+    colors: colors-a
+    quote: |
+      **Continuing Education**
     backgroundImage: null
     styles:
       self:
