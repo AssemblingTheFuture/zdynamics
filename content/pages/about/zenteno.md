@@ -1063,8 +1063,7 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: >-
-              https://www.linkedin.com/posts/dzentenol_learning-path-become-a-technical-program-activity-6681620919896670208-JkRH/
+            url: /
             showIcon: true
             icon: linkedin
             iconPosition: right
