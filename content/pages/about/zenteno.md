@@ -765,7 +765,14 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        text: IBM Data Science Professional Certificate
+        text: |
+          <div style = "text-align:center">
+
+          #### IBM Data Science Professional Certificate
+
+          IBM – Coursera | May, 2020
+
+          </div>
         featuredImage:
           type: ImageBlock
           url: /images/ibmcoursera.webp
