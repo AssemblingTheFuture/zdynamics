@@ -81,7 +81,7 @@ sections:
       text:
         textAlign: center
   - type: TextSection
-    elementId: '#me'
+    elementId: me
     colors: colors-a
     title: Me at a Glance
     subtitle: ''
