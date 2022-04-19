@@ -798,7 +798,6 @@ sections:
           product.
         featuredImage:
           type: ImageBlock
-          url: /images/smarter.svg
           altText: Item image
         styles:
           self:
