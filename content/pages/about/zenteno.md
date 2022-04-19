@@ -800,8 +800,11 @@ sections:
             elementId: ''
       type: FeaturedItem
         text: |
-          ##### zRobotics 0.2: 
-          ###### A powerful (Python) library for robot analysis
+          ##### zController 0.1 Beta:
+
+
+          ###### Controller for Uncertain Dynamic Systems based on its feedback
+          data
 
           zDynamics | Ongoing
         featuredImage:
