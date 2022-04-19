@@ -836,7 +836,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Code
+            label: More information
             altText: ''
             url: /blog/el-robot
             showIcon: true
