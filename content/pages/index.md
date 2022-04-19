@@ -549,7 +549,7 @@ sections:
         textAlign: center
       text:
         textAlign: center
-metaTitle: zDynamics
+metaTitle: zDynamics | The Future is ROBOTICS
 metaDescription: The Future is ROBOTICS
 socialImage: /images/ZD RGB.jpg
 addTitleSuffix: true
