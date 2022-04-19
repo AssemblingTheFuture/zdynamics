@@ -256,7 +256,6 @@ sections:
   - type: TextSection
     elementId: ''
     colors: colors-e
-    title: The Section Title
     subtitle: ''
     text: >-
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
