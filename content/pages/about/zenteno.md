@@ -514,11 +514,7 @@ sections:
     title: Instituto Politécnico Nacional
     subtitle: ''
     text: (August 2015 - July 2016)
-    actions:
-      - type: Button
-        label: Learn More
-        url: /
-        style: secondary
+    actions: []
     media:
       type: ImageBlock
       url: /images/hero-3.jpg
