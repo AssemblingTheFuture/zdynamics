@@ -176,7 +176,7 @@ sections:
             borderRadius: medium
         actions:
           - type: Link
-            label: Comprar ($5 USD)
+            label: Comprar (~~$55.9 USD~~ $5 USD)
             altText: ''
             url: 'https://bit.ly/zControl'
             showIcon: true
