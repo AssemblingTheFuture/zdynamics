@@ -1054,7 +1054,7 @@ sections:
           </div>
         featuredImage:
           type: ImageBlock
-          url: /images/coming-soon.webp
+          url: /images/coming-soon.png
           altText: Become a Technical Program Manager
         styles:
           self:
