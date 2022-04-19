@@ -739,7 +739,7 @@ sections:
     elementId: ''
     items:
       - type: FeaturedItem
-        title: 'LinkedIn Learning Path, Become a Technical Program Manager'
+        title: LinkedIn Learning Path
         text: >-
           Learn how top tech companies have learned working remote using our
           product.
