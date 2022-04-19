@@ -805,7 +805,6 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        title: Focused
         styles:
           self:
             textAlign: center
