@@ -123,7 +123,7 @@ sections:
     elementId: ''
     title: ¡Conócenos!
     subtitle: No hay ejércitos de una sola persona :D
-      styles:
+      - styles:
           self:
             textAlign: center
             borderRadius: medium
