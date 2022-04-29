@@ -118,8 +118,8 @@ sections:
       actions:
         justifyContent: flex-start
   - type: FeaturedItem
-      title: Métodos Numéricos con Aplicaciones de Ingeniería
-        text: >
+    title: Métodos Numéricos con Aplicaciones de Ingeniería
+    text: >
           Las matemáticas son muy importantes para cualquier profesional, pero
           es esencial saber resolver problemas rápidamente cumpliendo los requisitos teóricos básicos
         featuredImage:
