@@ -154,7 +154,7 @@ sections:
         featuredImage:
           type: ImageBlock
           altText: Itzel Torres
-          url: /images/troncs.jpg
+          url: /images/troncs.png
         styles:
           self:
             textAlign: center
