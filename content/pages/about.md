@@ -148,9 +148,9 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        title: David Zenteno
+        title: Itzel Torres
         text: |
-          Fundador
+          Co-fundadora
         featuredImage:
           type: ImageBlock
           altText: Zenteno con Z
