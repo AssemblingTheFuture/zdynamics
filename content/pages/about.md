@@ -127,8 +127,7 @@ sections:
       - type: FeaturedItem
         title: David Zenteno
         text: >
-          Las matemáticas son muy importantes para cualquier profesional, pero
-          es esencial saber resolver problemas rápidamente cumpliendo los requisitos teóricos básicos
+          Fundador
         featuredImage:
           type: ImageBlock
           altText: Métodos Numéricos con Aplicaciones de Ingeniería
