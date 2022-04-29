@@ -165,7 +165,7 @@ sections:
           - type: Link
             label: Resume
             altText: ''
-            url: /about/zenteno
+            url: /about#
             showIcon: true
             icon: chevronRight
             iconPosition: right
