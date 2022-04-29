@@ -170,6 +170,29 @@ sections:
             icon: chevronRight
             iconPosition: right
             elementId: ''
+      - type: FeaturedItem
+        title: Itzel Torres
+        text: |
+          Co-fundadora
+        featuredImage:
+          type: ImageBlock
+          altText: Itzel Torres
+          url: /images/troncs.jpg
+        styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
+        actions:
+          - type: Link
+            label: Resume
+            altText: ''
+            url: /about#
+            showIcon: true
+            icon: chevronRight
+            iconPosition: right
+            elementId: ''
   - type: FeaturedPeopleSection
     elementId: ''
     variant: variant-a
