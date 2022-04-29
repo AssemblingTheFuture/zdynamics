@@ -1086,7 +1086,7 @@ sections:
             textAlign: center
         actions:
           - type: Link
-            label: Certificate
+            label: Certificate (Level C1)
             altText: ''
             url: >-
               https://drive.google.com/file/d/1iAnfTrSrHJwVQ7xXUk3O2xzJYvBLrs-q/view?usp=sharing
