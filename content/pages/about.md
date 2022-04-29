@@ -123,6 +123,12 @@ sections:
     elementId: ''
     title: ¡Conócenos!
     subtitle: No hay ejércitos de una sola persona :D
+      styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
     items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
