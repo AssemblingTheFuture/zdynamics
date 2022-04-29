@@ -147,7 +147,7 @@ sections:
             icon: chevronRight
             iconPosition: right
             elementId: ''
-          
+        
   - type: FeaturedPeopleSection
     elementId: ''
     variant: variant-a
