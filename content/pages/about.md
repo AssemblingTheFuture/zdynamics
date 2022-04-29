@@ -78,45 +78,6 @@ sections:
         textAlign: center
       title:
         textAlign: center
-  - type: HeroSection
-    elementId: ''
-    colors: colors-a
-    title: 'Nuestro camino :D'
-    subtitle: ''
-    text: >
-      Muchos creen que emprender es fácil de hacer, pero cuesta uno y la mitad
-      del otro :(
-    actions: []
-    media:
-      type: ImageBlock
-      url: /images/Roadmap.svg
-      altText: Roadmap
-      caption: Roadmap
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
-        alignItems: center
-        justifyContent: center
-        flexDirection: col
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      text:
-        textAlign: center
-      actions:
-        justifyContent: flex-start
   - type: FeaturedItemsSection
     variant: variant-a
     colors: colors-e
@@ -165,7 +126,7 @@ sections:
           - type: Link
             label: Resume
             altText: ''
-            url: /about#
+            url: '/about#'
             showIcon: true
             icon: chevronRight
             iconPosition: right
@@ -188,9 +149,48 @@ sections:
           - type: Link
             label: Resume
             altText: ''
-            url: /about#
+            url: '/about#'
             showIcon: true
             icon: chevronRight
             iconPosition: right
             elementId: ''
+  - type: HeroSection
+    elementId: ''
+    colors: colors-a
+    title: 'Nuestro camino :D'
+    subtitle: ''
+    text: >
+      Muchos creen que emprender es fácil de hacer, pero cuesta uno y la mitad
+      del otro :(
+    actions: []
+    media:
+      type: ImageBlock
+      url: /images/Roadmap.svg
+      altText: Roadmap
+      caption: Roadmap
+    styles:
+      self:
+        height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pl-4
+          - pr-4
+        alignItems: center
+        justifyContent: center
+        flexDirection: col
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+      text:
+        textAlign: center
+      actions:
+        justifyContent: flex-start
 ---
