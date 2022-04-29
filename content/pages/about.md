@@ -193,37 +193,4 @@ sections:
             icon: chevronRight
             iconPosition: right
             elementId: ''
-  - type: FeaturedPeopleSection
-    elementId: ''
-    variant: variant-a
-    colors: colors-e
-    title: ¡Conócenos!
-    subtitle: 'No hay ejércitos de un solo hombre :D'
-    actions: []
-    people:
-      - content/data/team/david-zenteno.json
-      - content/data/team/itzel-torres.json
-      - content/data/team/luis-boyzo.json
-    styles:
-      self:
-        height: auto
-        width: wide
-        margin:
-          - mt-0
-          - mb-0
-          - ml-0
-          - mr-0
-        padding:
-          - pt-12
-          - pb-12
-          - pl-4
-          - pr-4
-        justifyContent: center
-        borderRadius: none
-      title:
-        textAlign: center
-      subtitle:
-        textAlign: center
-      actions:
-        justifyContent: center
 ---
