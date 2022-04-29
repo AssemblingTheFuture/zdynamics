@@ -153,8 +153,8 @@ sections:
           Co-fundadora
         featuredImage:
           type: ImageBlock
-          altText: Zenteno con Z
-          url: /images/z.png
+          altText: Itzel Torres
+          url: /images/troncs.png
         styles:
           self:
             textAlign: center
