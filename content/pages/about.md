@@ -122,15 +122,15 @@ sections:
     colors: colors-e
     elementId: ''
     title: ¡Conócenos!
-    subtitle: No hay ejércitos de una sola persona :D
+    subtitle: 'No hay ejércitos de una sola persona :D'
     items:
       - type: FeaturedItem
         title: David Zenteno
-        text: >
+        text: |
           Fundador
         featuredImage:
           type: ImageBlock
-          altText: Métodos Numéricos con Aplicaciones de Ingeniería
+          altText: Zenteno con Z
           url: /images/z.png
         styles:
           self:
