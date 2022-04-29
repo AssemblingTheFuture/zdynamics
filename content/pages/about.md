@@ -197,4 +197,5 @@ sections:
       self:
         width: wide
         height: auto
+        justifyContent: center
 ---
