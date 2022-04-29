@@ -117,7 +117,12 @@ sections:
         textAlign: center
       actions:
         justifyContent: flex-start
-  items:
+  - type: FeaturedItemsSection
+    colors: colors-c
+    elementId: ''
+    title: Robótica Avanzada en Línea
+    subtitle: Más allá de los libros y la aburrida teoría ;)
+    items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
         text: >
