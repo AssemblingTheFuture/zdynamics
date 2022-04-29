@@ -126,12 +126,7 @@ sections:
     actions:
       type: Link
       label: DE $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ A $5 USD
-      altText: ''
-      url: 'https://bit.ly/NumericZ'
-      showIcon: true
-      icon: cart
-      iconPosition: right
-      elementId: ''
+      
     people:
       - content/data/team/david-zenteno.json
       - content/data/team/itzel-torres.json
