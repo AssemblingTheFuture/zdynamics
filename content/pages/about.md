@@ -171,9 +171,9 @@ sections:
             iconPosition: right
             elementId: ''
       - type: FeaturedItem
-        title: Itzel Torres
+        title: Luis Boyzo
         text: |
-          Co-fundadora
+          Engineer
         featuredImage:
           type: ImageBlock
           altText: Itzel Torres
