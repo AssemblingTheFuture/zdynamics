@@ -51,12 +51,6 @@ sections:
     backgroundSize: inset
     title: ¿Quién @$@% somos?
     text: "Un grupo de amigos que buscan hacer algo más que programar robots:\_**queremos mejorar las condiciones de trabajo a través de la robótica y ramas afines**.\n"
-    badge:
-      type: Badge
-      label: NOSOTROS
-      styles:
-        self:
-          textAlign: left
     actions:
       - type: Button
         label: ¡Conócenos!
