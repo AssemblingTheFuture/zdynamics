@@ -125,7 +125,7 @@ sections:
     subtitle: No hay ejércitos de una sola persona :D
     items:
       - type: FeaturedItem
-        title: Métodos Numéricos con Aplicaciones de Ingeniería
+        title: David Zenteno
         text: >
           Las matemáticas son muy importantes para cualquier profesional, pero
           es esencial saber resolver problemas rápidamente cumpliendo los requisitos teóricos básicos
