@@ -193,10 +193,31 @@ sections:
             icon: chevronRight
             iconPosition: right
             elementId: ''
+    actions: []
+    columns: 3
+    enableHover: true
     styles:
       self:
-        width: wide
         height: auto
+        width: wide
+        margin:
+          - mt-0
+          - mb-0
+          - ml-0
+          - mr-0
+        padding:
+          - pt-12
+          - pb-12
+          - pl-4
+          - pr-4
         justifyContent: center
-    enableHover: true
+        borderRadius: medium
+        borderWidth: 1
+        borderStyle: solid
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+      actions:
+        justifyContent: center
 ---
