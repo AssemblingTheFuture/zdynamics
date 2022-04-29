@@ -198,4 +198,5 @@ sections:
         width: wide
         height: auto
         justifyContent: center
+    enableHover: true
 ---
