@@ -193,4 +193,7 @@ sections:
             icon: chevronRight
             iconPosition: right
             elementId: ''
+    styles:
+      self:
+        width: wide
 ---
