@@ -142,7 +142,7 @@ sections:
           - type: Link
             label: Resume
             altText: ''
-            url: 'https://bit.ly/NumericZ'
+            url: /about/zenteno
             showIcon: true
             icon: cart
             iconPosition: right
