@@ -126,6 +126,7 @@ sections:
     actions: []
     people:
       - content/data/team/david-zenteno.json
+        actions: []
       - content/data/team/itzel-torres.json
       - content/data/team/luis-boyzo.json
     styles:
