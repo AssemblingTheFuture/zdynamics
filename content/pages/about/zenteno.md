@@ -1088,7 +1088,8 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: '/about/zenteno/#continuing-education'
+            url: >-
+              https://drive.google.com/file/d/1iAnfTrSrHJwVQ7xXUk3O2xzJYvBLrs-q/view?usp=sharing
             showIcon: true
             icon: playCircle
             iconPosition: right
