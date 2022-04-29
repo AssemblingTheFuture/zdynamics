@@ -123,8 +123,7 @@ sections:
     colors: colors-e
     title: ¡Conócenos!
     subtitle: 'No hay ejércitos de un solo hombre :D'
-    actions:
-      type: Link
+    actions: []
     people:
       - content/data/team/david-zenteno.json
       - content/data/team/itzel-torres.json
