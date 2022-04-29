@@ -119,7 +119,7 @@ sections:
         justifyContent: flex-start
   - type: FeaturedItemsSection
     variant: variant-a
-    colors: colors-e
+    colors: colors-c
     elementId: ''
     title: ¡Conócenos!
     subtitle: 'No hay ejércitos de una sola persona :D'
