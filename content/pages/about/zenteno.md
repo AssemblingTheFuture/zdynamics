@@ -1079,7 +1079,7 @@ sections:
           </div>
         featuredImage:
           type: ImageBlock
-          url: /images/coming-soon.png
+          url: /images/ielts.png
           altText: IELTS
         styles:
           self:
