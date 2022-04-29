@@ -1072,11 +1072,9 @@ sections:
         text: |
           <div style = "text-align:center">
 
-          #### International English Language Testing 
+          #### International English Language Testing
 
-          ##### (CEFR Level: C1)
-
-          The British Council Mexico | March, 2022
+          CEFR Level: C1 | March, 2022
 
           </div>
         featuredImage:
