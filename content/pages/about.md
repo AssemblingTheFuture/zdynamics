@@ -125,7 +125,7 @@ sections:
     subtitle: 'No hay ejércitos de un solo hombre :D'
     actions: []
     people:
-      - [content/data/team/david-zenteno.json]()
+      - [content/data/team/david-zenteno.json](#)
       - content/data/team/itzel-torres.json
       - content/data/team/luis-boyzo.json
     styles:
