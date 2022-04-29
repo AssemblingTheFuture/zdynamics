@@ -117,6 +117,30 @@ sections:
         textAlign: center
       actions:
         justifyContent: flex-start
+  - type: FeaturedItem
+        title: Métodos Numéricos con Aplicaciones de Ingeniería
+        text: >
+          Las matemáticas son muy importantes para cualquier profesional, pero
+          es esencial saber resolver problemas rápidamente cumpliendo los requisitos teóricos básicos
+        featuredImage:
+          type: ImageBlock
+          altText: Métodos Numéricos con Aplicaciones de Ingeniería
+          url: /images/numerics.png
+        styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
+        actions:
+          - type: Link
+            label: DE $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ A $5 USD
+            altText: ''
+            url: 'https://bit.ly/NumericZ'
+            showIcon: true
+            icon: cart
+            iconPosition: right
+            elementId: ''
   - type: FeaturedPeopleSection
     elementId: ''
     variant: variant-a
