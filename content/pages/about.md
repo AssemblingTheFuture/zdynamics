@@ -196,4 +196,5 @@ sections:
     styles:
       self:
         width: wide
+        height: auto
 ---
