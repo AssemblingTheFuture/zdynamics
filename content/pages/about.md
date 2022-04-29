@@ -117,17 +117,85 @@ sections:
         textAlign: center
       actions:
         justifyContent: flex-start
-  - type: FeaturedPeopleSection
-    elementId: ''
+  - type: FeaturedItemsSection
     variant: variant-a
-    colors: colors-e
+    colors: colors-c
+    elementId: ''
     title: ¡Conócenos!
-    subtitle: 'No hay ejércitos de un solo hombre :D'
+    subtitle: 'No hay ejércitos de una sola persona :D'
+    items:
+      - type: FeaturedItem
+        title: David Zenteno
+        text: |
+          Fundador
+        featuredImage:
+          type: ImageBlock
+          altText: Zenteno con Z
+          url: /images/z.png
+        styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
+        actions:
+          - type: Link
+            label: Resume
+            altText: ''
+            url: /about/zenteno
+            showIcon: true
+            icon: chevronRight
+            iconPosition: right
+            elementId: ''
+      - type: FeaturedItem
+        title: Itzel Torres
+        text: |
+          Co-fundadora
+        featuredImage:
+          type: ImageBlock
+          altText: Itzel Torres
+          url: /images/troncs.png
+        styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
+        actions:
+          - type: Link
+            label: Resume
+            altText: ''
+            url: '/about#'
+            showIcon: true
+            icon: chevronRight
+            iconPosition: right
+            elementId: ''
+      - type: FeaturedItem
+        title: Luis Boyzo
+        text: |
+          Engineer
+        featuredImage:
+          type: ImageBlock
+          altText: Luis Boyzo
+          url: /images/boyzo.jpg
+        styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
+        actions:
+          - type: Link
+            label: Resume
+            altText: ''
+            url: '/about#'
+            showIcon: true
+            icon: chevronRight
+            iconPosition: right
+            elementId: ''
     actions: []
-    people:
-      - content/data/team/david-zenteno.json
-      - content/data/team/itzel-torres.json
-      - content/data/team/luis-boyzo.json
+    columns: 3
+    enableHover: true
     styles:
       self:
         height: auto
@@ -144,6 +212,8 @@ sections:
           - pr-4
         justifyContent: center
         borderRadius: none
+        borderWidth: 0
+        borderStyle: none
       title:
         textAlign: center
       subtitle:
