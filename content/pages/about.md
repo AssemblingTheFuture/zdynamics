@@ -121,7 +121,7 @@ sections:
     variant: variant-a
     colors: colors-e
     elementId: ''
-    title: Robótica Avanzada en Línea
+    title: ¡Conócenos!
     subtitle: Más allá de los libros y la aburrida teoría ;)
     items:
       - type: FeaturedItem
