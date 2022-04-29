@@ -212,8 +212,8 @@ sections:
           - pr-4
         justifyContent: center
         borderRadius: none
-        borderWidth: 1
-        borderStyle: solid
+        borderWidth: 0
+        borderStyle: none
       title:
         textAlign: center
       subtitle:
