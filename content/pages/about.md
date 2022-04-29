@@ -126,7 +126,7 @@ sections:
     actions:
       type: Link
       label: DE $̶5̶9̶.̶9̶9̶ ̶U̶S̶D̶ A $5 USD
-        altText: ''
+      altText: ''
         url: 'https://bit.ly/NumericZ'
         showIcon: true
         icon: cart
