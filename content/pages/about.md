@@ -144,7 +144,7 @@ sections:
             altText: ''
             url: /about/zenteno
             showIcon: true
-            icon: arrowRightCircle
+            icon: chevronRight
             iconPosition: right
             elementId: ''
   - type: FeaturedPeopleSection
