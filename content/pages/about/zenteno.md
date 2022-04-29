@@ -1069,17 +1069,17 @@ sections:
     elementId: ''
     items:
       - type: FeaturedItem
-        text: |-
+        text: |
           <div style = "text-align:center">
 
           #### International English Language Testing
 
-          The British Council Mexico | March, 2022
+          CEFR Level: C1 | March, 2022
 
           </div>
         featuredImage:
           type: ImageBlock
-          url: /images/coming-soon.png
+          url: /images/ielts.png
           altText: IELTS
         styles:
           self:
@@ -1088,7 +1088,8 @@ sections:
           - type: Link
             label: Certificate
             altText: ''
-            url: '/about/zenteno/#continuing-education'
+            url: >-
+              https://drive.google.com/file/d/1iAnfTrSrHJwVQ7xXUk3O2xzJYvBLrs-q/view?usp=sharing
             showIcon: true
             icon: playCircle
             iconPosition: right
