@@ -147,7 +147,29 @@ sections:
             icon: chevronRight
             iconPosition: right
             elementId: ''
-        
+      - type: FeaturedItem
+        title: David Zenteno
+        text: |
+          Fundador
+        featuredImage:
+          type: ImageBlock
+          altText: Zenteno con Z
+          url: /images/z.png
+        styles:
+          self:
+            textAlign: center
+            borderRadius: medium
+            borderWidth: 1
+            borderStyle: solid
+        actions:
+          - type: Link
+            label: Resume
+            altText: ''
+            url: /about/zenteno
+            showIcon: true
+            icon: chevronRight
+            iconPosition: right
+            elementId: ''
   - type: FeaturedPeopleSection
     elementId: ''
     variant: variant-a
