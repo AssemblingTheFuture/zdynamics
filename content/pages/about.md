@@ -176,7 +176,7 @@ sections:
           Engineer
         featuredImage:
           type: ImageBlock
-          altText: Itzel Torres
+          altText: Luis Boyzo
           url: /images/troncs.jpg
         styles:
           self:
