@@ -122,7 +122,7 @@ sections:
     colors: colors-e
     elementId: ''
     title: ¡Conócenos!
-    subtitle: Más allá de los libros y la aburrida teoría ;)
+    subtitle: No hay ejércitos de una sola persona :D
     items:
       - type: FeaturedItem
         title: Métodos Numéricos con Aplicaciones de Ingeniería
