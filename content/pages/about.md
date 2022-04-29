@@ -118,7 +118,8 @@ sections:
       actions:
         justifyContent: flex-start
   - type: FeaturedItemsSection
-    colors: colors-c
+    variant: variant-a
+    colors: colors-e
     elementId: ''
     title: Robótica Avanzada en Línea
     subtitle: Más allá de los libros y la aburrida teoría ;)
