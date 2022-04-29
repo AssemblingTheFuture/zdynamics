@@ -177,7 +177,7 @@ sections:
         featuredImage:
           type: ImageBlock
           altText: Luis Boyzo
-          url: /images/troncs.jpg
+          url: /images/boyzo.jpg
         styles:
           self:
             textAlign: center
