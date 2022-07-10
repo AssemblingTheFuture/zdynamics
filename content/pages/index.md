@@ -427,7 +427,7 @@ sections:
         styles:
           self:
             textAlign: center
-        title: 800+ estudiantes
+        title: 900+ estudiantes
         text: |
           ¡Y continuamos creciendo día con día!
       - type: FeaturedItem
