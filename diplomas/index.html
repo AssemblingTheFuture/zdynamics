@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomas | zDynamics</title>
+    <link rel="icon" href="../images/icon.ico">
+
+    <meta name="description" content="Validación y emisión de diplomas digitales para los talleres completados. Asegura la integridad académica con nuestro sistema de certificación seguro.">
+    <meta name="robots" content="noindex"> <meta property="og:title" content="Diplomas | zDynamics">
+    <meta property="og:description" content="Validación y emisión de diplomas digitales para los talleres completados. Asegura la integridad académica con nuestro sistema de certificación seguro.">
+    <meta property="og:image" content="https://cdn-icons-png.freepik.com/512/11387/11387833.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zdynamics.org/diplomas/">
+    
+    <meta name="robots" content="noindex"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() { emailjs.init('tc1u_lsh29PmThiJg'); })();
+    </script>
+
+    <style>
+        /* ESTILOS ESPECÍFICOS: DIPLOMAS / SEGURIDAD */
+        
+        .security-section {
+            min-height: 100vh;
+            padding: 120px 0 80px;
+            display: flex;
+            align-items: center;
+            background: rgba(13, 17, 23, 0.7);
+        }
+
+        .security-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #30363d;
+            background: rgba(13, 17, 23, 0.7);
+            backdrop-filter: blur(1px);
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 0 50px rgba(0, 212, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .security-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 30px;
+        }
+
+        .security-icon {
+            font-size: 4rem;
+            color: var(--neon-orange); /* Naranja = Alerta/Seguridad */
+            margin-bottom: 20px;
+            filter: drop-shadow(0 0 15px rgba(217, 54, 22, 0.7));
+        }
+
+        .security-title {
+            font-family: var(--font-hero);
+            font-size: 2rem;
+            color: var(--text-white);
+            margin-bottom: 10px;
+        }
+
+        .manifesto-box {
+            background: rgba(217, 54, 22, 0.05); /* Fondo rojizo sutil */
+            border-left: 4px solid var(--neon-orange);
+            padding: 20px;
+            margin-bottom: 40px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .manifesto-box strong { color: var(--neon-orange); }
+
+        /* Formulario de Solicitud */
+        .request-form {
+            display: grid;
+            gap: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: var(--font-code);
+            color: var(--neon-cyan);
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .form-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #30363d;
+            padding: 12px 15px;
+            color: white;
+            font-family: var(--font-code);
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .form-input:focus {
+            border-color: var(--neon-cyan);
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+        }
+
+        select.form-input {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300D4FF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 15px;
+            cursor: pointer;
+        }
+
+        select.form-input option {
+            background-color: #0b1120; /* Fondo oscuro (Tu color --bg-dark) */
+            color: #F0F6FC; /* Texto blanco */
+            padding: 10px;
+        }
+
+        .form-note {
+            font-size: 0.8rem;
+            color: var(--text-gray);
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .security-container { padding: 30px 20px; }
+            .security-icon { font-size: 3rem; }
+            .security-title { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="../" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="../#talleres">Talleres</a></li>
+                <li><a class="active" style="color: var(--neon-cyan);">Diplomas</a></li>
+                <li><a href="https://zdynamics.mitiendanube.com/" target="_blank">Tienda</a></li>
+                <li><a href="../nosotros/">Nosotros</a></li>
+                <li><a href="../eventos/">Eventos</a></li>
+                <li>
+                    <a href="../investigacion/" title="I²+D">
+                        <i class="fa-solid fa-flask" style="font-size: 1.1rem;"></i>
+                    </a>
+                </li>
+                <li><a href="#diploma-form" class="btn-nav">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="security-section">
+        <div class="container">
+            <div class="security-container">
+                <div class="scan-line"></div>
+                
+                <div class="security-header">
+                    <i class="fa-solid fa-shield-halved security-icon"></i>
+                    <h1 class="security-title">INTEGRIDAD ACADÉMICA</h1>
+                    <p style="color: var(--text-gray); font-family: var(--font-code);">VALIDACIÓN DE DIPLOMAS</p>
+                </div>
+
+                <div class="manifesto-box">
+                    <p>
+                        <strong>Aquí tu diploma se gana, no se compra.</strong><br><br>
+                        Monitoreamos tus patrones de aprendizaje en Udemy. Si notamos que un taller de 20 horas fue completado en menos tiempo y que además no realizaste ninguna tarea ni examen, <strong>nuestro diploma será cancelado automáticamente</strong>.
+                        <br><br>
+                        Valoramos el esfuerzo de los estudiantes HONESTOS. Si estudiaste con dedicación, tu diploma es garantía de tu calidad moral y profesional.
+                    </p>
+                </div>
+
+                <form id="diploma-form" class="request-form">
+                    
+                    <div class="form-group">
+                        <label>NOMBRE DEL TALLER</label>
+                        <select class="form-input" name="course_name" required>
+                            <option value="" disabled selected>Selecciona el taller completado...</option>
+                            <option value="Metodos Numericos">Métodos Numéricos con Aplicaciones de Ingeniería</option>
+                            <option value="Control Dinamico">Control de Sistemas Dinámicos</option>
+                            <option value="Robotica Cinematic">Robótica: de la Cinemática al Control</option>
+                            <option value="Python Robotics">Programación Básica de Robots con Python</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>CORREO REGISTRADO EN UDEMY</label>
+                        <input type="email" name="user_email" class="form-input" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>ENLACE A TU PERFIL PÚBLICO DE UDEMY</label>
+                        <input type="url" name="user_profile" class="form-input" placeholder="https://www.udemy.com/user/...">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" id="verify-btn" style="width: 100%; margin-top: 10px;">
+                        SOLICITAR VERIFICACIÓN <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <p class="form-note">
+                        <i class="fa-solid fa-circle-info"></i> Debido al número de alumnos activos en nuestra plataforma, la revisión manual puede tomar hasta <strong>7 días hábiles</strong>. Te contactaremos por correo cuando tengamos tu información lista.
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            
+            <div class="footer-col footer-info">
+                <img src="../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+    
+    <script>
+        // LÓGICA DE ENVÍO MANUAL (FASE 1)
+        // En el futuro, reemplazaremos esto con una llamada a la API
+        
+        const form = document.getElementById('diploma-form');
+        const btn = document.getElementById('verify-btn');
+
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const course = this.course_name.value;
+                const email = this.user_email.value;
+                const profile = this.user_profile.value || "No proporcionado";
+
+                // Preparamos el mensaje para ti
+                const templateParams = {
+                    name: "Estudiante (Solicitud Diploma)",
+                    email: email,
+                    subject: `SOLICITUD DE DIPLOMA: ${course}`,
+                    message: `El usuario solicita validación manual para el taller: ${course}.\nPerfil Udemy: ${profile}\n\nPor favor verifica su información en el panel de instructores de Udemy antes de emitir el diploma.`
+                };
+
+                // Feedback Visual
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> VERIFICANDO...';
+                btn.style.opacity = "0.7";
+
+                emailjs.send('service_66tnv1p', 'template_dy4961m', templateParams)
+                    .then(() => {
+                        // ÉXITO: Cambiamos el diseño para confirmar
+                        document.querySelector('.security-container').innerHTML = `
+                            <div style="text-align: center; padding: 40px;">
+                                <i class="fa-solid fa-check-circle" style="font-size: 4rem; color: #00FF88; margin-bottom: 20px;"></i>
+                                <h2 style="font-family: var(--font-hero); margin-bottom: 15px;">SOLICITUD EN PROCESO</h2>
+                                <p style="color: #cbd5e1; line-height: 1.6;">
+                                    Hemos recibido tu solicitud para validar la finalización del taller <strong>${course}</strong>.
+                                    <br>Revisaremos tu historial de progreso en el panel de instructores de Udemy. Si todo es correcto, recibirás tu diploma digital en <strong>${email}</strong>.
+                                </p>
+                                <a href="index.html" class="btn btn-outline" style="margin-top: 30px;">Volver al Inicio</a>
+                            </div>
+                        `;
+                    }, (err) => {
+                        console.error(err);
+                        btn.innerHTML = 'ERROR DE CONEXIÓN';
+                        btn.style.backgroundColor = 'red';
+                        alert("Hubo un error al enviar la solicitud. Por favor intenta más tarde.");
+                        setTimeout(() => {
+                            btn.innerHTML = originalText;
+                            btn.style.backgroundColor = '';
+                            btn.style.opacity = "0.7";
+                        }, 3000);
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>

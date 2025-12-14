@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla de Artículos v1.0 | zDynamics</title>
+    <link rel="icon" href="../../images/icon.ico">
+    
+    <meta name="description" content="Guía de uso para la redacción de artículos técnicos en nuestra plataforma">
+    <meta name="keywords" content="plantilla, latex, código, ingeniería, documentación">
+    <meta name="author" content="Assembling the Future S.A.S.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                packages: { '[+]': ['physics', 'ams'] },
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                tags: 'ams' // ESTO ACTIVA LA NUMERACIÓN AUTOMÁTICA (Eq. 1)
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/felipec.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/solarized-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/matlab.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad(); // Activa los números
+    </script>
+
+    <style>
+        /* Fondo de la página de lectura */
+        .article-container {
+            max-width: 80%; /* Ancho óptimo de lectura (aprox 75 caracteres por línea) */
+            margin: 120px auto 80px; /* Margen superior para librar el navbar */
+            padding: 60px;
+            
+            /* EFECTO PAPEL OSCURO */
+            background-color: rgba(13, 17, 23, 0.7); /* Casi sólido para legibilidad */
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            position: relative;
+            z-index: 10; /* Encima de partículas */
+        }
+
+        /* Tipografía del Artículo */
+        .article-content {
+            font-family: 'Exo 2', 'JetBrains Mono'; /* Fuente legible pero técnica */
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #c9d1d9; /* Gris claro (GitHub Dark mode style) */
+            text-align: justify;
+        }
+
+        /* Títulos */
+        h1.article-title {
+            font-family: 'Chakra Petch', 'Orbitron';
+            font-size: 2.5rem;
+            color: var(--text-white);
+            margin-bottom: 10px;
+            line-height: 1.2;
+            text-align: left;
+        }
+
+        h2.article-subtitle {
+            font-family: 'Exo 2', 'JetBrains Mono';
+            font-size: 1.5rem;
+            color: var(--neon-cyan);
+            margin-bottom: 30px;
+            font-weight: 300;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 20px;
+        }
+
+        /* Metadatos de Autores */
+        .article-meta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            font-family: var(--font-code);
+        }
+
+        .author-chip {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.05);
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid #30363d;
+        }
+
+        .author-chip img {
+            width: 30px; height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Encabezados internos */
+        .article-content h2 {
+            font-family: 'Chakra Petch', 'Orbitron';
+            color: var(--text-white);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--neon-orange);
+            padding-left: 15px;
+        }
+
+        .article-content h3 {
+            color: var(--neon-cyan);
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* Cajas de Código */
+        pre {
+            border-radius: 6px;
+            margin: 5%;
+            /*box-shadow: 0 5px 15px rgba(0,0,0,0.3);*/
+        }
+        
+        code {
+            font-family: 'JetBrains Mono', monospace !important;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        /* --- PESTAÑAS DE CÓDIGO --- */
+        .code-tabs-wrapper {
+            border: 1px solid var(--neon-cyan); /* Borde neón fino */
+            border-radius: 6px;
+            
+            /* FONDO SOLARIZED TRANSPARENTE */
+            /* El color base de Solarized Dark es #002b36. Le bajamos la opacidad */
+            background: rgba(0, 43, 54, 0.14); 
+            
+            width: fit-content; 
+            min-width: 50%; 
+            max-width: 100%;
+            margin: 40px auto;
+
+            display: grid;
+            grid-template-rows: auto 1fr; /* Fila 1: Header, Fila 2: Contenido */
+            
+            /* Sombra cian suave para efecto "pantalla encendida" */
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(1px); /* Efecto vidrio */
+        }
+        
+        /* Aseguramos que el código esté a la izquierda */
+        .code-tabs-wrapper pre { 
+            text-align: left; 
+            margin: 0;
+        }
+
+        .code-tabs-header {
+            grid-row: 1; /* El header va arriba */
+            display: flex;
+            /* Encabezado un poco más oscuro */
+            background: rgba(0, 30, 38, 0.0);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: #839496; /* Texto base Solarized */
+            padding: 8px 20px;
+            cursor: pointer;
+            font-family: var(--font-code);
+            font-size: 0.85rem;
+            border-right: 1px solid rgba(0, 212, 255, 0.1);
+            transition: 0.3s;
+        }
+
+        .tab-btn:hover { color: var(--neon-cyan); background: rgba(0, 212, 255, 0.05); }
+        
+        .tab-btn.active {
+            color: var(--neon-cyan);
+            background: rgba(0, 43, 54, 1);
+            border-bottom: 2px solid var(--neon-cyan);
+        }
+
+        .code-content {
+            grid-row: 2;     /* Todos van a la fila 2 */
+            grid-column: 1;  /* Todos van a la columna 1 (se enciman) */
+            
+            /* En lugar de display:none, los ocultamos visualmente */
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none; /* Para no dar clics fantasma */
+            transition: opacity 0.2s ease-in-out;
+            
+            /* Padding interno del código */
+            padding: 0; 
+        }
+
+        .code-content.active {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .code-tabs-wrapper pre, .code-tabs-wrapper code { 
+            background: transparent !important; /* Quitamos el fondo del tema original */
+            font-family: 'JetBrains Mono', monospace; 
+            text-shadow: none;
+            margin: 0;
+        }
+        
+        /* Estilo de los números de línea (Plugin) */
+        .hljs-ln-numbers {
+            padding-right: 15px !important;
+            border-right: 1px solid #30363d !important;
+            color: #484f58 !important;
+            text-align: right;
+            -webkit-user-select: none; /* No seleccionar números al copiar */
+        }
+
+        .hljs-ln-code { padding-left: 15px !important; }
+
+        /* --- AISLAR TABLAS DE CÓDIGO --- */
+        table.hljs-ln {
+            width: 100% !important; /* Ocupar todo el espacio disponible en su contenedor */
+            margin: 0 !important;   /* Quitar el margin: 0 auto */
+            box-shadow: none !important; /* Quitar la sombra de tabla de datos */
+        }
+
+        table.hljs-ln td {
+            text-align: left !important; /* CÓDIGO A LA IZQUIERDA */
+            padding: 0 5px !important;   /* Padding mínimo */
+            background: transparent !important;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1) !important;
+            border-top: none !important;
+            border-left: none !important;
+        }
+
+        /* Ajuste fino para la columna de números */
+        table.hljs-ln td.hljs-ln-numbers {
+            text-align: right !important; /* Los números sí van a la derecha */
+            border-right: 1px solid rgba(0, 212, 255, 0.2) !important; 
+            padding-right: 10px !important;
+            color: #586e75 !important; /* Color grisáceo Solarized */
+        }
+
+        /* Figuras */
+        figure {
+            /* Caja invisible y ajustada */
+            background: transparent; /* Sin fondo */
+            border: none; /* Sin borde */
+            padding: 0;
+            margin: 40px auto; /* Centrado vertical y horizontal */
+            width: fit-content; /* Se ajusta al tamaño de la imagen */
+            text-align: center;
+            max-width: 100%; /* Protección responsive */
+        }
+
+        figure img {
+            display: block; /* Elimina espacio fantasma abajo */
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            /* Sombra sutil directamente en la imagen, no en la caja */
+            box-shadow: 0 0 20px rgba(0,0,0,0.3); 
+            border: 1px solid #30363d;
+        }
+
+        figcaption {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            font-family: var(--font-code);
+        }
+
+        /* Forzamos el color cian */
+        figcaption strong, figcaption b { color: var(--neon-cyan); }
+
+        /* Grid de Figuras */
+        .figure-grid {
+            display: flex;
+            flex-wrap: wrap; /* Si no caben, bajan */
+            justify-content: center; /* Centrado horizontal */
+            gap: 15px;
+            padding: 15px;
+            width: fit-content;
+            margin: auto;
+        }
+
+        .figure-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 14px;
+        }
+
+        .figure-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #30363d;
+            margin-bottom: 10px;
+            transition: 0.3s;
+        }
+        
+        .figure-item img:hover { transform: scale(1.05); border-color: var(--neon-cyan); z-index: 5; }
+
+        /* Caption individual (dentro del grid) */
+        .figure-item figcaption {
+            font-size: 0.85rem;
+            color: var(--text-gray);
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Caption general del grupo (opcional) */
+        .grid-caption {
+            width: 100%; /* Forza salto de línea */
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-gray);
+        }
+
+        .grid-caption strong {color: var(--neon-cyan);}
+
+        /* Citas / Callouts */
+        blockquote {
+            background: rgba(0, 212, 255, 0.05);
+            border-left: 4px solid var(--neon-cyan);
+            margin: 30px 0;
+            padding: 20px;
+            font-style: italic;
+            color: var(--text-white);
+        }
+
+        /* Tablas (Centradas y Ajustadas) */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 30px 0;
+            display: flex; 
+            justify-content: center;
+        }
+
+        table {
+            width: auto; 
+            min-width: 50%; /* Para que no se vea diminuta si tiene poco texto */
+            max-width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+            /* Sombra suave para destacarla del fondo */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+        }
+
+        th {
+            text-align: center; /* Encabezados centrados se ven mejor en tablas compactas */
+            border-bottom: 2px solid var(--neon-cyan); /* Toque de color */
+            padding: 12px 20px; /* Más aire horizontal */
+            color: var(--text-white);
+            font-family: var(--font-heading);
+            background: rgba(255,255,255,0.02); /* Fondo sutil cabecera */
+        }
+
+        td {
+            border-bottom: 1px solid #30363d;
+            padding: 10px 20px;
+            text-align: center; /* Datos centrados por defecto */
+        }
+        
+        /* Alineación específica para la primera columna (etiquetas) */
+        td:first-child { text-align: left; color: var(--neon-cyan); }
+
+        table caption {
+            caption-side: top;
+            text-align: center; /* Caption centrado con la tabla */
+            margin-bottom: 10px;
+            font-family: var(--font-code);
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        table caption strong { color: var(--neon-cyan); }
+
+        /* Bibliografía */
+        .references {
+            margin-top: 60px;
+            border-top: 1px solid #30363d;
+            padding-top: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .references ol { padding-left: 20px; }
+        .references li { margin-bottom: 10px; color: var(--text-gray); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+        /* Aprovechar todo el ancho en celular */
+            .article-container {
+                width: 95%; /* Casi todo el ancho */
+                padding: 30px 20px; /* Reducir padding interno */
+                margin-top: 100px;
+            }
+
+            /* Permitir que los autores bajen de línea */
+            .article-meta {
+                flex-wrap: wrap; /* CLAVE: Si no caben, bajan */
+                gap: 10px; /* Menos espacio entre ellos */
+            }
+            
+            /* Ajuste de fuente título */
+            h1.article-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="../../index.html" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="../"><i class="fa-solid fa-arrow-left"></i> Volver a I²+D</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+        </div>
+    </nav>
+
+    <article class="article-container">
+        
+        <header>
+            <h1 class="article-title">Título del Artículo</h1>
+            <h2 class="article-subtitle">Guía de uso para la plantilla de artículos v1.0</h2>
+            
+            <div class="article-meta">
+                <div class="author-chip">
+                    <img src="../../images/itzel.jpg" alt="Itzel T." onerror="this.src='../../images/logo.png'">
+                    <span>Astrid Torres</span>
+                </div>
+                <div class="author-chip">
+                    <img src="../../images/david-zenteno.jpg" alt="David Z." onerror="this.src='../../images/logo.png'">
+                    <span>David Zenteno</span>
+                </div>
+                <div class="author-chip" style="background: transparent; border: none;">
+                    <i class="fa-regular fa-calendar"></i> DÍA de MES, 202x
+                </div>
+            </div>
+        </header>
+
+        <div class="article-content">
+            
+            <p><strong>Abstract.</strong> Este documento sirve como guía técnica y visual para la redacción de artículos en nuestra plataforma. Se demuestran las capacidades de creación de ecuaciones con LaTeX, resaltado de sintaxis para código (Python/C++/MATLAB) y estructuración de figuras y tablas. Esta plantilla está optimizada para lectura prolongada en modo oscuro.</p>
+
+            <h2>0. Configuración Inicial (Metadata)</h2>
+            
+            <p>
+                Antes de publicar, es vital editar la información invisible que usan Google y las redes sociales. Ve al inicio del archivo HTML, dentro de la etiqueta <code>&lt;head&gt;</code>, y modifica estos valores:
+            </p>
+
+            <div class="code-tabs-wrapper">
+                <div class="code-tabs-header">
+                    <button class="tab-btn active" onclick="switchTab(this)">HTML</button>
+                </div>
+
+                <div id="metadata" class="code-content active">
+                     <pre><code class="language-html">
+                        &lt;title&gt;Título de tu Artículo | zDynamics&lt;/title&gt;
+
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        
+                        &lt;meta name="description" content="Robótica avanzada: talleres especializados, algoritmos de control y hardware"&gt;
+                        &lt;meta name="keywords" content="robótica, control robusto, manipuladores, python, matlab, zDynamics, ingeniería, educación stem"&gt;
+                        &lt;meta name="author" content="Assembling the Future S.A.S."&gt;
+                        &lt;meta name="language" content="Spanish"&gt;
+                        &lt;meta name="robots" content="index, follow"&gt;
+
+                        &lt;meta property="og:type" content="article"&gt;
+                        &lt;meta property="og:site_name" content="zDynamics"&gt;
+                        &lt;meta property="og:title" content="Plantilla de Investigación | zDynamics"&gt;
+                        &lt;meta property="og:description" content="Recursos y documentación técnica de alto nivel para robótica y control."&gt;
+                        &lt;meta property="og:image" content="https://zdynamics.org/images/logo.png"&gt;
+                        &lt;meta property="og:url" content="https://zdynamics.org/investigacion/articulos/plantilla.html"&gt;
+
+                        &lt;meta name="twitter:card" content="summary_large_image"&gt;
+                        &lt;meta name="twitter:title" content="Plantilla de Investigación | zDynamics"&gt;
+                        &lt;meta name="twitter:description" content="Documentación técnica y artículos de investigación"&gt;
+                        &lt;meta name="twitter:image" content="https://zdynamics.org/images/logo.png"&gt;
+                    </code></pre>
+                </div>
+            </div>
+
+            <p>
+                Estos datos ayudan a que tu artículo sea encontrado y compartido correctamente. El título debe ser conciso pero informativo; la descripción debe captar la esencia de tu trabajo en pocas palabras; las palabras clave deben reflejar los temas principales.
+            </p>
+
+            <h2>1. Introducción</h2>
+
+            <p>
+                La comunicación científica requiere precisión. Utilizamos <strong>MathJax</strong> para mostrar ecuaciones matemáticas y <strong>Highlight.js</strong> para bloques de código con resaltado de sintaxis. A continuación, se presentan ejemplos de ambos.
+            </p>
+
+            <h3>1.1 Ecuaciones en Línea y Bloque</h3>
+
+            <p>
+                Puedes escribir ecuaciones en un párrafo (inline equations) dentro de los símbolos "$$"; por ejemplo, la identidad de Euler <code>$e^{i\pi} + 1 = 0$</code>. Esto es útil para variables como $x$, $y$ o $\theta$. Para ecuaciones numeradas, utiliza <code>\begin{equation}</code>; por ejemplo, la función de control es:
+            </p>
+            
+            <br>
+            <code>
+                \begin{equation} \label{eq:control-function}
+                    <br>
+                    u \left( t \right) = -k \text{sgn} \left( s \right)
+                    <br>
+                \end{equation}
+            </code>
+            <br>
+            <br>
+
+            <p>El resultado de usar el código anterior es:</p>
+
+            \begin{equation} \label{eq:control-function}
+                u \left( t \right) = -k \text{sgn} \left( s \right)
+            \end{equation}
+            
+            <p>Y puedes citar la ecuación usando <code>\ref{eq:control-function}</code> o <code>\eqref{eq:control-function}</code> (e.g. la ecuación \eqref{eq:control-function} es una función de control discontinua). También soporta matrices y notación vectorial compleja:</p>
+
+            \begin{equation} \label{eq:matrix-example}
+                \mathbf{J}
+                =
+                \begin{bmatrix}
+                    \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\
+                    \vdots & \ddots & \vdots \\
+                    \frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}
+                \end{bmatrix}
+            \end{equation}
+
+            <h2>2. Inserción de Código</h2>
+            <p>
+                Para demostrar algoritmos, utilizamos bloques de código con resaltado de sintaxis automático. El sistema detecta el lenguaje, pero es preferible especificarlo en la clase (ej. <code>class="language-python"</code>).
+            </p>
+
+            <div class="code-tabs-wrapper">
+                <div class="code-tabs-header">
+                    <button class="tab-btn active" onclick="switchTab(this)">Python</button>
+                    <button class="tab-btn" onclick="switchTab(this)">MATLAB</button>
+                    <button class="tab-btn" onclick="switchTab(this)">C++</button>
+                </div>
+
+                <div id="py" class="code-content active">
+                    <pre><code class="language-python">
+                        import numpy as np
+
+                        def sliding_surface(error, error_dot, lambda_gain):
+                            """
+                            Calcula la superficie de deslizamiento s = e_dot + lambda * e
+                            """
+                            s = error_dot + lambda_gain * error
+                            return s
+
+                        # Parámetros
+                        k_gain = 5.0
+                        s_val = 0.5
+
+                        # Ley de control discontinua
+                        u = -k_gain * np.sign(s_val)
+                        print(f"Control Output: {u}")
+                    </code></pre>
+                </div>
+
+                <div id="matlab" class="code-content">
+                    <pre><code class="language-matlab">
+                        % Simulación de Sistema Masa-Resorte
+                        clc; clear; close all;
+
+                        m = 10; k = 5; b = 2;
+                        sys = tf(1, [m b k]);
+
+                        t = 0:0.01:10;
+                        u = ones(size(t)); % Entrada escalón
+                        [y, t] = lsim(sys, u, t);
+
+                        plot(t, y, 'LineWidth', 2);
+                        grid on;
+                        title('Respuesta del Sistema');
+                    </code></pre>
+                </div>
+
+                <div id="cpp" class="code-content">
+                    <pre><code class="language-cpp">
+                        void setup() {
+                            pinMode(LED_BUILTIN, OUTPUT);
+                            Serial.begin(9600);
+                        }
+
+                        void loop() {
+                            // Control ON/OFF simple
+                            if (sensorValue > threshold) {
+                                digitalWrite(LED_BUILTIN, HIGH);
+                            } else {
+                                digitalWrite(LED_BUILTIN, LOW);
+                            }
+                            delay(100);
+                        }
+                    </code></pre>
+                </div>
+            </div>
+
+            <h2>3. Figuras y Tablas</h2>
+            <p>
+                Las figuras deben estar centradas y siempre acompañadas de una descripción que explique qué se está observando.
+            </p>
+
+            <div class="figure-grid">
+                <figure class="figure-item">
+                    <img src="../../images/bny.png">
+                    <figcaption><strong>(a)</strong> Industrias BNY</figcaption>
+                </figure>
+                
+                <figure class="figure-item">
+                    <img src="../../images/logo.png">
+                    <figcaption><strong>(b)</strong> zDynamics</figcaption>
+                </figure>
+
+                <div class="grid-caption">
+                    <strong>Figura 2.</strong> Vistas isométricas del prototipo experimental.
+                </div>
+            </div>
+
+            <h3>Tablas de Datos</h3>
+            <div class="table-wrapper">
+                <table>
+                    <caption><strong>Tabla 1.</strong> Parámetros de simulación</caption>
+                    <thead>
+                        <tr>
+                            <th>Parámetro</th>
+                            <th>Símbolo</th>
+                            <th>Valor</th>
+                            <th>Unidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Masa</td>
+                            <td>$m$</td>
+                            <td>1.25</td>
+                            <td>kg</td>
+                        </tr>
+                        <tr>
+                            <td>Gravedad</td>
+                            <td>$g$</td>
+                            <td>9.80665</td>
+                            <td>$\frac{m}{s^2}$</td>
+                        </tr>
+                        <tr>
+                            <td>Ganancia Proporcional</td>
+                            <td>$K_p$</td>
+                            <td>15.0</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>3.1 Gestión de Imágenes</h3>
+            
+            <p>
+                Para mantener el orden en el servidor, seguimos una estructura estricta de carpetas. Cada artículo debe tener su propio directorio.
+            </p>
+
+            <div style="background: rgba(0, 212, 255, 0.05); border-left: 4px solid var(--neon-cyan); padding: 15px; margin: 20px 0;">
+                <h4 style="margin-top: 0; color: var(--text-white);">📂 Estructura de Directorios</h4>
+                <ul style="list-style: none; padding-left: 10px; color: var(--text-gray); font-family: 'JetBrains Mono', monospace;">
+                    <li>/investigacion/</li>
+                    <li>├── index.html (Hub de Investigación)</li>
+                    <li>└── articulos/</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;├── <strong>nombre_del_articulo.html</strong> (Este es tu artículo)</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;└── <strong>nombre_del_articulo_img/</strong> (Carpeta de imágenes de tu artículo)</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <strong>figura-1.png</strong> (Imágenes aquí)</li>
+                </ul>
+            </div>
+            
+            <p>
+                El nombre de la carpeta debe tener guiones bajos en vez de espacios; por otro lado, las imágenes deben tener guiones medios en vez de espacios. Una vez creada la carpeta y subidas las imágenes, úsalas en el código usando rutas relativas simples, ya que el HTML estará junto a las imágenes:
+            </p>
+            
+            <div class="code-tabs-wrapper">
+                <div class="code-tabs-header">
+                    <button class="tab-btn active" onclick="switchTab(this)">HTML</button>
+                </div>
+
+                <div id="figures" class="code-content active">
+                     <pre><code class="language-html">
+                        &lt;figure class="figure-item"&gt;
+                            &lt;img src="nombre_del_articulo_img/diagrama-control.png" alt="Descripción para ciegos"&gt;
+                            &lt;figcaption&gt;&lt;strong&gt;Figura 1.&lt;/strong&gt; Diagrama de bloques del sistema.&lt;/figcaption&gt;
+                        &lt;/figure&gt;
+                    </code></pre>
+                </div>
+            </div>
+
+            <h2>4. Conclusión</h2>
+            <p>
+                Esta plantilla provee todos los elementos necesarios para publicar información científica. Recuerda siempre citar tus fuentes y verificar que el código sea funcional antes de publicarlo.
+            </p>
+
+            <blockquote>
+                "La simplicidad es la máxima sofisticación." - Leonardo da Vinci
+            </blockquote>
+
+            <div class="references">
+                <h3>Referencias</h3>
+                <ol>
+                    <li id="ref1">[1] J. Slotine and W. Li, <em>Applied Nonlinear Control</em>. Prentice Hall, 1991.</li>
+                    <li id="ref2">[2] D. Zenteno, "Cartesian Constrained Non-Singular Terminal Sliding Mode Control", <em>IEEE Access</em>, 2024.</li>
+                    <li id="ref3">[3] B. Siciliano, <em>Robotics: Modelling, Planning and Control</em>. Springer, 2009.</li>
+                </ol>
+            </div>
+
+        </div>
+    </article>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="../../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../scripts/main.js"></script>
+
+    <script>
+        function switchTab(btn) {
+            // 1. Encontrar el contenedor padre (El Wrapper de ESTE bloque)
+            const wrapper = btn.closest('.code-tabs-wrapper');
+            
+            // 2. Gestionar botones (Headers)
+            const buttons = wrapper.querySelectorAll('.tab-btn');
+            // Obtener el índice del botón clickeado (0, 1, 2...)
+            const index = Array.from(buttons).indexOf(btn);
+            
+            // Quitar activo a todos los botones de este bloque
+            buttons.forEach(b => b.classList.remove('active'));
+            // Activar el clickeado
+            btn.classList.add('active');
+
+            // 3. Gestionar contenido
+            const contents = wrapper.querySelectorAll('.code-content');
+            
+            // Quitar activo a todos los contenidos de este bloque
+            contents.forEach(c => c.classList.remove('active'));
+            
+            // Activar el contenido que corresponde al mismo índice del botón
+            if(contents[index]) {
+                contents[index].classList.add('active');
+            }
+        }
+    </script>
+
+    <script>
+        // 2. INICIALIZACIÓN Y REPARACIÓN
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // A. LIMPIEZA DE INDENTACIÓN HTML
+            document.querySelectorAll('pre code').forEach((block) => {
+                // Usamos textContent para evitar interpretar HTML erróneamente
+                let lines = block.textContent.split('\n'); 
+                
+                if (lines[0].trim() === "") lines.shift();
+                
+                let minIndent = Infinity;
+                lines.forEach(line => {
+                    if (line.trim().length > 0) {
+                        const indent = line.search(/\S/);
+                        if (indent !== -1 && indent < minIndent) minIndent = indent;
+                    }
+                });
+
+                if (minIndent !== Infinity && minIndent > 0) {
+                    const newLines = lines.map(line => line.substring(minIndent));
+                    // Reinyectamos como texto plano seguro
+                    block.textContent = newLines.join('\n'); 
+                }
+            });
+
+            // B. EJECUTAR PLUGINS
+            hljs.configure({ ignoreUnescapedHTML: true }); // <--- ESTO SILENCIA EL ERROR Y PROTEGE EL RENDER
+            hljs.highlightAll();
+            hljs.initLineNumbersOnLoad();
+
+            // C. IGUALADOR DE ALTURAS (MÉTODO CLONACIÓN)
+            // Esperamos un poco para asegurar que las tablas ya existen
+            setTimeout(() => {
+                document.querySelectorAll('.code-tabs-wrapper').forEach(wrapper => {
+                    const tables = Array.from(wrapper.querySelectorAll('table.hljs-ln'));
+                    if (tables.length === 0) return;
+
+                    // 1. Encontrar el número máximo de líneas en este grupo de pestañas
+                    let maxRows = 0;
+                    tables.forEach(table => {
+                        if (table.rows.length > maxRows) maxRows = table.rows.length;
+                    });
+
+                    // 2. Rellenar las tablas cortas clonando la última fila
+                    tables.forEach(table => {
+                        const currentRows = table.rows.length;
+                        const rowsToAdd = maxRows - currentRows;
+
+                        if (rowsToAdd > 0) {
+                            const tbody = table.querySelector('tbody');
+                            const templateRow = table.rows[currentRows - 1]; // Usamos la última fila como molde
+
+                            for (let i = 0; i < rowsToAdd; i++) {
+                                // Clonamos la fila (mantiene estilos y clases)
+                                const newRow = templateRow.cloneNode(true);
+                                const nextNum = currentRows + i + 1;
+
+                                // Actualizamos la celda de NÚMERO
+                                const numCell = newRow.querySelector('.hljs-ln-numbers');
+                                if (numCell) {
+                                    // Si tiene atributo data, lo actualizamos
+                                    if (numCell.hasAttribute('data-line-number')) {
+                                        numCell.setAttribute('data-line-number', nextNum);
+                                    }
+                                    // Si tiene texto visible, lo actualizamos
+                                    // (Algunos temas usan ::before, otros texto directo, esto cubre ambos)
+                                    if (numCell.innerText.trim().length > 0) {
+                                        numCell.innerText = nextNum;
+                                    }
+                                }
+
+                                // Limpiamos la celda de CÓDIGO
+                                const codeCell = newRow.querySelector('.hljs-ln-code');
+                                if (codeCell) {
+                                    codeCell.innerHTML = '&nbsp;'; // Espacio vacío para mantener altura
+                                }
+
+                                tbody.appendChild(newRow);
+                            }
+                        }
+                    });
+                });
+            }, 300); // 300ms de espera para seguridad
+        });
+    </script>
+
+</body>
+</html>

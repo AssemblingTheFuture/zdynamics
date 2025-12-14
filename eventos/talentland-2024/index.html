@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Land 2024 | zDynamics</title>
+    <link rel="icon" href="../../images/icon.ico">
+
+    <!-- Meta data -->
+    <meta name="description" content="Talent Land 2024: Nerd Talks v1.0. Pláticas sobre innovación latina, robótica espacial y diseño electrónico en colaboración con Paragon Robotics.">
+    <meta name="keywords" content="talent land 2024, nerd talks, paragon robotics, conferencias, robótica, guadalajara">
+    
+    <meta property="og:title" content="Talent Land 2024: Nerd Talks | zDynamics">
+    <meta property="og:description" content="Innovación Latina: Revive las ponencias sobre robótica espacial y diseño electrónico.">
+    <meta property="og:image" content="../../images/nerd-talks.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <style>
+        .event-hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
+        }
+        
+        .event-banner-container {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.2)); 
+        }
+
+        .event-banner-img {
+            width: 100%;
+            height: auto;
+            max-height: 180px; 
+            object-fit: contain;
+            display: block;
+        }
+
+        .event-meta {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-code);
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+        .meta-item i { color: var(--neon-cyan); }
+        /* Enlaces dentro de la meta data para dar veracidad */
+        .meta-item a { color: var(--text-gray); text-decoration: none; border-bottom: 1px dotted var(--neon-cyan); transition: 0.3s; }
+        .meta-item a:hover { color: var(--neon-cyan); }
+
+        .event-body {
+            max-width: 1000px; /* Aumentado para mejor lectura */
+            margin: 0 auto;
+            font-family: var(--font-body);
+            color: #cbd5e1;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .event-body h3 {
+            font-family: var(--font-heading);
+            color: var(--text-white);
+            margin-top: 60px;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .h3-container { text-align: center; } /* Para centrar el borde del h3 */
+
+        .highlight-text {
+            color: var(--neon-orange);
+            font-weight: bold;
+        }
+
+        /* --- NUEVA SECCIÓN: CRITERIOS DE SELECCIÓN (Veracidad) --- */
+        .criteria-box {
+            background: rgba(13, 17, 23, 0.4);
+            border-left: 4px solid var(--neon-cyan);
+            padding: 30px;
+            margin: 40px auto;
+            text-align: left;
+            border-radius: 0 12px 12px 0;
+        }
+        
+        .criteria-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .criteria-list li {
+            position: relative;
+            padding-left: 25px;
+            color: var(--text-gray);
+        }
+        
+        .criteria-list li::before {
+            content: '\f00c'; /* Check icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--neon-cyan);
+        }
+
+        /* --- GRID DE PONENTES (CORREGIDO: Flexbox para simetría) --- */
+        .speakers-grid {
+            display: flex; /* Flexbox permite centrar la última tarjeta huérfana */
+            flex-wrap: wrap;
+            justify-content: center; /* Centrado horizontal */
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .speaker-card {
+            flex: 0 1 350px; /* Ancho base más generoso */
+            background: rgba(13, 17, 23, 0.6);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.3s ease;
+            text-align: center;
+            padding-bottom: 25px;
+            
+            /* SOLUCIÓN AL BOTÓN INACTIVO: */
+            position: relative;
+            z-index: 2; /* Asegura estar encima de las partículas */
+        }
+
+        .speaker-card:hover {
+            border-color: var(--neon-cyan);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+        }
+
+        /* SOLUCIÓN A LA IMAGEN (Rectangular y completa) */
+        .speaker-img {
+            width: 100%;
+            height: auto; /* Altura automática para no deformar */
+            aspect-ratio: 16 / 9; /* Fuerza la proporción panorámica rectangular */
+            object-fit: cover; /* Cubre el área sin bordes negros */
+            border-bottom: 1px solid #30363d;
+            margin-bottom: 15px;
+        }
+
+        .speaker-name {
+            font-family: var(--font-heading);
+            color: var(--text-white);
+            font-size: 1.3rem;
+            margin: 10px 10px 5px;
+        }
+
+        .speaker-topic {
+            font-family: var(--font-code);
+            color: var(--neon-orange);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 20px;
+            min-height: 2.5em; /* Para alinear botones si el título es largo */
+        }
+
+        .speaker-btn {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid var(--text-gray);
+            border-radius: 50px;
+            color: var(--text-gray);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer; /* Asegura manita */
+        }
+
+        .speaker-btn:hover {
+            border-color: var(--neon-cyan);
+            color: var(--bg-dark);
+            background: var(--neon-cyan);
+            box-shadow: 0 0 15px var(--neon-cyan);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="../../" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="../"><i class="fa-solid fa-arrow-left"></i> Volver a Eventos</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="event-hero">
+        <div class="container">
+            <h1 class="section-title">TALENT LAND <span class="highlight">2024</span></h1>
+
+            <br>
+
+            <div class="event-banner-container">
+                <img src="../../images/nerd-talks.png" alt="Logo Talent Land 2024" class="event-banner-img">
+            </div>
+
+            <div class="event-meta">
+                <div class="meta-item"><i class="fa-solid fa-calendar"></i>1 - 4 Abril 2024</div>
+                <div class="meta-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <a href="https://www.expoguadalajara.mx/" target="_blank" style="z-index: 10;">Expo Guadalajara</a>
+                </div>
+                <div class="meta-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    En colaboración con
+                    <a href="https://www.facebook.com/ParagonRoboticsTeam" target="_blank" style="z-index: 10;">Paragon Robotics</a>
+                </div>
+            </div>
+
+            <article class="event-body">
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;">
+                    Una plática nocturna en el evento de tecnología más grande de México. <br>
+                    Nuestro objetivo: mostrar al mundo las innovaciones desarrolladas <span class="highlight-text">por Latin@s y para Latin@s</span>.
+                </p>
+
+                <h3>La Dinámica</h3>
+                <p>
+                    Creamos un espacio dedicado exclusivamente para dialogar sobre diseño electrónico, robótica, control y problemas sociales. Las <strong>Nerd Talks</strong> nacieron como un foro para entusiastas de la tecnología, abordando temas desde la manufactura hasta la desigualdad social.
+                </p>
+
+                <div class="h3-container"><h3>Proceso de Selección</h3></div>
+                <p>Para garantizar la calidad de las "Nerd Talks", realizamos una curaduría estricta de expertos externos a nosotros, evaluando:</p>
+                <div class="criteria-box">
+                    <ul class="criteria-list">
+                        <li>Originalidad y relevancia tecnológica del tema.</li>
+                        <li>Experiencia técnica comprobable en la industria.</li>
+                        <li>Capacidad de comunicación para audiencias jóvenes.</li>
+                        <li>Enfoque en solución de problemas sociales reales.</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-size: 0.9rem; margin-bottom: 0;">
+                        <em>*Se priorizó la equidad de género y la diversidad de áreas de conocimiento.</em>
+                    </p>
+                </div>
+
+                <h3>Nuestros Expositores</h3>
+                <p style="text-align: center; margin-bottom: 30px;">
+                    Expertos que compartieron su visión en diferentes áreas de la tecnología:
+                </p>
+
+                <div class="speakers-grid">
+                    
+                    <div class="speaker-card">
+                        <img src="images/eduardo-salazar.jpg" alt="Eduardo Salazar" class="speaker-img">
+                        <h4 class="speaker-name">Eduardo Salazar</h4>
+                        <span class="speaker-topic">Mecatrónica en el Espacio</span>
+                    </div>
+
+                    <div class="speaker-card">
+                        <img src="images/itzaee-coronado.jpg" alt="Itzaee Coronado" class="speaker-img">
+                        <h4 class="speaker-name">Itzaee Coronado</h4>
+                        <span class="speaker-topic">Pedagogía Espacial</span>
+                        <a href="https://youtu.be/1WNsB-3ElPU" target="_blank" class="speaker-btn"><i class="fa-brands fa-youtube"></i> VER</a>
+                    </div>
+
+                    <div class="speaker-card">
+                        <img src="images/jair-hernández.jpg" alt="Jair Hernández" class="speaker-img">
+                        <h4 class="speaker-name">Jair Hernández</h4>
+                        <span class="speaker-topic">Diseño Electrónico</span>
+                        <a href="https://youtu.be/4XVN1MrIxV4" target="_blank" class="speaker-btn"><i class="fa-brands fa-youtube"></i> VER</a>
+                    </div>
+
+                    <div class="speaker-card">
+                        <img src="images/rubén-díaz.jpg" alt="Rubén Díaz" class="speaker-img">
+                        <h4 class="speaker-name">Rubén Díaz</h4>
+                        <span class="speaker-topic">101: Crea Aplicaciones Seguras</span>
+                        <a href="https://youtu.be/intzYkkiNk8" target="_blank" class="speaker-btn"><i class="fa-brands fa-youtube"></i> VER</a>
+                    </div>
+
+                    <div class="speaker-card">
+                        <img src="images/david-zenteno.jpg" alt="David Zenteno" class="speaker-img">
+                        <h4 class="speaker-name">David Zenteno</h4>
+                        <span class="speaker-topic">Robótica en Latinoamérica</span>
+                    </div>
+
+                </div>
+            </article>
+
+            <div style="margin-top: 80px;">
+                <a href="../" class="btn btn-outline">
+                    <i class="fa-solid fa-arrow-left"></i> Volver a Eventos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="../../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../scripts/main.js"></script>
+
+</body>
+</html>

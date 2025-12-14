@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos | zDynamics</title>
+    <link rel="icon" href="../images/icon.ico">
+    
+    <!-- Meta data -->
+     <meta name="description" content="Nuestra participación en eventos de Tecnología. Explora nuestra participación en Talent Land, conferencias y exposiciones en Latinoamérica.">
+    <meta name="keywords" content="eventos robótica méxico, conferencias tecnología, talent land, exposiciones ingeniería, historial">
+    
+    <meta property="og:title" content="Bitácora de Eventos | zDynamics">
+    <meta property="og:description" content="Nuestra presencia en el ecosistema tecnológico. Talent Land, Expos y más.">
+    <meta property="og:image" content="../images/talentland.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="../" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="../#talleres">Talleres</a></li>
+                <li><a href="../diplomas/">Diplomas</a></li>
+                <li><a href="https://zdynamics.mitiendanube.com/" target="_blank">Tienda</a></li>
+                <li><a href="../nosotros/">Nosotros</a></li>
+                <li><a class="active" style="color: var(--neon-cyan);">Eventos</a></li>
+                <li>
+                    <a href="../investigacion/" title="I²+D">
+                        <i class="fa-solid fa-flask" style="font-size: 1.1rem;"></i>
+                    </a>
+                </li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">BITÁCORA DE <span class="highlight">EVENTOS</span></h2>
+                <p class="section-subtitle">Nuestra presencia en el ecosistema tecnológico.</p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-track"></div>
+
+                <div class="event-row">
+                    <div class="timeline-dot"></div>
+                    <a class="event-card">
+                        <div class="event-image" style="background: linear-gradient(45deg, #0b1120, #1a2332); display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-rocket" style="font-size: 3rem; color: #30363d;"></i>
+                        </div>
+                        <div class="event-details">
+                            <span class="event-date">ABRIL 2026 <span class="badge-future">PRÓXIMAMENTE</span></span>
+                            <h3 class="event-title">Talent Land 2026</h3>
+                            <p class="event-desc">Preparando nuestra próxima participación. Nuevos temas, nuevos proyectos.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="event-row">
+                    <div class="timeline-dot"></div>
+                    <a class="event-card">
+                        <img src="../images/nerd-talks-2-0.png" alt="Talent Land 2025" class="event-image banner-fit">
+                        <div class="event-details">
+                            <span class="event-date">ABRIL 2025</span>
+                            <h3 class="event-title">Talent Land 2025</h3>
+                            <p class="event-desc">Vehículos autónomos, arte e ingeniería</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="event-row">
+                    <div class="timeline-dot"></div>
+                    <a href="talentland-2024/" class="event-card">
+                        <img src="../images/nerd-talks.png" alt="Talent Land 2024" class="event-image banner-fit">
+                        <div class="event-details">
+                            <span class="event-date">ABRIL 2024</span>
+                            <h3 class="event-title">Talent Land 2024</h3>
+                            <p class="event-desc">Pláticas nocturnas sobre ciencia y tecnología</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="event-row">
+                    <div class="timeline-dot"></div>
+                    <a href="/eventos/circuito-cosplay/" class="event-card">
+                        <img src="../images/Logo-CC-01.png" alt="Circuito del Cosplay" class="event-image">
+                        <div class="event-details">
+                            <span class="event-date">2023</span>
+                            <h3 class="event-title">Circuito del Cosplay</h3>
+                            <p class="event-desc">Patrocinadores oficiales</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+
+</body>
+</html>

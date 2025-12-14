@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | zDynamics</title>
+    <link rel="icon" href="images/icon.ico">
+
+    <!-- Meta data -->
+    <meta name="description" content="Error 404: Página no encontrada...">
+    <meta name="robots" content="noindex">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <style>
+        /* --- ESTILOS EXCLUSIVOS 404 --- */
+        
+        .error-section {
+            /* Ocupa el espacio restante entre header y footer */
+            min-height: 70vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            overflow: hidden; /* Necesario para los efectos de glitch que salen del borde */
+        }
+
+        /* ICONO CON GLITCH REAL (RGB SPLIT) */
+        .glitch-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .glitch-icon {
+            font-size: 8rem;
+            color: var(--neon-orange);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Capas fantasma para el efecto RGB (Rojo y Azul) */
+        .glitch-icon::before,
+        .glitch-icon::after {
+            content: '\f544'; /* Código Unicode del robot de FontAwesome */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+
+        .glitch-icon::before {
+            color: #00D4FF; /* CIAN */
+            z-index: -1;
+            animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+        }
+
+        .glitch-icon::after {
+            color: #ff00ff; /* MAGENTA */
+            z-index: -2;
+            animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        /* TEXTO TERMINAL */
+        .error-code {
+            font-family: var(--font-hero);
+            font-size: 4rem;
+            color: var(--text-white);
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            
+            /* SOLUCIÓN AL DESPLAZAMIENTO: */
+            /* Reservamos la altura exacta de la fuente para que no "salte" al escribir */
+            min-height: 1.2em; 
+            line-height: 1.2;
+        }
+
+        .cursor-blink {
+            display: inline-block;
+            width: 15px;
+            height: 1em; /* Altura relativa a la fuente */
+            background-color: var(--neon-cyan);
+            vertical-align: text-bottom; /* Alineación precisa con el texto */
+            animation: blink 1s step-end infinite;
+        }
+
+        .error-desc {
+            font-family: var(--font-code);
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        /* ANIMACIONES GLITCH (Movimiento caótico) */
+        @keyframes glitch-anim-1 {
+            0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px); }
+            20% { clip-path: inset(60% 0 10% 0); transform: translate(2px, -1px); }
+            40% { clip-path: inset(40% 0 50% 0); transform: translate(-2px, 2px); }
+            60% { clip-path: inset(80% 0 5% 0); transform: translate(2px, -2px); }
+            80% { clip-path: inset(10% 0 70% 0); transform: translate(-1px, 1px); }
+            100% { clip-path: inset(30% 0 20% 0); transform: translate(1px, -1px); }
+        }
+
+        @keyframes glitch-anim-2 {
+            0% { clip-path: inset(10% 0 60% 0); transform: translate(2px, 1px); }
+            20% { clip-path: inset(80% 0 5% 0); transform: translate(-2px, -1px); }
+            40% { clip-path: inset(30% 0 20% 0); transform: translate(1px, 2px); }
+            60% { clip-path: inset(15% 0 80% 0); transform: translate(-1px, -2px); }
+            80% { clip-path: inset(55% 0 10% 0); transform: translate(2px, 1px); }
+            100% { clip-path: inset(40% 0 30% 0); transform: translate(-2px, -1px); }
+        }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+        /* Ajuste Responsive */
+        @media (max-width: 768px) {
+            .error-code { font-size: 2.5rem; }
+            .glitch-icon { font-size: 6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="error-section">
+        <div class="container">
+            <div class="glitch-icon">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <h1 class="error-code" id="error-typewriter"></h1>
+            
+            <p class="error-desc">Página no encontrada</p>
+
+            <a href="/" class="btn btn-outline"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+    
+    <script>
+        // EFECTO TYPEWRITER 404
+        const textToType = "ERROR 404_";
+        const typeWriterElement = document.getElementById('error-typewriter');
+        let i = 0;
+
+        function typeWriterError() {
+            const cursor = '<span class="cursor-blink"></span>';
+            
+            if (i < textToType.length) {
+                typeWriterElement.innerHTML = textToType.substring(0, i + 1) + cursor;
+                i++;
+                setTimeout(typeWriterError, Math.random() * 150 + 50); // Velocidad variable "humana"
+            } else {
+                typeWriterElement.innerHTML = textToType + cursor;
+            }
+        }
+        
+        // Iniciar un poco después de cargar
+        setTimeout(typeWriterError, 500);
+    </script>
+
+</body>
+</html>

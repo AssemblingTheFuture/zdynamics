@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | zDynamics</title>
+    <link rel="icon" href="images/icon.ico">
+
+    <!-- Meta data -->
+    <meta name="description" content="Documentación legal de Assembling the Future S.A.S. Protección de datos y términos de servicio.">
+    <meta name="robots" content="noindex">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="legal-section">
+        <div class="container">
+            <div class="legal-content">
+                <h1>Términos y Condiciones</h1>
+                <span class="last-updated">Última actualización: Diciembre 2025</span>
+
+                <p>Bienvenido a zDynamics.org. Estos Términos y Condiciones rigen el uso del sitio web y la compra de productos o servicios ofrecidos por <strong>Assembling the Future S.A.S.</strong> (en adelante "zDynamics"). Al acceder a este sitio, usted acepta estos términos en su totalidad.</p>
+
+                <h2>1. Naturaleza Educativa y Experimental</h2>
+                <p style="border-left: 3px solid var(--neon-orange); padding-left: 15px; color: var(--text-white);">
+                    <strong>AVISO IMPORTANTE DE SEGURIDAD:</strong> La robótica, los sistemas aéreos no tripulados (UAMs) y la manipulación industrial conllevan riesgos inherentes. zDynamics proporciona hardware, software y material educativo con fines estrictamente <strong>académicos, de investigación, innovación y desarrollo (I²+D)</strong>.
+                </p>
+                <p>zDynamics <strong>NO se hace responsable</strong> por daños físicos, lesiones personales, daños a la propiedad o pérdidas económicas derivadas del uso, mala implementación, o fallas en el código o hardware suministrado. El usuario asume total responsabilidad por la operación segura de sus robots y drones, cumpliendo con las regulaciones locales de aeronáutica y seguridad industrial.</p>
+
+                <h2>2. Propiedad Intelectual</h2>
+                <p><strong>Código Open Source:</strong> El software distribuido explícitamente bajo licencias libres (como MIT o GNU GPL) en nuestro GitHub puede ser utilizado según los términos de dicha licencia.</p>
+                <p><strong>Material Educativo:</strong> Los videos, guiones, textos de talleres y metodologías de enseñanza son propiedad exclusiva de zDynamics y no pueden ser reproducidos, revendidos ni distribuidos sin autorización expresa.</p>
+
+                <h2>3. Venta de Hardware y Envíos</h2>
+                <p>zDynamics actúa como comercializador de productos de robótica (ej. Elephant Robotics) en México.</p>
+                <ul>
+                    <li><strong>Envíos:</strong> Los tiempos de entrega son estimados y dependen de los servicios de paquetería externos.</li>
+                    <li><strong>Garantías:</strong> Los productos cuentan con garantía limitada contra defectos de fabricación. No cubrimos daños por mal uso, cortocircuitos provocados por el usuario, o modificaciones no autorizadas al hardware.</li>
+                    <li><strong>Aspectos Fiscales:</strong> Por el momento, nuestras operaciones de venta directa se procesan bajo el esquema de Venta al Público en General. Si usted requiere estrictamente una factura fiscal (CFDI) corporativa, le rogamos <strong>contactarnos antes de realizar su compra</strong> para verificar la disponibilidad actual del servicio de facturación.</li>
+                </ul>
+
+                <h2>4. Talleres y Productos Digitales</h2>
+                <p>Los talleres adquiridos a través de plataformas de terceros (como Udemy) están sujetos a los Términos de Uso y Políticas de Reembolso de dicha plataforma. zDynamics no procesa pagos ni reembolsos directos de estos talleres.</p>
+
+                <h2>5. Modificaciones</h2>
+                <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Es responsabilidad del usuario revisarlos periódicamente.</p>
+
+                <h2>6. Ley Aplicable</h2>
+                <p>Estos términos se rigen por las leyes vigentes en los Estados Unidos Mexicanos. Cualquier disputa se someterá a la jurisdicción de los tribunales competentes en la Ciudad de México.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a>Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

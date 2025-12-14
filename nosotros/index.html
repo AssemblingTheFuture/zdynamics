@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | zDynamics</title>
+    <link rel="icon" href="../images/icon.ico">
+    
+    <!-- METADATOS -->
+    <meta name="description" content="Conoce el equipo y la filosofía. Una organización orbital centrada en procesos, ingeniería con propósito y democratización tecnológica.">
+    <meta name="keywords" content="equipo, organigrama orbital, ingeniería mexicana, cultura de trabajo, innovación educativa">
+    <meta name="author" content="zDynamics">
+
+    <meta property="og:title" content="Nosotros | zDynamics">
+    <meta property="og:description" content="Somos un sistema orbital. Conoce nuestra estructura y misión.">
+    <meta property="og:image" content="../images/logo.png"> <meta property="og:url" content="https://zdynamics.org/nosotros">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() { emailjs.init('tc1u_lsh29PmThiJg'); })();
+    </script>
+
+    <style>
+        /* =========================================
+           ESTILOS
+           ========================================= */
+        
+        /* --- SECCIÓN MANIFIESTO (Texto) --- */
+        .manifesto-section {
+            padding: 150px 0 80px;
+            /* Fondo sutil para diferenciarla del header */
+            background: radial-gradient(circle at top right, rgba(0, 212, 255, 0.05) 0%, transparent 40%);
+        }
+
+        .manifesto-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .manifesto-card {
+            background: rgba(13, 17, 23, 0.6);
+            border-left: 3px solid var(--neon-cyan);
+            padding: 30px;
+            backdrop-filter: blur(5px);
+            transition: 0.3s;
+        }
+
+        .manifesto-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.1);
+            border-left-color: var(--neon-orange);
+        }
+
+        .manifesto-card h3 {
+            font-family: var(--font-heading);
+            color: var(--text-white);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .manifesto-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            font-family: var(--font-body);
+        }
+
+        /* --- SECCIÓN ORBITAL (El Organigrama) --- */
+        .orbital-section {
+            padding: 80px 0 100px;
+            overflow: hidden;
+            position: relative;
+            min-height: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            /* SEPARACIÓN CLARA (Estilo I²+D) */
+            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.05) 0%, transparent 70%);
+            
+            /* Mantenemos el borde superior y sombra que ya habíamos acordado */
+            border-top: 1px solid var(--neon-cyan);
+            box-shadow: 0 10px 30px -10px rgba(0, 212, 255, 0.15), inset 0 10px 30px -10px rgba(0, 212, 255, 0.1);
+            z-index: 5;
+        }
+
+        /* Contenedor del Sistema Solar (Solo Desktop) */
+        .solar-system-container {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* EL NÚCLEO (Procesos/Logo)*/
+        .core {
+            position: absolute;
+            width: 180px; /* Un poco más grande para que la luz respire */
+            height: 180px;
+            /* Quitamos el background sólido. Ahora es transparente */
+            background: transparent; 
+            border-radius: 50%;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* La Luz "Esfera de Dyson" DETRÁS del logo */
+        .core::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            z-index: -1; /* Detrás de la imagen */
+            /* Gradiente de luz pura (Blanco en centro -> Cian -> Transparente) */
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(0, 212, 255, 0.6) 40%, rgba(0,0,0,0) 70%);
+            /* Animación de pulsación */
+            animation: pulse-core 7s infinite ease-in-out;
+        }
+
+        .core img {
+            width: 65%; /* Ajustado para que flote dentro de la luz */
+            height: auto;
+            z-index: 11;
+            /* Sombra sutil al logo para separarlo de la luz */
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5)); 
+        }
+
+        @keyframes pulse-core {
+            0% { transform: scale(0.9); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; } /* La luz crece */
+            100% { transform: scale(0.9); opacity: 0.8; }
+        }
+
+        /* LAS ÓRBITAS (Anillos) */
+        .orbit {
+            position: absolute;
+            /* Aumentamos grosor a 2px y opacidad a 0.5 para mejor visibilidad */
+            border: 3px dotted rgba(0, 212, 255, 0.5); 
+            border-radius: 50%;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .orbit-inner {
+            width: 450px; height: 450px;
+            animation: rotate-right 280s linear infinite;
+        }
+
+        .orbit-outer {
+            width: 700px; height: 700px;
+            border-color: rgba(217, 54, 22, 0.5); 
+            animation: rotate-left 280s linear infinite;
+        }
+
+        @keyframes rotate-right { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+        @keyframes rotate-left { from { transform: translate(-50%, -50%) rotate(360deg); } to { transform: translate(-50%, -50%) rotate(0deg); } }
+
+        /* LOS PLANETAS (Personas) */
+        .planet {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: visible;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 20;
+        }
+
+        .planet-img-box {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid var(--neon-cyan);
+            background: #000;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .planet-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+            transition: 0.3s;
+        }
+
+        /* Estilo Líderes (Órbita Exterior) */
+        .planet.leader .planet-img-box {
+            border-color: var(--neon-orange);
+            /* Sombra naranja tenue en reposo */
+            box-shadow: 0 0 10px rgba(217, 54, 22, 0.3); 
+        }
+
+        /* Hover Normal (Especialistas - Cian) */
+        .planet:hover .planet-img-box {
+            transform: scale(1.2);
+            box-shadow: 0 0 30px var(--neon-cyan); /* Luz Cian intensa */
+            border-color: #fff;
+            z-index: 30;
+        }
+
+        /* Hover Líderes */
+        .planet.leader:hover .planet-img-box {
+            /* Sobrescribimos la sombra cian con NARANJA */
+            box-shadow: 0 0 30px var(--neon-orange) !important; 
+            border-color: rgba(217, 54, 22, 1);
+        }
+
+        .planet:hover img { filter: grayscale(0%); }
+
+        /* Tooltip */
+        .planet-info {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 180px;
+            text-align: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s;
+            background: rgba(0,0,0,0.9); /* Fondo más oscuro para leer mejor */
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #30363d;
+            z-index: 100; /* Asegurar que se vea sobre todo */
+        }
+
+        .planet:hover .planet-info {
+            opacity: 0.7;
+            bottom: -75px; /* Un poco más abajo para no tapar el planeta agrandado */
+        }
+
+        .planet-name {
+            display: block;
+            color: #fff;
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+        }
+        .planet-role {
+            display: block;
+            color: var(--text-gray);
+            font-size: 0.75rem;
+        }
+
+        /* --- VERSIÓN MÓVIL --- */
+        .mobile-team-container {
+            display: none;
+            width: 100%;
+            padding: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .solar-system-container { display: none; }
+            .mobile-team-container { display: block; }
+            
+            .team-card-mobile {
+                background: rgba(13, 17, 23, 0.4);
+                border: 1px solid #30363d;
+                border-radius: 12px;
+                padding: 20px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                z-index: 10;
+            }
+            .team-mobile-img {
+                width: 80px; height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--neon-cyan);
+            }
+            .team-mobile-img.leader { border-color: var(--neon-orange); }
+            
+            .team-mobile-info h4 { color: white; margin-bottom: 5px; }
+            .team-mobile-info p { color: var(--text-gray); font-size: 0.9rem; margin-bottom: 10px; }
+            .team-link { color: var(--neon-cyan); font-size: 0.85rem; text-decoration: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="../" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="../#talleres">Talleres</a></li>
+                <li><a href="../diplomas/">Diplomas</a></li>
+                <li><a href="https://zdynamics.mitiendanube.com/" target="_blank">Tienda</a></li>
+                <li><a class="active" style="color: var(--neon-cyan);">Nosotros</a></li>
+                <li><a href="../eventos/">Eventos</a></li>
+                <li>
+                    <a href="../investigacion/" title="I²+D">
+                        <i class="fa-solid fa-flask" style="font-size: 1.1rem;"></i>
+                    </a>
+                </li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="manifesto-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NUESTRO <span class="highlight">MANIFIESTO</span></h2>
+                <p class="section-subtitle">¿Por qué hacemos lo que hacemos?</p>
+            </div>
+
+            <div class="manifesto-grid">
+                <article class="manifesto-card">
+                    <h3><i class="fa-solid fa-fingerprint" style="color: var(--neon-orange);"></i> ORIGEN</h3>
+                    <p>Somos un colectivo de ingenieros con un objetivo: redefinir las condiciones laborales mediante la educación y automatización inteligente. El proyecto nace de la necesidad de hacer algo más que solo programar robots.</p>
+                </article>
+
+                <article class="manifesto-card">
+                    <h3><i class="fa-solid fa-crosshairs" style="color: var(--neon-cyan);"></i> MISIÓN</h3>
+                    <p>Educación sin filtros. Te enseñamos a razonar, no a memorizar; además, queremos diseñar sistemas que liberen a lxs trabajadorxs de tareas repetitivas, aburridas y peligrosas.</p>
+                </article>
+
+                <article class="manifesto-card">
+                    <h3><i class="fa-solid fa-eye" style="color: #fff;"></i> VISIÓN</h3>
+                    <p>Democratización total. Hacer que la robótica sea accesible para cualquier ser humano a través de ingeniería minimalista, sencilla y de bajo costo.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="orbital-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ESTRUCTURA <span class="highlight">ORBITAL</span></h2>
+                <p class="section-subtitle">Un sistema centrado en procesos, no en jerarquías.</p>
+            </div>
+
+            <div class="orbital-explanation" style="max-width: 800px; margin: 0 auto 40px; text-align: center; color: var(--text-gray);">
+                <p style="font-size: 1.1rem; line-height: 1.6;">
+                    Tal como la gravedad mantiene a los planetas en órbita o la fuerza nuclear une al átomo, nuestra organización se centra en el <strong>Objetivo</strong> (Núcleo). Aquí no existe "arriba" ni "abajo". Los líderes protegen el sistema y conectan con el universo exterior, mientras que los especialistas orbitan cerca del núcleo, nutriendo y materializando el proceso con alta precisión técnica. <br> <strong>(Recomendamos ver esta página en una computadora)</strong>
+                </p>
+            </div>
+
+            <div class="solar-system-container" id="solarSystem">
+                
+                <div class="orbit orbit-outer"></div> <div class="orbit orbit-inner"></div> <div class="core">
+                    <img src="../images/logo.png" alt="Nucleo zDynamics">
+                </div>
+
+            </div>
+
+            <div class="mobile-team-container" id="mobileTeam"></div>
+
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+
+    <script>
+        // 1. CONFIGURACIÓN DEL EQUIPO
+        // type: 'outer' (Fundadores - Naranja) | 'inner' (Especialistas - Cian)
+        const teamMembers = [
+            { name: "David Zenteno", role: "Co-fundador, voz e investigación", img: "../images/david-zenteno.jpg", link: "https://linkedin.com/in/dzentenol", type: "outer" },
+            { name: "Astrid Torres", role: "Co-fundador, administración y finanzas", img: "../images/logo.png", link: "#", type: "outer" }, // Cambia nombre archivo si es necesario
+            { name: "José Luis Boyzo", role: "Profesor y revisor de guiones", img: "../images/boyzo.jpg", link: "#", type: "inner" },
+            { name: "Rodrigo Rivera", role: "Diseño mecánico e impresión 3D", img: "../images/rodrigo-rivera.jpeg", link: "https://www.linkedin.com/in/rodrigoriveraingeniero/", type: "inner" },
+            { name: "Gonzalo Mendoza", role: "Mantenimiento de herramientas y equipo", img: "../images/gonzalo-mendoza.jpeg", link: "https://www.linkedin.com/in/gonzalo-mendoza-garc%C3%ADa-03997a241", type: "inner" },
+            { name: "Melissa Hernández", role: "Diseño Gráfico y Marketing", img: "../images/logo.png", link: "#", type: "inner" }
+        ];
+
+        // 2. CONFIGURACIÓN DE RADIOS (Tamaño de las órbitas en px)
+        // Deben coincidir con el CSS (.orbit-inner width/2 y .orbit-outer width/2)
+        const radiusInner = 225; // 450px / 2
+        const radiusOuter = 350; // 700px / 2
+
+        const solarSystem = document.getElementById('solarSystem');
+        const mobileContainer = document.getElementById('mobileTeam');
+
+        // 3. FUNCIÓN PARA GENERAR PLANETAS
+        function generatePlanets() {
+            // Filtramos por órbitas
+            const innerMembers = teamMembers.filter(m => m.type === 'inner');
+            const outerMembers = teamMembers.filter(m => m.type === 'outer');
+
+            // --- Generar Órbita INTERIOR (Especialistas) ---
+            const angleStepInner = 360 / innerMembers.length;
+            innerMembers.forEach((member, index) => {
+                createPlanet(member, radiusInner, angleStepInner * index, solarSystem);
+            });
+
+            // --- Generar Órbita EXTERIOR (Fundadores) ---
+            const angleStepOuter = 360 / outerMembers.length;
+            // Offset inicial para que no se alineen con los de adentro
+            const offsetOuter = 35; 
+            outerMembers.forEach((member, index) => {
+                createPlanet(member, radiusOuter, (angleStepOuter * index) + offsetOuter, solarSystem);
+            });
+        }
+
+        function createPlanet(member, radius, angleDeg, container) {
+            // Convertir a Radianes
+            const angleRad = (angleDeg * Math.PI) / 180;
+            
+            // Calcular posición (Centro es 0,0 en el contenedor relativo)
+            // Sumamos 400 (mitad de 800px) para centrar en el div
+            // Restamos 45 (mitad de 90px tamaño planeta) para centrar el elemento
+            const centerX = 400;
+            const centerY = 400;
+            const planetSize = 45; // Mitad del width (90px)
+
+            const x = centerX + radius * Math.cos(angleRad) - planetSize;
+            const y = centerY + radius * Math.sin(angleRad) - planetSize;
+
+            // HTML del Planeta
+            const planetDiv = document.createElement('a');
+            planetDiv.className = `planet ${member.type === 'outer' ? 'leader' : ''}`;
+            planetDiv.href = member.link;
+            planetDiv.target = "_blank";
+            planetDiv.style.left = `${x}px`;
+            planetDiv.style.top = `${y}px`;
+
+            planetDiv.innerHTML = `
+                <div class="planet-img-box">
+                    <img src="${member.img}" alt="${member.name}" onerror="this.src='images/logo.png'">
+                </div>
+                <div class="planet-info">
+                    <span class="planet-name">${member.name}</span>
+                    <span class="planet-role">${member.role}</span>
+                </div>
+            `;
+
+            container.appendChild(planetDiv);
+        }
+
+        // 4. FUNCIÓN PARA GENERAR VISTA MÓVIL (ALEATORIA)
+        function generateMobileList() {
+            // A. Creamos una copia del equipo para no afectar el orden del sistema solar en escritorio
+            const shuffledTeam = [...teamMembers];
+
+            // B. Algoritmo de Mezcla (Fisher-Yates) para aleatorizar la copia
+            for (let i = shuffledTeam.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffledTeam[i], shuffledTeam[j]] = [shuffledTeam[j], shuffledTeam[i]];
+            }
+
+            // C. Generamos las tarjetas usando el array mezclado
+            shuffledTeam.forEach(member => {
+                const card = document.createElement('a');
+                card.className = 'team-card-mobile';
+                card.href = member.link; 
+                card.target = "_blank";
+                card.style.textDecoration = "none";
+                
+                const borderColor = member.type === 'outer' ? 'var(--neon-orange)' : 'var(--neon-cyan)';
+                
+                card.innerHTML = `
+                    <img src="${member.img}" alt="${member.name}" class="team-mobile-img ${member.type === 'outer' ? 'leader' : ''}" onerror="this.src='images/logo.png'">
+                    <div class="team-mobile-info">
+                        <h4>${member.name}</h4>
+                        <p>${member.role}</p>
+                        <span class="team-link" style="color:${borderColor}">Ver Perfil <i class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                `;
+                mobileContainer.appendChild(card);
+            });
+        }
+
+        // Ejecutar
+        generatePlanets();
+        generateMobileList();
+
+    </script>
+</body>
+</html>

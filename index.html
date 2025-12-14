@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>zDynamics | The Future is ROBOTICS</title>
+    <link rel="icon" href="images/icon.ico">
+
+    <!-- Meta data -->
+    <meta name="description" content="Robótica avanzada: talleres especializados, algoritmos de control y distribuidores de Elephant Robotics en México. Educación, I²+D para el futuro.">
+    <meta name="keywords" content="robótica méxico, elephant robotics distribuidor, control robusto, manipuladores industriales, zDynamics, educación stem, talleres especializados, robótica avanzada, python robótica, matlab, simulink, simmechanics">
+    <meta name="author" content="Assembling the Future S.A.S.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.zdynamics.org/">
+    <meta property="og:title" content="zDynamics | The Future is ROBOTICS">
+    <meta property="og:description" content="Domina la teoría y práctica de la robótica moderna. Educación altamente especializada en México.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="zDynamics | The Future is ROBOTICS">
+    <meta property="twitter:description" content="Robótica avanzada y hardware especializado en México.">
+    <meta property="twitter:image" content="images/logo.png">
+    <meta name="language" content="Spanish">
+    
+    <link rel="icon" href="images/favicon.ico"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#talleres">Talleres</a></li>
+                <li><a href="/diplomas/">Diplomas</a></li>
+                <li><a href="#hardware">Tienda</a></li>
+                <li><a href="#equipo">Nosotros</a></li>
+                <li><a href="/eventos/">Eventos</a></li>
+                <li>
+                    <a href="#investigacion" title="I²+D">
+                        <i class="fa-solid fa-flask" style="font-size: 1.1rem;"></i>
+                    </a>
+                </li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <!-- <div class="video-container">
+            <video autoplay muted loop playsinline poster="images/poster.jpg" id="bg-video">
+                <source src="video/hero-video.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+        <div class="overlay"></div> </div> -->
+
+        <div class="hero-content">
+            <img src="images/logo.png" class="hero-logo">
+            
+            <h1 id="typewriter" class="glitch-text"></h1>
+            
+            <h2 class="hero-subtitle">ROBÓTICA <span class="highlight">SIMPLIFICADA</span></h2>
+            
+            <!-- <p class="hero-desc">
+                Ingeniería de alto nivel para construir el futuro. 
+                Especialistas en <strong>Educación Avanzada y Robótica</strong>
+            </p> -->
+
+            <div class="hero-buttons">
+                <a href="#talleres" class="btn btn-primary">QUIERO APRENDER</a>
+                <a href="#hardware" class="btn btn-outline">VER ROBOTS</a>
+            </div>
+        </div>
+
+        <a href="#metricas" class="scroll-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </header>
+
+    <section class="metrics-section" id = "metricas">
+        <div class="container metrics-grid">
+            <div class="metric-item">
+                <i class="fa-solid fa-earth-americas neon-icon"></i>
+                <h3 class="counter" id="count-countries">0</h3>
+                <p>Países</p>
+            </div>
+            <div class="metric-item">
+                <i class="fa-solid fa-users neon-icon"></i>
+                <h3 class="counter" id="count-students">0</h3>
+                <p>Estudiantes Activos</p>
+            </div>
+            <div class="metric-item">
+                <i class="fa-solid fa-medal neon-icon"></i>
+                <h3 class="counter" id="count-years">0</h3>
+                <p>Años de Experiencia</p>
+            </div>
+        </div>
+        <div class="metrics-footer">
+            <a href="https://www.udemy.com/user/z-dynamics/" target="_blank" class="btn-verify">
+                <i class="fa-solid fa-check-circle"></i> Perfil Oficial en Udemy
+            </a>
+        </div>
+    </section>
+
+    <section id="talleres" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">EDUCACIÓN <span class="highlight">ALTAMENTE ESPECIALIZADA</span></h2>
+                <p class="section-subtitle">Aprende a implementar la teoría que hace que un robot funcione</p>
+            </div>
+
+            <div class="cards-grid">
+
+                <article class="tech-card">
+                    <div class="card-image">
+                        <img src="images/numerical.png" alt="Métodos Numéricos con Aplicaciones de Ingeniería">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Métodos Numéricos con Aplicaciones de Ingeniería</h3>
+                        <p class="tech-font">SIMULACIÓN NUMÉRICA</p>
+                        <p>Aprende los algoritmos numéricos para crear simulaciones desde cero.</p>
+                        <a href="https://www.udemy.com/course/metodos-numericos-zdynamics/?referralCode=6FA2593CD98A23C874C2" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="card-image">
+                        <img src="images/control.png" alt="Control de Sistemas Dinámicos">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Control de Sistemas Dinámicos</h3>
+                        <p class="tech-font">CONTROL ROBUSTO</p>
+                        <p>Más allá del PID. Aprende criterios de estabilidad y control automático.</p>
+                        <a href="https://www.udemy.com/course/control-de-sistemas-dinamicos/?referralCode=74300CF3F21F98714329" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="card-image">
+                        <img src="images/robotics.png" alt="Robótica Cinemática">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Robótica: de la Cinemática al Control</h3>
+                        <p class="tech-font">MATLAB / SIMULINK / SIMMECHANICS</p>
+                        <p>Domina las teoría detrás del estudio de la robótica sin perder la cabeza.</p>
+                        <a href="https://www.udemy.com/course/robotica-de-la-cinematica-al-control/?referralCode=5FF404FC9C3C95DE6D11" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="tech-card">
+                    <div class="card-image">
+                        <img src="images/python_robotics.png" alt="Python Robotics">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Programación Básica de Robots con Python</h3>
+                        <p class="tech-font">ROBÓTICA + PYTHON</p>
+                        <p>Visualiza la teoría resolviendo problemas reales con código limpio.</p>
+                        <a href="https://www.udemy.com/course/programacion-basica-de-robots-con-python/?referralCode=1DAE7ED9A6373802861C" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="hardware" class="hardware-section">
+        <div class="container hardware-layout">
+            <div class="hardware-image">
+                <img src="images/elephant-robotics.png" alt="myAGV + MechArm 270">
+                <div class="glowing-circle"></div> </div>
+            <div class="hardware-text">
+                <h2 class="section-title">HARDWARE DE <br>CLASE MUNDIAL</h2>
+                <p class="lead-text">Distribuidores oficiales de <strong>Elephant Robotics</strong> en México.</p>
+                <p>
+                    Aplica tus conocimientos usando robots empleados en laboratorios de primer nivel. Precios especiales para universidades y estudiantes.
+                </p>
+                <a href="https://zdynamics.mitiendanube.com/" target="_blank" class="btn btn-neon">
+                    VISITAR TIENDA <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="section-padding bg-darker">
+        <div class="container philosophy-layout">
+            
+            <div class="philosophy-text">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <h2 class="section-title">INGENIERÍA CON <span class="highlight">PROPÓSITO</span></h2>
+                    <p class="section-subtitle" style="margin-bottom: 20px;">Aprende. Innova. Desarrolla. Repite</p>
+                </div>
+
+                <div class="pillars-list">
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-unlock-keyhole pillar-icon"></i>
+                        <div>
+                            <h4>Democratización de la Ciencia</h4>
+                            <p>La robótica no debe ser un secreto. Desmenuzamos sus fundamentos teóricos para simplificar su comprensión e implementación.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-brain pillar-icon"></i>
+                        <div>
+                            <h4>Pensamiento Crítico</h4>
+                            <p>Enseñamos a cuestionar, razonar, deducir y crear soluciones, no solo a seguir instrucciones.</p>
+                        </div>
+                    </div>
+
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-rocket pillar-icon"></i>
+                        <div>
+                            <h4>Impacto Real</h4>
+                            <p>De la teoría a la realidad. Nuestros talleres y productos funcionan para resolver problemas reales que están más allá del papel.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="nosotros/" class="btn-long">
+                    Conoce al equipo y nuestra historia <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="philosophy-visual">
+                <div class="system-diagram">
+                    <svg class="diagram-lines" viewBox="0 0 300 300">
+                        <polygon points="150,50 50,250 250,250" class="line-base"/>
+                        <circle r="4" fill="#D93616" class="pulse-dot">
+                            <animateMotion dur="4s" repeatCount="indefinite"
+                                path="M150,50 L250,250 L50,250 Z" />
+                        </circle>
+                    </svg>
+
+                    <div class="node node-top">
+                        <i class="fa-solid fa-flask"></i>
+                        <span>Research</span>
+                    </div>
+                    <div class="node node-left">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Education</span>
+                    </div>
+                    <div class="node node-right">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Development</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="investigacion" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">I<sup><span class="highlight">2</span></sup>+D</h2> 
+                <p class="section-subtitle">Investigación, Innovación y Desarrollo.</p>
+            </div>
+            
+            <div class="carousel-3d-wrapper">
+                
+                <button class="carousel-nav prev-btn" id="prevBtn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-track" id="track">
+                    
+                    <div class="carousel-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <h3>Sliding Modes: Aplicación Numérica</h3>
+                            <p>¿Cómo simular control discontinuo?</p>
+                            <span class="card-status">PRÓXIMAMENTE</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <div class="card-icon"><i class="fa-solid fa-cube"></i></div>
+                            <h3>Cuaterniones Duales</h3>
+                            <p>¿Por qué 8 números son mejores que una matriz 4x4?</p>
+                            <span class="card-status">PRÓXIMAMENTE</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+                            <h3>Matriz Jacobiana: Significado Físico</h3>
+                            <p>¿Cómo influyen los movimientos articulares en el efector final?</p>
+                            <span class="card-status">PRÓXIMAMENTE</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <div class="card-icon"><i class="fa-solid fa-battery-quarter"></i></div>
+                            <h3>Estabilidad de Lyapunov</h3>
+                            <p>¿Cómo estudiar la convergencia a través de la disipación de energía?</p>
+                            <span class="card-status">PRÓXIMAMENTE</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+                            <h3>Cinemática Inversa Numérica</h3>
+                            <p>¿Cómo calcular la posición de las articulaciones cuando no hay solución analítica?</p>
+                            <span class="card-status">PRÓXIMAMENTE</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                            <h3>Robots Redundantes</h3>
+                            <p>¿Cómo se utiliza el Espacio Nulo en la Robótica?</p>
+                            <span class="card-status">PRÓXIMAMENTE</span>
+                        </div>
+                    </div>
+
+                    <div class="carousel-card see-more-card" data-url="/investigacion">
+                        <div class="card-inner">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                            <h3>VER MÁS</h3>
+                            <p>Explora el archivo completo de I<sup><span class="highlight">2</span></sup>+D</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-nav next-btn" id="nextBtn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>

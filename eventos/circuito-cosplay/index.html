@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circuito del Cosplay | zDynamics</title>
+    <link rel="icon" href="../../images/icon.ico">
+
+    <!-- Meta data -->
+     <meta name="description" content="Sobre la cancelación de Circuito del Cosplay.">
+    <meta name="keywords" content="comunicado oficial, circuito cosplay">
+    
+    <meta property="og:title" content="Comunicado Oficial: Circuito Cosplay">
+    <meta property="og:description" content="Información importante sobre nuestra participación en el evento.">
+    <meta property="og:image" content="../../images/Logo-CC-01.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('tc1u_lsh29PmThiJg'); 
+        })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <style>
+        .statement-section {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 20px 60px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .statement-image {
+            max-width: 800px;
+            width: 100%;
+            border-radius: 8px;
+            
+            /* Color naranja para combinar con el título */
+            border: 1px solid var(--neon-orange); 
+            box-shadow: 0 0 30px rgba(217, 54, 22, 0.2);
+            
+            /* Transparencia para efecto Glassmorphism */
+            opacity: 0.7; 
+            transition: 0.3s;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 60px;
+            
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-family: var(--font-heading);
+            
+            /* CRÍTICO: Texto Blanco para lectura perfecta sobre fondo oscuro */
+            color: var(--text-white); 
+            
+            /* El borde se queda Naranja para combinar con la imagen */
+            border: 1px solid var(--neon-orange);
+            
+            border-radius: 50px;
+            background: rgba(11, 17, 32, 0.8);
+            text-decoration: none;
+            transition: 0.3s ease;
+            box-shadow: 0 0 15px rgba(217, 54, 22, 0.1); 
+        }
+
+        .back-btn i {
+            /* La flecha también en blanco o naranja, prefiero naranja como acento */
+            color: var(--neon-orange);
+            margin-right: 10px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            /* Al hacer hover, se llena de naranja y el texto se mantiene blanco */
+            background: var(--neon-orange);
+            color: white; 
+            box-shadow: 0 0 25px var(--neon-orange);
+            transform: translateY(-3px);
+        }
+        
+        /* Al hacer hover, la flecha se vuelve blanca para no perderse */
+        .back-btn:hover i {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tsparticles"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="../"><i class="fa-solid fa-arrow-left"></i> Volver a Eventos</a></li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="statement-section">
+        <div class="container">
+            <h1 class="section-title" style="font-size: 2rem; margin-bottom: 30px; color: var(--text-white);">
+                COMUNICADO <span style="color: var(--neon-orange);">OFICIAL</span>
+            </h1>
+
+            <img src="images/circuito.png" class="statement-image">
+
+            <br>
+
+            <a href="../" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i> Regresar a Eventos
+            </a>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container footer-content">
+            <div class="footer-col contact-form-wrapper">
+                <h3>¿PROYECTOS? ¿IDEAS? ¿COMENTARIOS? <span class="highlight">HABLEMOS.</span></h3>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="user_name" required>
+                        <label>Nombre</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" required>
+                        <label>Correo Electrónico</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" required></textarea>
+                        <label>Mensaje</label>
+                        <span class="bar"></span>
+                    </div>
+                    <button type="submit" class="btn btn-neon submit-btn">
+                        ENVIAR MENSAJE <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-col footer-info">
+                <img src="../../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5215542949603" target="_blank" title="Contáctanos en WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i> </a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../../scripts/main.js"></script>
+</body>
+</html>
