@@ -86,22 +86,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ======================================================
-    // 4. CONTADORES (Solo corre si existe la sección)
+    // 4. CONTADORES (Conectado a API Udemy vía Netlify)
     // ======================================================
     let counterSection = document.querySelector('.metrics-section');
     if(counterSection) {
-        const counters = [
-            { id: 'count-countries', target: 60 },
-            { id: 'count-students', target: 4800 },
-            { id: 'count-years', target: 9 }
-        ];
-        const duration = 2000; 
-        const frameDuration = 20; 
+        
+        // Función asíncrona para obtener datos reales
+        const fetchMetrics = async () => {
+            try {
+                // Llamamos a TU función de Netlify (definida en netlify.toml como /api/...)
+                const response = await fetch('/api/metricas'); 
+                const data = await response.json();
+                
+                if (data && data.total_students) {
+                    console.log("Estudiantes en tiempo real:", data.total_students);
+                    return data.total_students;
+                }
+            } catch (error) {
+                console.warn("No se pudo conectar con Udemy, usando datos locales.", error);
+            }
+            return 4800; // Fallback: Si falla la API, mostramos este número
+        };
 
-        const animateCounters = () => {
+        // Lógica de animación
+        const startAnimation = async () => {
+            // 1. Obtenemos el número real antes de animar
+            const realStudentCount = await fetchMetrics();
+
+            const counters = [
+                { id: 'count-countries', target: 60 },
+                { id: 'count-students', target: realStudentCount }, // ¡Ahora es dinámico!
+                { id: 'count-years', target: 9 }
+            ];
+            const duration = 2000; 
+            const frameDuration = 20; 
+
             counters.forEach(counter => {
                 const element = document.getElementById(counter.id);
-                if (!element) return; // Si no encuentra el ID, salta
+                if (!element) return;
                 
                 const target = counter.target;
                 const totalFrames = duration / frameDuration;
@@ -114,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         element.innerText = Math.ceil(currentCount);
                         setTimeout(updateCount, frameDuration);
                     } else {
+                        // Formato bonito: si son miles agrega la "k" o el "+"
                         element.innerText = "+" + target; 
                     }
                 };
@@ -121,10 +144,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         };
 
+        // Intersection Observer: Dispara la función cuando el usuario ve la sección
         let observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    animateCounters();
+                    startAnimation(); // Ejecutamos la nueva función async
                     observer.unobserve(entry.target);
                 }
             });
