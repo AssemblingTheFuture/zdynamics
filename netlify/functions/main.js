@@ -15,7 +15,7 @@ exports.handler = async function(event, context) {
     try {
         console.log("Iniciando conexión con Udemy...");
 
-        const response = await fetch("https://www.udemy.com/instructor-api/v1/taught-courses/courses/?page_size=100&fields[course]=num_students", {
+        const response = await fetch("https://www.udemy.com/instructor-api/v1/taught-courses/courses/", {
             headers: {
                 "Authorization": `Bearer ${UDEMY_TOKEN}`,
                 "Content-Type": "application/json"
