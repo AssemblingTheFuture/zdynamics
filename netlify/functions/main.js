@@ -2,7 +2,7 @@ exports.handler = async function(event, context) {
     const UDEMY_TOKEN = process.env.UDEMY_TOKEN;
 
     // CAMBIO: Quitamos el filtro "fields" para que Udemy nos mande TODO lo que tenga del curso.
-    const url = "https://www.udemy.com/instructor-api/v1/taught-courses/courses/?page_size=10";
+    const url = "https://www.udemy.com/instructor-api/v1/taught-courses/courses?fields[course]=@default&fields[user]=@default";
 
     try {
         const response = await fetch(url, {
