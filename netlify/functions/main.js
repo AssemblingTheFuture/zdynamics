@@ -1,14 +1,20 @@
 exports.handler = async function(event, context) {
-    // 1. Obtenemos el token seguro desde Netlify
     const UDEMY_TOKEN = process.env.UDEMY_TOKEN;
 
+    // CHEQUEO 1: ¿Existe el token?
     if (!UDEMY_TOKEN) {
-        return { statusCode: 500, body: "Error: Falta configuración del Token." };
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ 
+                error: "Falta Token", 
+                mensaje: "La variable de entorno UDEMY_TOKEN no está configurada o está vacía." 
+            })
+        };
     }
 
     try {
-        // 2. Llamamos a Udemy pidiendo hasta 100 cursos para asegurar que traemos todos
-        // Pedimos solo el campo 'num_students' para que sea rápido
+        console.log("Iniciando conexión con Udemy...");
+
         const response = await fetch("https://www.udemy.com/instructor-api/v1/taught-courses/courses/?page_size=100&fields[course]=num_students", {
             headers: {
                 "Authorization": `Bearer ${UDEMY_TOKEN}`,
@@ -16,31 +22,52 @@ exports.handler = async function(event, context) {
             }
         });
 
+        // CHEQUEO 2: ¿Udemy nos rechazó?
         if (!response.ok) {
-            throw new Error(`Error de Udemy: ${response.statusText}`);
+            return {
+                statusCode: response.status,
+                body: JSON.stringify({ 
+                    error: "Udemy rechazó la conexión", 
+                    status: response.status,
+                    statusText: response.statusText 
+                })
+            };
         }
 
         const data = await response.json();
 
-        // 3. Sumamos los estudiantes de todos los cursos
-        let totalStudents = 0;
-        if (data.results && Array.isArray(data.results)) {
-            data.results.forEach(course => {
-                totalStudents += course.num_students;
-            });
+        // CHEQUEO 3: ¿Llegaron los datos correctamente?
+        if (!data.results) {
+            return {
+                statusCode: 500,
+                body: JSON.stringify({ 
+                    error: "Formato inesperado", 
+                    respuesta_completa: data // Esto nos mostrará qué envió Udemy
+                })
+            };
         }
 
-        // 4. Devolvemos el dato limpio a tu sitio web
+        // Si todo sale bien, sumamos
+        let totalStudents = 0;
+        data.results.forEach(course => {
+            totalStudents += course.num_students;
+        });
+
         return {
             statusCode: 200,
-            body: JSON.stringify({ total_students: totalStudents })
+            body: JSON.stringify({ 
+                total_students: totalStudents,
+                mensaje: "Éxito" 
+            })
         };
 
     } catch (error) {
-        console.error(error);
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: "No se pudieron obtener las métricas" })
+            body: JSON.stringify({ 
+                error: "Error interno en la función", 
+                detalle: error.message 
+            })
         };
     }
 };
