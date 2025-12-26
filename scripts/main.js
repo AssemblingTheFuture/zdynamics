@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const fetchMetrics = async () => {
             try {
                 // Llamamos a TU función de Netlify (definida en netlify.toml como /api/...)
-                const response = await fetch('/api/metricas'); 
+                const response = await fetch('/api/main'); 
                 const data = await response.json();
                 
                 if (data && data.total_students) {
