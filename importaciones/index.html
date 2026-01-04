@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importación y Facturación | zDynamics</title>
+    <link rel="icon" href="../images/icon.ico">
+    
+    <!-- Metadata -->
+    <meta name="description" content="Importamos y facturamos tus productos para investigación científica y desarrollo tecnológico.">
+    <meta name="keywords" content="investigación robótica, control, smc, lyapunov, research, ingeniería">
+    <meta name="author" content="David Zenteno Lara">
+    <meta property="og:title" content="Importación y Facturación | zDynamics">
+    <meta property="og:description" content="Importamos y facturamos tus productos para investigación científica y desarrollo tecnológico.">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT3W5rZNWYJ3JF4O6ec78SqcViMTF0CveeA&s">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zdynamics.org/importaciones/">
+    <meta name="language" content="Spanish">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() { emailjs.init('tc1u_lsh29PmThiJg'); })();
+    </script>
+    
+    <style>
+        /* =========================================
+           0. CONFIGURACIÓN BASE
+           ========================================= */
+        body { 
+            background-color: #050505 !important; 
+            overflow-x: hidden; 
+        }
+
+        /* MÁSCARA DE SINGULARIDAD */
+        .warp-mask {
+            position: fixed;
+            width: 100%; 
+            height: 100%;
+            pointer-events: none; /* CRÍTICO: Permite hacer clic a través de ella */
+            z-index: 0; /* Encima de las partículas (que suelen estar en 0 o -1), debajo del contenido (10+) */
+            
+            /* El truco: Negro sólido en el centro exacto, desvaneciéndose rápidamente hacia transparente */
+            background:
+                radial-gradient(ellipse at top, rgba(5, 5, 5, 0.5), transparent),
+                radial-gradient(ellipse at bottom,  rgba(5, 5, 5, 0.5), transparent);
+        }
+
+        .navbar {
+            background: rgba(5, 5, 5, 0.9) !important;
+            backdrop-filter: blur(10px) !important;
+        }
+        
+        .import-main {
+            padding-top: 120px; 
+            margin-bottom: 80px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* =========================================
+           1. CONCEPTO "PUENTE" (Logos y Flujo)
+           ========================================= */
+        .bridge-section {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 0 20px;
+        }
+
+        .bridge-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* CAMBIO CRÍTICO: Alinea todo a la base */
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Contenedor de Logos */
+        .logos-group {
+            display: flex;
+            gap: 25px; 
+            align-items: center;
+            justify-content: center;
+            /* Fondo un poco más presente para dar estructura */
+            background: rgba(255, 255, 255, 0.05); 
+            padding: 15px 30px;
+            border-radius: 12px; /* Menos redondo, más técnico */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: 0.3s;
+            height: 60px; /* Altura forzada para alinear todo */
+        }
+        
+        .logos-group:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+        }
+
+        /* CORRECCIÓN DE TAMAÑOS DE LOGO */
+        .brand-logo {
+            max-height: 30px; /* Altura máxima */
+            max-width: 100px; /* Ancho máximo para evitar que Amazon se vea gigante */
+            width: auto;
+            opacity: 0.7; 
+            transition: 0.3s;
+            filter: brightness(0) invert(1); /* Volver blanco */
+        }
+
+        .logos-group:hover .brand-logo { opacity: 1; }
+
+        .bridge-arrow {
+            color: var(--neon-cyan);
+            font-size: 1.5rem;
+            animation: float-right 2s infinite ease-in-out;
+            display: flex; /* Asegura centrado */
+            align-items: center;
+            height: 60px
+        }
+
+        @keyframes float-right {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+
+        .zone-label {
+            font-family: var(--font-code);
+            font-size: 0.75rem;
+            color: var(--text-gray);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            display: block;
+            font-weight: bold;
+        }
+
+        /* =========================================
+           2. LAYOUT GRID
+           ========================================= */
+        .import-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* 1. Tarjeta HUD (Cotizador) - Estilo Tecnológico */
+        .hud-card {
+            position: relative;
+            background: rgba(11, 15, 25, 0.7); /* Más oscuro para contraste */
+            backdrop-filter: blur(3px);
+            /* Padding basado en Silver Ratio (20px * 1.414 = ~28px) */
+            padding: 30px; 
+            border: 1px solid rgba(0, 212, 255, 0.2); /* Cyan sutil */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+            z-index: 20;
+            overflow: hidden; /* Para contener la barra de estado */
+        }
+
+        /* Decoración "Tech" en las esquinas */
+        .hud-card::before, .hud-card::after {
+            content: '';
+            position: absolute;
+            width: 20px; height: 20px;
+            border-color: var(--neon-cyan);
+            border-style: solid;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        .hud-card::before { top: 0; right: 0; border-width: 2px 2px 0 0; }
+        .hud-card::after { bottom: 0; left: 0; border-width: 0 0 2px 2px; }
+
+        /* Barra de estado superior falsa (Estética Ingeniería) */
+        .hud-status-bar {
+            display: flex;
+            justify-content: space-between;
+            font-family: var(--font-code);
+            font-size: 0.7rem;
+            color: var(--neon-cyan);
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed rgba(0, 212, 255, 0.3);
+            opacity: 0.8;
+        }
+
+        /* Inputs */
+        .input-group textarea, .input-group input {
+            background: rgba(0, 0, 0, 0.6) !important;
+            border: 1px solid #30363d !important;
+            color: #00D4FF !important; /* Texto tecleado en Cyan */
+            font-family: 'JetBrains Mono', monospace; /* Fuente de código */
+            font-size: 0.9rem;
+        }
+        
+        .input-group textarea:focus, .input-group input:focus {
+            border-color: var(--neon-cyan) !important;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.2) !important;
+        }
+
+        /* Corrección de Inputs: Espaciado interno para evitar texto pegado */
+        .input-group input, 
+        .input-group textarea {
+            padding: 12px 15px !important; /* 15px a los lados da aire profesional */
+        }
+
+        /* Ajuste de la etiqueta flotante para que coincida con el nuevo padding */
+        .input-group label {
+            left: 15px !important; /* Alineamos la etiqueta con el texto */
+        }
+
+        /* Ajuste cuando la etiqueta sube (focus/valid) */
+        .input-group input:focus ~ label,
+        .input-group input:valid ~ label,
+        .input-group textarea:focus ~ label,
+        .input-group textarea:valid ~ label {
+            left: 0 !important; /* Al subir, regresa a la izquierda para alinearse con el borde */
+        }
+
+        .calc-grid-compact { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+        .full-width { width: 100%; margin-top: 15px; }
+        
+        .result-box-hidden {
+            display: none; margin-top: 15px; padding: 15px; 
+            background: rgba(0,0,0,0.5); border: 1px dashed var(--neon-cyan); text-align: center;
+        }
+        .result-price { color: var(--neon-cyan); font-size: 1.5rem; margin: 5px 0; }
+
+        /* Nuevo Botón HUD (Reemplaza al btn-primary en este contexto) */
+        .btn-hud-cyan {
+            background: rgba(0, 212, 255, 0.1); /* Fondo sutil cian */
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+        }
+
+        .btn-hud-cyan:hover {
+            background: var(--neon-cyan);
+            color: #050810; /* Texto oscuro al hacer hover */
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        /* =========================================
+           4. LISTA IZQUIERDA (Unificada con Derecha)
+           ========================================= */
+        /* 2. Tarjetas de Proceso (Antes invisibles) */
+        .vertical-step {
+            display: flex;
+            align-items: flex-start; /* Alineación superior */
+            gap: 20px;
+            margin-bottom: 25px;
+            padding: 20px;
+            
+            background: rgba(13, 17, 23, 0.4); /* Sutil */
+            border-left: 3px solid #30363d; /* Gris apagado por defecto */
+            border-radius: 0 4px 4px 0;
+            
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* Efecto Hover Activo */
+        .vertical-step:hover {
+            transform: translateX(10px); /* Desplazamiento mecánico */
+            background: rgba(0, 212, 255, 0.05); 
+            border-left-color: var(--neon-cyan); /* Se enciende en Cyan */
+            box-shadow: -5px 0 15px rgba(0, 212, 255, 0.1);
+        }
+
+        /* Tipografía Escala Silver Ratio (Base 1rem) */
+        .step-number {
+            font-family: var(--font-heading);
+            font-size: 2rem; /* 1.414 * 1.414 approx */
+            line-height: 1;
+            color: rgba(255,255,255,0.1);
+            transition: 0.3s;
+        }
+        .vertical-step:hover .step-number {
+            color: var(--neon-cyan);
+        }
+
+        /* 4. Botón Flotante de WhatsApp */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            z-index: 100;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            z-index: 9999 !important;
+        }
+
+        .wa-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+        }
+
+        /* Estilos para FAQ Tecnológico */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(11, 15, 25, 0.7); /* Más oscuro para contraste */
+            backdrop-filter: blur(3px);
+            border: 1px solid rgba(48, 54, 61, 0.5);
+            border-radius: 4px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);
+        }
+
+        .faq-item summary {
+            padding: 15px 20px;
+            cursor: pointer;
+            font-family: var(--font-heading);
+            color: var(--text-white); /* Color base blanco */
+            font-weight: 600;
+            list-style: none; /* Quita el triángulo por defecto */
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Triángulo personalizado animado */
+        .faq-item summary::after {
+            content: '\f107'; /* Icono FontAwesome (Chevron Down) */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--neon-cyan);
+            transition: transform 0.3s;
+        }
+
+        /* Rotación al abrir */
+        .faq-item[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-item[open] summary {
+            color: var(--neon-cyan); /* Título se vuelve Cyan al abrir */
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        /* Animación suave para FAQ */
+        .faq-content {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.4s ease-out;
+            background: rgba(11, 15, 25, 0.7); /* Más oscuro para contraste */
+            backdrop-filter: blur(3px);
+        }
+
+        .faq-item[open] + .faq-content, /* Fallback */
+        .faq-item[open] .faq-content {
+            grid-template-rows: 1fr;
+        }
+
+        .faq-inner {
+            overflow: hidden;
+            padding: 0 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease, padding 0.3s ease;
+        }
+
+        .faq-item[open] .faq-inner {
+            opacity: 1;
+            padding: 20px;
+            color: #cbd5e1;
+        }
+
+        /* --- RESPONSIVE (Móvil) --- */
+        @media (max-width: 900px) {
+            .import-grid { grid-template-columns: 1fr; }
+            .steps-column { order: 2; margin-top: 40px; }
+            .calculator-column { order: 1; }
+            
+            .bridge-container { 
+                flex-direction: column; 
+                gap: 7px; 
+                align-items: center; /* FORZAMOS CENTRO EN MÓVIL */
+            }
+            
+            .bridge-arrow { 
+                transform: rotate(90deg); 
+                margin: 0; 
+                animation: float-down 2s infinite ease-in-out;
+            }
+
+            @keyframes float-down {
+                0%, 100% { transform: rotate(90deg) translateX(0); }
+                50% { transform: rotate(90deg) translateX(5px); }
+            }
+        }
+    </style>
+</head>
+<body data-env="warp">
+
+    <div id="tsparticles"></div>
+
+    <div class="warp-mask"></div>
+
+    <nav id="main-nav" class="navbar">
+        <div class="container nav-container">
+            <a href="../" class="nav-logo">
+                <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
+            </a>
+            <ul class="nav-links">
+                <li><a href="../#talleres">Talleres</a></li>
+                <li><a href="../diplomas/">Diplomas</a></li>
+                <li><a href="https://shop.zdynamics.org/" target="_blank">Tienda</a></li>
+                <li><a href="../nosotros/">Nosotros</a></li>
+                <li><a href="../eventos/">Eventos</a></li>
+                <li><a class="active" style="color: var(--neon-cyan);">Importaciones</a></li>
+                <li>
+                    <a href="../investigacion/" title="I²+D">
+                        <i class="fa-solid fa-flask" style="font-size: 1.1rem;"></i>
+                    </a>
+                </li>
+                <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="import-main container">
+        <div class="bridge-section">
+            <h1 class="section-title">IMPORTACIÓN DE <span class="highlight">MATERIAL CIENTÍFICO</span></h1>
+            <p class="section-subtitle">
+                Enfócate en la ciencia, nosotros en la logística. Importación y facturación de componentes, herramientas y equipos para investigación científica y desarrollo tecnológico.
+            </p>
+
+            <div class="bridge-container">
+                <div>
+                    <span class="zone-label">COMPRA GLOBAL</span>
+                    <div class="logos-group">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Alibaba-Group-Logo.svg" alt="Alibaba" class="brand-logo" title="Alibaba">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Aliexpress_logo.svg" alt="AliExpress" class="brand-logo" title="AliExpress">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="brand-logo" title="Amazon">
+                    </div>
+                </div>
+
+                <div class="bridge-arrow">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div>
+                    <span class="zone-label">FACTURACIÓN NACIONAL</span>
+                    <div class="logos-group">
+                        <i class="fa-solid fa-building-columns brand-logo" style="font-size: 24px; color:white; width: auto;" title="Gobierno e Instituciones Públicas"></i>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Escudo-UNAM-escalable.svg" alt="UNAM" class="brand-logo" style="height: 30px;" title="UNAM">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/IPN_logo.svg" alt="IPN" class="brand-logo" style="height: 30px;" title="IPN">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Logo_del_ITESM.svg" alt="ITESM" class="brand-logo" title="ITESM">
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 15px; font-size: 0.8rem; color: var(--neon-cyan);">
+                <i class="fa-solid fa-check-circle"></i> Servicio disponible para Personas Físicas, Físicas con Actividad Empresarial, Personas Morales e Instituciones Públicas.
+            </div>
+        </div>
+
+        <div class="import-grid">
+            
+            <div>
+                <h3 style="color: var(--neon-cyan); margin-bottom: 25px; font-family: var(--font-heading); text-align: left; letter-spacing: 1px;">
+                    <i class="fa-solid fa-network-wired"></i> PROCESO
+                </h3>
+                
+                <div class="vertical-step">
+                    <div class="step-number">01</div>
+                    <div>
+                        <h4 style="color:white; margin-bottom:5px; font-size: 1.41rem;">Identificación</h4>
+                        <p style="color:#8b949e; font-size:0.9rem;">
+                            Localiza tus componentes (sensores, actuadores, PCBs) en cualquier tienda global. Copia y pega las URLs en el formulario
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vertical-step">
+                    <div class="step-number">02</div>
+                    <div>
+                        <h4 style="color:white; margin-bottom:5px; font-size: 1.41rem;">Cotización</h4>
+                        <p style="color:#8b949e; font-size:0.9rem;">
+                            Analizamos la fracción arancelaria. Recibes una cotización con desglose fiscal por correo y WhatsApp
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vertical-step">
+                    <div class="step-number">03</div>
+                    <div>
+                        <h4 style="color:white; margin-bottom:5px; font-size: 1.41rem;">Envío y Facturación</h4>
+                        <p style="color:#8b949e; font-size:0.9rem;">
+                            Gestionamos los trámites aduanales, enviamos a tu laboratorio y generamos tu factura CFDI 4.0 + XML
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hud-card" id="contacto">
+
+                <div class="hud-status-bar">
+                    <span>STATUS: ONLINE</span>
+                    <span id="sys-id">ID: REQ-00</span>
+                </div>
+                
+                <h2 style="text-align: center; margin-bottom: 20px; font-size: 1.5rem; letter-spacing: 1px;">
+                    COTIZA <span style="color: var(--neon-cyan);">AHORA</span>
+                </h2>
+                
+                <form id="quote-form">
+                    <div class="input-group">
+                        <textarea name="product_urls" required placeholder=" " rows="3" style="resize: vertical;"></textarea>
+                        <label>URLs de tus productos (separados por línea)</label>
+                    </div>
+                    
+                    <div class="calc-grid-compact">
+                        <div class="input-group">
+                            <input type="number" name="usd_price" step="0.01" required placeholder=" ">
+                            <label>Valor Aproximado (USD)</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="tel" name="whatsapp" required placeholder=" ">
+                            <label>Teléfono</label>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" name="user_name" required placeholder=" ">
+                        <label>Nombre / Empresa / Institución</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" name="user_email" required placeholder=" ">
+                        <label>Correo Electrónico</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-hud-cyan full-width" style="border-radius: 4px;">
+                        ENVIAR <i class="fa-solid fa-terminal"></i>
+                    </button>
+
+                    <div id="estimation-result" class="result-box-hidden">
+                        <p class="result-label">Estimado Preliminar (MXN):</p>
+                        <h3 id="price-range" class="result-price"></h3>
+                    </div>
+                </form>
+            </div>
+        </div> 
+
+        <a href="https://wa.me/5215542949603?text=Hola.%20Quiero%20saber%20... " class="wa-float" target="_blank" title="Contactar por WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </section>
+
+    <section class="container section-padding" style="margin-top: 80px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="faq-container">
+            <h2 style="text-align: center; color: var(--text-white); margin-bottom: 50px; font-family: var(--font-heading);">
+                <i class="fa-solid fa-circle-question" style="color: var(--neon-cyan);"></i> CENTRO DE AYUDA
+            </h2>
+            
+            <details class="faq-item">
+                <summary>¿Emiten facturas válidas para México?</summary>
+                <div class="faq-content"><div class="faq-inner">
+                    Sí, emitimos CFDI 4.0 + XML validado por el SAT. Cumplimos con los requisitos del <a href="http://omawww.sat.gob.mx/tramitesyservicios/Paginas/anexo_20.htm" target="_blank" style="color:var(--neon-cyan); text-decoration:underline;">Anexo 20 de la RMF vigente</a>. Podemos ajustar el uso de CFDI (G03, I04, etc.) para tu comprobación de gastos institucional.
+                </div></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Cuáles son los tiempos de entrega?</summary>
+                <div class="faq-content"><div class="faq-inner">
+                    El tiempo promedio es:<br><br>
+                    <strong style="color:white;">🇨🇳 China (Express):</strong> 10-15 días hábiles.<br>
+                    <strong style="color:white;">🇨🇳 China (Estándar):</strong> 20-30 días hábiles.<br>
+                    <strong style="color:white;">🇺🇸 USA (Mouser/DigiKey):</strong> 5-8 días hábiles.<br><br>
+                    <em>Nota: esto depende del fabricante, origen logístico, compañía de transporte y agente aduanal.</em>
+                </div></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Qué garantía ofrecen?</summary>
+                <div class="faq-content"><div class="faq-inner">
+                    Nosotros tramitamos las garantías para productos defectuosos dentro de un plazo de 15 días naturales. Si el componente llega dañado o no corresponde a lo solicitado, gestionamos el reemplazo o la devolución del dinero sin costo adicional para ti.
+                </div></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Cuáles son los métodos de pago?</summary>
+                <div class="faq-content"><div class="faq-inner">
+                    Aceptamos transferencia interbancaria (SPEI), tarjeta de crédito, débito, PayPal y Mercado Pago.
+                </div></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>¿Por qué importar con ustedes?</summary>
+                <div class="faq-content"><div class="faq-inner">
+                    Alibaba, AliExpress y muchas otras plataformas NO emiten facturas. Nosotros actuamos como tu proveedor nacional: manejamos el riesgo de importación, pagamos impuestos aduanales y te facturamos localmente en MXN.
+                </div></div>
+            </details>
+
+            <div style="margin-top: 50px; padding: 25px; border: 1px dashed var(--neon-orange); background: rgba(217, 54, 22, 0.05); border-radius: 4px; position: relative; z-index: 100;">
+                <h3 style="color: var(--neon-orange); font-size: 1rem; margin-bottom: 10px;">
+                    <i class="fa-solid fa-ban"></i> RESTRICCIONES DE IMPORTACIÓN
+                </h3>
+                <p style="font-size: 0.9rem; color: #cbd5e1;">
+                    En estricto apego a la <a href="https://www.diputados.gob.mx/LeyesBiblio/pdf/LIGIE_2022.pdf" target="_blank" style="color:var(--neon-orange); text-decoration:underline;">LIGIE</a> y regulaciones de Seguridad Nacional, <strong>NO gestionamos:</strong>
+                </p>
+                <ul style="font-size: 0.9rem; margin-top: 10px; list-style-type: none; padding-left: 0; color: #cbd5e1;">
+                    <li style="margin-bottom: 5px;"><i class="fa-solid fa-xmark" style="color: var(--neon-orange); margin-right: 8px;"></i> Armas, material táctico o equipo controlado por la <a href="https://aduanasmex.com.mx/index.php/gob/sedena" target="_blank" style="color:var(--neon-orange); text-decoration:underline;">Secretaría de la Defensa Nacional</a>.</li>
+                    <li style="margin-bottom: 5px;"><i class="fa-solid fa-xmark" style="color: var(--neon-orange); margin-right: 8px;"></i> Precursores químicos o material biológico.</li>
+                    <li style="margin-bottom: 5px;"><i class="fa-solid fa-xmark" style="color: var(--neon-orange); margin-right: 8px;"></i> Equipos médicos que requieran <a href="https://www.gob.mx/cofepris/documentos/registros-dispositivos-medicos" target="_blank" style="color:var(--neon-orange); text-decoration:underline;">Registro Sanitario COFEPRIS</a>.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            
+            <div class="footer-col footer-info">
+                <img src="../images/logo.png" alt="zDynamics" class="footer-logo">
+                <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
+                
+                <div class="social-links">
+                    <a href="https://youtube.com/@zdynamics" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/AssemblingTheFuture" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/dzentenol" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
+                    <div class="legacy-wrapper">
+                        <img src="../images/bny.png" title="Assembling the Future... TOGETHER!">
+                    </div>
+                </div>
+
+                <ul class="legal-links">
+                    <li><a href="../aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="../terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <p class="copyright">
+                    © <script>document.write(new Date().getFullYear())</script> David Zenteno Lara. Todos los derechos reservados.<br>
+                    Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="../scripts/main.js"></script>
+       
+    <script>
+        // Lógica del Formulario
+        const quoteForm = document.getElementById('quote-form');
+
+        // Generador de ID Aleatorio para efecto visual
+        document.getElementById('sys-id').innerText = 'ID: REQ-' + Math.floor(Math.random() * 9000 + 1000);
+
+        quoteForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            const usdPrice = parseFloat(this.usd_price.value);
+            
+            // Cálculo Estimado (Misma lógica, solo ajustando presentación)
+            const estimatedMin = (usdPrice * 18.5 * 1.35).toFixed(0); 
+            const estimatedMax = (usdPrice * 20.5 * 1.6 + 450).toFixed(0); 
+            
+            const resultBox = document.getElementById('estimation-result');
+            const priceText = document.getElementById('price-range');
+            
+            // Formato de moneda
+            const formatter = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' });
+            priceText.innerHTML = `${formatter.format(estimatedMin)} - ${formatter.format(estimatedMax)}`;
+            resultBox.style.display = 'block';
+
+            btn.innerHTML = 'PROCESANDO... <i class="fa-solid fa-microchip fa-fade"></i>';
+            
+            const templateParams = {
+                name: this.user_name.value,
+                email: this.user_email.value,
+                whatsapp: this.whatsapp.value, // Nuevo campo capturado
+                subject: `COTIZACIÓN (${usdPrice} USD) - ${this.user_name.value}`, 
+                message: `
+                    DATOS DE CONTACTO:
+                    Nombre: ${this.user_name.value}
+                    WhatsApp: ${this.whatsapp.value}
+                    Email: ${this.user_email.value}
+                    
+                    SOLICITUD:
+                    URLs / Lista de Material: 
+                    ${this.product_urls.value}
+                    
+                    Valor Declarado USD: $${usdPrice}
+                    -----------------------------------
+                `
+            };
+
+            emailjs.send('service_66tnv1p', 'template_dy4961m', templateParams)
+                .then(() => {
+                    btn.innerHTML = 'SOLICITUD ENVIADA <i class="fa-solid fa-check"></i>';
+                    btn.style.borderColor = '#00FF88';
+                    btn.style.color = '#00FF88';
+                    
+                    // Opcional: Redirigir a WhatsApp después de enviar
+                    // window.open(`https://wa.me/5215542949603?text=Hola,%20acabo%20de%20enviar%20una%20solicitud%20de%20cotización%20por%20$${usdPrice}USD`, '_blank');
+                    
+                    setTimeout(() => {
+                        quoteForm.reset();
+                        btn.innerHTML = originalText;
+                        btn.style.borderColor = '';
+                        btn.style.color = '';
+                        resultBox.style.display = 'none';
+                    }, 6000);
+                }, (err) => {
+                    console.error('Error:', err);
+                    btn.innerHTML = 'ERROR DE CONEXIÓN';
+                    btn.style.borderColor = 'red';
+                    btn.style.color = 'red';
+                });
+        });
+    </script>
+
+</body>
+</html>

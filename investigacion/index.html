@@ -9,7 +9,7 @@
     <!-- Metadata -->
     <meta name="description" content="Hub de Investigación (I²+D). Proyectos sobre control, algoritmos numéricos, robótica y temas afines">
     <meta name="keywords" content="investigación robótica, control, smc, lyapunov, research, ingeniería">
-    <meta name="author" content="Assembling the Future S.A.S.">
+    <meta name="author" content="David Zenteno Lara">
     <meta property="og:title" content="I²+D | zDynamics">
     <meta property="og:description" content="Hub de Investigación (I²+D). Proyectos sobre control, algoritmos numéricos, robótica y temas afines">
     <meta property="og:image" content="https://img.freepik.com/premium-photo/neon-science-cyberpunk-scientist-futuristic-lab_735318-8472.jpg">
@@ -30,16 +30,21 @@
 
     <style>
         /* ESTILOS ESPECÍFICOS: RESEARCH HUB */
+
+        body {
+            background-color: #050505 !important;
+        }
+        
+        .navbar {
+            background: rgba(5, 5, 5, 0.9) !important;
+            backdrop-filter: blur(5px) !important;
+        }
         
         .research-hero {
             padding: 120px 0 60px;
             text-align: center;
-            /* Fondo técnico con cuadrícula sutil */
-            background-image: 
-                linear-gradient(rgba(11, 17, 32, 0.9), rgba(11, 17, 32, 0.9)),
-                linear-gradient(0deg, transparent 24%, rgba(0, 212, 255, .05) 25%, rgba(0, 212, 255, .05) 26%, transparent 27%, transparent 74%, rgba(0, 212, 255, .05) 75%, rgba(0, 212, 255, .05) 76%, transparent 77%, transparent),
-                linear-gradient(90deg, transparent 24%, rgba(0, 212, 255, .05) 25%, rgba(0, 212, 255, .05) 26%, transparent 27%, transparent 74%, rgba(0, 212, 255, .05) 75%, rgba(0, 212, 255, .05) 76%, transparent 77%, transparent);
-            background-size: 50px 50px;
+            background-color: #050505 !important; 
+            overflow-x: hidden; 
         }
 
         /* --- DASHBOARD GRID --- */
@@ -218,7 +223,7 @@
 
     </style>
 </head>
-<body>
+<body data-env="void">
 
     <div id="tsparticles"></div>
 
@@ -233,6 +238,7 @@
                 <li><a href="https://shop.zdynamics.org/" target="_blank">Tienda</a></li>
                 <li><a href="../nosotros">Nosotros</a></li>
                 <li><a href="../eventos/">Eventos</a></li>
+                <li><a href="../importaciones/">Importaciones</a></li>
                 <li>
                     <a class = "active" title="I²+D">
                         <i class="fa-solid fa-flask" style="font-size: 1.1rem;"></i>
@@ -295,7 +301,7 @@
                     <li><a href="../terminos-y-condiciones">Términos y Condiciones</a></li>
                 </ul>
                 <p class="copyright">
-                    © <script>document.write(new Date().getFullYear())</script> Assembling the Future S.A.S. Todos los derechos reservados.<br>
+                    © <script>document.write(new Date().getFullYear())</script> David Zenteno Lara. Todos los derechos reservados.<br>
                     Hecho con <i class="fa-regular fa-heart heart-beat"></i> en México <span class="mexico-flag">🇲🇽</span>
                 </p>
             </div>

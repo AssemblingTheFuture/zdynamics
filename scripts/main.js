@@ -352,4 +352,161 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* =========================================
+        SISTEMA DE AMBIENTES Y PARTÍCULAS
+        ========================================= */
+
+    // 1. Detectar el ambiente actual desde el HTML
+    const body = document.body;
+    const currentEnv = body.getAttribute('data-env') || 'standard';
+        
+    // Si no existe el contenedor, no hacemos nada (evita errores)
+    const container = document.getElementById('tsparticles');
+    if (!container) return;
+
+    // 2. Definir las configuraciones (Perfiles)
+    const configs = {
+        // PERFIL 1: DEFAULT (Index - Tus partículas actuales)
+        'standard': {
+                particles: {
+                    number: { value: 80, density: { enable: true, value_area: 800 } },
+                    color: { value: "#00D4FF" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.5, random: true },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: "#00D4FF", opacity: 0.2, width: 1 },
+                    move: { enable: true, speed: 1.5 }
+                },
+                interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { grab: { distance: 140, line_linked: { opacity: 1 } }, push: { particles_nb: 7 } }
+                },
+                retina_detect: true
+        },
+
+        // PERFIL 2: WARP (Corregido: Avance Frontal Suave y Continuo)
+        'warp': {
+            particles: {
+                // Aumentamos el número para evitar "huecos" cuando viajan rápido
+                number: { value: 120, density: { enable: true, value_area: 777 } },
+                
+                color: { value: ["#ffffff", "#0b1120"] }, 
+                
+                shape: { type: "circle" },
+
+                // Empiezan en 0 (invisibles en el centro) y aparecen gradualmente.
+                // Esto oculta el punto de origen y da sensación de profundidad.
+                opacity: { 
+                    value: 1, 
+                    random: true, 
+                    anim: { 
+                        enable: true, 
+                        speed: 0.7, 
+                        opacity_min: 0, // Nacen invisibles
+                        sync: false 
+                    } 
+                },
+                
+                // TRUCO DE TAMAÑO: Crecen al acercarse (Perspective Projection)
+                size: { 
+                    value: 3, 
+                    random: true, // Variación natural
+                    anim: { 
+                        enable: true, 
+                        speed: 0.1, 
+                        size_min: 0, // Nacen microscópicas
+                        sync: false 
+                    } 
+                },
+                
+                line_linked: { enable: false }, // Limpieza total
+                
+                move: {
+                    enable: true,
+                    speed: 0.7,           // Velocidad reducida para apreciación (antes 8)
+                    direction: "outside", // Del centro hacia afuera
+                    random: false,      // Trayectoria recta (Inercia)
+                    straight: false,    
+                    out_mode: "out",    // Salen y se reciclan
+                    bounce: false,
+                    attract: { enable: false },
+                    warp: true
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: false }, // Sin distracción
+                    resize: true
+                }
+            },
+            retina_detect: true
+        },
+
+        // PERFIL 3: ORBITAL (Nosotros - Rotación y Estructura)
+        'orbital': {
+                particles: {
+                    number: { value: 60, density: { enable: true, value_area: 800 } },
+                    color: { value: ["#00D4FF", "#ffffff"] }, // Cian y Blanco
+                    shape: { type: "circle" },
+                    opacity: { value: 0.6 },
+                    size: { value: 2 },
+                    line_linked: {
+                        enable: true,
+                        distance: 180,
+                        color: "#00d4ff", // Conexiones Cian
+                        opacity: 0.2,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 0.5, // Muy lento, majestuoso
+                        direction: "none",
+                        random: true,
+                        straight: false,
+                        out_mode: "out",
+                        attract: { enable: true, rotateX: 600, rotateY: 1200 } // Efecto sutil de atracción
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: { onhover: { enable: true, mode: "grab" }, resize: true },
+                    modes: { grab: { distance: 200, line_linked: { opacity: 0.5 } } }
+                },
+                retina_detect: true
+        },
+
+        // PERFIL 4: VOID (Investigación - Misterio y Flotación)
+        'void': {
+                particles: {
+                    number: { value: 100, density: { enable: true, value_area: 800 } },
+                    color: { value: ["#ffffff", "#0b1120"] }, 
+                    shape: { type: "circle" },
+                    opacity: { value: 0.7, random: true, anim: { enable: true, speed: 3, opacity_min: 0.1, sync: false } },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: false }, // Solo polvo
+                    move: {
+                        enable: true,
+                        speed: 0.2, // Casi estático
+                        direction: "top", // Flotando suavemente hacia arriba
+                        random: true,
+                        straight: false,
+                        out_mode: "out"
+                    }
+                },
+                retina_detect: true
+        }
+    };
+
+        // 3. Cargar la configuración seleccionada
+        // Si el perfil no existe, usamos 'default' por seguridad
+        const selectedConfig = configs[currentEnv] || configs['default'];
+        
+        if (typeof tsParticles !== 'undefined') {
+            tsParticles.load("tsparticles", selectedConfig);
+        } else {
+            console.warn('tsParticles no está cargado. Revisa tus scripts.');
+        }
+
 });

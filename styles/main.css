@@ -973,10 +973,10 @@ footer {
     /* CAMBIO: Usamos rgba para transparencia real + blur para efecto vidrio */
     background: rgba(2, 4, 8, 0.50); 
     backdrop-filter: blur(2px);
-    padding: 60px 0 20px;
+    padding: 50px 0 35px;
     border-top: 1px solid var(--neon-cyan);
     position: relative; /* Necesario para el z-index */
-    z-index: 10;        /* CAMBIO: Esto pone el footer ENCIMA de las partículas */
+    z-index: 5;        /* CAMBIO: Esto pone el footer ENCIMA de las partículas */
 }
 
 .footer-content {
@@ -984,7 +984,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center; /* CENTRA las columnas horizontalmente en el contenedor */
     align-items: flex-start; /* Alinea las columnas al tope superior entre ellas */
-    gap: 80px; /* Espacio entre las dos columnas */
+    gap: 35px; /* Espacio entre las dos columnas */
 }
 
 .footer-info {
