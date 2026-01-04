@@ -29,11 +29,13 @@
     </script>
     
     <style>
-        /* =========================================
-           0. CONFIGURACIÓN BASE
-           ========================================= */
+        :root {
+            --bg-dark: #050505;               /* Fondo negro absoluto */
+            --glass-bg: rgba(5, 5, 5, 0.9);   /* Color que usará la navbar al hacer scroll */
+        }
+
         body { 
-            background-color: #050505 !important; 
+            background-color: var(--bg-dark) !important; /* Aseguramos que el fondo sea negro */
             overflow-x: hidden; 
         }
 
@@ -49,11 +51,6 @@
             background:
                 radial-gradient(ellipse at top, rgba(5, 5, 5, 0.5), transparent),
                 radial-gradient(ellipse at bottom,  rgba(5, 5, 5, 0.5), transparent);
-        }
-
-        .navbar {
-            background: rgba(5, 5, 5, 0.9) !important;
-            backdrop-filter: blur(10px) !important;
         }
         
         .import-main {
@@ -393,6 +390,17 @@
             color: #cbd5e1;
         }
 
+        /* Nueva clase para el cuadro de restricciones */
+        .restrictions-box {
+            margin-top: 50px;
+            padding: 25px;
+            border: 1px dashed var(--neon-orange);
+            background: rgba(217, 54, 22, 0.05);
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+        }
+
         /* --- RESPONSIVE (Móvil) --- */
         @media (max-width: 900px) {
             .import-grid { grid-template-columns: 1fr; }
@@ -414,6 +422,42 @@
             @keyframes float-down {
                 0%, 100% { transform: rotate(90deg) translateX(0); }
                 50% { transform: rotate(90deg) translateX(5px); }
+            }
+
+            /* AJUSTES FAQ PARA MÓVIL */
+            .faq-container {
+                width: 100%;
+                padding: 0 10px; /* Margen lateral para que no toque los bordes */
+            }
+
+            .faq-item summary {
+                font-size: 0.9rem;     /* Texto un poco más pequeño */
+                padding: 15px 10px;    /* Ajuste de espacio */
+                line-height: 1.4;      /* Mejor lectura si el título es largo */
+            }
+
+            .faq-inner {
+                padding: 15px !important; /* Menos relleno interno */
+                font-size: 0.9rem;
+            }
+
+            /* AJUSTES RESTRICCIONES PARA MÓVIL */
+            .restrictions-box {
+                margin-top: 30px;      /* Menos separación arriba */
+                padding: 15px;         /* Caja más compacta */
+            }
+
+            .restrictions-box h3 {
+                font-size: 0.95rem !important; /* Título ajustado */
+            }
+
+            .restrictions-box ul {
+                padding-left: 10px !important; /* Menos sangría en la lista */
+            }
+            
+            .restrictions-box li {
+                font-size: 0.85rem !important; /* Texto de lista más compacto */
+                margin-bottom: 8px;
             }
         }
     </style>
@@ -508,7 +552,7 @@
                     <div>
                         <h4 style="color:white; margin-bottom:5px; font-size: 1.41rem;">Cotización</h4>
                         <p style="color:#8b949e; font-size:0.9rem;">
-                            Analizamos la fracción arancelaria. Recibes una cotización con desglose fiscal por correo y WhatsApp
+                            Investigamos al vendedor, el método de envío y la fracción arancelaria correspondiente. Recibes una cotización por correo y WhatsApp
                         </p>
                     </div>
                 </div>
@@ -624,7 +668,7 @@
                 </div></div>
             </details>
 
-            <div style="margin-top: 50px; padding: 25px; border: 1px dashed var(--neon-orange); background: rgba(217, 54, 22, 0.05); border-radius: 4px; position: relative; z-index: 100;">
+            <div class="restrictions-box">
                 <h3 style="color: var(--neon-orange); font-size: 1rem; margin-bottom: 10px;">
                     <i class="fa-solid fa-ban"></i> RESTRICCIONES DE IMPORTACIÓN
                 </h3>

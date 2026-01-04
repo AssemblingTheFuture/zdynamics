@@ -29,21 +29,25 @@
     </script>
 
     <style>
-        /* ESTILOS ESPECÍFICOS: RESEARCH HUB */
+        /* =========================================
+        CONFIGURACIÓN TEMA NEGRO (I²+D)
+        ========================================= */
+        :root {
+            --bg-dark: #050505;
+            --glass-bg: rgba(5, 5, 5, 0.9);
+        }
 
         body {
-            background-color: #050505 !important;
+            background-color: var(--bg-dark) !important; /* Esto corrige el fondo azul que veías abajo */
         }
-        
-        .navbar {
-            background: rgba(5, 5, 5, 0.9) !important;
-            backdrop-filter: blur(5px) !important;
-        }
-        
+
+        /* ESTILOS ESPECÍFICOS: RESEARCH HUB */
         .research-hero {
             padding: 120px 0 60px;
             text-align: center;
-            background-color: #050505 !important; 
+            /* Ya no es necesario forzar el background aquí si el body ya es negro, 
+            pero lo dejamos transparente para ver las partículas */
+            background-color: transparent; 
             overflow-x: hidden; 
         }
 

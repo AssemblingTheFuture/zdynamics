@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     line_linked: { enable: false }, // Solo polvo
                     move: {
                         enable: true,
-                        speed: 0.2, // Casi estático
+                        speed: 0.4, // Casi estático
                         direction: "top", // Flotando suavemente hacia arriba
                         random: true,
                         straight: false,
