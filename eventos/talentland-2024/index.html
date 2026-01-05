@@ -32,6 +32,20 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <style>
+
+        :root {
+            /* Forzamos el negro absoluto para el fondo */
+            --bg-dark: #050505; 
+            
+            /* Forzamos el negro semitransparente para la barra al hacer scroll */
+            --glass-bg: rgba(5, 5, 5, 0.7); 
+        }
+
+        body {
+            background-color: var(--bg-dark) !important;
+            overflow-x: hidden;
+        }
+
         .event-hero {
             padding-top: 120px;
             padding-bottom: 60px;
@@ -211,7 +225,7 @@
         }
     </style>
 </head>
-<body data-env="standard">
+<body data-env="network">
 
     <div id="tsparticles"></div>
 

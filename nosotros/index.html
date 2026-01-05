@@ -79,10 +79,9 @@
 
         /* --- SECCIÓN ORBITAL (El Organigrama) --- */
         .orbital-section {
-            padding: 80px 0 100px;
+            padding: 80px 0 50px;
             overflow: hidden;
             position: relative;
-            min-height: 800px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -99,8 +98,8 @@
         /* Contenedor del Sistema Solar (Solo Desktop) */
         .solar-system-container {
             position: relative;
-            width: 800px;
-            height: 800px;
+            width: auto;
+            height: 700px;
             margin-top: 50px;
             display: flex;
             justify-content: center;
@@ -149,28 +148,6 @@
             100% { transform: scale(0.9); opacity: 0.8; }
         }
 
-        /* LAS ÓRBITAS (Anillos) */
-        .orbit {
-            position: absolute;
-            /* Aumentamos grosor a 2px y opacidad a 0.5 para mejor visibilidad */
-            border: 3px dotted rgba(0, 212, 255, 0.5); 
-            border-radius: 50%;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-
-        .orbit-inner {
-            width: 450px; height: 450px;
-            animation: rotate-right 280s linear infinite;
-        }
-
-        .orbit-outer {
-            width: 700px; height: 700px;
-            border-color: rgba(217, 54, 22, 0.5); 
-            animation: rotate-left 280s linear infinite;
-        }
-
         @keyframes rotate-right { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
         @keyframes rotate-left { from { transform: translate(-50%, -50%) rotate(360deg); } to { transform: translate(-50%, -50%) rotate(0deg); } }
 
@@ -182,8 +159,24 @@
             border-radius: 50%;
             overflow: visible;
             cursor: pointer;
-            transition: 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Quitamos 'left' y 'top' de la transición */
             z-index: 20;
+
+            /* CENTRADO ABSOLUTO EN EL CONTENEDOR */
+            /* El JS ya no calculará left/top, sino que los centraremos aquí */
+            top: 50%;
+            left: 50%;
+            margin-top: -45px;  /* Mitad del alto para centrar exacto */
+            margin-left: -45px; /* Mitad del ancho para centrar exacto */
+
+            /* VARIABLES PARA LA ÓRBITA (Se llenan desde JS) */
+            --radius: 0px; 
+            --start-angle: 0deg;
+            --speed: 280s; /* Misma velocidad que tus anillos */
+            
+            /* ANIMACIÓN DE ÓRBITA */
+            /* 'infinite linear' asegura que nunca se detenga y sea constante */
+            animation: orbit-float var(--speed) linear infinite;
         }
 
         .planet-img-box {
@@ -271,6 +264,72 @@
             padding: 20px;
         }
 
+        /* --- BUSCA LA REGLA .team-card-mobile Y ACTUALÍZALA ASÍ --- */
+        .team-card-mobile {
+            background: rgba(13, 17, 23, 0.6); /* Un poco más oscuro para contraste */
+            border: 1px solid #30363d;
+            border-left: 4px solid transparent; /* Preparamos el borde izquierdo */
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative; /* Necesario para efectos */
+            overflow: hidden;   /* Para contener el destello de luz */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Movimiento suave */
+        }
+
+        /* --- EFECTO DE DESTELLO (SCAN) --- */
+        /* Creamos una luz invisible que cruzará la tarjeta */
+        .team-card-mobile::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.1) 50%,
+                rgba(255, 255, 255, 0) 100%
+            );
+            transform: skewX(-25deg); /* Inclinamos la luz */
+            transition: 0.5s;
+            pointer-events: none;
+        }
+
+        /* --- ESTADOS HOVER Y ACTIVE (Toque) --- */
+        .team-card-mobile:hover, 
+        .team-card-mobile:active {
+            transform: translateY(-5px) scale(1.02); /* Se levanta y crece un poco */
+            background: rgba(13, 17, 23, 0.9);
+        }
+
+        /* Al pasar el mouse/dedo, la luz cruza la tarjeta */
+        .team-card-mobile:hover::before,
+        .team-card-mobile:active::before {
+            left: 150%;
+            transition: 0.7s ease-in-out;
+        }
+
+        /* --- COLORES ESPECÍFICOS (Gracias al cambio en JS) --- */
+
+        /* LÍDERES (Naranja) */
+        .team-card-mobile.card-leader:hover, 
+        .team-card-mobile.card-leader:active {
+            border-color: var(--neon-orange); /* Borde completo naranja */
+            box-shadow: 0 5px 20px rgba(217, 54, 22, 0.3); /* Resplandor naranja */
+        }
+
+        /* ESPECIALISTAS (Cian) */
+        .team-card-mobile.card-specialist:hover, 
+        .team-card-mobile.card-specialist:active {
+            border-color: var(--neon-cyan); /* Borde completo cian */
+            box-shadow: 0 5px 20px rgba(0, 212, 255, 0.3); /* Resplandor cian */
+        }
+
         @media (max-width: 900px) {
             .solar-system-container { display: none; }
             .mobile-team-container { display: block; }
@@ -297,6 +356,28 @@
             .team-mobile-info h4 { color: white; margin-bottom: 5px; }
             .team-mobile-info p { color: var(--text-gray); font-size: 0.9rem; margin-bottom: 10px; }
             .team-link { color: var(--neon-cyan); font-size: 0.85rem; text-decoration: none; }
+        }
+
+        /* Esta animación hace dos cosas a la vez:
+        1. Rota el planeta alrededor del sol.
+        2. Rota el planeta en sentido contrario sobre sí mismo para que la imagen siempre esté "de pie". */
+        @keyframes orbit-float {
+            from {
+                transform: rotate(var(--start-angle)) translateX(var(--radius)) rotate(calc(-1 * var(--start-angle)));
+            }
+            to {
+                transform: rotate(calc(var(--start-angle) + 360deg)) translateX(var(--radius)) rotate(calc(-1 * (var(--start-angle) + 360deg)));
+            }
+        }
+
+        /* Variante para girar al lado contrario (Para la órbita externa) */
+        @keyframes orbit-float-reverse {
+            from {
+                transform: rotate(var(--start-angle)) translateX(var(--radius)) rotate(calc(-1 * var(--start-angle)));
+            }
+            to {
+                transform: rotate(calc(var(--start-angle) - 360deg)) translateX(var(--radius)) rotate(calc(-1 * (var(--start-angle) - 360deg)));
+            }
         }
     </style>
 </head>
@@ -443,16 +524,16 @@
         // type: 'outer' (Fundadores - Naranja) | 'inner' (Especialistas - Cian)
         const teamMembers = [
             { name: "David Zenteno", role: "Co-fundador, voz e investigación", img: "../images/david-zenteno.jpg", link: "https://linkedin.com/in/dzentenol", type: "outer" },
-            { name: "Astrid Torres", role: "Co-fundador, administración y finanzas", img: "../images/logo.png", link: "#", type: "outer" }, // Cambia nombre archivo si es necesario
+            { name: "Astrid Torres", role: "Co-fundadora, administración y finanzas", img: "../images/logo.png", link: "#", type: "outer" },
             { name: "José Luis Boyzo", role: "Profesor y revisor de guiones", img: "../images/boyzo.jpg", link: "#", type: "inner" },
             { name: "Rodrigo Rivera", role: "Diseño mecánico e impresión 3D", img: "../images/rodrigo-rivera.jpeg", link: "https://www.linkedin.com/in/rodrigoriveraingeniero/", type: "inner" },
             { name: "Gonzalo Mendoza", role: "Mantenimiento de herramientas y equipo", img: "../images/gonzalo-mendoza.jpeg", link: "https://www.linkedin.com/in/gonzalo-mendoza-garc%C3%ADa-03997a241", type: "inner" },
-            { name: "Melissa Hernández", role: "Diseño Gráfico y Marketing", img: "../images/melissa-hernandez.png", link: "https://www.behance.net/gallery/234135325/Portfolio-Branding-branding-branding", type: "inner" }
+            { name: "Melissa Hernández", role: "Diseño Gráfico", img: "../images/melissa-hernandez.png", link: "https://www.behance.net/gallery/234135325/Portfolio-Branding-branding-branding", type: "inner" }
         ];
 
         // 2. CONFIGURACIÓN DE RADIOS (Tamaño de las órbitas en px)
         // Deben coincidir con el CSS (.orbit-inner width/2 y .orbit-outer width/2)
-        const radiusInner = 225; // 450px / 2
+        const radiusInner = 200; // 450px / 2
         const radiusOuter = 350; // 700px / 2
 
         const solarSystem = document.getElementById('solarSystem');
@@ -480,30 +561,38 @@
         }
 
         function createPlanet(member, radius, angleDeg, container) {
-            // Convertir a Radianes
-            const angleRad = (angleDeg * Math.PI) / 180;
-            
-            // Calcular posición (Centro es 0,0 en el contenedor relativo)
-            // Sumamos 400 (mitad de 800px) para centrar en el div
-            // Restamos 45 (mitad de 90px tamaño planeta) para centrar el elemento
-            const centerX = 400;
-            const centerY = 400;
-            const planetSize = 45; // Mitad del width (90px)
-
-            const x = centerX + radius * Math.cos(angleRad) - planetSize;
-            const y = centerY + radius * Math.sin(angleRad) - planetSize;
-
-            // HTML del Planeta
+            // HTML del Planeta (Elemento 'a')
             const planetDiv = document.createElement('a');
-            planetDiv.className = `planet ${member.type === 'outer' ? 'leader' : ''}`;
+            
+            // Determinamos si es líder (outer) o inner para la dirección de giro
+            // Los inner giran horario, los outer anti-horario (para contrastar)
+            const isOuter = member.type === 'outer';
+            
+            planetDiv.className = `planet ${isOuter ? 'leader' : ''}`;
             planetDiv.href = member.link;
             planetDiv.target = "_blank";
-            planetDiv.style.left = `${x}px`;
-            planetDiv.style.top = `${y}px`;
 
+            // --- AQUÍ ESTÁ EL CAMBIO CLAVE ---
+            // En lugar de calcular left/top con Math.cos/sin, pasamos las variables al CSS.
+            
+            // 1. Definimos el radio de la órbita
+            planetDiv.style.setProperty('--radius', `${radius}px`);
+            
+            // 2. Definimos en qué ángulo arranca (para que no empiecen todos empalmados)
+            planetDiv.style.setProperty('--start-angle', `${angleDeg}deg`);
+            
+            // 3. Definimos la dirección de la animación
+            // Si es 'outer', usa la animación inversa (orbit-float-reverse)
+            if (isOuter) {
+                planetDiv.style.animationName = 'orbit-float-reverse';
+            } else {
+                planetDiv.style.animationName = 'orbit-float';
+            }
+
+            // Contenido interno (Imagen y Tooltip) - ESTO SE MANTIENE IGUAL
             planetDiv.innerHTML = `
                 <div class="planet-img-box">
-                    <img src="${member.img}" alt="${member.name}" onerror="this.src='images/logo.png'">
+                    <img src="${member.img}" alt="${member.name}" onerror="this.src='../images/logo.png'">
                 </div>
                 <div class="planet-info">
                     <span class="planet-name">${member.name}</span>
@@ -515,32 +604,36 @@
         }
 
         // 4. FUNCIÓN PARA GENERAR VISTA MÓVIL (ALEATORIA)
+        // Busca la función 'generateMobileList' y actualízala así:
         function generateMobileList() {
-            // A. Creamos una copia del equipo para no afectar el orden del sistema solar en escritorio
             const shuffledTeam = [...teamMembers];
 
-            // B. Algoritmo de Mezcla (Fisher-Yates) para aleatorizar la copia
+            // Algoritmo de Mezcla (Fisher-Yates)
             for (let i = shuffledTeam.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [shuffledTeam[i], shuffledTeam[j]] = [shuffledTeam[j], shuffledTeam[i]];
             }
 
-            // C. Generamos las tarjetas usando el array mezclado
             shuffledTeam.forEach(member => {
                 const card = document.createElement('a');
-                card.className = 'team-card-mobile';
+                
+                // CAMBIO AQUÍ: Agregamos una clase lógica para saber el tipo en CSS
+                const typeClass = member.type === 'outer' ? 'card-leader' : 'card-specialist';
+                
+                card.className = `team-card-mobile ${typeClass}`;
                 card.href = member.link; 
                 card.target = "_blank";
-                card.style.textDecoration = "none";
+                card.style.textDecoration = "none"; // Movemos estilo inline al CSS idealmente, pero aquí funciona bien.
                 
-                const borderColor = member.type === 'outer' ? 'var(--neon-orange)' : 'var(--neon-cyan)';
+                // Esto es solo para colorear el texto "Ver Perfil", igual que antes
+                const linkColor = member.type === 'outer' ? 'var(--neon-orange)' : 'var(--neon-cyan)';
                 
                 card.innerHTML = `
-                    <img src="${member.img}" alt="${member.name}" class="team-mobile-img ${member.type === 'outer' ? 'leader' : ''}" onerror="this.src='images/logo.png'">
+                    <img src="${member.img}" alt="${member.name}" class="team-mobile-img ${member.type === 'outer' ? 'leader' : ''}" onerror="this.src='../images/logo.png'">
                     <div class="team-mobile-info">
                         <h4>${member.name}</h4>
                         <p>${member.role}</p>
-                        <span class="team-link" style="color:${borderColor}">Ver Perfil <i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="team-link" style="color:${linkColor}">Ver Perfil <i class="fa-solid fa-arrow-right"></i></span>
                     </div>
                 `;
                 mobileContainer.appendChild(card);

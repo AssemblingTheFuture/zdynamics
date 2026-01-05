@@ -2,15 +2,15 @@
    1. VARIABLES & CONFIGURACIÓN
    ========================================= */
 :root {
-    /* Paleta de Colores zDynamics */
-    --bg-dark: #0b1120;       /* Azul Profundo (Fondo principal) */
-    --bg-darker: #050810;     /* Casi negro (Para contrastes/footer) */
-    --neon-cyan: #00D4FF;     /* Cian Eléctrico (Detalles Tech) */
-    --neon-orange: #D93616;   /* Naranja/Rojo (Acción/Alertas) */
-    --text-white: #F0F6FC;    /* Blanco Hielo (Texto principal) */
-    --text-gray: #8B949E;     /* Gris (Textos secundarios) */
+    /* Paleta de Colores zDynamics - TEMA ESPACIO PROFUNDO */
+    --bg-dark: #050505;       /* Negro Absoluto (Antes era azul oscuro) */
+    --bg-darker: #020202;     /* Casi vacío total */
+    --neon-cyan: #00D4FF;     
+    --neon-orange: #D93616;   
+    --text-white: #F0F6FC;    
+    --text-gray: #8B949E;     
     
-    /* Tipografías */
+    /* Tipografías (Sin cambios) */
     --font-hero: 'Orbitron', sans-serif;
     --font-heading: 'Chakra Petch', sans-serif;
     --font-body: 'Exo 2', sans-serif;
@@ -19,7 +19,7 @@
     /* Efectos */
     --glow-cyan: 0 0 10px rgba(0, 212, 255, 0.7);
     --glow-orange: 0 0 10px rgba(217, 54, 22, 0.7);
-    --glass-bg: rgba(11, 17, 32, 0.85); /* Efecto vidrio para el menú */
+    --glass-bg: rgba(5, 5, 5, 0.95); /* Navbar negra semitransparente por defecto */
 }
 
 /* =========================================
@@ -515,9 +515,9 @@ h1, h2, h3 {
 
 .tech-card {
     position: relative;
-    background: rgba(22, 27, 34, 0.21);
+    background: rgba(255, 255, 255, 0.03); /* Vidrio muy sutil */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde fino */
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(48, 54, 61, 0.5); /* Borde más sutil */
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -597,7 +597,7 @@ h1, h2, h3 {
    9. HARDWARE (Elephant Robotics)
    ========================================= */
 .hardware-section {
-    background: rgba(11, 17, 32, 0.77); 
+    background: rgba(5, 5, 5, 0.77); 
     padding: 100px 0;
     position: relative;
     overflow: hidden;

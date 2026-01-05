@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Aumentamos el número para evitar "huecos" cuando viajan rápido
                 number: { value: 120, density: { enable: true, value_area: 777 } },
                 
-                color: { value: ["#ffffff", "#0b1120"] }, 
+                color: { value: ["#ffffff", "#00D4FF","#0b1120"] },
                 
                 shape: { type: "circle" },
 
@@ -446,42 +446,68 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // PERFIL 3: ORBITAL (Nosotros - Rotación y Estructura)
         'orbital': {
-                particles: {
-                    number: { value: 60, density: { enable: true, value_area: 800 } },
-                    color: { value: ["#00D4FF", "#ffffff"] }, // Cian y Blanco
-                    shape: { type: "circle" },
-                    opacity: { value: 0.6 },
-                    size: { value: 2 },
-                    line_linked: {
-                        enable: true,
-                        distance: 180,
-                        color: "#00d4ff", // Conexiones Cian
-                        opacity: 0.2,
-                        width: 1
-                    },
-                    move: {
-                        enable: true,
-                        speed: 0.5, // Muy lento, majestuoso
-                        direction: "none",
-                        random: true,
-                        straight: false,
-                        out_mode: "out",
-                        attract: { enable: true, rotateX: 600, rotateY: 1200 } // Efecto sutil de atracción
-                    }
+            particles: {
+                // Aumentamos el número para evitar "huecos" cuando viajan rápido
+                number: { value: 170, density: { enable: true, value_area: 800 } },
+                
+                color: { value: ["#ffffff", "#0b1120"] },
+                
+                shape: { type: "circle" },
+
+                // Empiezan en 0 (invisibles en el centro) y aparecen gradualmente.
+                // Esto oculta el punto de origen y da sensación de profundidad.
+                opacity: { 
+                    value: 1, 
+                    random: true, 
+                    anim: { 
+                        enable: true, 
+                        speed: 0.7, 
+                        opacity_min: 0, // Nacen invisibles
+                        sync: false 
+                    } 
                 },
-                interactivity: {
-                    detect_on: "canvas",
-                    events: { onhover: { enable: true, mode: "grab" }, resize: true },
-                    modes: { grab: { distance: 200, line_linked: { opacity: 0.5 } } }
+                
+                // TRUCO DE TAMAÑO: Crecen al acercarse (Perspective Projection)
+                size: { 
+                    value: 3, 
+                    random: true, // Variación natural
+                    anim: { 
+                        enable: true, 
+                        speed: 0.1, 
+                        size_min: 0, // Nacen microscópicas
+                        sync: false 
+                    } 
                 },
-                retina_detect: true
+                
+                line_linked: { enable: false }, // Limpieza total
+                
+                move: {
+                    enable: true,
+                    speed: 0.2,           // Velocidad reducida para apreciación (antes 8)
+                    direction: "none", // Del centro hacia afuera
+                    random: false,      // Trayectoria recta (Inercia)
+                    straight: false,    
+                    out_mode: "out",    // Salen y se reciclan
+                    bounce: false,
+                    attract: { enable: false },
+                    warp: true
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: false }, // Sin distracción
+                    resize: true
+                }
+            },
+            retina_detect: true
         },
 
         // PERFIL 4: VOID (Investigación - Misterio y Flotación)
         'void': {
                 particles: {
                     number: { value: 100, density: { enable: true, value_area: 800 } },
-                    color: { value: ["#ffffff", "#0b1120"] }, 
+                    color: { value: ["#ffffff", "#00D4FF", "#0b1120"] }, 
                     shape: { type: "circle" },
                     opacity: { value: 0.7, random: true, anim: { enable: true, speed: 3, opacity_min: 0.1, sync: false } },
                     size: { value: 3, random: true },
@@ -496,6 +522,75 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 },
                 retina_detect: true
+        },
+
+        // PERFIL 5: TIMELINE (Para la página principal de Eventos)
+        'timeline': {
+            particles: {
+                number: { value: 120, density: { enable: true, value_area: 800 } },
+                color: { value: ["#ffffff", "#0b1120"] }, 
+                shape: { type: "circle" },
+                opacity: { 
+                    value: 0.5, 
+                    random: true,
+                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } // Efecto parpadeo estrella
+                },
+                size: { value: 3, random: true },
+                line_linked: { enable: false }, // Sin líneas, solo estrellas pasando
+                move: {
+                    enable: true,
+                    speed: 1,           // Velocidad constante pero tranquila
+                    direction: "bottom",  // Se mueven a la izq -> Sensación de ir a la derecha (Futuro)
+                    random: true,      // Movimiento lineal recto
+                    straight: true,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            retina_detect: true
+        },
+
+        // PERFIL 6: NETWORK (Para Talent Land, Cosplay, etcétera)
+        'network': {
+            particles: {
+                // Menos partículas para más elegancia
+                number: { value: 50, density: { enable: true, value_area: 800 } },
+                
+                // Color: Blanco técnico, no Cyan (para diferenciarlo de la Home)
+                color: { value: "#ffffff" }, 
+                
+                shape: { type: "circle" },
+                opacity: { value: 0.3, random: true }, // Más transparente
+                size: { value: 2, random: true },
+                
+                // CONEXIONES: Muy sutiles, solo se ven al acercarse
+                line_linked: {
+                    enable: true,
+                    distance: 160,
+                    color: "#ffffff",
+                    opacity: 0.15, // Apenas visibles, muy fino
+                    width: 1
+                },
+                
+                move: {
+                    enable: true,
+                    speed: 0.4,      // Movimiento casi imperceptible (Flotación)
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "grab" }, // Interacción al pasar mouse
+                    resize: true
+                },
+                modes: { grab: { distance: 200, line_linked: { opacity: 0.4 } } }
+            },
+            retina_detect: true
         }
     };
 
