@@ -571,7 +571,7 @@
             <div class="hud-card" id="contacto">
 
                 <div class="hud-status-bar">
-                    <span>STATUS: ONLINE</span>
+                    <span>ESTATUS: ACTIVO</span>
                     <span id="sys-id">ID: REQ-00</span>
                 </div>
                 
@@ -609,11 +609,6 @@
                     <button type="submit" class="btn btn-hud-cyan full-width" style="border-radius: 4px;">
                         ENVIAR <i class="fa-solid fa-terminal"></i>
                     </button>
-
-                    <div id="estimation-result" class="result-box-hidden">
-                        <p class="result-label">Estimado Preliminar (MXN):</p>
-                        <h3 id="price-range" class="result-price"></h3>
-                    </div>
                 </form>
             </div>
         </div> 
@@ -717,50 +712,119 @@
     <script src="../scripts/main.js"></script>
        
     <script>
+        // ==========================================
+        // CONFIGURACIÓN DE SEGURIDAD Y VALIDACIÓN
+        // ==========================================
+        
+        // 1. Lista negra de dominios de correo basura/temporales
+        const BLOCKED_DOMAINS = [
+            'test.com', 'ejemplo.com', 'example.com', 'yopmail.com', 'tempmail.com', 
+            '10minutemail.com', 'mailinator.com', 'guerrillamail.com' // Opcional: Bloquear hotmail si prefieres solo Gmail/Corporativos
+        ];
+
+        // 2. Lista negra de palabras clave en URLs (Pornografía/Phishing básico)
+        const BLOCKED_KEYWORDS = [
+            'porn', 'xxx', 'sex', 'casino', 'bet', 'crypto', 'viagra', 'cialis', 
+            'free-money', 'ganar-dinero', 'bit.ly', 'tinyurl' // Bloquear acortadores suele ser buena práctica de seguridad
+        ];
+
         // Lógica del Formulario
         const quoteForm = document.getElementById('quote-form');
+        // Usamos 'let' para permitir incremento
+        let ID = Math.floor(Math.random() * 7777);
 
-        // Generador de ID Aleatorio para efecto visual
-        document.getElementById('sys-id').innerText = 'ID: REQ-' + Math.floor(Math.random() * 9000 + 1000);
+        // Generador de ID inicial
+        document.getElementById('sys-id').innerText = `COTIZACIÓN: ${ID}`;
 
         quoteForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
             const btn = this.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
-            const usdPrice = parseFloat(this.usd_price.value);
             
-            // Cálculo Estimado (Misma lógica, solo ajustando presentación)
-            const estimatedMin = (usdPrice * 18.5 * 1.35).toFixed(0); 
-            const estimatedMax = (usdPrice * 20.5 * 1.6 + 450).toFixed(0); 
-            
-            const resultBox = document.getElementById('estimation-result');
-            const priceText = document.getElementById('price-range');
-            
-            // Formato de moneda
-            const formatter = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' });
-            priceText.innerHTML = `${formatter.format(estimatedMin)} - ${formatter.format(estimatedMax)}`;
-            resultBox.style.display = 'block';
+            // --- EXTRACCIÓN DE DATOS ---
+            const name = this.user_name.value.trim();
+            const email = this.user_email.value.trim().toLowerCase();
+            const phone = this.whatsapp.value.replace(/\D/g, ''); // Elimina todo lo que no sea número
+            const urls = this.product_urls.value.trim();
+            const price = parseFloat(this.usd_price.value);
+
+            // --- FUNCIÓN DE ERROR VISUAL ---
+            const showError = (msg) => {
+                btn.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> ${msg}`;
+                btn.style.borderColor = 'red';
+                btn.style.color = 'red';
+                // Regresar al estado original después de 3 segundos
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.borderColor = '';
+                    btn.style.color = '';
+                }, 3000);
+            };
+
+            // ==========================================
+            //  FILTROS DE SEGURIDAD
+            // ==========================================
+
+            // 1. VALIDACIÓN DE NOMBRE (No números, longitud mínima)
+            if (name.length < 5 || /[\d]/.test(name)) {
+                showError('NOMBRE INVÁLIDO');
+                return; // Detiene el envío
+            }
+
+            // 2. VALIDACIÓN DE TELÉFONO (Anti-Spam básico)
+            // Bloquea: longitud incorrecta, todos iguales (5555555555), o secuenciales (1234567890)
+            if (phone.length < 10 || /^(\d)\1+$/.test(phone) || phone === '1234567890') {
+                showError('TELÉFONO FALSO O FUERA DE MÉXICO');
+                return;
+            }
+
+            // 3. VALIDACIÓN DE EMAIL (Dominios falsos)
+            const emailDomain = email.split('@')[1];
+            if (!emailDomain || BLOCKED_DOMAINS.includes(emailDomain)) {
+                showError('EMAIL NO PERMITIDO');
+                return;
+            }
+
+            // 4. VALIDACIÓN DE PRECIO (Números irreales)
+            // Bloquea si es 0, negativo o sospechosamente bajo para importación (ej. menos de $10 USD)
+            if (isNaN(price) || price < 10) {
+                showError('VALOR USD IRREAL');
+                return;
+            }
+
+            // 5. VALIDACIÓN DE URLS (Seguridad y Contenido)
+            const lowerUrls = urls.toLowerCase();
+            // Debe contener al menos un http/https
+            if (!lowerUrls.includes('http')) {
+                showError('URLS SIN FORMATO');
+                return;
+            }
+            // Buscar palabras prohibidas
+            const hasBadWord = BLOCKED_KEYWORDS.some(keyword => lowerUrls.includes(keyword));
+            if (hasBadWord) {
+                showError('ENLACE SOSPECHOSO');
+                return;
+            }
 
             btn.innerHTML = 'PROCESANDO... <i class="fa-solid fa-microchip fa-fade"></i>';
             
             const templateParams = {
-                name: this.user_name.value,
-                email: this.user_email.value,
-                whatsapp: this.whatsapp.value, // Nuevo campo capturado
-                subject: `COTIZACIÓN (${usdPrice} USD) - ${this.user_name.value}`, 
+                name: name,
+                email: email,
+                whatsapp: phone, 
+                subject: `COTIZACIÓN DE IMPORTACIÓN ${ID} - ${name}`, 
                 message: `
                     DATOS DE CONTACTO:
-                    Nombre: ${this.user_name.value}
-                    WhatsApp: ${this.whatsapp.value}
-                    Email: ${this.user_email.value}
+                    Nombre: ${name}
+                    WhatsApp: ${this.whatsapp.value} (Validado)
+                    Email: ${email}
                     
                     SOLICITUD:
                     URLs / Lista de Material: 
                     ${this.product_urls.value}
                     
-                    Valor Declarado USD: $${usdPrice}
-                    -----------------------------------
+                    Valor Declarado USD: $${price}
                 `
             };
 
@@ -770,21 +834,20 @@
                     btn.style.borderColor = '#00FF88';
                     btn.style.color = '#00FF88';
                     
-                    // Opcional: Redirigir a WhatsApp después de enviar
-                    // window.open(`https://wa.me/5215542949603?text=Hola,%20acabo%20de%20enviar%20una%20solicitud%20de%20cotización%20por%20$${usdPrice}USD`, '_blank');
+                    // Opcional: Redirigir a WhatsApp
+                    // window.open(`https://wa.me/5215542949603?text=Hola...`, '_blank');
                     
                     setTimeout(() => {
                         quoteForm.reset();
+                        ID++; // Incremento de ID corregido
+                        document.getElementById('sys-id').innerText = `COTIZACIÓN: ${ID}`;
                         btn.innerHTML = originalText;
                         btn.style.borderColor = '';
                         btn.style.color = '';
-                        resultBox.style.display = 'none';
-                    }, 6000);
+                    }, 2100);
                 }, (err) => {
                     console.error('Error:', err);
-                    btn.innerHTML = 'ERROR DE CONEXIÓN';
-                    btn.style.borderColor = 'red';
-                    btn.style.color = 'red';
+                    showError('ERROR DE CONEXIÓN'); // Reutilizamos la función de error
                 });
         });
     </script>
