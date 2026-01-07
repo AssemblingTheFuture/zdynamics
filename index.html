@@ -35,7 +35,6 @@
             emailjs.init('tc1u_lsh29PmThiJg'); 
         })();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <style>
         :root {
@@ -142,59 +141,73 @@
                 <p class="section-subtitle">Aprende a implementar la teoría que hace que un robot funcione</p>
             </div>
 
-            <div class="cards-grid">
+            <div class="carousel-3d-wrapper" data-carousel-id="talleres">
+                
+                <button class="carousel-nav prev-btn">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
 
-                <article class="tech-card">
-                    <div class="card-image">
-                        <img src="images/numerical.png" alt="Métodos Numéricos con Aplicaciones de Ingeniería">
-                        <div class="card-overlay"></div>
+                <div class="carousel-track">
+                    
+                    <div class="carousel-card" data-url="https://www.udemy.com/course/metodos-numericos-zdynamics/?referralCode=6FA2593CD98A23C874C2">
+                        <div class="card-inner poster-style">
+                            <img src="images/numerical.png" alt="Métodos Numéricos" class="poster-img">
+                            
+                            <div class="card-overlay">
+                                <h3>Métodos Numéricos</h3>
+                                <p>Aprende los algoritmos numéricos para crear simulaciones desde cero.</p>
+                                <span class="card-status status-active">DISPONIBLE</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Métodos Numéricos con Aplicaciones de Ingeniería</h3>
-                        <p class="tech-font">SIMULACIÓN NUMÉRICA</p>
-                        <p>Aprende los algoritmos numéricos para crear simulaciones desde cero.</p>
-                        <a href="https://www.udemy.com/course/metodos-numericos-zdynamics/?referralCode=6FA2593CD98A23C874C2" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
 
-                <article class="tech-card">
-                    <div class="card-image">
-                        <img src="images/control.png" alt="Control de Sistemas Dinámicos">
-                        <div class="card-overlay"></div>
+                    <div class="carousel-card" data-url="https://www.udemy.com/course/control-de-sistemas-dinamicos/?referralCode=74300CF3F21F98714329">
+                        <div class="card-inner poster-style">
+                            <img src="images/control.png" alt="Control" class="poster-img">
+                            <div class="card-overlay">
+                                <h3>Control de Sistemas Dinámicos</h3>
+                                <p>Más allá del PID. Aprende criterios de estabilidad y control automático.</p>
+                                <span class="card-status status-active">DISPONIBLE</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Control de Sistemas Dinámicos</h3>
-                        <p class="tech-font">CONTROL ROBUSTO</p>
-                        <p>Más allá del PID. Aprende criterios de estabilidad y control automático.</p>
-                        <a href="https://www.udemy.com/course/control-de-sistemas-dinamicos/?referralCode=74300CF3F21F98714329" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
 
-                <article class="tech-card">
-                    <div class="card-image">
-                        <img src="images/robotics.png" alt="Robótica Cinemática">
-                        <div class="card-overlay"></div>
+                    <div class="carousel-card" data-url="https://www.udemy.com/course/robotica-de-la-cinematica-al-control/?referralCode=5FF404FC9C3C95DE6D11">
+                        <div class="card-inner poster-style">
+                            <img src="images/robotics.png" alt="Robótica" class="poster-img">
+                            <div class="card-overlay">
+                                <h3>Robótica: de la Cinemática al Control</h3>
+                                <p>Analiza, modela y simula diferentes tipos de robots.</p>
+                                <span class="card-status status-active">DISPONIBLE</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Robótica: de la Cinemática al Control</h3>
-                        <p class="tech-font">MATLAB / SIMULINK / SIMMECHANICS</p>
-                        <p>Domina las teoría detrás del estudio de la robótica sin perder la cabeza.</p>
-                        <a href="https://www.udemy.com/course/robotica-de-la-cinematica-al-control/?referralCode=5FF404FC9C3C95DE6D11" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                </article>
 
-                <article class="tech-card">
-                    <div class="card-image">
-                        <img src="images/python_robotics.png" alt="Python Robotics">
-                        <div class="card-overlay"></div>
+                    <div class="carousel-card" data-url="https://www.udemy.com/course/programacion-basica-de-robots-con-python/?referralCode=1DAE7ED9A6373802861C">
+                        <div class="card-inner poster-style">
+                            <img src="images/python_robotics.png" alt="Python" class="poster-img">
+                            <div class="card-overlay">
+                                <h3>Programación Básica de Robots con Python</h3>
+                                <p>Entiende la teoría resolviendo problemas reales con código limpio.</p>
+                                <span class="card-status status-active">DISPONIBLE</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <h3>Programación Básica de Robots con Python</h3>
-                        <p class="tech-font">ROBÓTICA + PYTHON</p>
-                        <p>Visualiza la teoría resolviendo problemas reales con código limpio.</p>
-                        <a href="https://www.udemy.com/course/programacion-basica-de-robots-con-python/?referralCode=1DAE7ED9A6373802861C" target="_blank" class="btn-text">Ver Taller <i class="fa-solid fa-arrow-right"></i></a>
+
+                    <div class="carousel-card see-more-card" data-url="">
+                        <div class="card-inner poster-style flex-center">
+                            <i class="fa-solid fa-arrow-right-long" style="font-size: 3rem; margin-bottom: 10px; z-index: 2;"></i>
+                            <h3 style="z-index: 2;">PRÓXIMAMENTE</h3>
+                            <p style="z-index: 2;">Muy pronto tendremos más para ti</p>
+                        </div>
                     </div>
-                </article>
+
+                </div>
+
+                <button class="carousel-nav next-btn">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
             </div>
         </div>
     </section>

@@ -86,38 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ======================================================
-    // 4. CONTADORES (Conectado a API Udemy vía Netlify)
+    // 4. CONTADORES (Versión Estática / Manual)
     // ======================================================
     let counterSection = document.querySelector('.metrics-section');
     if(counterSection) {
         
-        // Función asíncrona para obtener datos reales
-        const fetchMetrics = async () => {
-            try {
-                // Llamamos a TU función de Netlify (definida en netlify.toml como /api/...)
-                const response = await fetch('/api/main'); 
-                const data = await response.json();
-                
-                if (data && data.total_students) {
-                    console.log("Estudiantes en tiempo real:", data.total_students);
-                    return data.total_students;
-                }
-            } catch (error) {
-                console.warn("No se pudo conectar con Udemy, usando datos locales.", error);
-            }
-            return 4800; // Fallback: Si falla la API, mostramos este número
-        };
-
         // Lógica de animación
-        const startAnimation = async () => {
-            // 1. Obtenemos el número real antes de animar
-            const realStudentCount = await fetchMetrics();
-
+        const startAnimation = () => {
+            
+            // AQUÍ EDITAS TUS NÚMEROS MANUALMENTE:
             const counters = [
                 { id: 'count-countries', target: 60 },
-                { id: 'count-students', target: realStudentCount }, // ¡Ahora es dinámico!
+                { id: 'count-students', target: 4900 }, // <--- Tu número manual
                 { id: 'count-years', target: 9 }
             ];
+            
             const duration = 2000; 
             const frameDuration = 20; 
 
@@ -136,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         element.innerText = Math.ceil(currentCount);
                         setTimeout(updateCount, frameDuration);
                     } else {
-                        // Formato bonito: si son miles agrega la "k" o el "+"
+                        // Formato bonito: si son miles agrega el "+"
                         element.innerText = "+" + target; 
                     }
                 };
@@ -148,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let observer = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    startAnimation(); // Ejecutamos la nueva función async
+                    startAnimation(); 
                     observer.unobserve(entry.target);
                 }
             });
@@ -159,33 +142,32 @@ document.addEventListener('DOMContentLoaded', () => {
     // ======================================================
     // 5. CARRUSEL 3D (CRÍTICO: "IF TRACK EXISTE")
     // ======================================================
-    // Aquí estaba el error. Si no hay track, todo el JS moría.
-    const track = document.getElementById('track');
-    
-    if (track) { 
-        let cards = Array.from(document.querySelectorAll('.carousel-card'));
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
+    const carousels = document.querySelectorAll('.carousel-3d-wrapper');
+
+    carousels.forEach((wrapper) => {
+        const track = wrapper.querySelector('.carousel-track');
+        const prevBtn = wrapper.querySelector('.prev-btn');
+        const nextBtn = wrapper.querySelector('.next-btn');
+
+        if (!track) return; // Si por alguna razón está incompleto, saltar
+
+        let cards = Array.from(track.querySelectorAll('.carousel-card'));
+        let centerIndex = 0;
 
         // --- FASE 1: ALEATORIEDAD ---
-        function shuffleCards() {
-            for (let i = cards.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [cards[i], cards[j]] = [cards[j], cards[i]];
-            }
-            cards.forEach(card => track.appendChild(card));
-        }
-
-        // Solo barajamos si hay espacio suficiente (Escritorio)
+        // Solo barajamos si NO es el carrusel de investigación (opcional)
+        // O barajamos todos. Aquí barajamos todos para cumplir tu requisito.
         if (window.innerWidth > 768) {
-            shuffleCards();
+             for (let i = cards.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                track.appendChild(cards[j]); // Mueve el nodo en el DOM
+            }
+            // Actualizamos la lista después de moverlos en el DOM
+            cards = Array.from(track.querySelectorAll('.carousel-card'));
         }
 
         // --- FASE 2: LÓGICA 3D ---
-        let centerIndex = 0; 
-
         const updateCarousel = () => {
-            // En móvil desactivamos la lógica 3D para evitar glitches
             if (window.innerWidth <= 768) return; 
 
             const total = cards.length;
@@ -206,21 +188,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     const scale = Math.max(1 - (absDist * 0.15), 0.6); 
                     const opacity = Math.max(1 - (absDist * 0.3), 0);
                     const zIndex = 100 - absDist; 
-                    const translateX = distance * 200;
+                    const translateX = distance * 200; // Separación horizontal
 
                     card.style.transform = `translateX(${translateX}px) scale(${scale})`;
                     card.style.zIndex = zIndex;
                     card.style.opacity = opacity;
-                    
-                    // Permitimos interacción en todas para poder hacer clic y rotar
                     card.style.pointerEvents = 'auto'; 
                     card.style.filter = (distance === 0) ? 'none' : 'blur(2px) grayscale(40%)';
-                    card.style.cursor = 'pointer'; 
                 }
             });
         };
 
-        // Event Listeners Botones (Con protección por si no existen)
+        // --- FASE 3: EVENT LISTENERS (Scoped al wrapper actual) ---
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
                 centerIndex = (centerIndex + 1) % cards.length;
@@ -235,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // --- FASE 3: CLIC INTELIGENTE ---
+        // Clic en tarjetas
         cards.forEach((card) => {
             card.addEventListener('click', () => {
                 const currentIndex = cards.indexOf(card);
@@ -247,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // SI ESTÁ EN EL CENTRO -> ABRIR URL
                     const url = card.getAttribute('data-url');
                     if (url) {
-                        card.style.transform += " scale(0.95)"; // Efecto "Press"
+                        card.style.transform += " scale(0.95)"; 
                         setTimeout(() => {
                             window.location.href = url;
                         }, 150);
@@ -260,32 +239,30 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-        // Inicializar
+        // Inicializar este carrusel específico
         updateCarousel();
 
-        // Responsive Reset
+        // Responsive Reset específico
         window.addEventListener('resize', () => {
             if (window.innerWidth <= 768) {
                 cards.forEach(card => {
-                    // Limpiar estilos inline para que CSS tome el control en móvil
                     card.style.transform = '';
                     card.style.opacity = '';
                     card.style.zIndex = '';
                     card.style.filter = '';
-                    card.style.pointerEvents = 'auto';
                     
-                    // En móvil, el clic siempre abre
+                    // En móvil, el clic siempre abre directo
                     card.onclick = function() {
                         const url = this.getAttribute('data-url');
                         if(url) window.location.href = url;
                     };
                 });
             } else {
-                cards.forEach(c => c.onclick = null); // Quitar el onclick inline
+                cards.forEach(c => c.onclick = null); 
                 updateCarousel();
             }
         });
-    } // CIERRE DEL IF (TRACK)
+    });
 
     // ======================================================
     // 6. ENVÍO DE FORMULARIO (Ahora protegido y robusto)

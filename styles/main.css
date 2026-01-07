@@ -594,6 +594,100 @@ h1, h2, h3 {
 .btn-text:hover i { margin-left: 10px; }
 
 /* =========================================
+   ESTILOS EXCLUSIVOS: CARRUSEL TALLERES
+   ========================================= */
+
+[data-carousel-id="talleres"] .carousel-card {
+    padding: 0 !important;
+}
+
+/* 1. Quitamos el padding original de la tarjeta para aprovechar todo el espacio */
+[data-carousel-id="talleres"] .card-inner.poster-style {
+    padding: 0;
+    display: block; 
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* 2. Estilo de la Imagen (Grande y centrada) */
+[data-carousel-id="talleres"] .poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que el robot se vea completo */
+    object-position: center 20%; /* Lo sube un poco para dejar espacio al texto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    
+    /* Filtro sutil para que brille un poco */
+    filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.3));
+}
+
+/* Efecto Hover: Zoom in a la imagen */
+[data-carousel-id="talleres"] .carousel-card:hover .poster-img {
+    transform: scale(1.15); /* Crece más */
+    filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
+}
+
+/* 3. El gradiente y contenedor del texto */
+[data-carousel-id="talleres"] .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* Ajustamos el padding para que el texto no toque el borde de la tarjeta */
+    padding: 60px 20px 20px 20px; 
+    
+    background: linear-gradient(to top, 
+        rgba(5, 5, 5, 1) 0%,      
+        rgba(5, 5, 5, 0.8) 50%,   
+        transparent 100%          
+    );
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Ajustes finos de tipografía para este diseño */
+[data-carousel-id="talleres"] .card-overlay h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    text-shadow: 0 2px 4px black;
+}
+
+[data-carousel-id="talleres"] .card-overlay p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+/* Ajuste especial para la tarjeta "Ver Más" para centrar su contenido */
+[data-carousel-id="talleres"] .card-inner.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.05); /* Un fondo sutil diferente */
+}
+
+/* Estado activo color verde neón */
+.status-active {
+    align-self: flex-start; /* Que no se estire */
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    color: #00FF88;
+    background: rgba(0, 255, 136, 0.1);
+    border-radius: 4px;
+}
+
+/* =========================================
    9. HARDWARE (Elephant Robotics)
    ========================================= */
 .hardware-section {

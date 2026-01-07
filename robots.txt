@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /investigacion/plantilla
+Disallow: /investigacion/plantilla.html
+
+Sitemap: https://zdynamics.org/sitemap.xml

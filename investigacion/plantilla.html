@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla de Artículos v1.0 | zDynamics</title>
-    <link rel="icon" href="../../images/icon.ico">
+    <title>Plantilla de Artículos v1.1 | zDynamics</title>
+    <link rel="icon" href="/images/icon.ico">
     
     <!-- Metadata -->
     <meta name="description" content="Guía de uso para la redacción de artículos técnicos en nuestra plataforma">
     <meta name="keywords" content="plantilla, latex, código, ingeniería, documentación">
     <meta name="author" content="David Zenteno Lara">
-    <meta property="og:title" content="Plantilla de Artículos v1.0 | zDynamics">
+    <meta property="og:title" content="Plantilla de Artículos v1.1 | zDynamics">
     <meta property="og:description" content="Guía de uso para la redacción de artículos técnicos en nuestra plataforma">
     <meta property="og:image" content="https://thumbs.dreamstime.com/b/futuristic-city-glowing-digital-elements-cyberpunk-theme-tall-skyscrapers-illuminated-symbolizes-technology-367776179.jpg">
     <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Exo+2:wght@300;400;600&family=JetBrains+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css">
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -29,7 +29,6 @@
             emailjs.init('tc1u_lsh29PmThiJg'); 
         })();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script>
@@ -87,6 +86,36 @@
             line-height: 1.8;
             color: #c9d1d9; /* Gris claro (GitHub Dark mode style) */
             text-align: justify;
+        }
+
+        /* --- ESTILOS PARA ENLACES EN EL TEXTO (Efecto Cyberpunk) --- */
+        .article-content a {
+            color: var(--neon-cyan); /* Color base Cian */
+            text-decoration: none;   /* Quitamos subrayado por defecto */
+            position: relative;      /* Necesario para la animación de la línea */
+            transition: 0.3s;
+            font-weight: 600;        /* Un poco más de peso para que resalte */
+        }
+
+        /* La línea animada invisible inicial */
+        .article-content a::after {
+            content: '';
+            position: absolute;
+            width: 0;                /* Empieza sin ancho */
+            height: 1px;             /* Línea fina elegante */
+            bottom: -2px;            /* Un poco separado del texto */
+            left: 0;
+            background-color: var(--neon-orange); /* Color Naranja al interactuar */
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Estado Hover (Al pasar el mouse) */
+        .article-content a:hover {
+            color: var(--neon-orange); /* El texto cambia a naranja */
+        }
+
+        .article-content a:hover::after {
+            width: 100%;             /* La línea se expande de izquierda a derecha */
         }
 
         /* Títulos */
@@ -461,7 +490,7 @@
                 <span style="color: var(--neon-orange); margin-right: 2px; font-weight: bold;">./</span>zDynamics
             </a>
             <ul class="nav-links">
-                <li><a href="../"><i class="fa-solid fa-arrow-left"></i> Volver a I²+D</a></li>
+                <li><a href="/investigacion/"><i class="fa-solid fa-arrow-left"></i> Volver a I²+D</a></li>
                 <li><a href="#contacto" class="btn-nav">Contacto</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
@@ -472,15 +501,15 @@
         
         <header>
             <h1 class="article-title">Título del Artículo</h1>
-            <h2 class="article-subtitle">Guía de uso para la plantilla de artículos v1.0</h2>
+            <h2 class="article-subtitle">Guía de uso para la plantilla de artículos v1.1</h2>
             
             <div class="article-meta">
                 <div class="author-chip">
-                    <img src="../../images/itzel.jpg" alt="Itzel T." onerror="this.src='../../images/logo.png'">
+                    <img src="/images/itzel.jpg" alt="Itzel T." onerror="this.src='/images/logo.png'">
                     <span>Astrid Torres</span>
                 </div>
                 <div class="author-chip">
-                    <img src="../../images/david-zenteno.jpg" alt="David Z." onerror="this.src='../../images/logo.png'">
+                    <img src="/images/david-zenteno.jpg" alt="David Z." onerror="this.src='/images/logo.png'">
                     <span>David Zenteno</span>
                 </div>
                 <div class="author-chip" style="background: transparent; border: none;">
@@ -708,18 +737,25 @@
             <h3>3.1 Gestión de Imágenes</h3>
             
             <p>
-                Para mantener el orden en el servidor, seguimos una estructura estricta de carpetas. Cada artículo debe tener su propio directorio.
+                Para mantener el orden en el servidor, usamos la siguiente estructura estricta de carpetas:
             </p>
 
             <div style="background: rgba(0, 212, 255, 0.05); border-left: 4px solid var(--neon-cyan); padding: 15px; margin: 20px 0;">
-                <h4 style="margin-top: 0; color: var(--text-white);">📂 Estructura de Directorios</h4>
                 <ul style="list-style: none; padding-left: 10px; color: var(--text-gray); font-family: 'JetBrains Mono', monospace;">
-                    <li>/investigacion/</li>
-                    <li>├── index.html (Hub de Investigación)</li>
+                    <li>📂 (raíz)</li>
+                    <li>├── images/</li>
+                    <li>├── imagen-1.png</li>
+                    <li>├── imagen-2.png</li>
+                    <li>├── ⋮</li>
                     <li>└── articulos/</li>
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;├── <strong>nombre_del_articulo.html</strong> (Este es tu artículo)</li>
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;└── <strong>nombre_del_articulo_img/</strong> (Carpeta de imágenes de tu artículo)</li>
-                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── <strong>figura-1.png</strong> (Imágenes aquí)</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;├── <strong>grafica-1.png</strong></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;⋮ </li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;└── <strong>figura-3.gif</strong></li>
+                    <li>├── investigacion/</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;├── index.html (Hub de Investigación)</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;├── plantilla.html (Plantilla de artículos)</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;⋮ </li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;└── tu-artículo.html (Este es tu artículo)</li>
                 </ul>
             </div>
             
@@ -790,7 +826,7 @@
             </div>
 
             <div class="footer-col footer-info">
-                <img src="../../images/logo.png" alt="zDynamics" class="footer-logo">
+                <img src="/images/logo.png" alt="zDynamics" class="footer-logo">
                 <p class="tagline">The Future is <span class="highlight">ROBOTICS</span></p>
                 
                 <div class="social-links">
@@ -801,13 +837,13 @@
                         <i class="fa-brands fa-whatsapp"></i> </a>
                     <a href="mailto:contact@zdynamics.org"><i class="fa-solid fa-envelope"></i></a>
                     <div class="legacy-wrapper">
-                        <img src="../../images/bny.png" title="Assembling the Future... TOGETHER!">
+                        <img src="/images/bny.png" title="Assembling the Future... TOGETHER!">
                     </div>
                 </div>
 
                 <ul class="legal-links">
-                    <li><a href="../../aviso-de-privacidad">Aviso de Privacidad</a></li>
-                    <li><a href="../../terminos-y-condiciones">Términos y Condiciones</a></li>
+                    <li><a href="/aviso-de-privacidad">Aviso de Privacidad</a></li>
+                    <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
                 </ul>
                 <p class="copyright">
                     © <script>document.write(new Date().getFullYear())</script> David Zenteno Lara. Todos los derechos reservados.<br>
@@ -818,7 +854,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
-    <script src="../../scripts/main.js"></script>
+    <script src="/scripts/main.js"></script>
 
     <script>
         function switchTab(btn) {
